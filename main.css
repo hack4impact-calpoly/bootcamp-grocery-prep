@@ -1,0 +1,65 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cad2c5;
+    color: #FFF;
+    padding: 0 20px;
+}
+header a {
+    color: #6b705c;
+    margin: 0 12px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+body {
+    margin: 0;
+    background-color: white;
+}
+main {
+    padding: 15px 20% 40px;
+    display: block;
+}
+p {
+    display: block;
+
+    font-family: 'Montserrat', sans-serif;
+}
+h1 {
+    display: block;
+    font-weight: bold;
+    font-family: 'Noto Serif JP', serif;
+}
+h2 {
+    background-color: #84a98c;
+    padding: 4px 8px;
+    font-family: 'Montserrat', sans-serif;
+}
+.showcase {
+    display: flex;
+    justify-content: space-between;
+}
+.showcase > .links {
+    margin: 30px 6%;
+}
+.links a{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+.about_photos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.about_photos > img {
+    height: 300px;
+    padding: 3px 20px;
+}
+.recipe_photo {
+    height: 500px;
+    padding-left: 50px;
+}
+ul, li{
+    font-family: 'Montserrat', sans-serif;
+}
