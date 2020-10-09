@@ -1,6 +1,7 @@
 # bootcamp-grocery-prep
 2020 bootcamp project
 # eric newcomer
+# ethan zimbelman
 
 this repo will serve as a place to "turn in" your work. more info about bootcamp can be found on the [bootcamp resources notion page](https://www.notion.so/h4i/Bootcamp-Resources-995537643dec454099abd859d8c02643).
 
