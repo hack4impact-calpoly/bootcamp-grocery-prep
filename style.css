@@ -1,0 +1,60 @@
+html {
+   background-color: #FFDDD2;
+}
+
+header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   background-color: #83C5BE;
+   padding-left: 2em;
+   padding-right: 2em;
+}
+
+main {
+   display: flex;
+   flex-direction: column;
+   padding-left: 15em;
+}
+
+.box#meals {
+   display: flex;
+   background-color: #E29578;
+   padding: 10px;
+   width: 700px;
+   height: 100px:
+}
+
+.shift#links {
+   display: flex;
+   padding-left: 35em;
+   padding-top: 1em;
+   color: #006D77;
+}
+
+.shift#recipeImage {
+   display: flex;
+   justify-content: center;
+   padding-right: 25em;
+   padding-left: 12em;
+}
+
+#aboutImage li {
+   float: left;
+}
+
+.shift#aboutImage li img {
+   float: left;
+   padding: 20px;
+}
+
+.box#about {
+   display: flex;
+   background-color: #E29578;
+   padding: 10px;
+   width: 225px;
+   height: 100px:
+}
+
+
