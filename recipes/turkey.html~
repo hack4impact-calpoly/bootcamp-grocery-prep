@@ -1,0 +1,77 @@
+<html lang="en-US">
+	<head>
+		<title>MFR - Turkey Wrap</title>
+	</head>
+
+	<body>
+		<header>
+			<h1>My Favorite Recipes</h1>
+			<nav>
+				<a href="../index.html">Home</a>
+				<a href="../about.html">About the Chef</a>
+			</nav>
+		</header>
+
+		<main>
+			<h1>Turkey Wrap</h1>
+			<p>Absolutely delectable!</p>
+			<p>Makes 2 servings</p>
+			<img src="../imgs/turkey.jpg" height="250">
+			<h2>Ingredients</h2>
+			<ul>
+				<li>
+					2 whole wheat tortillas (8 inches)
+				</li>
+				<li>
+					4 tsp honey mustard
+				</li>
+				<li>
+					6 oz thinly sliced deli turkey
+				</li>
+				<li>
+					2 thin slices Muenster cheese
+				</li>
+				<li>
+					1 cup fresh baby spinach
+				</li>
+				<li>
+					1 medium carrot, shredded
+				</li>
+				<li>
+					1 bacon strip, cooked and crumbled
+				</li>
+				<li>
+					1/4 cup chopped seeded cucumber
+				</li>
+				<li>
+					1/4 cup chopped roasted sweet red pepper
+				</li>
+			</ul>
+			<h2>Instructions</h2>
+			<ol>
+				<li>
+					Spread tortillas with mustard. Layer each with turkey, cheese, spinach, carrot, bacon, cucumber, and red pepper; roll up tightly
+				</li>
+			</ol>
+			<h2>Nutrition Facts</h2>
+			<p><b>1 wrap: 345 calories</b></p>
+			<ul>
+				<li>
+					10g fat (3g saturated fat)
+				</li>
+				<li>
+					55mg cholesterol
+				</li>
+				<li>
+					1450mg sodium
+				</li>
+				<li>
+					36g carbohydrate (7g sugars, 4g fiber)
+				</li>
+				<li>
+					27g protein
+				</li>
+			</ul>
+		</main>
+	</body>
+</html>
