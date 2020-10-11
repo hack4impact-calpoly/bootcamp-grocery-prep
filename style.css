@@ -1,0 +1,445 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+/*--------Navigation---------*/
+#nav-bar
+{
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	animation: drop 2s ease;
+}
+.navbar-brand img
+{
+	height: 130px;
+	animation: drop 1.5s ease;
+	border-radius: 100px;
+}
+.navbar-nav li
+{
+	padding: 0 10px;
+}
+.navbar-nav li a
+{
+	float: right;
+	text-align: left;
+}
+#nav-bar ul li a:hover{
+	color: #007bff!important;
+	border-bottom: 1px solid #007bff;
+}
+
+.navbar
+{
+	background: #fff;
+}
+.navbar-toggler
+{
+	border: none!important;
+}
+.nav-link
+{
+	color: #555!important;
+	font-weight: 600;
+	transition: color 1s;
+	font-size: 16px;
+}
+/*---------Slider-----------*/
+#slider
+{
+	width: 100%;
+}
+.carousel-caption
+{
+	top: 50%;
+	transform: translateY(-50%);
+	bottom: initial!important;
+}
+.carousel-caption h5
+{
+	color: #fff;
+	font-size: 60px;
+}
+
+/*---------About---------*/
+#about
+{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	color: #555;
+}
+#about .btn
+{
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.about-content
+{
+	padding-top: 20px;
+	float: left;
+}
+.about-video img
+{
+	position: relative;
+	width: 100%;
+	margin-left: 50%;
+	-webkit-filter: grayscale(0%);
+	-webkit-transition: 0.5s ease-in-out;
+	box-shadow: 15px 15px 5px #ddd;
+	/*-moz-box-shadow: 15px 15px 5px #ddd;*/
+	/*-webkit-box-shadow: 15px 15px 5px #ddd;*/
+	/*-khtml-box-shadow: 15px 15px 5px #ddd;*/
+}
+.about-video img:hover
+{
+	filter: grayscale(0.5);
+	transition: all grayscale .5s ease;
+}
+.play-btn
+{
+	position: absolute;
+	transform: translateY(-50%);
+	left: 525px;
+	bottom: 90px;
+	height: 75px;
+	width: 75px;
+	background: #000;
+	border: none;
+	color: #fff;
+	border-radius: 75px;
+	-webkit-filter: grayscale(20%);
+	-webkit-transition: 0.5s ease-in-out;
+	opacity: 0;
+
+}
+.about-video:hover .play-btn
+{
+	cursor: pointer;
+	opacity: 0.9;
+}
+.fa-play-circle
+{
+	position: absolute;
+	transform: translateX(-50%);
+	left: 50%;
+	top: 6px;	
+}
+.skills-bar
+{
+	margin-bottom: 6px;
+	font-weight: 600;
+}
+.progress-bar
+{
+	border-radius: 16px;
+}
+.progress
+{
+	border-radius: 16px !important;
+	margin-bottom: 20
+}
+/*---------Explore---------*/
+#explore
+{
+	/*background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(img/explore.png);*/
+	background: #fff;
+	background-size: 100%;
+	background-position: center;
+	color: #555 !important;
+	background-attachment: fixed;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+#explore h1
+{
+	text-align: center;
+	color: #555 !important;
+	padding-bottom: 10px;
+}
+#explore h1:after
+{
+	content: '';
+	background: #555;
+	display: block;
+	height: 3px;
+	width: 160px;
+	margin: 20px auto 5px;
+}
+#explore h3
+{
+	color: #555 !important;
+}
+.explore
+{
+	margin-top: 100px;
+}
+#explore .col-md-6
+{
+	padding-top: 100px;
+}
+#explore .btn
+{
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.tutorial1 img
+{
+	width: 600px;
+}
+.icon
+{
+	color: #555 !important;
+	line-height: 20px;
+	font-size: 40px;
+	margin: 20px auto;
+	padding: 20px;
+	height: 80px;
+	width: 80px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+}
+#explore p
+{
+	font-size: 14px;
+	margin-top: 20px;
+	color: #ccc;
+}
+.explore .col-md-3:hover{
+	background: #007bff;
+	cursor: pointer;
+	transition: 0.7s;
+}
+/*---------Sign Up---------*/
+.header
+{
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(img/signup.jpeg);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: sans-serif;
+}
+.header h1
+{
+	color: #fff !important;
+	margin-bottom: 35px;
+	font-size: 45px;
+	letter-spacing: 2px;
+	text-align: center;
+}
+.header h1::after
+{
+	content: '';
+	background: #fff; /*#007bff;*/
+	display: block;
+	height: 2px;
+	width: 550px;
+	margin: 20px auto 5px;
+}
+.signup-field
+{
+	height: 40px;
+	padding: 15px;
+	border: none;
+	border-radius: 25px;
+	outline: none;
+	margin-bottom: 25px;
+	width: 200px;
+}
+.signup-btn
+{
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 50px;
+	width: 150px;
+	background: #0039e6;
+	border: none;
+	color: #fff;
+	border-radius: 25px;
+}
+.signup-btn:hover
+{
+	background: #1a53ff;
+	cursor: pointer;
+}
+.visible-btn
+{
+	position: relative;
+	left: 205px;
+	bottom: 56px;
+	height: 20px;
+	width: 20px;
+	color: #000;
+	border-radius: 25px;
+}
+.fa-eye
+{
+	position: relative;
+	left: 2.5px;
+	bottom: 1.5px;
+}
+.visible-btn:hover
+{
+	background: #fff;
+	cursor: pointer;
+}
+.form-box
+{
+	background: rgba(0,0,0,0.2);
+	border: none;
+	transform: translate(50%);	
+	border-radius: 50px;
+	width: 250px;
+	padding: 20px;
+	left: 50%;
+	text-align: left;
+}
+/*---------Our Team---------*/
+#team
+{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	color: #555;
+}
+h1
+{
+	text-align: center;
+	color: #555 !important;
+	padding-bottom: 10px;
+}
+h1::after
+{
+	content: '';
+	background: #555; /*#007bff;*/
+	display: block;
+	height: 3px;
+	/*width: 170px;*/
+	width: 300px;
+	margin: 20px auto 5px;
+}
+.profile-pic
+{
+	margin-top: 30px;
+}
+.profile-pic .img-box
+{
+	opacity: 1;
+	display: block;
+	position: relative;
+}
+.profile-pic .img-box img
+{
+	filter: grayscale(1);
+	height: 150px;
+}
+.profile-pic .img-box img:hover
+{
+	filter: grayscale(0);
+	cursor: pointer;
+}
+.profile-pic h2
+{
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 15px;
+	color: #007bff !important;
+}
+.profile-pic h3
+{
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 15px;
+}
+#team .fa
+{
+	height: 25px;
+	width: 25px;
+	columns: #007bff !important;
+	background: #fff;
+	padding: 4px;
+	border-radius: 50%;
+}
+.img-box ul
+{
+	padding-top: 30px;
+	position: absolute;
+	padding-left: 400px;
+	z-index: 2;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 1;
+}
+.img-box ul li
+{
+	padding: 5px;
+	display: inline-block;
+}
+.img-box:hover ul
+{
+	opacity: 1;
+}
+.img-box ul, .img-box ul li
+{
+	transition: 0.5s;
+}
+#team .LI-profile-badge
+{
+	padding-top: 10px;
+	padding-bottom: 50px;
+	margin-left: 38.5%;
+}
+/*---------Contact Us---------*/
+#contactus
+{
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(img/contactus.jpeg);
+	background-size: cover;
+	color: #fff;
+	background-attachment: fixed;
+	text-align: center;
+	padding: 60px;
+	font-family: sans-serif;
+	font-size: 38px; 
+}
+#top{
+	border: 1px solid black;
+	height: 3000px;
+}
+
+#bottom {
+	border: 1px solid red;
+}
+/*---------Footer---------*/
+#footer
+{
+	background: #000;
+	text-align: center;
+	color: #fff;
+	padding: 12px;
+}
+#footer .fa-globe
+{
+	background-color: black;
+}
+.fa-globe
+{
+	margin: 3px;
+	color: lightblue;
+}
+/*---------Drop Animation---------*/
+@keyframes drop {
+	0% {
+		opacity: 0;
+		transform: translateY(-80px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
