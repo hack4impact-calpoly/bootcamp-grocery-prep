@@ -1,0 +1,28 @@
+body {                                                                       
+  margin: 0;                                                                 
+  background-color: #FFFFFF;                                                 
+}                                                                            
+header{                                                                      
+  display: flex;                                                             
+  justify-content: space-between;                                            
+  align-items: center;                                                       
+                                                                             
+  background-color: #279CCE;                                                 
+  color: #FFFFFF;                                                            
+  padding: 0 22px;                                                           
+                                                                             
+ }                                                                           
+                                                                             
+header a{                                                                    
+  color: #FFFFFF;                                                            
+  margin: 0 12px;                                                            
+}                                                                            
+                                                                             
+main{                                                                        
+  padding: 15px 20% 40px;                                                    
+}                                                                            
+                                                                             
+h2 {                                                                         
+ background-color: #88C4FF;                                                  
+ padding: 4px 8px;                                                           
+} 

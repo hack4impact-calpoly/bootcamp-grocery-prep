@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  background-color: #FFFFFF;
+}
+header{  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  background-color: #279CCE;
+  color: #FFFFFF; 
+  padding: 0 22px;
+
+ }
+
+header a{
+  color: #FFFFFF;
+  margin: 0 12px;
+}
+
+main{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 80px;
+}
+
+.img {
+ float: left;
+}
+
+
+.l2 {
+ float: right;
+}
