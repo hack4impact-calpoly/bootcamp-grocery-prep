@@ -14,7 +14,7 @@
 
 		<main>
 			<h1>Spicy Egg Bake</h1>
-			<p>Very yummy breakfast!</p>
+			<p>Very yummy breakfast! Makes 8 servings</p>
 			<img src="../imgs/egg_bake.jpg" height="250">
 			<h2>Ingredients</h2>
 			<ul>
@@ -56,7 +56,7 @@
 				</li>
 			</ol>
 			<h2>Nutrition Facts</h2>
-			<p>1 piece: 481 calories</p>
+			<p><b>1 piece: 481 calories</b></p>
 			<ul>
 				<li>
 					32g fat (14g saturated fat)
