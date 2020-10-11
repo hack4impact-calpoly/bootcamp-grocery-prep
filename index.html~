@@ -1,11 +1,32 @@
 <html lang="en US">
 	<head>
-		<title>Grocery Prep</title>
+		<title>My Favorite Recipes</title>
 	</head>
+	
 	<body>
 		<header>
-			<h1>Grocery Prep</h1>
+			<h1>My Favorite Recipes</h1>
 			<nav>
 				<a href="index.html">Home</a>
 				<a href="about.html">About the Chef</a>
 			</nav>
+		</header>
+		
+		<main>
+			<h1>Welcome to My Favorite Recipes!</h1>
+			<p>This is a collection of my favorite recipes</p>
+			<p>I hope you enjoy these as much as I do!</p>
+			<h1>Recipes</h1>
+
+			<section>
+				<h2>Breakfast</h2>
+					<nav>
+						<a href="egg_bake.html">Spicy Egg Bake</a>
+					</nav>
+				<h2>Lunch</h2>
+				<h2>Dinner</h2>
+				<h2>Dessert</h2>
+			</section>
+		</main>
+	</body>
+</html>
