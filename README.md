@@ -1,6 +1,6 @@
 # bootcamp-grocery-prep
 
-Try out my program: https://objectjosh.github.io/Intergalactic/
+Try out my program: https://objectjosh.github.io/bootcamp-grocery-prep/
 ------------------------------------------
 2020 bootcamp project
 
