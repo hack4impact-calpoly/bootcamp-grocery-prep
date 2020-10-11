@@ -1,0 +1,88 @@
+body {
+	margin: 0;
+	background-color: #D8DBE2;
+	color: #1B1B1E;
+	font-family: Tisa;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	background-color: #373F51;
+	color: #FFF;
+	padding: 0 20px;
+}
+
+header a {
+	color: #A9BCD0;
+	margin: 0 12px;
+}
+
+main {
+	padding: 15px 10% 40px;
+	color: #1B1B1E;
+}
+
+
+h2 {
+	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	font-size: 30;
+}
+
+h3 {
+	background-color: #58A4B0;
+	padding: 4px 8px;
+	font-size: 25;
+}
+
+.topImg {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.topImg > img {
+	width: 60%;
+}
+
+.items {
+	display: flex;
+	align-items: center;
+}
+
+.items > img {
+	height: 200px;
+	margin: 15px;
+}
+
+.items > .recipeLinks > a {
+	color: #373F51;
+	margin: 25px;
+	line-height: 35px;
+	font-size: 20;
+}
+
+@media screen and (max-width: 460px) {
+	header {
+		justify-content: center;
+	    flex-wrap: wrap;
+	    padding-bottom: 13px;
+	}
+
+	main {
+		padding: 15px 5% 40px;
+	}
+
+	.items {
+		flex-wrap: wrap;
+	}
+
+	.items > img {
+		height: auto;
+	}
+/*not rlly sure what i'm doing here tbh haha*/
+}
