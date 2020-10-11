@@ -1,0 +1,51 @@
+html{
+  font-family: 'Piazzolla', serif;
+  background-color: #F2E3BC;
+}
+
+body{
+  margin:0px;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #414535;
+  color: #FFF;
+  padding: 0 20px;
+}
+
+header a{
+  color: #C19875;
+  padding-left: 1em;
+}
+
+main{
+  margin-left: 20%;
+  padding: 0;
+}
+
+a{
+  color: black;
+}
+
+.flexbox{
+  display:flex;
+  justify-content: space-between;
+  width: 800px;
+  padding: 2px;
+  margin: 2;
+}
+
+h2{
+  color: white;
+  background-color: #4E6E5D;
+  width: 800px;
+  padding: 2px;
+  margin: 2;
+}
+
+img{
+  width:300px;
+}
