@@ -6,4 +6,6 @@
 		<header>
 			<h1>Grocery Prep</h1>
 			<nav>
-				<a href=
+				<a href="index.html">Home</a>
+				<a href="about.html">About the Chef</a>
+			</nav>
