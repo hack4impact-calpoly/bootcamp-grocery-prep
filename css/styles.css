@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: #e8ffff;
+}
+
+h2{
+    background-color: #41aea9;
+}
+
+header{
+    background-color: #386460;
+    justify-content: space-between;
+    padding: 0 20px;
+    display: flex;
+    color: #FFF;
+    align-items: center;
+}
+
+header a{
+    color: #FFF;
+    margin: 0 12px;
+}
+
+.middle-container{
+    padding: 15px 20% 40px;
+    display: block;
+}
+
+.showcase{
+    display: flex;
+    justify-content: space-between;   
+}
+
+.showcase > .links{
+    margin: 30px 6%;
+}
+
+.links > a{
+    color: #dd8dab;
+    line-height: 30px;
+}
+
+nav{
+    color: #FFF;
+    display: block;
+}
+
+.asia-dog-img{
+    width: 35%;
+}
+
+.europe-dog-img{
+    width: 35%;
+}
+
+.africa-dog-img{
+    width: 35%;
+}
+
+#chuna-imgs{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.chuna-img{
+    width: 25%;
+}
+
+.feature-img{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
