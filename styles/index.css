@@ -1,0 +1,47 @@
+html{
+    background-color: #9EF0D5;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-color: #4A7063;
+    margin: -10px;
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+    display: block;
+    padding-top: 25px;
+}
+
+nav>a{
+    color:azure;
+    padding: 0 100 100 0;
+}
+
+main{
+    padding: 5% 10% 5% 10%;
+}
+.box1{
+    display: flex;
+    padding: 0% 20% 0% 20%;
+
+}
+.box2{
+    display: flex;
+    padding: 1%;
+    justify-content: center;
+    background-color: #7DBDA7;
+}
+
+.box3{
+    display: flex;
+    background-color: #BCF5DD;
+    padding: 1%;
+}
+
+.box4{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
