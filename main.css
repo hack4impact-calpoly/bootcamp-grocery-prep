@@ -37,7 +37,12 @@ h2 {
 }
 .showcase {
     display: flex;
-    justify-content: space-between;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: -80px;
+    margin-right: -80px;
+
 }
 .showcase > .links {
     margin: 30px 6%;
@@ -58,8 +63,30 @@ h2 {
 }
 .recipe_photo {
     height: 500px;
-    padding-left: 50px;
+
 }
 ul, li{
     font-family: 'Montserrat', sans-serif;
+}
+.grid-img > img{
+    height: 375px;
+
+}
+.grid-item{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+.links{
+    padding-top: 25px;
+}
+.recipe-header{
+    display: flex;
+    justify-content: space-between;
+}
+.recipe-header > img{
+    height: 500px;
+}
+.recipe-description{
+    padding-right: 50px;
 }
