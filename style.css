@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    background-color: #84ff94;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+h1 { /* used to call on tags */
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+
+    background-color: #3D405B;
+    color: #FFF;
+    padding: 0 20px;
+}
+
+#aboutLink{
+    color: red;
+}
+
+.ingred { /* used to call on classes (which will be applied to all of them) */
+    margin-left: 100px;
+}
+
+.steps {
+    margin-left: 100px;
+}
+
+#Intro{ /* used to call on ids (CAN ONLY BE ONE ID) */
+    margin: 0px;
+}
+
+#title{
+    color: blue;
+}
