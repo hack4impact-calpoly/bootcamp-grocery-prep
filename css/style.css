@@ -1,0 +1,133 @@
+body {
+    text-align: center;
+}
+
+#home {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    background-image: url('../imgs/veggies.jpg');
+    height: 220px;
+}
+#about {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    background-image: url('../imgs/veggies.jpg');
+    height: 220px;
+}
+
+.nav {
+    display: inline-block;
+    text-align: center;
+}
+
+.nav ul {
+    list-style: none;
+    background-color: #444;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  .nav li {
+    font-size: 1.2em;
+    line-height: 40px;
+    height: 40px;
+    border-bottom: 1px solid #888;
+    text-align: center;
+  }
+   
+  .nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: .3s background-color;
+
+  }
+   
+  .nav a:hover {
+    background-color: #005f5f;
+  }
+   
+   
+  @media screen and (min-width: 600px) {
+    .nav li {
+      width: 120px;
+      border-bottom: none;
+      height: 50px;
+      line-height: 50px;
+      font-size: 1.4em;
+    }
+   
+    /* Option 1 - Display Inline */
+    .nav li {
+      display: inline-block;
+      margin-right: -4px;
+    }
+   
+  }
+
+  #salsa {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    color: black;
+    background-image: url('../imgs/salsa.jpeg');
+    height: 220px;
+  }
+
+  #guac {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    color: black;
+    background-image: url('../imgs/guac.jpg');
+    height: 220px;
+  }
+
+  #queso {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    color: black;
+    background-image: url('../imgs/queso.jpeg');
+  }
+
+  ul {
+    text-align: center;
+    list-style-position: inside;
+}
+
+ol {
+    text-align: center;
+    list-style-position: inside; 
+}
+
+
+
+#salsacolumn {
+    background-image: url('../imgs/salsa2.jpg');
+}
+
+#guaccolumn {
+    background-image: url('../imgs/guac2.jpg');
+}
+
+#quesocolumn {
+    background-image: url('../imgs/queso2.jpg');
+}
+
+.flex-container ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .flex-container ul> div {
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 30px;
+  }
+
+  #chipheader {
+      padding: 20px;
+  }
+

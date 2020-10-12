@@ -8,58 +8,33 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div id="home">
   <header>
-    <h1>Grocery Prep</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About the Chef</a>
-    </nav>
+    <h1 style="font-size: 90px;">Grocery Prep</h1>
+    <div class="nav">
+      <ul>
+        <li class="home"><a href="index.html">Home</a></li>
+        <li class="about"><a href="about.html">About</a></li>
+      </ul>
+    </div>
   </header>
+
   <main>
     <h1>Welcome to Grocery Prep!</h1>
+  </div> 
     <p>This is your one stop shop for all things grocery and meal planning related.</p>
-    <p>Feel free to check out some of hte recipes below. I hope you enjoy!</p>
+    <p>Feel free to check out some of the recipes below. I hope you enjoy!</p> 
     <h1>Recipes</h1>
     <section>
-      <h2>Snacks</h2>
-      <div id="snacksdiv">
-      <a href="recipes/salsa.html">Salsa</a><br>
-      <a href="recipes/guac.html">Guacamole</a><br>
-      <a href="recipes/avocado_toast.html">Avocado Toast</a><br>
-      <img src="imgs/food/chips_and_salsa.jpg" height="200">
-      </div>
-
-      <h2>Lunches</h2>
-      <div id="lunchesdiv">
-      <a href="recipes/tuna_salad.html">Tuna Salad</a><br>
-      <a href="recipes/mac_and_cheese.html">Mac and Cheese</a><br>
-      <a href="recipes/turkey_sandwhich.html">Turkey Sandwhich</a><br>
-      <img src="imgs/food/mac_and_cheese.jpg" height="200">
-      </div>
-
-      <h2>Dinners</h2>
-      <div id="dinnersdiv">
-      <a href="recipes/tuna_casserole.html">Tuna Casserole</a><br>
-      <a href="recipes/bfd.html">Breakfast for Dinner</a><br>
-      <a href="recipes/tacos.html">Tacos</a><br>
-      <img src="imgs/food/tacos.jpg" height="200">
-      </div>
-
-      <h2>Desserts</h2>
-      <div id="dessertsdiv">
-      <a href="recipes/brownies_and_icecream.html">Brownies + Ice Cream</a><br>
-      <a href="recipes/oreos_and_milk.html">Oreos and Milk</a><br>
-      <img src="imgs/food/brownie_and_icecream.jpg" height="200">
+      <div id="chipsdiv", class="flex-container">
+        <div id="chipheader">
+        <h2>Chip Dips</h2></div>
+        <ul>
+        <div id="salsacolumn"><a href="recipes/salsa.html">Salsa<br></div>
+        <div id="guaccolumn"><a href="recipes/guac.html">Guacamole</a><br></div>
+        <div id="quesocolumn"><a href="recipes/queso.html">Queso</a><br></div>
+      </ul>
       </div>
   </main>
-  <!-- Bootstrap scripts. -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  
-  <!-- Google Maps scripts. -->
-  <script src="script.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1fm5j1RQqJkszE5Z0KSyACHdX8vsC-mo&callback=initMap&libraries=places" async defer></script>
-
 </body>
 </html>
