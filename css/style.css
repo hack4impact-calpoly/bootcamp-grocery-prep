@@ -5,14 +5,12 @@ body {
 #home {
     margin-top: 35px;
     margin-bottom: 35px;
-    color: white;
     background-image: url('../imgs/veggies.jpg');
     height: 220px;
 }
 #about {
     margin-top: 35px;
     margin-bottom: 35px;
-    color: white;
     background-image: url('../imgs/veggies.jpg');
     height: 220px;
 }
@@ -70,7 +68,66 @@ body {
   #salsa {
     margin-top: 35px;
     margin-bottom: 35px;
-    color: white;
-    background-image: url('../imgs/chips.jpg');
+    color: black;
+    background-image: url('../imgs/salsa.jpeg');
     height: 220px;
   }
+
+  #guac {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    color: black;
+    background-image: url('../imgs/guac.jpg');
+    height: 220px;
+  }
+
+  #queso {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    color: black;
+    background-image: url('../imgs/queso.jpeg');
+  }
+
+  ul {
+    text-align: center;
+    list-style-position: inside;
+}
+
+ol {
+    text-align: center;
+    list-style-position: inside; 
+}
+
+
+
+#salsacolumn {
+    background-image: url('../imgs/salsa2.jpg');
+}
+
+#guaccolumn {
+    background-image: url('../imgs/guac2.jpg');
+}
+
+#quesocolumn {
+    background-image: url('../imgs/queso2.jpg');
+}
+
+.flex-container ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .flex-container ul> div {
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 30px;
+  }
+
+  #chipheader {
+      padding: 20px;
+  }
+
