@@ -15,7 +15,6 @@ header{
 }
 
 header a {
-	background-color: #FFFFFF;
 	color: #FAF3DD;
 	margin: 0 12px;
 }
@@ -27,6 +26,10 @@ main{
 h2{
 	background-color: #FFE6A7;
 	padding: 4px 8px;
+}
+
+img{
+	border: 5px solid #C8E7FF;
 }
 
 .showcase{
