@@ -20,7 +20,7 @@ header a {
 }
 
 main{
-	padding: 15px 10% 40px;
+	padding: 15px 20% 40px;
 }
 
 h2{
@@ -29,7 +29,7 @@ h2{
 }
 
 img{
-	border: 5px solid #C8E7FF;
+	border: 5px solid #FEEAFA;
 }
 
 .showcase{
@@ -39,11 +39,16 @@ img{
 
 .showcase > .links {
 	margin: 30px 6%;
+	line-height: 30px;
 }
 
+.showcase > .desc {
+	padding-right: 4px;
+}
 .links > a {
 	color: #FFB703;
-	text-align: center;
+	text-align: right;
+	line-height: 30px;
 }
 
 
