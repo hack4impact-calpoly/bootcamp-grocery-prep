@@ -13,29 +13,29 @@
 		<!----------Navigation Bar---------->
 		<section id="nav-bar">
 			<nav class="navbar navbar-expand-lg navbar-light">
-			  <a class="navbar-brand" href="#"><img src="img/logo.jpg"></a>
-			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			    <span class="navbar-toggler-icon"></span>
-			  </button>
-			  <div class="collapse navbar-collapse" id="navbarNav">
-			    <ul class="navbar-nav ml-auto">
-			      <li class="nav-item active">
-			        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-			      </li>
-			      <li class="nav-item">
-			        <a class="nav-link" href="index.html#about">About Us</a>
-			      </li>
-			      <li class="nav-item">
-			        <a class="nav-link" href="index.html#explore">Explore</a>
-			      </li>
-			      <li class="nav-item">
-			        <a class="nav-link" href="#top">Sign Up</a>
-			      </li>
-			      <li class="nav-item">
-			        <a class="nav-link" href="index.html#team">Our Team</a>
-			      </li>
-			    </ul>
-			  </div>
+			<a class="navbar-brand" href="#"><img src="img/logo.jpg"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="index.html#about">About Us</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="index.html#explore">Explore</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#top">Sign Up</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="index.html#team">Our Team</a>
+					</li>
+				</ul>
+			</div>
 			</nav>
 		</section>
 		<!----------Sign Up---------->
@@ -43,18 +43,53 @@
 			<form>
 				<h1>Start Learning Now</h1>
 				<div class="form-box">
-					<input type="text" id="input_first_name" class="signup-field firstname" placeholder="First Name">
-					<input type="text" id="input_last_name" class="signup-field lastname" placeholder="Last Name">
-					<input type="text" id="input_email" class="signup-field email" placeholder="Email">
-					<input type="text" id="input_username" class="signup-field username" placeholder="Choose a Username">
-					<input type="password" id="input_password" class="signup-field password" placeholder="Create a Password">
+					<input
+						type="text"
+						id="input_first_name"
+						class="signup-field firstname"
+						placeholder="First Name"
+						pattern="[A-Za-z_-]{1,32}"
+						title="Please enter first name"
+					>
+					<input
+						type="text"
+						id="input_last_name"
+						class="signup-field lastname"
+						placeholder="Last Name"
+						pattern="[A-Za-z_-]{1,32}"
+						title="Please enter last name"
+					>
+					<input
+						type="text"
+						id="input_email"
+						class="signup-field email"
+						placeholder="Email"
+						pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+						title="someone@example.com"
+					>
+					<input
+						type="text"
+						id="input_username"
+						class="signup-field username"
+						placeholder="Choose a Username"
+						pattern="[A-Za-z_-]{1,20}"
+						title="Valid symbols and less than 21 characters"
+					>
+					<input
+						type="password"
+						id="input_password"
+						class="signup-field password"
+						placeholder="Create a Password"
+						pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+						title="UpperCase, LowerCase, Number/SpecialCharacters and minimum 8 characters"
+					>
 					<div class="visible-btn" id="visible">
 						<i class="fa fa-eye"></i>
 					</div>
-					<button class="signup-btn" type="button" id="signup">Sign Up</button>
+					<button class="signup-btn" type="submit" id="signup">Sign Up</button>
 				</div>
 			</form>
-		</div>	
+		</div>
 		<!----------Footer---------->
 		<section id="footer">
 			<div class="container">

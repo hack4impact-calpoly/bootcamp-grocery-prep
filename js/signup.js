@@ -16,7 +16,7 @@ function getPassword(){
 
 function visibility(){
 	var pass = document.getElementById("input_password");
-	if(pass.type == "password"){
+	if(pass.type === "password"){
 		document.getElementById("input_password").type = "text";
 	}else{
 		pass.type = "password";
@@ -34,15 +34,20 @@ function inputValidity(){
 	]);
 	for(const[key, value] of inputMap.entries()){
 		console.log(key, value);
-		if(value.indexOf(" ") >= 0){
-			alert(key + " contains spaces");
-			return;
-		}
 		if(value.length < 1){
 			alert(key + " is empty");
 			return;
 		}
+		if(value.indexOf(" ") >= 0){
+			alert(key + " contains spaces");
+			return;
+		}
+		if(value.length > 50){
+			alert(key + " cannot contain over 100 characters");
+			return;
+		}
 	}
+
 	if(inputMap.get("Username").length < 3){
 		alert("Username must contain at least 3 characters");
 	}else{
