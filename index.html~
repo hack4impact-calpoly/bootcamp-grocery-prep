@@ -1,11 +1,13 @@
 <html lang="en US">
 	<head>
 		<title>My Favorite Recipes</title>
+		<link rel="stylesheet" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	
 	<body>
 		<header>
-			<h1>My Favorite Recipes</h1>
+			<h1><i>My Favorite Recipes</i></h1>
 			<nav>
 				<a href="index.html">Home</a>
 				<a href="about.html">About the Chef</a>
@@ -24,17 +26,24 @@
 						<img src="imgs/egg_bake.jpg" height="250" alt="Spicy Egg Bake">
 						<br>
 						<a href="recipes/egg_bake.html">Spicy Egg Bake</a>
+						<a href="recipes/xx.html">XXXX</a>
 					</nav>
 				<h2>Lunch</h2>
 					<nav>
+						<img src="imgs/turkey.jpg" height="250" alt="Turkey Wraps">
+						<br>
 						<a href="recipes/turkey.html">Turkey Wraps</a>
 					</nav>
 				<h2>Dinner</h2>
 					<nav>
+						<img src="imgs/spanish.jpg" height="250" alt="Spanish Rice Dinner">
+						<br>
 						<a href="recipes/spanish.html">Spanish Rice Dinner</a>
 					</nav>
 				<h2>Dessert</h2>
 					<nav>
+						<img src="imgs/cherrycream.jpg" height="250" alt="Cherry Cream Cheese Dessert">
+						<br>
 						<a href="recipes/cherrycream.html">Cherry Cream Cheese Dessert</a>
 					</nav>
 			</section>

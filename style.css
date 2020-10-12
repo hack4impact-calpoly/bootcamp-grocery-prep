@@ -1,0 +1,45 @@
+body{
+	margin: 0;
+	background-color: #CBF3F0;
+	font-family: Helvetica;
+}
+
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	background-color: #F4ACB7;
+	color: #FFF;
+	padding: 0 15px;
+}
+
+header a {
+	color: #FFE5D9;
+	margin: 0 12px;
+}
+
+main{
+	padding: 15px 10% 40px;
+}
+
+h2{
+	background-color: #FFE6A7;
+	padding: 4px 8px;
+}
+
+.showcase{
+	display: flex;
+	justify-content: space-between;
+}
+
+.showcase > .links {
+	margin: 30px 6%;
+}
+
+.links > a {
+	color: #FFB703;
+	text-align: center;
+}
+
+
