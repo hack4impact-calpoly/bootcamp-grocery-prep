@@ -15,7 +15,8 @@ header{
 }
 
 header a {
-	color: #FFE5D9;
+	background-color: #FFFFFF;
+	color: #FAF3DD;
 	margin: 0 12px;
 }
 
@@ -38,7 +39,7 @@ h2{
 }
 
 .links > a {
-	color: #FFFFFF;
+	color: #FFB703;
 	text-align: center;
 }
 
