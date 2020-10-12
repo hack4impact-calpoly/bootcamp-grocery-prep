@@ -26,11 +26,10 @@ header {
 }
 
 #Intro{ /* used to call on ids (CAN ONLY BE ONE ID) */
-    margin: 0px;
 }
 
 #title{
-    color: blue;
+    color: black;
 }
 
 .backButton{
@@ -44,6 +43,11 @@ header {
 }
 
 .photo{
+    display: flex;
+    justify-content: center;
+}
+
+.photoLinks{
     display: flex;
     justify-content: center;
 }
