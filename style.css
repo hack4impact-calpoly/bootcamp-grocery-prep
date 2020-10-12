@@ -16,9 +16,6 @@ header {
     padding: 0 20px;
 }
 
-#aboutLink{
-    color: red;
-}
 
 .ingred { /* used to call on classes (which will be applied to all of them) */
     margin-left: 100px;
@@ -34,4 +31,19 @@ header {
 
 #title{
     color: blue;
+}
+
+.backButton{
+    color: red;
+    font-size: 20px;
+}
+
+#aboutMeText{
+    font-size: 25px;
+    margin-left: 400px;
+}
+
+.photo{
+    display: flex;
+    justify-content: center;
 }
