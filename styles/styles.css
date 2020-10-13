@@ -1,0 +1,45 @@
+
+
+
+
+img.carton{
+  width: 100px;
+  height: auto;
+}
+
+img.carton:hover{
+  width: 200px;
+  height: auto;
+}
+
+img#reg:hover{
+  filter: drop-shadow(0px 0px 25px white);
+}
+
+img#almond:hover{
+  filter: drop-shadow(0px 0px 25px blanchedalmond);
+}
+
+img#chocolate:hover{
+  filter: drop-shadow(0px 0px 25px #CE9653);
+}
+
+img#soy:hover{
+  filter: drop-shadow(0px 0px 25px #d2c29d);
+}
+
+img#strawberry:hover{
+  filter: drop-shadow(0px 0px 25px #FAD3ED);
+}
+
+img#vanilla:hover{
+  filter: drop-shadow(0px 0px 25px blanchedalmond);
+}
+
+th, td, tr, img{
+  padding: 50px;
+}
+
+table {
+  border-collapse: collapse;
+}
