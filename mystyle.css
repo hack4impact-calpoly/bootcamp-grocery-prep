@@ -1,0 +1,37 @@
+header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #006d77;
+   color: #FFF;
+   padding: 20px;
+}
+
+h1 {
+   display: block;
+   font-weight: bold;
+}
+
+h2 {
+   display: block;
+   font-weight: bold;
+   background-color: 83c5be;
+}
+
+nav {
+   color: #FFF;
+}
+
+body {
+   display: block;
+   background-color: edf6f9;
+   font-family: Helvetica;
+}
+
+main {
+   margin: 30px;
+}
+
+section {
+   display: block;
+}
