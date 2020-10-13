@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    background-color:#DEF2F1;
+  }
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color:#17252A;
+  padding: 15px;
+}
+
+header a{
+    color: white;
+    margin: 0 12px;
+}
+  
+main{
+    padding:50px 20% 40px;
+}
+
+main a{
+    color: #17252A;
+    padding: 0px 10px;
+}
+
+
+h2{
+    justify-content: stretch;
+    color: #17252A;
+    padding: 0px 10px;
+}
+
+h1{
+    padding: 10px 10px;
+}
+
+p{
+    padding: 0px 10px;
+}
+
+.breakfast > img{
+    position: absolute;
+    right: 50%;
+    margin: -90px 0px;
+    height: 250;
+    width: 20%;
+}
+
+.lunch > img{
+    position: absolute;
+    right: 45%;
+    margin: -80px -60px;
+    height: 250;
+    width: 30%;
+}
+
+.break{
+    line-height: 1100%;
+}
+
+.about > img{
+    margin: 0px 0px;
+    height: 225;
+    width: 33%;
+}
