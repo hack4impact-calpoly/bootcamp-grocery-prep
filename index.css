@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    background-color: #ffffff;
+    font-family: Arial;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: darkcyan;
+    color: white;
+    padding: 0 20px;
+}
+
+header a {
+    color: black;
+    margin: 0 12px;
+}
+
+main {
+    padding: 0px 20px;
+}
+
+h1 {
+    background-color: darkcyan;
+}
+
+h2 {
+    background-color: darkcyan;
+}
+
+h3 {
+    background-color: cadetblue;
+}
