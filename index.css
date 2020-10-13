@@ -1,0 +1,60 @@
+header {
+
+	background-color: #1D3557;
+	padding: 6%;
+	
+}
+
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	padding: 2%;
+}
+
+
+h1 {
+
+	background-color: #1D3557;
+	padding: 3%;
+	color: #F1FAEE;
+}
+
+
+
+h3 {
+
+	color: #A8DADC;
+	background-color: #1D3557;
+}
+
+
+ul {
+	margin: 20px 0px;
+	font-size: 18px;
+}
+
+
+html {
+
+	background-color: #F1FAEE;
+}
+
+
+.red {
+	background-color: #E63946;
+	color: #F1FAEE;
+}
+
+.purple {
+	background-color: #45789D;
+	color: #F1FAEE;
+
+}
+
+.block {
+	background-color: #A8DADC;
+	color: #1D3557;
+	padding: 4%;
+}
+
