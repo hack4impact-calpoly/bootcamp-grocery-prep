@@ -1,0 +1,36 @@
+.recipe-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	margin: 20px 40px 40px;
+}
+
+.recipe-page li {
+    margin: 7px 0px;
+}
+
+.recipe-page h3 {
+    background-color: #EEEDED;
+    padding: 5px;
+}
+
+.recipe-title {
+    margin: 0px 0px 20px;
+    padding-top: 40px;
+}
+
+.recipe-description {
+    margin: 0px 0px 30px;
+}
+
+.recipe-image {
+    height: 300px;
+    width: auto;
+    margin: 0px 0px 20px;
+    padding: 0px;
+}
+
+.instructions, .ingredients {
+    width: 600px;
+}
+
