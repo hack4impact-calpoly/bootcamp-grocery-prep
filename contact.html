@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Sign Up Today</title>
+		<title>Contact Us</title>
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -29,7 +29,7 @@
 						<a class="nav-link" href="index.html#explore">Explore</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#top">Sign Up</a>
+						<a class="nav-link" href="signup.html">Sign Up</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="index.html#team">Our Team</a>
@@ -38,76 +38,59 @@
 			</div>
 			</nav>
 		</section>
-		<!----------Sign Up---------->
-		<div class="header">
-			<form action="insert.php" method="POST">
-				<h1>Start Learning Now</h1>
+		<!----------Contact Us---------->
+		<section id="contact">
+			<div class="header">
+			<form action="contact.php" method="POST">
+				<h1>Contact Us</h1>
 				<div class="form-box">
 					<input
 						type="text"
-						name="first_name"
-						id="input_first_name"
-						class="signup-field firstname"
-						placeholder="First Name"
+						name="contact_name"
+						id="input_contact_name"
+						class="contact-field name"
+						placeholder="Your Name"
 						pattern="[A-Za-z_-]{1,32}"
 						title="Please enter first name"
 						required
 					>
 					<input
 						type="text"
-						name="last_name"
-						id="input_last_name"
-						class="signup-field lastname"
-						placeholder="Last Name"
-						pattern="[A-Za-z_-]{1,32}"
-						title="Please enter last name"
-						required
-					>
-					<input
-						type="text"
-						name="email"
-						id="input_email"
-						class="signup-field email"
-						placeholder="Email"
+						name="contact_email"
+						id="input_contact_email"
+						class="contact-field email"
+						placeholder="Your Email"
 						pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
 						title="someone@example.com"
 						required
 					>
-					<input
+					<textarea class="message-field"
 						type="text"
-						name="username"
+						name="contact_message"
 						id="input_username"
-						class="signup-field username"
-						placeholder="Choose a Username"
-						pattern="[A-Za-z_-]{1,20}"
-						title="Valid symbols and less than 21 characters"
+						class="contact-field message"
+						placeholder="Message"
+						rows="14"
+						cols="10"
+						wrap="soft"
+						pattern="[A-Za-z_-]{1,1000}"
+						title="Valid symbols and no more than 1000 characters"
 						required
-					>
-					<input
-						type="password"
-						name="password"
-						id="input_password"
-						class="signup-field password"
-						placeholder="Create a Password"
-						pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
-						title="UpperCase, LowerCase, Number/SpecialCharacters and minimum 8 characters"
-						required
-					>
-					<div class="visible-btn" id="visible">
-						<i class="fa fa-eye"></i>
-					</div>
-					<button class="signup-btn" type="submit" id="signup">Sign Up</button>
+					></textarea>
+					<button class="contact-btn" type="submit" id="contact">Send Message</button>
 				</div>
 			</form>
 		</div>
+		</section>
 		<!----------Footer---------->
 		<section id="footer">
 			<div class="container">
 				<p>Made by Josh <i class="fa fa-globe"></i></p>
+			</div>
 		</section>
  		<!----------Footer End---------->
 		<script src="js/smooth-scroll.js"></script>
-		<script src="js/signup.js"></script>
+		<!-- <script src="js/contact.js"></script> -->
 		<script>
 			var scroll = new SmoothScroll('a[href*="#"]');
 		</script>
