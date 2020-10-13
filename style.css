@@ -222,6 +222,7 @@
 	justify-content: center;
 	align-items: center;
 	font-family: sans-serif;
+	padding-bottom: 20%;
 }
 .header h1
 {
@@ -233,11 +234,12 @@
 }
 .header h1::after
 {
+	position: relative;
 	content: '';
 	background: #fff; /*#007bff;*/
 	display: block;
 	height: 2px;
-	width: 550px;
+	width: 400px;
 	margin: 20px auto 5px;
 }
 .signup-field
@@ -290,13 +292,13 @@
 }
 .form-box
 {
+	position: absolute;
+	transform: translateX(35%);
 	background: rgba(0,0,0,0.2);
 	border: none;
-	transform: translate(50%);	
 	border-radius: 50px;
 	width: 250px;
 	padding: 20px;
-	left: 50%;
 	text-align: left;
 }
 /*---------Our Team---------*/
@@ -413,6 +415,88 @@ h1::after
 
 #bottom {
 	border: 1px solid red;
+}
+
+/*---------Contact Us Page---------*/
+#contact
+{
+}
+#contact .header
+{
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(img/contactbackground.jpeg);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: sans-serif;
+	padding-bottom: 20%;
+}
+#contact .header h1
+{
+	color: #fff !important;
+	margin-bottom: 35px;
+	font-size: 45px;
+	letter-spacing: 2px;
+	text-align: center;
+}
+#contact .header h1::after
+{
+	content: '';
+	background: #fff;
+	display: block;
+	height: 2px;
+	width: 230px;
+	margin: 20px auto 5px;
+}
+#contact .contact-field
+{
+	height: 40px;
+	padding: 15px;
+	border: none;
+	border-radius: 25px;
+	outline: none;
+	margin-bottom: 25px;
+	width: 200px;
+}
+#contact .message-field
+{
+	height: 80px;
+	padding: 15px;
+	border: none;
+	border-radius: 25px;
+	outline: none;
+	margin-bottom: 25px;
+	width: 405px;
+}
+#contact .contact-btn
+{
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 50px;
+	width: 150px;
+	background: #0039e6;
+	border: none;
+	color: #fff;
+	border-radius: 25px;
+}
+#contact .contact-btn:hover
+{
+	background: #1a53ff;
+	cursor: pointer;
+}
+#contact .form-box
+{
+	position: absolute;
+	transform: translateX(-23%);
+	background: rgba(0,0,0,0.2);
+	border: none;
+	border-radius: 50px;
+	width:450px;
+	padding: 20px;
+	text-align: left;
 }
 /*---------Footer---------*/
 #footer
