@@ -1,0 +1,51 @@
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	background-color: ffcb69;
+	color: #FFF;
+  	padding: 0 20px;
+}
+
+header a{
+	color: 555b6e;
+	margin: 0 12px;
+}
+
+body{
+	margin: 0;
+	background-color: f8edeb;
+	font-family: Century Gothic;
+
+}
+
+main{
+	padding: 15px 20% 50px;
+}
+
+h2{
+	background-color: f79d65;
+  	padding: 4px 8px;
+}
+
+p1{
+	display: flex;
+	justify-content: center;
+}
+
+.present{
+	display: flex;
+	justify-content: space-around;
+}
+
+.present > .links{
+	display: flex;
+	margin: 0 1% 0;
+}
+
+.links > a{
+	color: d00000;
+	line-height: 10;
+}
+
