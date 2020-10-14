@@ -1,0 +1,17 @@
+
+h1{
+    padding-bottom:5mm;
+    border:hidden blue; 
+    border-radius:5px;
+    background-color:rgb(87, 218, 174);
+}
+p,nav{
+    text-indent:50px;
+}
+*{
+    font-size:75px;
+    text-align:center;
+}
+body{
+    background-color:beige;
+}
