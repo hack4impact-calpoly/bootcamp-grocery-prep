@@ -88,6 +88,14 @@ h2{
   text-align: center;
 }
 
+h1{
+  padding: 20px;
+}
+
+p{
+  padding-left: 30px;
+}
+
 .ingredients{
   background: #54A5F2;
   border: #394753;
