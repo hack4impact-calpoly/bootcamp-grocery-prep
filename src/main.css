@@ -1,0 +1,41 @@
+header {
+   background-color: lightblue;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 25px;
+}
+
+body {
+   background-color: wheat;
+}
+
+html, body {
+   margin: 0;
+}
+
+main {
+   width: 1000px;
+   margin: 0 auto;
+}
+
+h3 {
+   background-color: tomato;
+}
+
+.intro {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 30px 0;
+}
+
+.breakfast, .lunch, .dinner, .chefImages, .cereal, .banana, .pizza, .popcorn, .ramen, .sandwich {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.shef {
+   margin: 0 300px;
+}
