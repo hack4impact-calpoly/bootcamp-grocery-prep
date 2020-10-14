@@ -59,3 +59,12 @@ body h3 {
 body img{
     padding-left: 400px;
 }
+
+.recpie_descrp {
+    font-family: fantasy;
+}
+
+#now_sentence{
+    /* color: rebeccapurple; */
+    padding-left: 90px;
+}
