@@ -1,0 +1,102 @@
+body {
+    background-color: #FFFFFF;
+  }
+  
+  h1 {
+    color: #1A535C;
+    margin-left: 20px;
+  }
+  h2 {
+    background-color: #FFE66D;
+    margin-left: 30px;
+    padding: 5px 5px 5px 10px;
+    text-align: left;
+    width: 50%;
+  }
+  h3 {
+    color: navy;
+    margin-left: 20px;
+  }
+  h4 {
+    color: #1A535C;
+    margin-left: 35px;
+  }
+  nav {
+    color: #FF6B6B;
+    margin-left: 20px;        
+  }
+  .nav-bar {
+    border: 3px solid tomato;
+    background-color: tomato;
+    color: white;
+    padding: 3px 3px;
+    text-align: left;
+    display: inline-table;
+    width: 95%;
+    margin: 5px;
+  }
+  .nav-item {
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: larger;
+    border-radius: 1px;
+    /* border-style: groove outset; */
+    /* border-color: black; */
+  }
+  .nav-item:link {
+    color: white;
+    text-align: center;
+    display: inline-block;  
+
+  }
+  a:link {
+    color: red;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 35px;
+  }
+  /* visited link */
+  .recipe-link:visited {
+    color: #4ECDC4;
+    background-color: #f44336;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    
+  }
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
+  .categories {
+    display: flex;
+  }
+  .home-img{
+    /* float: right; */
+    align-self: flex-end;
+    padding-left: 20px;
+  }
+  img {
+    margin-left: 35px;
+  }
+  p {
+    margin-left: 35px;
+  }
+  ol {
+    margin-left: 35px;
+    border-left: 2px solid tomato;
+  }
+  ul {
+    margin-left: 35px;
+    border-left: 2px solid tomato;
+
+  }
