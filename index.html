@@ -3,31 +3,45 @@
 <head>
     <meta charset="utf-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link href="styles/style.css"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    
     <title>Taste of Campus</title>
 </head>
 <body>
-    <header><h1>Taste of Campus</h1></header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="meet-the-chef.html">Meet the Chef</a>
-    </nav>
-    <h1>Welcome to Taste of Campus</h1>
-    <p>
-        Just because you're living off-campus shouldn't mean that you need to pay astronomical prices for the finest meals that
-        Cal Poly has to offer, convince a freshman to spot you with their PolyCard, or abstain from eating campus food entirely. 
-        Taste of Campus is a free, one-stop meal preparation resource for Cal Poly students living off-campus or whose meal schedules
-        fail to align with the operating hours at many university dining venues.
-    </p>
-    <h1>Recipes</h1>
-    <h2>Breakfast</h2>
-    <div><a href="hash-brown-scramble-burrito.html">Hash Brown Scramble Burrito</a></div>
-    <div><a href="acai-bowl.html">Acai Bowl</a></div>
-    <div><img src="images/acai-bowl.jpg"></div>
-    <h2>Lunch</h2>
-    <div><a href="greek-chicken-salad.html">Greek Chicken Salad</a></div>
-    <div><img src="images/greek-chicken-salad.jpg"></div>
-    <h2>Dinner</h2>
-    <div><a href="tri-tip-sandwich.html">Tri Tip Sandwich</a></div>
-    <!-- <div><img src="images/tri-tip-sandwich.jpg"></div> -->
+    <div class="navbar">
+        <header><h1>Taste of Campus</h1></header>
+        <nav>
+            <div><a href="index.html">Home</a></div>
+            <div><a href="meet-the-chef.html">Meet the Chef</a></div>
+        </nav>
+    </div>
+    <main>
+        <div class="welcome">
+            <h1>Welcome to Taste of Campus</h1>
+            <p>
+                Just because you're living off-campus shouldn't mean that you need to pay astronomical prices for the finest meals that
+                Cal Poly has to offer, convince a freshman to spot you with their PolyCard, or abstain from eating campus food entirely. 
+                Taste of Campus is a free, one-stop meal preparation resource for Cal Poly students living off-campus or whose meal schedules
+                fail to align with the operating hours at many university dining venues.
+            </p>
+        </div>
+        <div class="recipes">
+            <!-- <h1>Recipes</h1> -->
+            <div class="breakfast">
+                <h2>Breakfast</h2>
+                <div><a href="acai-bowl.html">Acai Bowl</a></div>
+                <div><a href="hash-brown-scramble-burrito.html">Hash Brown Scramble Burrito</a></div>
+                <div><img class="home-image" src="images/hash-brown-scramble-burrito.jpg"></div>
+            </div>
+            <div class="dinner">
+                <h2>Dinner</h2>
+                <div><a href="tri-tip-sandwich.html">Tri Tip Sandwich</a></div>
+                <div><a href="greek-chicken-salad.html">Greek Chicken Salad</a></div>
+                <div><img class="home-image" src="images/greek-chicken-salad.jpg"></div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

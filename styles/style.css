@@ -1,0 +1,95 @@
+html {
+    background-color: #FF5A5F;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+}
+
+img {
+    width:450px;
+    height: auto;
+}
+
+main {
+    margin: 4%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #484848;
+    margin: -10px;
+}
+
+.intro, .recipes {
+    margin-top: 5%;
+}
+
+.breakfast, .dinner {
+    display: inline-block;
+    margin: 4%;
+    margin-top: 0%;
+}
+
+.overview, .intro {
+    display: flex;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 4%;
+}
+
+.overview-text, .overview-image {
+    display: flex;
+    justify-content: center;
+    margin: 4%;
+}
+
+.overview-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.recipe-page {
+    width:300px;
+    height: auto;
+}
+
+.recipe {
+    display: flex;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 4%;
+}
+
+.instructions, .ingredients {
+    flex: 1;
+    margin: 4%;
+}
+
+.home-image {
+    margin-top: 4%;
+}
+
+.meet-the-chef {
+    margin: 5%;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+h1, h2, h3 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h2 {
+    background-color:  #484848;
+    padding: 10px;
+}
+
+ul, ol {
+    display: inline-block;
+    text-align:left;
+}
