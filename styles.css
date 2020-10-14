@@ -1,0 +1,74 @@
+body
+{
+    margin: 0;
+    background-color: E7D8C9;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: B2967D;
+    color: black;
+    padding: 0 20px;
+}
+header h1
+{
+    color: white;
+}
+header a
+{
+    color: ECF8F8;
+    margin: 0 12px;
+}
+
+main
+{
+    padding: 15px 20% 40px;
+}
+
+h1
+{
+    color:rgb(100, 76, 76);
+}
+h2
+{
+    background-color: EEE4E1;
+    padding: 4px 8px;
+}
+
+.showcase
+{
+    display: flex;
+    justify-content: space-between;
+}
+.showcase > .recipe
+{
+    margin: 30px 6%;
+    justify-content: space-between;
+}
+.showcase > .links
+{
+    margin: 30px 6%;
+}
+.showcase > .desc
+{
+    padding-right: 4px;
+} 
+
+.recipe > a
+{
+    color: gray;
+    line-height: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+}
+.links > a
+{
+    color: gray;
+    line-height: 30px;
+}
+    
