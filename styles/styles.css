@@ -82,6 +82,12 @@ h3{
   margin: 0;
 }
 
+h2{
+  padding: 20px;
+  font-style: italic;
+  text-align: center;
+}
+
 .ingredients{
   background: #54A5F2;
   border: #394753;
@@ -90,10 +96,12 @@ h3{
   padding: 10px;
 }
 
-img .pageimage{
-  padding: 100px;
-  border: 1px;
-  border-radius: 4px;
+img.pageimage{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
   padding: 5px;
-  border-color: #394753;
+  width: 500px;
+  filter: drop-shadow(20px 10px 10px #3C3E40)
 }
