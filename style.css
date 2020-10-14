@@ -1,0 +1,179 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li, a 
+{
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+}
+
+main
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+main h1
+{  
+    padding-bottom: 20px;
+}
+
+main img
+{
+    border-radius: 10%;
+    width: 300px;
+    padding: 10px;
+}
+
+#down-arrow
+{
+    height: 50px;
+    width: 50px;
+    text-align: center;
+}
+
+section img
+{
+    width: 300px;
+    border-radius: 50%;
+
+}
+
+main figure
+{
+    text-align: center;
+    height: 100px;
+    font-size: large;
+    padding-top: 10px;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    
+    
+}
+
+.nav__links 
+{
+    display: flex;
+    list-style: none;
+    font-size: 16px;
+    padding: 20px;
+}
+
+.nav__links li
+{
+
+    padding: 0px 20px;
+}
+
+.nav__links li a
+{
+    transition: all 0.3s ease 0s;
+}
+
+a:hover
+{
+    color: #0088a9;
+}
+
+#recipes
+{
+    padding-bottom: 0;
+    padding-top: 10px;
+    text-align: center;
+}
+
+section
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+div h2
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h2
+{
+    text-align: center;
+}
+
+.recipe__links
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipe__links a
+{
+    padding: 10px;
+}
+
+.container
+{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 30px;
+}
+
+.container h1
+{
+    font-size: 4vw;
+}
+
+.container img
+{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.container p
+{
+    width: 600px;
+    min-width: 300px;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.container ul li 
+{
+    list-style: none;
+    text-align: left;
+}
+
+.container ol li 
+{
+    padding: 10px 0px;
+    width: 400px;
+    text-align: left;
+}
+
+
+
