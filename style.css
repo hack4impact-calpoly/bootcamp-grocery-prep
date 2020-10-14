@@ -63,10 +63,12 @@ header
     align-items: center;
     padding: 10px 10%;
     
+    
 }
 
 .nav__links 
 {
+    display: flex;
     list-style: none;
     font-size: 16px;
     padding: 20px;
@@ -74,7 +76,7 @@ header
 
 .nav__links li
 {
-    display: inline-block;
+
     padding: 0px 20px;
 }
 
@@ -115,7 +117,7 @@ h2
     text-align: center;
 }
 
-.links
+.recipe__links
 {
     display: flex;
     flex-direction: column;
@@ -123,152 +125,55 @@ h2
     align-items: center;
 }
 
-.links a
+.recipe__links a
 {
     padding: 10px;
 }
 
-@media only screen and (max-width: 540px)
+.container
 {
-    * 
-    {
-    margin: 0;
-    font-family: 'Playfair Display', serif;
-    line-height: 1.5em;
-    font-weight: lighter;
-    }
-
-    body
-    {
+    position: relative;
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    }
+    margin: 30px;
+}
 
-    p 
-    {
-    margin: 1em;
-    }
+.container h1
+{
+    font-size: 4vw;
+}
 
-    ul li 
-    {
+.container img
+{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.container p
+{
+    width: 600px;
+    min-width: 300px;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.container ul li 
+{
     list-style: none;
     text-align: left;
-    padding: 0.5em;
-    margin: 1em;
-    }
-
-    ol li 
-    {
-    text-align: left;
-    padding: 0.5em;
-    margin: 1em;
-    }
-
-    #ingredients
-    {
-    border-bottom-style: solid;
-    border-bottom-color: black;
-    border-width: thin;
-    padding-left: 3em;
-    padding-right: 3em;
-    padding-top: 0.5em;
-
-    }
-
-    #instructions
-    {
-    border-bottom-style: solid;
-    border-bottom-color: black;
-    border-width: thin;
-    margin: 0 -0.5em;
-    padding-top: 0.5em;
-
-    }
-
-    #recipes 
-    {
-    letter-spacing: 0.3em;
-    border-bottom-style: dotted;
-    border-bottom-color: black;
-    border-top-style: dotted;
-    border-width: thin;
-    margin: 0 -1em;
-    padding-left: 3em;
-    padding-right: 3em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    font-size: 2.5em;
-    }
-
-    figure
-    {
-    padding-top: 2em;
-    margin-left: 2em;
-    margin-right: 2em;
-    }
-
-    figcaption
-    {
-    padding: 0.3em;
-    margin-right: 1em;
-    margin-left: 1em;
-    margin-bottom: 1em;
-    }
-
-    nav
-    {
-    padding: 1em;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1.5em;
-    }
-
-    a 
-    {
-    color: inherit;
-    font-family: 'Playfair Display', serif;
-    text-decoration: none;
-    }
-
-    img
-    {
-    height: auto;
-    width: 90%;
-    box-shadow: 3px 3px 5px 6px #ccc;
-    }
-
-    header h1 
-    {
-    padding-top: 1em;
-    }
-
-    h2 
-    {
-    font-size: 2em;
-    padding-top: 1em;
-    margin: 0,5em;
-    font-family: 'Playfair Display', serif;
-    }
-
-    .links 
-    {
-    padding-top: 0.5em;
-    }
-
-    .links a 
-    {
-    display: flex;
-    padding: 0.5em;
-    justify-content: center;
-    }
-
-    .showcase :last-of-type
-    {
-    margin-bottom: 1em;
-    }
-
 }
+
+.container ol li 
+{
+    padding: 10px 0px;
+    width: 400px;
+    text-align: left;
+}
+
 
 
