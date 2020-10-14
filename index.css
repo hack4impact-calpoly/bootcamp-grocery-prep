@@ -10,13 +10,17 @@ nav {
 	display: flex;
 	justify-content: space-around;
 	padding: 2%;
+	 
+	background-color: #A8DADC;
+	color: #1D3557;
+	padding: 2%;
 }
 
 
 h1 {
 
 	background-color: #1D3557;
-	padding: 3%;
+	padding: 1%;
 	color: #F1FAEE;
 }
 
@@ -52,9 +56,7 @@ html {
 
 }
 
-.block {
-	background-color: #A8DADC;
-	color: #1D3557;
-	padding: 4%;
+#space {
+	margin-block: 10px, 20px;
 }
 
