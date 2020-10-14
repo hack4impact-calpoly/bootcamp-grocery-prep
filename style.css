@@ -44,6 +44,11 @@ a
     margin-right: auto;
 }
 
+#header
+{
+
+}
+
 #ingredients
 {
     padding: 20px;
@@ -92,6 +97,7 @@ a
 a:hover
 {
     color: #0088a9;
+    font-weight: 400;
 }
 
 #main__homepage
@@ -102,6 +108,12 @@ a:hover
     justify-content: center;
     text-align: center;
     height: 100vh;
+
+}
+
+#main__homepage h1
+{
+    position: relative;
 }
 
 #hero__img
@@ -144,6 +156,7 @@ main figure
     list-style: none;
     font-size: 18px;
     padding: 30px 0px;
+    position: relative;
 }
 
 .nav__links li a
@@ -182,52 +195,13 @@ h2
 .recipe__links a
 {
     padding: 10px;
+    transition: transform .2s;
 }
 
-/* .container
+.recipe__links a:hover
 {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 30px;
-} */
-
-/* .container h1
-{
-    font-size: 4vw;
+    transform: scale(1.1);
 }
-
-.container img
-{
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-}
-
-.container p
-{
-    width: 600px;
-    min-width: 300px;
-    padding: 20px;
-    font-size: 24px;
-}
-
-.container ul li 
-{
-    list-style: none;
-    text-align: left;
-}
-
-.container ol li 
-{
-    padding: 10px 0px;
-    width: 400px;
-    text-align: left;
-} */
 
 .about
 {
@@ -235,13 +209,14 @@ h2
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 #about__p
 {
     text-align: center;
     margin: 20px;
-    width: 600px;
+    max-width: 600px;
     padding: 20px;
     font-size: 24px;
 }
@@ -281,6 +256,17 @@ h2
     {
     max-width: 450px;
     padding: 20px;
+    }
+
+    #about__p
+    {
+        font-size: 18px;
+    }
+
+    #main__recipe img
+    {
+        width: 100%;
+        border-radius: 0%;
     }
 
 
