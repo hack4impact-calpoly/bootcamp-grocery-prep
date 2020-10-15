@@ -15,13 +15,18 @@
             <img src="egg.jpeg" height="200" width="225">
         </header>
         <main class="recipieDetails">
+            <div class="changeIngredients">
+                <button class = "button" id="sub">-</button>
+                <span id="counter">1</span>
+                <button class = "button" id="add">+</button>
+            </div>
             <h1>Ingredients</h1>
             <ul>
-                <li>Eggs x 3</li>
+                <li><span class="ingredCount" starter="3">3</span> Eggs</li>
                 <li>Olive Oil</li>
                 <li>Salt to taste</li>
                 <li>Pepper to taste</li>
-                <li>Cup of water (will be used later)</li>
+                <li id="last">1 Cup of water (will be used later)</li>
             </ul>
             <h1>Steps</h1>
             <ol>

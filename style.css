@@ -48,3 +48,17 @@ header {
     display: flex;
     justify-content: center;
 }
+
+.button{
+    background-color: teal;
+}
+
+.changeIngredients{
+    display: flex;
+    padding: 20px;
+    height: 30px;
+}
+
+#counter{
+    font-size: 30px;
+}

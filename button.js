@@ -1,3 +1,4 @@
+firstIter = true
 
 document.addEventListener('click', event => {
     if (event.target.id === 'sub' && Number(counter.innerText) > 1){
@@ -11,12 +12,31 @@ document.addEventListener('click', event => {
 const updateServingCount = dir => {
     const counter = document.getElementById("counter");
     counter.innerText = Number(counter.innerText) + dir;
-    updateIngredient(dir);
+    updateIngredient(Number(counter.innerText));
+    if (Number(counter.innerText) >= 10 && firstIter === true){
+            const newParagraph = document.createElement("p");
+            const node = document.createTextNode("WOW! That's a lot of servings! I'm glad you like it :)");
+            newParagraph.appendChild(node);
+            const element = document.getElementById("last");
+            element.appendChild(newParagraph);
+            newParagraph.id = "newParagraph";
+            firstIter = false;
+    }
+    else if (Number(counter.innerText) < 10 && firstIter === false){
+        const removed = document.getElementById("newParagraph");
+        removed.remove();
+        firstIter = true
+    }
 }
 
-const updateIngredient = dir => {
+const updateIngredient = servingSize => {
     const ingredientNums = document.getElementsByClassName("ingredCount");
-    const servingSize = document.getElementById("counter")
-    console.log(ingredientNums.innerText);
 
+    for (const food in ingredientNums) {
+        if (ingredientNums.hasOwnProperty(food)) {
+            const element = ingredientNums[food];
+            const starter  = Number(element.getAttribute("starter"));
+            element.textContent = starter * servingSize;         
+        }
+    }
 }

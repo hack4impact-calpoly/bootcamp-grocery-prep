@@ -15,15 +15,20 @@
             <img src="appleSmoothie.jpeg" height="200" width="150">
         </header>
         <main class="recipieDetails">
+            <div class="changeIngredients">
+                <button class = "button" id="sub">-</button>
+                <span id="counter">1</span>
+                <button class = "button" id="add">+</button>
+            </div>
             <h1>Ingredients</h1>
             <ul>
-                <li>Apple x 1</li>
-                <li>Cinnamon x 1/2 tp</li>
-                <li>Nutmeg x 1/2 tp</li>
-                <li>Protein powder x 1 scoop</li>
+                <li><span class="ingredCount" starter="1">1</span> Apple</li>
+                <li><span class="ingredCount" starter="0.5">0.5</span> tsp of Cinnamonp</li>
+                <li><span class="ingredCount" starter="0.5">0.5</span> tsp of Nutmeg</li>
+                <li><span class="ingredCount" starter="1">1</span> scoop of Protein powder</li>
                 <li>Sweetener (Honey/Agave)</li>
-                <li>Oats x to desired consistancy</li>
-                <li>Milk of some type (cow/nut/etc) x to desired consistancy</li>
+                <li>Oats to desired consistancy</li>
+                <li id="last">Milk of some type (cow/nut/etc) to desired consistancy</li>
             </ul>
             <h1>Steps</h1>
             <ol>

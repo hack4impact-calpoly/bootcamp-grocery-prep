@@ -15,13 +15,20 @@
             <img src="golden_milk.jpeg" height="200" width="150">
         </header>
         <main class="recipieDetails">
+            <div class="changeIngredients">
+                <button class = "button" id="sub">-</button>
+                <span id="counter">1</span>
+                <button class = "button" id="add">+</button>
+            </div>
             <h1>Ingredients</h1>
             <ul>
-                <li>Oat/Almond milk x 1 cup</li>
-                <li>Tumeric x 2 tsp</li>
-                <li>Giger x 1 tsp OR 1 small grated chunk</li>
-                <li>Pepper x 1 pinch</li>
-                <li>(OPTIONAL) Honey/Agave x 2 tsp</li>
+                <li><span class="ingredCount" starter="1">1</span> cup of Oat/Almond milk</li>
+                <li><span class="ingredCount" starter="2">2</span> tsp of Tumeric</li>
+                <li><span class="ingredCount" starter="1">1</span> tsp of Giger</li>
+                <p>OR</p>
+                <li><span class="ingredCount" starter="1">1</span> Small grated chunk</li>
+                <li><span class="ingredCount" starter="1">1</span> pinch of Pepper</li>
+                <li id="last"><span class="ingredCount" starter="2">2</span> tbs Honey/Agave (OPTIONAL)</li>
             </ul>
             <h1>Steps</h1>
             <ol>
