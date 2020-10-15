@@ -2,6 +2,7 @@
    <head>
       <title>Ice Cream</title>
       <link rel="stylesheet" href="style.css">
+      <script src="js/main.js"></script>
    </head>
    <body>
       <header>
@@ -13,17 +14,23 @@
       </header>
       <main>
          <h1>Ice Cream</h1>
+         <div class="button">
+            <h3>Servings</h3>
+            <button id="decrease">-</button>
+            <span id="servecount">1</span>
+            <button id="increase">+</button>
+         </div>
          <p>It's as cliche as is sounds, ice cream for deserts, perfect for pairing with
             <a href="steak.html"><strong>StEAk</strong></a>!
          </p>
          <img src="img/icecream.jpg" height="250">
          <h2>Ingredients</h2>
          <ul>
-            <li>2 cups heavy cream</li>
-            <li>1 cup whole milk</li>
-            <li>2/3 cup sugar</li>
-            <li>1/8 teaspoon fine sea salt</li>
-            <li>6 large egg yolks</li>
+            <li><span class="change" base="2">2 cups heavy cream</li>
+            <li><span class="change" base="1">1 cup whole milk</li>
+            <li><span class="change" base="0.5">1/2 cup sugar</li>
+            <li><span class="change" base="1">1 teaspoon fine sea salt</li>
+            <li><span class="change" base="6">6 large egg yolks</li>
          </ul>
          <h2>Instructions</h2>
          <ol>

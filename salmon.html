@@ -2,6 +2,7 @@
    <head>
       <title>Salmon</title>
       <link rel="stylesheet" href="style.css">
+      <script src="js/main.js"></script>
    </head>
    <body>
       <header>
@@ -14,12 +15,18 @@
       <main>
          <h1>Salmon</h1>
          <p>Classy and tasty.</p>
+         <div class="button">
+            <h3>Servings</h3>
+            <button id="decrease">-</button>
+            <span id="servecount">1</span>
+            <button id="increase">+</button>
+         </div>
          <img src="img/salmon.jpg" height="250">
          <h2>Ingredients (copied from nytimes)</h2>
          <ul>
-            <li>1 fillet salmon</li>
-            <li>1 tablespoon garlic salt and pepper</li>
-            <li>1 lemon</li>
+            <li><span class="change" base="1">1</span> fillet salmon</li>
+            <li><span class="change" base="1">1</span> tablespoon garlic salt and pepper</li>
+            <li><span class="change" base="1">1</span> lemon</li>
          </ul>
          <h2>Instructions</h2>
          <ol>

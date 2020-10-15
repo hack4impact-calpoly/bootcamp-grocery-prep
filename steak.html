@@ -2,6 +2,7 @@
    <head>
       <title>Steak</title>
       <link rel="stylesheet" href="style.css">
+      <script src="js/main.js"></script>
    </head>
    <body>
       <header>
@@ -14,13 +15,19 @@
       <main>
          <h1>Australian Steak</h1>
          <p>Classy and tasty.</p>
+         <div class="button">
+            <h3>Servings</h3>
+            <button id="decrease">-</button>
+            <span id="servecount">1</span>
+            <button id="increase">+</button>
+         </div>
          <img src="img/steak.jpg" height="250">
          <h2>Ingredients</h2>
          <ul>
-            <li>1 ribeye/sirloin steak</li>
-            <li>1 tablespoon garlic salt and pepper</li>
-            <li>1 slice of butter</li>
-            <li>1 rosemary</li>
+            <li><span class="change" base="1">1</span> ribeye/sirloin steak</li>
+            <li><span class="change" base="1">1</span> tablespoon garlic salt and pepper</li>
+            <li><span class="change" base="1">1</span> slice of butter</li>
+            <li><span class="change" base="1">1</span> rosemary</li>
             <li>Olive oil</li>
          </ul>
          <h2>Instructions</h2>

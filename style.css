@@ -50,3 +50,15 @@ div {
 ul, ol {
     color: #F2CC8F;
 }
+
+.button {
+  margin: 0 0 10px;
+}
+
+.button > button {
+  background-color: #FAE1EB;
+  border: none;
+  color: 79A4AD;
+  font-size: 14px;
+  padding: 5px 14px;
+}
