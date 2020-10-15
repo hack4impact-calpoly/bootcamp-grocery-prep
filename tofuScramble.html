@@ -2,6 +2,7 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
+        <script src="button.js"></script>
     </head>
     <title>Tofu Scramble</title>
     <body>
@@ -14,14 +15,19 @@
             <img src="tofuScramble.jpeg" height="200" width="150">
         </header>
         <main class="recipieDetails">
+            <div class="changeIngredients">
+                <button id="sub">-</button>
+                <span id="counter"> 1 </span>
+                <button id="add">+</button>
+            </div>
             <h1>Ingredients</h1>
             <ul>
-                <li>Firm Tofu x 1 packet</li>
-                <li>Spinach x 2 handfulls</li>
-                <li>Salt and Pepper to taste</li>
-                <li>Tumeric x 1 tbs</li>
-                <li>Nutritional Yeast x 1/4 cup</li>
-                <li>Veggie bouillon x 1 tsp</li>
+                <li><span class ="ingredCount">1</span> Firm Tofu packet</li>
+                <li class="ingred">Spinach x 2 handfulls</li>
+                <li class="ingred">Salt and Pepper to taste</li>
+                <li class="ingred">Tumeric x 1 tbs</li>
+                <li class="ingred">Nutritional Yeast x 1/4 cup</li>
+                <li class="ingred">Veggie bouillon x 1 tsp</li>
             </ul>
             <h1>Steps</h1>
             <ol>
