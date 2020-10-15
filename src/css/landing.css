@@ -1,57 +1,7 @@
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #40916c;
-    padding: 0 20px;
-}
-
 body {
     margin: 0px;
-    background-color: #d8f3dc;
+    background-color: #f8edeb;
 }
-
-nav {
-    width: 100%;
-    background-color: #40916c;
-    padding-left: 30px;
-    padding-right: 10px;
-}
-
-.nav-head {
-    display: flex;
-}
-
-.nav-head p {
-    color: black;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    color: black;
-}
-
-.nav-link {
-    display:flex;
-    padding: 5%;
-    flex-wrap: nowrap;
-}
-
-.logo {
-    display: flex;
-    padding: 18px 10px;
-    justify-content: space-around;
-}
-
 
 main {
     display: block;
@@ -68,28 +18,64 @@ main {
 }
 
 .recipes {
+    display: flex;
+    flex-direction: column;
     font-size: xx-large;
     font-weight: bold;
+    margin-top: 50px;
+}
+
+.meals {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
 }
 
 .highlight {
     display: flex;
-    padding-left: 10px;
+    border-radius: 10px;
+    padding-left: 25px;
     padding-top: 5px;
     padding-bottom: 5px;
+    margin-bottom: 5px;
     font-size: 25px;
-    font-weight: 200;
-    background-color: #74c69d;
+    font-weight: 500;
+    background-color: #ffb5a7;
     color: white
 }
 
 .description {
+    display: flex;
     font-size: 20px;
     font-weight: 100;
+    margin-bottom: 5px;
+    justify-content: center;
+}
+
+.subsection {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 25px;
+    background-color: #f8dfcc;
+    border-radius: 20px;
+    margin-top: 2px;
+}
+
+.meal-list {
+    display: flex;
 }
 
 section ul {
     list-style: none;
     font-size: 20px;
     font-weight: 100;
+    margin-bottom: 25px;
+    margin-top: 38px;
+}
+
+.meal-pic {
+    width: 40%;
+    margin-left: 200px;
+    margin: 18px 40px 20px auto;
+    border-radius: 20px;
 }

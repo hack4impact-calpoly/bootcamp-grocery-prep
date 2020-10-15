@@ -1,0 +1,50 @@
+body {
+    margin: 0px;
+    background-color: #f8edeb;
+}
+
+main {
+    display: block;
+    padding: 15px auto 40px;
+    padding-top: 15px;
+    padding-right: 20%;
+    padding-bottom: 40px;
+    padding-left: 20%;
+}
+
+.intro {
+    display: block;
+}
+
+.intro-title {
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    padding-bottom: 0px;
+}
+
+.intro-description{
+    padding-top: 0px;
+    font-style: italic;
+    padding-top: 0px;
+}
+
+.highlight {
+    display: flex;
+    border-radius: 10px;
+    padding-left: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: 500;
+    background-color: #ffb5a7;
+    color: white
+}
+
+article {
+    margin-top: 50px;
+}
+.life {
+    padding-left: 20px;
+}
