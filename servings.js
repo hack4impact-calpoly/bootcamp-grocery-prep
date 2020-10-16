@@ -7,6 +7,8 @@ document.addEventListener('click', event => {
         changeServings(-1);
     
 });
+// copied from the grocery website for a few hours 
+// made sure I understand everything thats happening
 
 const changeServings = (direction) => {
     const currentServings = document.getElementById("serving-count");
