@@ -113,3 +113,10 @@ img.pageimage{
   width: 500px;
   filter: drop-shadow(20px 10px 10px #3C3E40)
 }
+
+button{
+  padding: 10px;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
