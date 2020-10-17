@@ -39,6 +39,10 @@ main a {
     color: #B0C4DE;
 }
 
+img {
+    border-radius: 8px;
+}
+
 .food-section {
     display: flex;
     justify-content: space-between;
