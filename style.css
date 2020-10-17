@@ -66,6 +66,22 @@ h3 {
 	font-size: 20;
 }
 
+.serving {
+	margin: 0 30px;
+}
+
+.serving > button {
+  background-color: #58A4B0;
+  border: none;
+  color: white;
+  font-size: 14px;
+  padding: 4px 10px;
+}
+
+#count {
+	margin: 0 5px;
+}
+
 @media screen and (max-width: 460px) {
 	header {
 		justify-content: center;
