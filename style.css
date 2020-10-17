@@ -34,6 +34,14 @@ header {
     font-size: 20px;
 }
 
+.random{
+    display: flex;
+    justify-content: left;
+
+    color: red;
+    font-size: 20px;
+}
+
 #aboutMeText{
     font-size: 25px;
     margin-left: 400px;
