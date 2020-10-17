@@ -1,0 +1,63 @@
+html {
+    margin: 0;
+    height: 100%;
+} 
+
+body {
+    margin: 0;
+    height: 100%;
+    background-color: #FFFFF0;
+    font-family: Courier New;
+}
+
+header {
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #B0C4DE;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: #FFFFF0;
+}
+
+
+main {
+    height: 100%;
+    padding: 15px 20% 40px;
+}
+
+main h2 {
+    background-color: #B0C4DE;
+    padding: 3px 5px;
+}
+
+main a {
+    color: #B0C4DE;
+}
+
+.food-section {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.food-section-recipepage {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.links {
+    padding: 50px 50px 50px 50px;
+
+}
+
+.images {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
