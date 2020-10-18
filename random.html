@@ -1,0 +1,55 @@
+<html lang="en-US">
+<head>
+  <title>Random</title>
+  <link rel="stylesheet" href="page.css">
+  <script src="button2.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <header>
+    <h1 id="title"> </h1>
+    <nav>
+     <a href="index.html">Dinner Recipes</a>
+     <a href="pasta.html"> Pasta Recipes</a>
+     <a href="rice.html"> Rice Recipes</a>
+     <a href="random.html"> Random Recipe</a> 
+   </nav>
+  </header>
+<main>
+  <script src="random.js"></script>
+  <div>
+   <h2 id="time">Time: <span id="randomTime"></span> to <span id="randomTime2"></span> minutes</h2>
+   <p id="ratings"><span id="rating"></span> &star;</p>
+   <div class="rating">
+          <label for="select-rating" id="rating-label">Rate Me!</label>
+          <select id="select-rating">
+            <option selected hidden disabled>Select Rating</option>
+            <option value="1">1 &starf;</option>
+            <option value="2">2 &starf;</option>
+            <option value="3">3 &starf;</option>
+            <option value="4">4 &starf;</option>
+            <option value="5">5 &starf;</option>
+          </select>
+          <button id="post-rating">Post Rating</button>
+        </div>
+   <p></p>
+   <img id="food"  height="275">
+   <div class="holder">
+     <h3> Servings</h3>
+     <button id="sub">-</button>
+     <span id="count"></span>
+     <button id="add">+</button>
+   </div>
+   <p id="desc"></p>
+ </div>
+ <div>
+  <h2>Ingredients</h2>
+ <ul id="ingredients">
+ </ul>
+  <h2> Instructions</h2>
+  <ol id="instruct">
+   </ol>
+</div> 
+</main>
+</body>
+</html>  
