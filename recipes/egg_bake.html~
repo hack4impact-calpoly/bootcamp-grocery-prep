@@ -30,28 +30,28 @@
 			<h2>Ingredients</h2>
 			<ul>
 				<li>
-					1 tube (8 oz) refrigerated crescent rolls
+					<span class="count" base="0.125">1</span> tube (8 oz) refrigerated crescent rolls
 				</li>
 				<li>
-					10 large eggs
+					<span class="count" base="1.25">10</span> large eggs
 				</li>
 				<li>
-					1/3 cup water
+					<span class="count" base="0.03125">0.25</span> cup water
 				</li>
 				<li>
-					3 tbsp butter
+					<span class="count" base="0.375">3</span> tbsp butter
 				</li>
 				<li>
-					1-1/2 cups prepared taco meat
+					<span class="count" base="0.1875">1.5</span> cups prepared taco meat
 				</li>
 				<li>
-					1 cup shredded cheddar cheese
+					<span class="count" base="0.125">1</span> cup shredded cheddar cheese
 				</li>
 				<li>
-					1 cup shredded Montery Jack cheese
+					<span class="count" base="0.125">1</span> cup shredded Montery Jack cheese
 				</li>
 				<li>
-					1 cup salsa
+					<span class="count" base="0.125">1</span> cup salsa
 				</li>
 			</ul>
 			<h2>Instructions</h2>
