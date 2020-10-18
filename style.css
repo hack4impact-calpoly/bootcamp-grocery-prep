@@ -47,3 +47,20 @@ img{
 	color: #FFB703;
 	text-align: right;
 }
+
+.servings {
+	margin: 0 0 10px;
+}
+
+.servings > button {
+	background-color: #F4ACB7;
+	border: 1px solid #FEEAFA;
+	color: white;
+	font-size 14px;
+	padding: 5px 14px;
+}
+
+#serving-count {
+	margin: 0 4px;
+	color: blue;
+}

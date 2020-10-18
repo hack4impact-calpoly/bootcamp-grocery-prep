@@ -42,13 +42,20 @@ img{
 	line-height: 30px;
 }
 
-.showcase > .desc {
-	padding-right: 4px;
-}
+
 .links > a {
 	color: #FFB703;
 	text-align: right;
-	line-height: 30px;
 }
 
+.servings {
+	margin: 0 0 10px;
+}
 
+.servings > button {
+	background-color: #F4ACB7;
+	border: 1px solid #FEEAFA;
+	color: white;
+	font-size 14px;
+	padding: 5px 14px;
+}
