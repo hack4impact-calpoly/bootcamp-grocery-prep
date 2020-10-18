@@ -19,34 +19,42 @@
 			<p>Absolutely delectable!</p>
 			<p>Makes 2 servings</p>
 			<img src="../imgs/turkey.jpg" height="250">
+
+			<div class="servings">
+				<h3>Servings</h3>
+				<button id="dec">-</button>
+				<span id="serving-count">2</span>
+				<button id="inc">+</button>
+			</div>
+
 			<h2>Ingredients</h2>
 			<ul>
 				<li>
-					2 whole wheat tortillas (8 inches)
+					<span class="count" base="1">2</span> whole wheat tortillas (8 inches)
 				</li>
 				<li>
-					4 tsp honey mustard
+					<span class="count" base="2">4</span> tsp honey mustard
 				</li>
 				<li>
-					6 oz thinly sliced deli turkey
+					<span class="count" base="3">6</span> oz thinly sliced deli turkey
 				</li>
 				<li>
-					2 thin slices Muenster cheese
+					<span class="count" base="1">2</span> thin slices Muenster cheese
 				</li>
 				<li>
-					1 cup fresh baby spinach
+					<span class="count" base="0.5">1</span> cup fresh baby spinach
 				</li>
 				<li>
-					1 medium carrot, shredded
+					<span class="count" base="0.5">1</span> medium carrot, shredded
 				</li>
 				<li>
-					1 bacon strip, cooked and crumbled
+					<span class="count" base="0.5">1</span> bacon strip, cooked and crumbled
 				</li>
 				<li>
-					1/4 cup chopped seeded cucumber
+					<span class="count" base="0.125">1/4</span> cup chopped seeded cucumber
 				</li>
 				<li>
-					1/4 cup chopped roasted sweet red pepper
+					<span class="count" base="0.125">1/4</span> cup chopped roasted sweet red pepper
 				</li>
 			</ul>
 			<h2>Instructions</h2>
@@ -75,5 +83,6 @@
 				</li>
 			</ul>
 		</main>
+		<script src="../recipe.js"></script>
 	</body>
 </html>
