@@ -16,7 +16,6 @@ const updateServings = (direction) => {
   currentServings.textContent = newServings;
 
   Array.prototype.map.call(countElements, e => {
-    const itemServing = Number(e.getAttribute('base'));
-    e.textContent = +(itemServing * newServings).toFixed(2);
+    e.textContent = +((e.textContent / servingCount) * newServings).toFixed(2)
   })
 }

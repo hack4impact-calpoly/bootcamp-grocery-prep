@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<title>Stick's Tea House - Milk</title>
+		<link rel="stylesheet" href="../style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+		<header>
+			<h1> Stick's Cafe</h1>
+			<nav>
+				<a href="../index.html">Home</a>
+				<a href="../about.html">About Stick</a>
+			</nav>
+		</header>
+
+		<main>
+			<div class="topImg">
+				<img id ="picture">
+			</div>
+			<h2 id="title"></h2>
+
+			<p id="desc"></p>
+			<div id="ratings">
+				<p><span id="rating"></span> ★</p>
+			</div>
+			<div class="rating">
+				<label id="rating-label" for="select-rating">Rate Me!</label>
+				<select id="select-rating">
+					<option value="1">1 ★</option>
+					<option value="2">2 ★</option>
+					<option value="3">3 ★</option>
+					<option value="4">4 ★</option>
+					<option value="5">5 ★</option>
+				</select>
+				<button id="post-rating">Post Rating</button>
+
+			<h3>Ingredients</h3>
+			<div class="serving">
+				<h4>Servings</h4>
+				<button id="sub">-</button>
+				<span id="count">1</span>
+				<button id="add">+</button>
+			</div>
+			<ul id="ingredients">
+				
+			</ul>
+			<h3>Instructions</h3>
+			<ol id="instructions" class="instructions">
+
+			</ol>
+		</main>
+		<script src="../recipe.js"></script>
+		<script src="../surpriseMe.js"></script>
+	</body>
+</html>
