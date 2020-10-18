@@ -19,43 +19,51 @@
 			<p>Zesty and flavorful!</p>
 			<p>Makes 4 servings</p>
 			<img src="../imgs/spanish.jpg" height="250">
+
+			<div class="servings">
+				<h3>Servings</h3>
+				<button id="dec">-</button>
+				<span id="serving-count">4</span>
+				<button id="inc">+</button>
+			</div>
+
 			<h2>Ingredients</h2>
 			<ul>
 				<li>
-					1 lb ground beef
+					<span class="count" base="0.25">1</span> lb ground beef
 				</li>
 				<li>
-					1-1/2 cups cooked long grain rice
+					<span class="count" base="0.375">1.5</span> cups cooked long grain rice
 				</li>
 				<li>
-					1 can (14-1/2 oz) stewed tomatoes
+					<span class="count" base="0.25">1</span> can (14-1/2 oz) stewed tomatoes
 				</li>
 				<li>
-					1 can (14-1/2 oz) cut green beans, drained
+					<span class="count" base="0.25">1</span> can (14.5 oz) cut green beans, drained
 				</li>
 				<li>
-					1 tbsp dried minced onion
+					<span class="count" base="0.25">1</span> tbsp dried minced onion
 				</li>
 				<li>
-					1 tbsp sugar
+					<span class="count" base="0.25">1</span> tbsp sugar
 				</li>
 				<li>
-					1 tsp salt
+					<span class="count" base="0.25">1</span> tsp salt
 				</li>
 				<li>
-					1 tsp Worcestershire sauce
+					<span class="count" base="0.25">1</span> tsp Worcestershire sauce
 				</li>
 				<li>
-					1/2 tsp ground mustard
+					<span class="count" base="0.125">0.5</span> tsp ground mustard
 				</li>
 				<li>
-					1/4 tsp garlic powder
+					<span class="count" base="0.0625">0.25</span> tsp garlic powder
 				</li>
 				<li>
-					1/8 tsp pepper
+					<span class="count" base="0.03125">0.125</span> tsp pepper
 				</li>
 				<li>
-					1/8 tsp hot pepper sauce
+					<span class="count" base="0.03125">0.125</span> tsp hot pepper sauce
 				</li>
 			</ul>
 			<h2>Instructions</h2>
@@ -84,5 +92,6 @@
 				</li>
 			</ul>
 		</main>
+		<script src="../recipe.js"></script>
 	</body>
 </html>
