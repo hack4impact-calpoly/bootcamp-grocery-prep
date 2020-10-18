@@ -7,7 +7,7 @@
 
 	<body>
 		<header>
-			<h1>My Favorite Recipes</h1>
+			<h1><i>My Favorite Recipes</i></h1>
 			<nav>
 				<a href="../index.html">Home</a>
 				<a href="../about.html">About the Chef</a>
@@ -19,6 +19,14 @@
 			<p>Very yummy breakfast!</p>
 			<p>Makes 8 servings</p>
 			<img src="../imgs/egg_bake.jpg" height="250">
+
+			<div class="servings">
+				<h3>Servings</h3>
+				<button id="dec">-</button>
+				<span id="serving-count">8</span>
+				<button id="inc">+</button>
+			</div>
+
 			<h2>Ingredients</h2>
 			<ul>
 				<li>
