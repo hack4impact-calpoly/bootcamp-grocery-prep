@@ -17,95 +17,66 @@
         </nav>
     </div>
     <div class="overview">
-    <div class="overview-text">
-    <h1>Greek Chicken Salad</h1>
-    <p>
-       <i>"805 is like a high budget version of golden coral buffet but they only have succulent meat, vegetables
-        cooked to perfection, and amazing pasta."</i>
-    </p>
-    </div>
-    <div class="overview-image">
-    <img src="images/greek-chicken-salad.jpg">
-    </div>
+        <div class="overview-text">
+            <h1>Greek Chicken Salad</h1>
+            <p>
+            <i>"805 is like a high budget version of golden coral buffet but they only have succulent meat, vegetables
+                cooked to perfection, and amazing pasta."</i>
+            </p>
+            <div class="serving-info">
+                <div class="serving-adjust">
+                    <div><h3>Servings</h3></div>
+                    <div><button id="minus">-</button></div>
+                    <div><span id="count">6</span></div>
+                    <div><button id="plus">+</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="overview-image">
+            <img class="recipe-image" src="images/greek-chicken-salad.jpg">
+        </div>
     </div>
     <div class="recipe">
     <div class="ingredients">
-<!--     
-            <h2>Ingredients</h2>
-            <ul>
-                <li>2 teaspoons dried oregano</li>
-                <li>2 teaspoons dried basil</li>
-                <li>1 teaspoon dried thyme</li>
-                <li>1 teaspoon paprika</li>
-                <li>1 teaspoon garlic powder</li>
-                <li>Kosher salt and freshly ground black pepper</li>
-                <li>2 pounds boneless, skinless chicken thighs</li>
-                <li>1 head romaine, roughly chopped</li>
-                <li>1 cup diced cucumber</li>
-                <li>1 cup halved cherry tomatoes</li>
-                <li>1 avocado, halved, seeded, peeled and sliced</li>
-                <li>1/2 small red onion, thinly sliced</li>
-                <li>1/2 cup pitted kalamata olives</li>
-                <li>4 ounces feta, cubed</li>
-            </ul>
-            <h3>Tzatziki Dressing</h3>
-            <ul>
-                <li>1 cup Greek yogurt</li>
-                <li>5 tablespoons buttermilk</li>
-                <li>2 tablespoons chopped fresh dill</li>
-                <lil>2 tablespoons freshly squeezed lemon juice</lil>
-                <li>2 teaspoons lemon zest</li>
-                <li>1 clove garlic, minced</li>
-                <li>Kosher salt and freshly ground black pepper</li>
-            </ul>
-            <h2>Instructions</h2>
-            <ol>
-                <li>In a medium bowl, whisk together Greek yogurt, buttermilk, dill, lemon juice, lemon zest and garlic; season with salt and pepper, to taste; set aside.</li>
-                <li>In a small bowl, combine oregano, basil, thyme, paprika, garlic powder, 1 teaspoon salt and 1/2 teaspoon pepper. Season chicken with oregano mixture.</li>
-                <li>Preheat grill to medium heat.</li>
-                <li>Add chicken to grill, and cook, turning occasionally, until chicken is completely cooked through, reaching an internal temperature of 165 degrees F, about 10 minutes.</li>
-                <li>To assemble the salad, place romaine lettuce in a large bowl; top with chicken, cucumber, tomatoes, avocado, onion, olives and feta. Pour the tzatziki dressing on top of the salad and gently toss to combine.</li>
-            </ol>
-         -->
-
-    <h2>Ingredients</h2>
-    <ul>
-        <li>2 teaspoons dried oregano</li>
-        <li>2 teaspoons dried basil</li>
-        <li>1 teaspoon dried thyme</li>
-        <li>1 teaspoon paprika</li>
-        <li>1 teaspoon garlic powder</li>
-        <li>Kosher salt and freshly ground black pepper</li>
-        <li>2 pounds boneless, skinless chicken thighs</li>
-        <li>1 head romaine, roughly chopped</li>
-        <li>1 cup diced cucumber</li>
-        <li>1 cup halved cherry tomatoes</li>
-        <li>1 avocado, halved, seeded, peeled and sliced</li>
-        <li>1/2 small red onion, thinly sliced</li>
-        <li>1/2 cup pitted kalamata olives</li>
-        <li>4 ounces feta, cubed</li>
-    </ul>
-    <h3>Tzatziki Dressing</h3>
-    <ul>
-        <li>1 cup Greek yogurt</li>
-        <li>5 tablespoons buttermilk</li>
-        <li>2 tablespoons chopped fresh dill</li>
-        <lil>2 tablespoons freshly squeezed lemon juice</lil>
-        <li>2 teaspoons lemon zest</li>
-        <li>1 clove garlic, minced</li>
-        <li>Kosher salt and freshly ground black pepper</li>
-    </ul>
+        <h2>Ingredients</h2>
+        <ul>
+            <li class="ingredient">2 teaspoons dried oregano</li>
+            <li class="ingredient">2 teaspoons dried basil</li>
+            <li class="ingredient">1 teaspoon dried thyme</li>
+            <li class="ingredient">1 teaspoon paprika</li>
+            <li class="ingredient">1 teaspoon garlic powder</li>
+            <li class="ingredient">1 dash Kosher salt and freshly ground black pepper</li>
+            <li class="ingredient">2 pounds boneless, skinless chicken thighs</li>
+            <li class="ingredient">1 head romaine, roughly chopped</li>
+            <li class="ingredient">1 cup diced cucumber</li>
+            <li class="ingredient">1 cup halved cherry tomatoes</li>
+            <li class="ingredient">1 avocado, halved, seeded, peeled and sliced</li>
+            <li class="ingredient">0.5 small red onion, thinly sliced</li>
+            <li class="ingredient">0.5 cup pitted kalamata olives</li>
+            <li class="ingredient">4 ounces feta, cubed</li>
+        </ul>
+        <h3>Tzatziki Dressing</h3>
+        <ul>
+            <li class="ingredient">1 cup Greek yogurt</li>
+            <li class="ingredient">5 tablespoons buttermilk</li>
+            <li class="ingredient">2 tablespoons chopped fresh dill</li>
+            <li class="ingredient">2 tablespoons freshly squeezed lemon juice</lil>
+            <li class="ingredient">2 teaspoons lemon zest</li>
+            <li class="ingredient">1 clove garlic, minced</li>
+            <li class="ingredient">1 dash Kosher salt and freshly ground black pepper</li>
+        </ul>
     </div>
     <div class = instructions>
-    <h2>Instructions</h2>
-    <ol>
-        <li>In a medium bowl, whisk together Greek yogurt, buttermilk, dill, lemon juice, lemon zest and garlic; season with salt and pepper, to taste; set aside.</li>
-        <li>In a small bowl, combine oregano, basil, thyme, paprika, garlic powder, 1 teaspoon salt and 1/2 teaspoon pepper. Season chicken with oregano mixture.</li>
-        <li>Preheat grill to medium heat.</li>
-        <li>Add chicken to grill, and cook, turning occasionally, until chicken is completely cooked through, reaching an internal temperature of 165 degrees F, about 10 minutes.</li>
-        <li>To assemble the salad, place romaine lettuce in a large bowl; top with chicken, cucumber, tomatoes, avocado, onion, olives and feta. Pour the tzatziki dressing on top of the salad and gently toss to combine.</li>
-    </ol>
-</div>
-</div>
+        <h2>Instructions</h2>
+        <ol>
+            <li>In a medium bowl, whisk together Greek yogurt, buttermilk, dill, lemon juice, lemon zest and garlic; season with salt and pepper, to taste; set aside.</li>
+            <li>In a small bowl, combine oregano, basil, thyme, paprika, garlic powder, 1 teaspoon salt and 1/2 teaspoon pepper. Season chicken with oregano mixture.</li>
+            <li>Preheat grill to medium heat.</li>
+            <li>Add chicken to grill, and cook, turning occasionally, until chicken is completely cooked through, reaching an internal temperature of 165 degrees F, about 10 minutes.</li>
+            <li>To assemble the salad, place romaine lettuce in a large bowl; top with chicken, cucumber, tomatoes, avocado, onion, olives and feta. Pour the tzatziki dressing on top of the salad and gently toss to combine.</li>
+        </ol>
+    </div>
+    </div>
+<script src="serving.js"></script>
 </body>
 </html>

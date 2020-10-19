@@ -33,6 +33,7 @@ main {
 
 .overview, .intro {
     display: flex;
+    justify-content: center;
     margin-left: 4%;
     margin-right: 4%;
     margin-top: 4%;
@@ -50,9 +51,9 @@ main {
     justify-content: center;
 }
 
-.recipe-page {
-    width:300px;
-    height: auto;
+.recipe-image {
+    height: 275px;
+    width: 275px;
 }
 
 .recipe {
@@ -76,7 +77,6 @@ main {
 }
 
 a {
-    text-decoration: none;
     color: #ffffff;
 }
 
@@ -92,4 +92,35 @@ h2 {
 ul, ol {
     display: inline-block;
     text-align:left;
+}
+
+.serving-info {
+    all: unset;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.serving-adjust {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#minus, #plus {
+    background-color: #484848;
+    color: white;
+    border: none;
+    height: 38px;
+    width: 38px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    border: none;
 }

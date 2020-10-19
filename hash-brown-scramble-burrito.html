@@ -21,12 +21,19 @@
     <h1>Hash Brown Scramble Burrito</h1>
     <p>
         Courtesy of the chef, this Chick-Fil-A breakfast item is now vailable on Sundays, in your kitchen of course, without the baggage 
-        associated with supporting an organization whose charitable contribution have raised ethical concerns in the past. It is rumored 
-        that the effects of this burrito vary significantly from individual to individual; proceed with caution.
+        associated with supporting an organization whose charitable contribution have raised ethical concerns in the past.
     </p>
+    <div class="serving-info">
+    <div class="serving-adjust">
+        <div><h3>Servings</h3></div>
+        <div><button id="minus">-</button></div>
+        <div><span id="count">4</span></div>
+        <div><button id="plus">+</button></div>
+    </div>
+    </div>
     </div>
     <div class="overview-image">
-    <img class="recipe-page" src="images/hash-brown-scramble-burrito.jpg">
+    <img class="recipe-image" src="images/hash-brown-scramble-burrito.jpg">
     </div>
     </div>
     <div class="recipe">
@@ -34,39 +41,39 @@
     <h2>Ingredients</h2>
     <h3>Hash Browns</h3>
     <ul>
-        <li>1 (16 ounce) bag tater tots</li>
+        <li class="ingredient">1 (16 ounce) bag tater tots</li>
     </ul>
     <h3>Fried Chicken</h3>
     <ul>
-        <li>6 cups peanut oil, for frying</li>
+        <li class="ingredient">6 cups peanut oil, for frying</li>
     </ul>
     <h3>Wet Mixture for Chicken</h3>
     <ul>
-        <li>1/2 cup pickle juice</li>
-        <li>1/2 cup whole milk</li>
-        <li>1/2 teaspoon garlic powder</li>
-        <li>1/2 teaspoon onion powder</li>
-        <li>1 3/4 lbs chicken tenderloins, about 16 pieces</li>
-        <li>1 large egg</li>
+        <li class="ingredient">0.5 cup pickle juice</li>
+        <li class="ingredient">0.5 cup whole milk</li>
+        <li class="ingredient">0.5 teaspoon garlic powder</li>
+        <li class="ingredient">0.5 teaspoon onion powder</li>
+        <li class="ingredient">1.75 lbs chicken tenderloins, about 16 pieces</li>
+        <li class="ingredient">1 large egg</li>
     </ul>
     <h3>Dry Mixture for Chicken</h3>
     <ul>
-        <li>3 cups all-purpose flour</li>
-        <li>1/4 cup powdered sugar</li>
-        <li>2 tablespoons baking powder</li>
-        <li>1 teaspoon kosher salt</li>
-        <li>1 tablespoon paprika</li>
-        <li>2 teaspoons chili powder</li>
+        <li class="ingredient">3 cups all-purpose flour</li>
+        <li class="ingredient">0.25 cup powdered sugar</li>
+        <li class="ingredient">2 tablespoons baking powder</li>
+        <li class="ingredient">1 teaspoon kosher salt</li>
+        <li class="ingredient">1 tablespoon paprika</li>
+        <li class="ingredient">2 teaspoons chili powder</li>
     </ul>
     <h3>Scrambled Eggs</h3>
     <ul>
-        <li>1 (8 ounce) cooking spray, such as Pam</li>
-        <li>8 large eggs</li>
-        <li>1/4 cup whole milk</li>
-        <li>1 cup monterey jack and cheddar cheese blend, shredded</li>
-        <li>1/8 teaspoon kosher salt</li>
-        <li>4 flour tortillas, 10-inch</li>
-        <li>1 (8 ounce) jar salsa, jalepeno preferred</li>
+        <li class="ingredient">1 (8 ounce) cooking spray, such as Pam</li>
+        <li class="ingredient">8 large eggs</li>
+        <li class="ingredient">0.25 cup whole milk</li>
+        <li class="ingredient">1 cup monterey jack and cheddar cheese blend, shredded</li>
+        <li class="ingredient">0.13 teaspoon kosher salt</li>
+        <li class="ingredient">4 flour tortillas, 10-inch</li>
+        <li class="ingredient">1 (8 ounce) jar salsa, jalepeno preferred</li>
     </ul>
     </div>
     <div class = instructions>
@@ -95,4 +102,5 @@
 </div>
 </div>
 </body>
+<script src="serving.js"></script>
 </html>
