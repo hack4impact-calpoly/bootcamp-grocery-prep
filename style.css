@@ -140,6 +140,11 @@
 	border-radius: 16px !important;
 	margin-bottom: 20
 }
+.fa-meh
+{
+	font-size: 15px;
+	transform: translateY(-4.1px);
+}
 /*---------Explore---------*/
 #explore
 {
@@ -357,6 +362,93 @@ h1::after
 	font-weight: bold;
 	margin-top: 15px;
 }
+.food
+{
+	text-align: center;
+}
+.food button
+{
+	margin-top: 5px;
+	margin-bottom: 20px;
+	background-color: #000;
+
+}
+.food a
+{
+	background-color: #000;
+}
+.food .serv-text
+{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.food .skills-bar
+{
+	transform: translateX(50%);
+}
+.food img
+{
+	border: 10px solid #000;
+	-webkit-filter: grayscale(0%);
+	-webkit-transition: 0.5s ease-in-out;
+	box-shadow: 15px 15px 5px #ddd;
+
+}
+.food .rate
+{
+	font-size: 25px;
+	margin-top: 20px;
+}
+.food .checked
+{
+	color: orange;
+}
+.rate
+{
+	direction: rtl;
+}
+.rate span:hover{
+	transition: 0.4s;
+	color: orange;
+	animation: bounce 1.5s infinite;
+   	-webkit-animation: bounce 1.5s infinite;
+   	-moz-animation: bounce 1.5s infinite;
+}
+
+@-webkit-keyframes bounce {
+    0%,  
+    100% {
+       -webkit-transform: translateY(0);
+    } 
+    50% {
+        -webkit-transform: translateY(-5px);
+    }
+}
+@-moz-keyframes bounce {
+    0%, 
+    100% {
+       -moz-transform: translateY(0);
+    }
+    50% {
+       -moz-transform: translateY(-5px);
+    }
+}
+@keyframes bounce {
+    0%,  
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+.rate :hover ~ span{
+	transition: 0.4s;
+	color: orange;
+	margin-bottom: 10px;
+}
+
+
 #team .fa
 {
 	height: 25px;
