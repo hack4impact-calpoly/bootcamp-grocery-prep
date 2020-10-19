@@ -5,6 +5,7 @@
     <title>Breakfast Sandwich</title>
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="./recipies.css">
+    <script type="text/javascript" src="recipies.js" async></script>
   </head>
   <body>
     <header>
@@ -20,21 +21,32 @@
       <h1>Breakfast Sandwich</h1>
       <div>
         <img src="../images/breakfast-sandwich.jpg">
-        <p>A yummy way to start the day.</p>
+        <div id='intro'>
+          <p>A yummy way to start the day.</p>
+          <div id="serving-counter">
+            <button id="sub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/></svg>
+            </button>
+            <span id="num-servings">1</span>
+            <button id="add">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
+            </button>
+          </div>
+        </div>
       </div>
       
   
       <h2>Ingredients</h2>
       <ul>
-        <li>English Muffins</li>
-        <li>2 Egg</li>
-        <li>Sausage Patty</li>
-        <li>Cheese</li>
+        <li><span class="ingredient">1</span> English Muffin</li>
+        <li><span class="ingredient">2</span> Eggs</li>
+        <li><span class="ingredient">1</span> Sausage Patty</li>
+        <li><span class="ingredient">1</span> Slice of Cheese</li>
       </ul>
       
       <h2>Instructions</h2>
       <ol>
-        <li>Beat eggs until blended</li>
+        <li>Wisk eggs until blended</li>
         <li>Cook Eggs in skillet for 2 minutes</li>
         <li>Cook Sausage for 4 minutes, adding cheese after flipping</li>
         <li>Toast english muffins and assemble</li>

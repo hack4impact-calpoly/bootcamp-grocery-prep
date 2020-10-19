@@ -5,6 +5,7 @@
     <title>Cuban Sandwich</title>
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="./recipies.css">
+    <script type="text/javascript" src="recipies.js" async></script>
   </head>
   <body>
     <header>
@@ -20,26 +21,37 @@
       <h1>Cuban Sandwich</h1>
       <div>
         <img src="../images/cubano-roast-pork-sandwich.jpg">
-        <p>This sanwich is full of flavir and easy to make</p>
+        <div id='intro'>
+          <p>This sandwich is full of flavor and easy to make</p>
+          <div id="serving-counter">
+            <button id="sub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/></svg>
+            </button>
+            <span id="num-servings">1</span>
+            <button id="add">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
+            </button>
+          </div>
+        </div>
       </div>
       
   
       <h2>Ingredients</h2>
       <ul>
-        <li>Bread</li>
-        <li>Deli Sliced Ham</li>
-        <li>Pulled Pork</li>
-        <li>Swiss Cheese</li>
-        <li>Pickles</li>
-        <li>Musturd</li>
-        <li>Butter</li>
+        <li><span class="ingredient">2</span> Slices of Bread</li>
+        <li><span class="ingredient">2</span> Slices of Deli Sliced Ham</li>
+        <li><span class="ingredient">0.25</span> Pound of Pulled Pork</li>
+        <li><span class="ingredient">1</span> Slice of Swiss Cheese</li>
+        <li><span class="ingredient">3</span> Pickles</li>
+        <li><span class="ingredient">1</span> Tsp Musturd</li>
+        <li><span class="ingredient">0.1</span> Stick of Butter</li>
       </ul>
       
       <h2>Instructions</h2>
       <ol>
         <li>Butter bread.</li>
         <li>Assemble ingredients on sandwich.</li>
-        <li>Toast sandwich in panini press.</li>
+        <li>Toast sandwich in panini press for 3 minutes.</li>
       </ol>
     </main>
 

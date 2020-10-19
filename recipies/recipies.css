@@ -1,0 +1,27 @@
+#intro {
+    flex-direction: column;
+}
+
+#serving-counter {
+    align-items: center;
+}
+
+#num-servings {
+    padding: 0 20px;
+    font-size: 30px;
+    font-family: monospace;
+}
+
+svg {
+    pointer-events: none;
+}
+
+button:hover {
+    fill: var(--emphasis);
+}
+
+button {
+    background: transparent;
+    border: none;
+    outline: none;
+}
