@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 
-<!DOCTYPE html>
-
 <header>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -12,8 +10,8 @@
         <h1 id="webTitle">Grocery Prep</h1>
         <div class=navItems>
             <nav class="nav">
-                <a class="nav-link active" href="file:///Users/carterselman/Desktop/H4I_website/index.html" style="margin-right: 40px">Home</a>
-                <a class="nav-link" href="file:///Users/carterselman/Desktop/H4I_website/about.html">About</a>
+                <a class="nav-link active" href="index.html" style="margin-right: 40px">Home</a>
+                <a class="nav-link" href="about.html">About</a>
             </nav>
         </div>
     </div>
@@ -33,45 +31,50 @@
                 <h3>
                     Cook: 15 mins
                 </h3>
-                <h3>
-                    Servings: 4
-                </h3>
+                <h3>Servings:</h3>
+                <div style="display: inline-flex; justify-content: space-between;">
+                    <button onClick="changePortionsMinus()">-</button>
+                    <h3 id = "portion" style="padding-left: 10px; padding-right: 10px;">
+                        4
+                    </h3>
+                    <button onClick="changePortionsPlus()">+</button>
+                </div>
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container" style="margin-bottom: 40px;">
         <div class="row">
             <div class="col-4">
                 <div class="borderItem" style="position: absolute; left: 0%; margin-top: 10px; padding-top: 10px; padding-right: 5px;">
-                    <ol>
-                        ¾ teaspoon dried rosemary
+                    <ol><span class="num">0.75</span>
+                        teaspoon dried rosemary
                     </ol>
-                    <ol>
-                        ¼ teaspoon dried basil
+                    <ol><span class="num">0.25</span>
+                        teaspoon dried basil
                     </ol>
-                    <ol> 
-                        ½ teaspoon dried thyme
+                    <ol><span class="num">0.5</span>
+                        teaspoon dried thyme
                     </ol>
                     <ol>
                         salt and pepper to taste
                     </ol>
-                    <ol>
-                        4 raw chop with refuse, 120 g; (blank) 4.225 ounces lamb chops (3/4 inch thick)
+                    <ol><span class="num">4</span>
+                        raw chop with refuse, 120 g; (blank) 4.225 ounces lamb chops (3/4 inch thick)
                     </ol>
-                    <ol>
-                        1 tablespoon olive oil
+                    <ol><span class="num">1</span>
+                        tablespoon olive oil
                     </ol>
-                    <ol>
-                        ¼ cup minced shallots
+                    <ol><span class="num">0.25</span>
+                        cup minced shallots
                     </ol>
-                    <ol>
-                        ⅓ cup aged balsamic vinegar
+                    <ol><span class="num">0.25</span>
+                        cup aged balsamic vinegar
                     </ol>
-                    <ol>
-                        ¾ cup chicken broth
+                    <ol><span class="num">0.75</span>
+                        cup chicken broth
                     </ol>
-                    <ol>
-                        1 tablespoon butter
+                    <ol><span class="num">1</span>
+                        tablespoon butter
                     </ol>
                 </div>
             </div>
@@ -99,5 +102,39 @@
             </div>
         </div>
     </div>
+
+    <script>
+        const baseServe = 4;
+        const ingredNums = [0.75, 0.25, 0.5, 4, 1, 0.25, 0.25, 0.75, 1];
+
+        function changePortionsPlus(){
+            getPortion = parseInt(document.getElementById("portion").innerText)
+            document.getElementById("portion").innerHTML = getPortion + 1;
+
+            listNums = document.getElementsByClassName("num");
+            for (i = 0; i < listNums.length; i++){
+                getNum = parseInt(listNums[i].innerText);
+                getMultiplier = Math.floor((getPortion + 1) / baseServe);
+                if (getMultiplier !== 0){
+                    listNums[i].innerHTML = ingredNums[i] * getMultiplier;
+                }
+            }
+        }
+
+        function changePortionsMinus(){
+            getPortion = parseInt(document.getElementById("portion").innerText)
+            if (getPortion > 1){
+                document.getElementById("portion").innerHTML = getPortion - 1;
+
+                listNums = document.getElementsByClassName("num");
+                for (i = 0; i < listNums.length; i++){
+                    getNum = parseInt(listNums[i].innerText);
+                    getMultiplier = Math.ceil((getPortion - 1) / baseServe);
+                    listNums[i].innerHTML = ingredNums[i] * getMultiplier;
+                }
+            }
+        }
+
+    </script>
 
 </body>
