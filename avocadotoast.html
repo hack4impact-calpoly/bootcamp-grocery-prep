@@ -17,14 +17,20 @@
         <div class="showcase">
             <div class="desc">
                 <p>Embrace your inner millienal with this quirky recipe</p>
+                <div class= "servings">
+                    <h3>Servings</h3>
+                    <button id ="sub">-</button>
+                    <span id= "count">1</span>
+                    <button id ="add">+</button>
+                </div>
             </div>
             <img src="https://ibakeheshoots.com/wp-content/uploads/2014/08/avocado-1.jpg" height="250">
         </div>
         <h2>Ingredients</h2>
         <ul>
-            <li>2 slices of bread</li>
-            <li>1 avocado</li>
-            <li>1 tbsp of pepper</li>
+            <li><span class="amount" base="2">2</span> slices of bread</li>
+            <li><span class="amount" base="1">1</span> avocado</li>
+            <li><span class="amount" base="1">1</span> tbsp of pepper</li>
         </ul>
         <h2>Instructions</h2>
         <ol>
@@ -33,5 +39,6 @@
             <li>Add pepper</li>
         </ol>
     </main>
+    <script src="recipecounter.js"></script>
 </body>
 </html>

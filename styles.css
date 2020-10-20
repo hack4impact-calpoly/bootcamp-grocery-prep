@@ -5,22 +5,19 @@ body
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header
-{
+header{
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    background-color: B2967D;
+    background-color: B28F7D;
     color: black;
     padding: 0 20px;
 }
-header h1
-{
+header h1{
     color: white;
 }
-header a
-{
+header a{
     color: ECF8F8;
     margin: 0 12px;
 }
@@ -30,32 +27,26 @@ main
     padding: 15px 20% 40px;
 }
 
-h1
-{
+h1{
     color:rgb(100, 76, 76);
 }
-h2
-{
+h2{
     background-color: EEE4E1;
     padding: 4px 8px;
 }
 
-.showcase
-{
+.showcase{
     display: flex;
     justify-content: space-between;
 }
-.showcase > .recipe
-{
+.showcase > .recipe{
     margin: 30px 6%;
     justify-content: space-between;
 }
-.showcase > .links
-{
+.showcase > .links{
     margin: 30px 6%;
 }
-.showcase > .desc
-{
+.showcase > .desc{
     padding-right: 4px;
 } 
 
@@ -70,5 +61,27 @@ h2
 {
     color: gray;
     line-height: 30px;
+}
+
+/*for button*/
+.servings {
+    justify-content: left;
+	padding-bottom: 13px;
+}
+.servings > button 
+{
+    background-color: #DDA892;
+    color: white;
+    border: none;
+    
+    width: 30px;
+    height: 20px;
+    font-size: 15px;
+    padding: 2px 10px;
+}
+
+#count {
+    font-size: 20px;
+    margin: 5px 5px;
 }
     
