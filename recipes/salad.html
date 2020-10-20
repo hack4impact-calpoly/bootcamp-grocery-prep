@@ -11,6 +11,7 @@
 		<header id="topbar">
 			<div id = "name">Yummy Food</div>
 			<a class="link" id= "homepage" href="../index.html">Home</a>
+			<a class="link" id="random" href="../random.html">Surprise Recipe</a>
 			<a class="link" id="projects" href="../aboutme.html">About the Chef</a>
 		</header>
 		<main>
@@ -18,13 +19,16 @@
 				<h1 class="recipe-title">Salad</h1>
 				<h4 class="recipe-description">A quick and easy healthy snack</h4>
 				<img class="recipe-image" src="../images/salad.jpeg" alt="salad image" />
+				<div class = "servings">
+					<h2>Servings:</h2><button id="decrease">-</button><div id="serving-size">1</div><button id="increase">+</button>
+				</div>
 				<div class = "ingredients">
                     <h3>Ingredients</h3>
                     <ul>
-                        <li>Romaine Lettuce</li>
-                        <li>Balsamic Vinegar</li>
-                        <li>Walnuts</li>
-                        <li>Parmesian Cheese</li>
+                        <li><span id="i1">0</span> cup Romaine Lettuce</li>
+                        <li><span id="i2">0</span> tablespoon Balsamic Vinegar</li>
+                        <li><span id="i3">0</span> tablespoons walnuts</li>
+                        <li><span id="i4">0</span> tablespoons parmesian cheese</li>
                     </ul>
 				</div>
 				<div class = "instructions">
@@ -38,5 +42,15 @@
                     </ol>
 				</div>
 			</div>
+			<script>
+				let size = 1;
+				let ingredients = {
+					1: 1,
+					2: 1,
+					3: 2,
+					4: 2
+				};
+			</script>
+			<script src="../update-recipe.js"></script>
 	</body>
 </html>

@@ -11,6 +11,7 @@
 		<header id="topbar">
 			<div id = "name">Yummy Food</div>
 			<a class="link" id= "homepage" href="../index.html">Home</a>
+			<a class="link" id="random" href="../random.html">Surprise Recipe</a>
 			<a class="link" id="projects" href="../aboutme.html">About the Chef</a>
 		</header>
 		<main>
@@ -18,17 +19,20 @@
 				<h1 class="recipe-title">Breakfast Burrito</h1>
 				<h4 class="recipe-description">Literally the best breakfast food ever invented. You will be making this nonstop for days!</h4>
 				<img class="recipe-image" src="../images/breakfast-burrito.jpg" alt="breakfast burrito image" />
+				<div class = "servings">
+					<h2>Servings:</h2><button id="decrease">-</button><div id="serving-size">2</div><button id="increase">+</button>
+				</div>
 				<div class = "ingredients">
                     <h3>Ingredients</h3>
                     <ul>
-                        <li>Tortilla</li>
-                        <li>2 eggs</li>
-                        <li>Hash browns (1/2 cup)</li>
-						<li>3 strips of bacon</li>
-						<li>Salt</li>
-						<li>Pepper</li>
-						<li>Vegetable Oil</li>
-						<li>Shredded Cheese (multi-cheese blend is recommended)</li>
+                        <li><span id="i1">0</span> tortilla</li>
+                        <li><span id="i2">0</span> eggs</li>
+                        <li><span id="i3">0</span> cup Hash browns</li>
+						<li><span id="i4">0</span> strips of bacon</li>
+						<li><span id="i5">0</span> teaspoon salt</li>
+						<li><span id="i6">0</span> teaspoon pepper</li>
+						<li><span id="i7">0</span> tablespoon Vegetable Oil</li>
+						<li><span id="i8">0</span> tablespoons shredded csheese (multi-cheese blend is recommended)</li>
                     </ul>
 				</div>
 				<div class = "instructions">
@@ -48,5 +52,19 @@
                     </ol>
 				</div>
 			</div>
+			<script>
+				let size = 2;
+				let ingredients = {
+					1: 2,
+					2: 4,
+					3: 1,
+					4: 6,
+					5: 1,
+					6: 1/2,
+					7: 2,
+					8: 6
+				};
+			</script>
+			<script src="../update-recipe.js"></script>
 	</body>
 </html>

@@ -2,7 +2,6 @@ body {
 	margin: 0px;
 	height:100vh;
 	background-color: #FCE0DA;
-	background-image: url("background2.jpg");
 	background-size: cover;
 	color: black;
 }
@@ -96,7 +95,7 @@ a:hover{ -webkit-transform: scale(1.2); }
 	margin: 7px 7px 0px;
 }
 
-button {
+.content button {
 	border:  1px;
 	border-style: solid;
 	border-color: grey;
@@ -110,7 +109,7 @@ button {
 	margin: 20px 0;
 }
 
-button:hover {
+.content button:hover {
 	transform: scale(1.1);
 	text-decoration: underline;
 	color: black;

@@ -11,6 +11,7 @@
 		<header id="topbar">
 			<div id = "name">Yummy Food</div>
 			<a class="link" id= "homepage" href="../index.html">Home</a>
+			<a class="link" id="random" href="../random.html">Surprise Recipe</a>
 			<a class="link" id="projects" href="../aboutme.html">About the Chef</a>
 		</header>
 		<main>
@@ -18,12 +19,15 @@
 				<h1 class="recipe-title">Pizza</h1>
 				<h4 class="recipe-description">Make your own version of this classic dish that will rival any pizza palor</h4>
 				<img class="recipe-image" src="../images/pizza.jpeg" alt="pizza image" />
+				<div class = "servings">
+					<h2>Servings:</h2><button id="decrease">-</button><div id="serving-size">1</div><button id="increase">+</button>
+				</div>
 				<div class = "ingredients">
                     <h3>Intredients</h3>
                     <ul>
-                        <li>Pizza Dough from Trader Joes</li>
-                        <li>Tomato Sauce</li>
-                        <li>Cheese (mozzarella recommended)</li>
+                        <li><span id="i1">0</span> Pizza Dough from Trader Joes</li>
+                        <li><span id="i2">0</span> cup tomato sauce</li>
+                        <li><span id="i3">0</span> cup cheese (mozzarella recommended)</li>
                         <li>Toppings of choice (fresh basil recommended)</li>
                     </ul>
 				</div>
@@ -39,5 +43,14 @@
                     </ol>
 				</div>
 			</div>
+			<script>
+				let size = 3;
+				let ingredients = {
+					1: 1,
+					2: 1/4,
+					3: 1/2
+				};
+			</script>
+			<script src="../update-recipe.js"></script>
 	</body>
 </html>

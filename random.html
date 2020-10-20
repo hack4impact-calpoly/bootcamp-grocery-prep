@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Chef Emily Gavrilenko</title>
+		<link rel="stylesheet" type= "text/css" href="index.css">
+        <link rel="stylesheet" type= "text/css" href="recipe.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+
+	<body>
+		<header id="topbar">
+			<div id = "name">Yummy Food</div>
+			<a class="link" id= "homepage" href="index.html">Home</a>
+			<a class="link" id="random" href="random.html">Surprise Recipe</a>
+			<a class="link" id="projects" href="aboutme.html">About the Chef</a>
+		</header>
+		<main>
+			<div class="recipe-page">
+				<div class="recipe-topbar"><h1 class="recipe-title" id="title">Salmon</h1><div id="rating-display">1 </div><div class="fa fa-star checked" id="star"></div></div>
+				<h4 class="recipe-description" id="description">Get transported to the streams of Alaska with this fresh and juicy recipe</h4>
+				<img class="recipe-image" id="image" alt="food image" />
+				<div class = "servings">
+					<h2>Servings:</h2><button id="decrease">-</button><div id="serving-size">4</div><button id="increase">+</button>
+                </div>
+                <span class = "ratings">
+                    <h2>Rate Me:</h2>
+                    <select name="Ratings" id="rate-me">
+                        <option value="none" selected disabled hidden>Select Rating</option> 
+                        <option value="1">1 </option>
+                        <option value="2">2 </option>
+                        <option value="3">3 </option>
+                        <option value="4">4 </option>
+                        <option value="5">5 </option>
+                    </select>
+                    <button id="submit-rating">Submit</button>
+				</span>
+				<div class = "ingredients">
+                    <h3>Ingredients</h3>
+                    <ul id="ingredients">
+                    </ul>
+				</div>
+				<div class = "instructions">
+					<h3>Instructions</h3>
+					<ol id="instructions"> 
+                    </ol>
+				</div>
+			</div>
+            <script src="update-random-recipe.js"></script>
+	</body>
+</html>

@@ -11,6 +11,7 @@
 		<header id="topbar">
 			<div id = "name">Yummy Food</div>
 			<a class="link" id= "homepage" href="../index.html">Home</a>
+			<a class="link" id="random" href="../random.html">Surprise Recipe</a>
 			<a class="link" id="projects" href="../aboutme.html">About the Chef</a>
 		</header>
 		<main>
@@ -18,11 +19,14 @@
 				<h1 class="recipe-title">Cheerios</h1>
 				<h4 class="recipe-description">It may be basic, but Cheerios are a tried and true way to start any morning with a satisfied stomach</h4>
 				<img class="recipe-image" src="../images/cheerios.jpg" alt="cheerios image" />
+				<div class = "servings">
+					<h2>Servings:</h2><button id="decrease">-</button><div id="serving-size">2</div><button id="increase">+</button>
+				</div>
 				<div class = "ingredients">
                     <h3>Ingredients</h3>
                     <ul>
-                        <li>Milk</li>
-                        <li>Honey Cheerios</li>
+                        <li><span id="i1">0</span> cup milk</li>
+                        <li><span id="i2">0</span> cup Honey Cheerios</li>
                     </ul>
 				</div>
 				<div class = "instructions">
@@ -34,5 +38,13 @@
                     </ol>
 				</div>
 			</div>
+			<script>
+				let size = 2;
+				let ingredients = {
+					1: 1,
+					2: 1
+				};
+			</script>
+			<script src="../update-recipe.js"></script>
 	</body>
 </html>

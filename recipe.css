@@ -9,7 +9,7 @@
     margin: 7px 0px;
 }
 
-.recipe-page h3 {
+.instructions h3, .ingredients h3 {
     background-color: #EEEDED;
     padding: 5px;
 }
@@ -34,3 +34,58 @@
     width: 600px;
 }
 
+.servings{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.servings h2, .ratings h2{
+    margin-right: 20px;
+}
+
+.servings button{
+    height: 25px;
+    width: 30px;
+    margin: 5px;
+    background-color: purple;
+    color: white;
+    border: none;
+}
+
+#serving-size, #rating-display {
+    font-size: 20px;
+}
+
+.ratings {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+#submit-rating {
+    margin-left: 10px;
+}
+
+.recipe-topbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+#rating-display, #star {
+    margin: 0px 0px 20px;
+    padding-top: 40px;
+    margin-left: 50px;
+}
+
+#star {
+    padding-top: 38px;
+    margin-left: 5px;
+}
