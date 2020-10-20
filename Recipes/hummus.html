@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>hummus</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla&display=swap" rel="stylesheet">
+    <script type="text/javascript"> src="index.js"</script>
+  </head>
+  <body>
+    <header>
+      <h1>Grocery Prep</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About the Chef</a>
+      </nav>
+      </header>
+    <main>
+    <h1>Hummus</h1>
+
+    <div class="flexbox">
+
+      <div class="item1">
+      <p>A simple, easy, and healthy snack that can be paired with chips or veggies!</p>
+      </div>
+
+      <div class="item2">
+      <b>
+        Servings<br/>
+      </b>
+        <button id = "sub">-</button>
+        <span id = "count">0</span>
+        <button id = "add">+</button>
+      </div>
+
+    <div class="item3">
+      <img src="/Users/mandyko/Desktop/Hack4Impact_GroceryPrep/bootcamp-grocery-prep/Images/hummus.jpeg" alt="Hummus" style="float:right">
+    </div>
+
+  </div>
+
+    <h2>Ingredients</h2>
+    <ul>
+      <li><span id = "chickpeas">1</span> can chickpeas</li>
+      <li><span id = "tahini">0.25</span> cup tahini</li>
+      <li><span id = "lemon">1</span> lemon</li>
+      <li><span id = "garlic">1</span> garlic clove</li>
+      <li><span id = "oliveoil">2</span> tablespoons extra-virgin olive oil</li>
+      <li><span id = "salt">0.5</span> teaspoon of salt</li>
+      <li><span id = "water">2</span> tablespoons of water</li>
+    </ul>
+    <h2>Instructions</h2>
+    <ol>
+      <li>Drain and rinse chickpeas</li>
+      <li>Add chickpeas, tahini, olive oil, minced garlic, salt, and lemon juice to food processor</li>
+      <li>Process until you have reached desired consistency</li>
+      <li>Enjoy with chips or veggies!</li>
+    </ol>
+    <script>
+    const count = document.getElementById('count')
+    const chickpeas = document.getElementById('chickpeas')
+    const tahini = document.getElementById('tahini')
+    const lemon = document.getElementById('lemon')
+    const garlic = document.getElementById('garlic')
+    const oliveoil = document.getElementById('oliveoil')
+    const salt = document.getElementById('salt')
+    const water = document.getElementById('water')
+
+    document.addEventListener('click', event => {
+      if (event.target.id === 'sub') updateCount(-1)
+      if (event.target.id === 'add') updateCount(1)
+    })
+
+    const updateCount = dir => {
+      count.innerText = +(count.innerText) + dir
+      chickpeas.innerText = count.innerText * 1
+      tahini.innerText = count.innerText * 0.25
+      lemon.innerText = count.innerText * 1
+      garlic.innerText = count.innerText * 1
+      oliveoil.innerText = count.innerText * 2
+      salt.innerText = count.innerText * 0.5
+      water.innerText = count.innerText * 2
+    }
+  </script>
+  </main>
+  </body>
+</html>

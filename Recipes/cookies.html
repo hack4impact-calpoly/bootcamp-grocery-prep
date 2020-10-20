@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>cookies</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Grocery Prep</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About the Chef</a>
+      </nav>
+      </header>
+    <main>
+    <h1>Chocolate Chip Cookies</h1>
+
+    <div class="flexbox">
+
+		<div class="item1">
+		<p>Simple and delicious dessert that will certainly satisfy your sweet tooth!</p>
+		</div>
+
+	    <div class="item2">
+        <b>
+          Servings<br/>
+        </b>
+          <button id = "sub">-</button>
+          <span id = "count">0</span>
+          <button id = "add">+</button>
+        </div>
+
+ 		<div class="item3">
+		  <img src="/Users/mandyko/Desktop/Hack4Impact_GroceryPrep/bootcamp-grocery-prep/Images/cookies.jpg" alt="Chocolate Chip Cookies" style="float:right">
+		</div>
+
+  </div>
+
+    <h2>Ingredients</h2>
+    <ul>
+      <li><span id = "butter">0.5</span> cup butter</li>
+      <li><span id = "sugar">0.5</span> cup granulated sugar</li>
+      <li><span id = "brownsugar">0.25</span> cup brown sugar</li>
+      <li><span id = "vanilla">2</span> teaspoons vanilla extract</li>
+      <li><span id = "eggs">1</span> egg</li>
+      <li><span id = "flour">1.75</span> cups all-purpose flour</li>
+      <li><span id = "bakingsoda">0.5</span> teasponn bakind soda</li>
+      <li><span id = "salt">0.5</span> teaspoon salt</li>
+      <li><span id = "chocolate">1</span> cup semisweet choclate chips</li>
+    </ul>
+    <h2>Instructions</h2>
+    <ol>
+      <li>Preheat oven to 350 F</li>
+      <li>Melt butter</li>
+      <li>In large bowl, mix butter with the sugars</li>
+      <li>Add flour, baking soda, and salt.</li>
+      <li>Mix dough until just combined</li>
+      <li>Stir in chocolate chips</li>
+      <li>Scoop out 1.5 tablespoons of dough and place 2 inches apart on baking sheet</li>
+      <li>Bake for 7-10 minutes or until cookies are set</li>
+    </ol>
+    <script>
+      const count = document.getElementById('count')
+      const butter = document.getElementById('butter')
+      const sugar = document.getElementById('sugar')
+      const brownsugar = document.getElementById('brownsugar')
+      const vanilla = document.getElementById('vanilla')
+      const eggs = document.getElementById('eggs')
+      const flour = document.getElementById('flour')
+      const bakingsoda = document.getElementById('bakingsoda')
+  const salt = document.getElementById('salt')
+  const chocolate = document.getElementById('chocolate')
+
+      document.addEventListener('click', event => {
+        if (event.target.id === 'sub') updateCount(-1)
+        if (event.target.id === 'add') updateCount(1)
+      })
+
+      const updateCount = dir => {
+        count.innerText = +(count.innerText) + dir
+        butter.innerText = count.innerText * 0.5
+        sugar.innerText = count.innerText * 0.5
+        brownsugar.innerText = count.innerText * 0.25
+        vanilla.innerText = count.innerText * 2
+        eggs.innerText = count.innerText * 1
+        flour.innerText = count.innerText * 1.75
+        bakingsoda.innerText = count.innerText * 0.5
+    salt.innerText = count.innerText * 0.5
+    chocolate.innerText = count.innerText * 1
+      }
+    </script>
+  </main>
+  </body>
+</html>

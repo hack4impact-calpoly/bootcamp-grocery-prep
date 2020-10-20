@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>grilled_cheese</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Grocery Prep</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About the Chef</a>
+      </nav>
+      </header>
+    <main>
+    <h1>Grilled Cheese</h1>
+
+    <div class="flexbox">
+
+    <div class="item1">
+      <p>An easy and delicious meal for days that you are too busy to cook</p>
+    </div>
+
+    <div class="item2">
+      <b>
+        Servings<br/>
+      </b>
+        <button id = "sub">-</button>
+        <span id = "count">0</span>
+        <button id = "add">+</button>
+    </div>
+
+    <div class="item3">
+      <img src="/Users/mandyko/Desktop/Hack4Impact_GroceryPrep/bootcamp-grocery-prep/Images/grilled_cheese.jpg" alt="Grilled Cheese" style="float:right">
+    </div>
+
+  </div>
+    <h2>Ingredients</h2>
+    <ul>
+      <li><span id = "bread">2</span> slices sourdough bread</li>
+      <li><span id = "butter">3</span> tablespoons butter</li>
+      <li><span id = "cheddar">1</span> cup shredded cheddar</li>
+    </ul>
+    <h2>Instructions</h2>
+    <ol>
+      <li>Spread 1 tablespoon butter on one side of each slice of bread</li>
+      <li>In a skillet over medium heat, melt one tablespoon of butter</li>
+      <li>Place the bread butter side down on the skillet and top each slice of bread with 1/2 cup of cheddar cheese</li>
+      <li>Cook until bread is golden and cheese is melted</li>
+      <li>Flip one slice of bread on top of the other</li>
+      <li>Enjoy!</li>
+    </ol>
+    <script>
+    const count = document.getElementById('count')
+    const bread = document.getElementById('bread')
+    const butter = document.getElementById('butter')
+    const cheddar = document.getElementById('cheddar')
+
+    document.addEventListener('click', event => {
+      if (event.target.id === 'sub') updateCount(-1)
+      if (event.target.id === 'add') updateCount(1)
+    })
+
+    const updateCount = dir => {
+      count.innerText = +(count.innerText) + dir
+      bread.innerText = count.innerText * 2
+      butter.innerText = count.innerText * 3
+      cheddar.innerText = count.innerText * 1
+    }
+  </script>
+  </main>
+  </body>
+</html>
