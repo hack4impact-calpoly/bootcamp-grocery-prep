@@ -8,24 +8,34 @@
    <nav>
       <a href="grocery.html">Home</a>
       <a href="about.html">About the Chef</a>
+      <a href="random.html">Random Recipe</a>
    </nav>
 </header>
 <main>
    <h1>Crepes</h1>
    <p> Whether your style is sweet or savory, crepes always make a fun and delicious breakfast!</p>
-   <img class="shift" id="recipeImage" src="./images/crepes.JPG" height="250">
-   <h1 class="box" id="meals">Ingredients</h1>
-   <ul>
-      <li>3/2 cups Flour</li>
+   <h2 class="boxAbout">Servings</h2>
+
+<body>
+    <div class="holder">
+      <button id="sub">-</button>
+      <span id="count">5</span>
+      <button id="add">+</button>
+   </div>
+
+   <img class="shiftRecipe" src="./images/crepes.JPG" height="250">
+   <h1 class="boxMeals">Ingredients</h1>
+   <ul id='ingredients'>
+      <li>1.5 cups Flour</li>
       <li>1 tbs Sugar</li>
-      <li>1/2 tps Baking Powder</li>
-      <li>1/2 tps Salt</li>
+      <li>0.5 tps Baking Powder</li>
+      <li>0.5 tps Salt</li>
       <li>2 cups Milk</li>
       <li>2 tbs Butter</li>
       <li>2 tps Vanilla Extract</li>
       <li>2 Eggs</li>
    </ul>
-   <h1 class="box" id="meals">Filling Suggestions</h1>
+   <h1 class="boxMeals">Filling Suggestions</h1>
    <h2>Savory</h2>
    <ul>
       <li>Scrambled Eggs</li>
@@ -41,7 +51,7 @@
       <li>Chocolate Sauce or Nutella</li>
    </ul>
    <h3>Don't forget to mix and match!</h3> 
-   <h1 class="box" id="meals">Instructions</h1>
+   <h1 class="boxMeals">Instructions</h1>
    <ol> 
       <li>In a medium bowl, whisk togeher dry ingredients (flour, sugar, baking powder,
       and salt).</li>
@@ -55,5 +65,8 @@
       <li>Fill crepes with desired fillings and roll up like a burrito.</li>
       <li>Enjoy!</li>
    </ol>
+
+   <script src="js/script.js"></script>
+</body>
 </main>
 </html>

@@ -1,0 +1,73 @@
+<html lang="en-US">
+<head>
+   <meta charset="utf-8">
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<header>
+   <h1>Grocery Prep</h1>
+   <nav>
+      <a href="grocery.html">Home</a>
+      <a href="about.html">About the Chef</a>
+      <a href="random.html">Random Recipe</a>
+   </nav>
+</header>
+
+<main>
+   <h1 id="title">Title</h1>
+   <p id="des">Description</p>
+
+   <div class="servingAndrating">
+      <h2 id="serving">Servings</h2>
+   </div>
+
+      <p id="rating">5</p>
+      <p> </p>
+<body>
+   <div class="holder">
+      <button id="sub">-</button>
+      <span id="count">1</span>
+      <button id="add">+</button>
+   </div>
+
+<h2> </h2>
+
+   <div>
+      <form action = >
+         <p id="RateMe">Rate Me! Currently</p>
+         <p id="stars">Stars</p>
+         <fieldset id = "fieldset">
+         <select>
+            <option value=""> Select Rating
+            <option value = "1">1</option>
+            <option value = "2">2</option>
+            <option value = "3">3</option>
+            <option value = "4">4</option>
+            <option value = "5">5</option>
+         </select>
+         <input id="rate" type = "button"
+            value = "rate"
+            onclick = "rateRecipe()" />
+         </fieldset>
+      </form>
+   </div>
+
+   <img id="randomImage" src="./images/crepes.JPG" height="250">
+      
+   <div>
+      <h1 class="boxMeals">Ingredients</h1>
+      <ul id='ingredients'>
+      </ul>
+   </div>
+
+   <div>
+      <h1 class="boxMeals">Instructions</h1>
+      <ol id="instructions">
+      </ol>
+   </div>
+
+   <script src="js/random.js"></script>
+   <script src="js/script.js"></script>
+</body>
+</main>
+<html>

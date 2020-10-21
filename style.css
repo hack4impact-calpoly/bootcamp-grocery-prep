@@ -12,13 +12,37 @@ header {
    padding-right: 2em;
 }
 
+nav {
+   justify-content: space-around;
+   padding: 1em;
+}
+
 main {
    display: flex;
    flex-direction: column;
    padding-left: 15em;
 }
 
-.box#meals {
+button {
+   background-color: #5E6472;
+   color: white;
+   border: none;
+
+   width: 50px;
+   height: 40px;
+   font-size: 20px;
+}
+
+.holder {
+   display: flex;
+}
+
+#count {
+   font-size: 20px;
+   margin: 10px 15px;
+}
+
+.boxMeals {
    display: flex;
    background-color: #E29578;
    padding: 10px;
@@ -26,35 +50,93 @@ main {
    height: 100px:
 }
 
-.shift#links {
+.shiftLinks {
    display: flex;
    padding-left: 35em;
    padding-top: 1em;
    color: #006D77;
 }
 
-.shift#recipeImage {
+.shiftRecipe {
    display: flex;
-   justify-content: center;
-   padding-right: 25em;
-   padding-left: 12em;
+   padding-left: 15em;
+   max-width: 300px;
 }
 
 #aboutImage li {
    float: left;
 }
 
-.shift#aboutImage li img {
+.shift li img {
    float: left;
    padding: 20px;
 }
 
-.box#about {
+.boxAbout  {
    display: flex;
    background-color: #E29578;
    padding: 10px;
    width: 225px;
-   height: 100px:
+   float: left;
 }
+
+.ratingArea {
+   display: flex;
+   background-color: #83C5BE;
+}
+
+#fieldset {
+   width: 10em;
+}
+
+
+#RateMe {
+   display: flex;
+   background-color: #E29578;
+   padding: 10px;
+   width: 200px;
+   height: 25px:
+}
+
+.servingAndrating  {
+   display: flex;
+   background-color: #E29578;
+   padding-left: 10px;
+   width: 150px;
+   height: 55px;
+   position: relative;
+}
+
+#rating {
+   display: block;
+   position: absolute;
+   top: 399px;
+   right: 37em;
+   height: 100%;
+   width: 200px;
+}
+
+#serving {
+   margin-right: 215 px;
+}
+
+#stars {
+   display: block;
+   position: absolute;
+   top: 399px;
+   right: 35em;
+   height: 100%;
+   width: 200px;
+}
+
+#randomImage {
+   display: block;
+   position: absolute;
+   top: 250px;
+   right: 230px;
+   height: 35%;
+   width: 35%;
+}
+
 
 
