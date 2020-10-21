@@ -7,29 +7,40 @@
 
 <body>
     <header>
-        <h1 id = "title">Grocery Prep</h1>
+        <h1 id="title">Grocery Prep</h1>
         <nav>
             <a href="../index.html">Home</a>
+            <a href="../random.html">Random Recipe</a>
             <a href="../about.html">About the Chef</a>
         </nav>
     </header>
     <main>
         <h1>Chocolate Chip Cookies</h1>
-
-        <img src="../imgs/chocolate_chip_cookies.jpg" height="250">
+        <div class="showcase">
+            <div class="info">
+                <div class="servings">
+                    <h3>Servings</h3>
+                    <button id="dec">-</button>
+                    <span id="serving-count">1</span>
+                    <button id="inc">+</button>
+                </div>
+            </div>
+            <img src="../imgs/chocolate_chip_cookies.jpg" height="250">
+        </div>
 
         <h2>Ingredients</h2>
         <ul>
-            <li>1/2 cup granulated sugar</li>
-            <li>3/4 cup brown sugar (packed)</li>
-            <li>1 teaspoon salt</li>
-            <li>1/2 cup unsalted butter, melted</li>
-            <li>1 egg</li>
-            <li>1 teapoon vanilla extract</li>
-            <li>1 1/4 cups all-purpose flour</li>
-            <li>1/2 teaspoon baking soda</li>
-            <li>4 oz semi-sweet chocolate chips</li>
-            <li>4 oz dark chocolate chips</li>
+            <li><span class="count" base=".5">.5</span> cup granulated sugar</li>
+            <li><span class="count" base=".75">.75</span> cup brown sugar (packed)</li>
+            <li><span class="count" base="1">1</span> teaspoon salt</li>
+            <li><span class="count" base=".5">.5</span> cup unsalted butter, melted</li>
+            <li><span class="count" base="1">1</span> egg</li>
+            <li><span class="count" base="1">
+                    <1 /span> teapoon vanilla extract</li>
+            <li><span class="count" base="1.25">1.25</span> cups all-purpose flour</li>
+            <li><span class="count" base=".5">.5</span> teaspoon baking soda</li>
+            <li><span class="count" base="4">4</span> oz semi-sweet chocolate chips</li>
+            <li><span class="count" base="4">4</span> oz dark chocolate chips</li>
         </ul>
 
         <h2>Instructions</h2>
@@ -44,6 +55,7 @@
             <li>Let the cookies cool and serve!</li>
         </ol>
     </main>
+    <script src="../recipe.js"></script>
 </body>
 
 </html>

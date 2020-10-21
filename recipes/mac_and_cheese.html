@@ -1,29 +1,40 @@
-
 <html lang="en-US">
+
 <head>
   <title>Grocery Prep - Mac & Cheese</title>
   <link rel="stylesheet" href="../style.css">
 </head>
+
 <body>
   <header>
-    <h1  id = "title">Grocery Prep</h1>
+    <h1 id="title">Grocery Prep</h1>
     <nav>
       <a href="../index.html">Home</a>
+      <a href="../random.html">Random Recipe</a>
       <a href="../about.html">About the Chef</a>
     </nav>
   </header>
   <main>
     <h1>Macaroni and Cheese</h1>
+    <div class="showcase">
+      <div class="info">
+        <div class="servings">
+          <h3>Servings</h3>
+          <button id="dec">-</button>
+          <span id="serving-count">2</span>
+          <button id="inc">+</button>
+        </div>
+      </div>
+      <img src="../imgs/mac_and_cheese.jpg" height="250">
+    </div>
 
-    <img src="../imgs/mac_and_cheese.jpg" height="250">
-   
     <h2>Ingredients</h2>
     <ul>
-      <li>2 cups of elbow macaroni</li>
-      <li>1/2 cup of sharp cheddar</li>
-      <li>6 cups of water</li>
-      <li>2 - 4 tbsp of margarine or butter</li>
-      <li>1/4 cup of milk</li>
+      <li><span class="count" base="2">4</span> cups of elbow macaroni</li>
+      <li><span class="count" base=".5">1</span> cup of sharp cheddar</li>
+      <li><span class="count" base="6">12</span> cups of water</li>
+      <li><span class="count" base="2">4</span> - <span class="count" base="4">8</span> tbsp of margarine or butter</li>
+      <li><span class="count" base=".25">0.5</span> cup of milk</li>
     </ul>
 
     <h2>Instructions</h2>
@@ -35,5 +46,7 @@
       <li>Stir and enjoy!</li>
     </ol>
   </main>
+  <script src="../recipe.js"></script>
 </body>
+
 </html>

@@ -1,26 +1,37 @@
-
 <html lang="en-US">
+
 <head>
   <title>Grocery Prep - Salsa</title>
   <link rel="stylesheet" href="../style.css">
 </head>
+
 <body>
   <header>
-    <h1 id = "title">Grocery Prep</h1>
+    <h1 id="title">Grocery Prep</h1>
     <nav>
       <a href="../index.html">Home</a>
+      <a href="../random.html">Random Recipe</a>
       <a href="../about.html">About the Chef</a>
     </nav>
   </header>
   <main>
     <h1>Oatmeal</h1>
+    <div class="showcase">
+      <div class="info">
+        <div class="servings">
+          <h3>Servings</h3>
+          <button id="dec">-</button>
+          <span id="serving-count">4</span>
+          <button id="inc">+</button>
+        </div>
+      </div>
+      <img src="../imgs/oatmeal.jpeg" height="250">
+    </div>
 
-    <img src="../imgs/oatmeal.jpeg" height="250">
-   
     <h2>Ingredients</h2>
     <ul>
-      <li>1/2 cup instant oats</li>
-      <li>3/4 cup milk or water</li>
+      <li><span class="count" base=".5">2</span> cup instant oats</li>
+      <li><span class="count" base=".75">3</span> cup milk or water</li>
     </ul>
 
     <h2>Instructions</h2>
@@ -32,5 +43,7 @@
       <li>Enjoy!</li>
     </ol>
   </main>
+  <script src="../recipe.js"></script>
 </body>
+
 </html>
