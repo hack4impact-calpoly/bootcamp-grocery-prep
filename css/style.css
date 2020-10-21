@@ -19,28 +19,27 @@ body {
 
 #home-image {
   background-image: url('../imgs/veggies.jpg');
-  filter: blur(8px);
+  filter: blur(6px);
   height: 220px;
 }
 
 #salsa-image{
   background-image: url('../imgs/salsa.jpeg');
-  filter: blur(8px);
+  filter: blur(6px);
   height: 220px;
 }
 
 #guac-image{
   background-image: url('../imgs/guac.jpg');
-  filter: blur(8px);
+  filter: blur(6px);
   height: 220px;
 }
 
 #queso-image {
   background-image: url('../imgs/queso.jpeg');
-  filter: blur(8px);
+  filter: blur(6px);
   height: 220px;
 }
-
 
 
 .nav {
@@ -139,7 +138,7 @@ ol {
 
 
 .servings > button, #post-rating {
-  background-color: #BC4524;
+  background-color:  #444;
   border: none;
   color: white;
   font-size: 14px;
