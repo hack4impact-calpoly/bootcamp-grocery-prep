@@ -39,3 +39,7 @@ h3 {
 .shef {
    margin: 0 300px;
 }
+
+img {
+   max-width: 100%;
+}
