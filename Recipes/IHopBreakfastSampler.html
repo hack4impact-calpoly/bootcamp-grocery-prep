@@ -17,13 +17,34 @@
       <p>This is my favorite dish from IHop the traditional diner breakfast</p>
       <img src="../Images/IHopBreakfastSampler.jpg" alt="IHOP" height="200">
       <p>Simple yet delicious</p>
+      <div class="servings">
+        <h3>Servings:</h3>
+        <button id="dec">-</button>
+        <span id="servingCount">1</span>
+        <button id="inc">+</button>
+      </div>
       <h2>Ingredients:</h2>
       <ul>
-        <li>2 Eggs</li>
-        <li>2 Strips of Bacon</li>
-        <li>2 Link Sausages</li>
-        <li>2 Slices of Canadian Bacon</li>
-        <li>1 Cup of Frozen Hash Browns</li>
+        <li>
+          <span class="count" base="1">1</span>
+           Cup of Frozen Hash Browns
+        </li>
+        <li>
+          <span class="count" base="2">2</span>
+           Strips of Bacon
+        </li>
+        <li>
+          <span class="count" base="2">2</span>
+           Link Sausages
+        </li>
+        <li>
+          <span class="count" base="2">2</span>
+           Slices of Canadian Bacon
+        </li>
+        <li>
+          <span class="count" base="2">2</span>
+           Eggs
+        </li>
       </ul>
       <h2>Directions:</h2>
       <ol>
@@ -34,5 +55,6 @@
         <li>in new pan, lightly oil then pan fry the frozen hash browns</li>
       </ol>
     </main>
+    <script src="../recipe.js"></script>
   </body>
 </html>

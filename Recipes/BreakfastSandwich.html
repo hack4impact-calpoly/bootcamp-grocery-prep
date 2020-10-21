@@ -17,12 +17,30 @@
       <p>This is my take on Einstiens Bacon and Cheddar Breakfast Sandwich</p>
       <img src="../Images/BreakfastSandwich.jpg" alt="Breakfast Sandwich" height="200">
       <p>This is my favorite meal in the morning given I have all the ingredients</p>
+      <div class="servings">
+        <h3>Servings:</h3>
+        <button id="dec">-</button>
+        <span id="servingCount">1</span>
+        <button id="inc">+</button>
+      </div>
       <h2>Ingredients:</h2>
       <ul>
-        <li>Bagel of choice</li>
-        <li>2 Strips of Bacon</li>
-        <li>Slice of Cheddar</li>
-        <li>One Egg</li>
+        <li>
+          <span class="count" base="1">1</span>
+           Bagel of choice
+        </li>
+        <li>
+          <span class="count" base="2">2</span>
+           Strips of Bacon
+        </li>
+        <li>
+          <span class="count" base="1">1</span>
+           Slice of Cheddar
+        </li>
+        <li>
+          <span class="count" base="1">1</span>
+           Egg
+        </li>
       </ul>
       <h2>Directions:</h2>
       <ol>
@@ -32,5 +50,6 @@
         <li>slice bagel and lay the egg-cheddar combo and top with bacon to complete sandwich</li>
       </ol>
     </main>
+    <script src="../recipe.js"></script>
   </body>
 </html>

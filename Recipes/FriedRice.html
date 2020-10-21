@@ -17,14 +17,39 @@
       <p>This is a very basic yet delicious recipe for fried rice</p>
       <img src="../Images/FriedRice.jpg" alt="FriedRice" height="200">
       <p>Its gonna sound strage but fried rice is better when you use day old rice</p>
+      <div class="servings">
+        <h3>Servings:</h3>
+        <button id="dec">-</button>
+        <span id="servingCount">1</span>
+        <button id="inc">+</button>
+      </div>
       <h2>Ingredients:</h2>
       <ul>
-        <li>Soy Sauce</li>
-        <li>1 Cup of Rice (preferably day old)</li>
-        <li>1 Egg</li>
-        <li>2 stalks of green onions</li>
-        <li>1/4 cup of sweet onion</li>
-        <li>2 Slices of Bacon</li>
+        <li>Soy Sauce to taste</li>
+        <li>
+          <span class="count" base="2">2</span>
+           Cups of Rice (preferably day old)
+        </li>
+        <li>
+          <span class="count" base="2">2</span>
+           Green Onions
+        </li>
+        <li>
+          <span class="count" base=".25">.25</span>
+           Cups of Sweet Onions
+        </li>
+        <li>
+          <span class="count" base="2">2</span>
+           Egg
+        </li>
+        <li>
+          <span class="count" base="3">3</span>
+           Slices of Bacon
+        </li>
+        <li>
+          <span class="count" base=".5">.5</span>
+           Cups of Chopped Baby Carrots
+        </li>
       </ul>
       <h2>Directions:</h2>
       <ol>
@@ -36,5 +61,8 @@
         <li>add green onions salt and pepper</li>
       </ol>
     </main>
+    <script src="../recipe.js">
+
+    </script>
   </body>
 </html>

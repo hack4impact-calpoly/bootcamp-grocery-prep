@@ -17,12 +17,27 @@
       <p>This is the perfect midnight snack that doesn't take much prep at all</p>
       <img src="../Images/GourmetInstantRamen.jpg" alt="Gourmet Ramen" height="200">
       <p>This is my favorite snack late on a weekend night</p>
+      <div class="servings">
+        <h3>Servings:</h3>
+        <button id="dec">-</button>
+        <span id="servingCount">1</span>
+        <button id="inc">+</button>
+      </div>
       <h2>Ingredients:</h2>
       <ul>
-        <li>1 Pack of Instant Ramen of your choosing</li>
-        <li>2 Green Onions</li>
-        <li>Kamaboko</li>
-        <li>Togarashi</li>
+        <li>
+          <span class="count" base="1">1</span>
+           Pack of Instant Ramen of your choosing
+        </li>
+        <li>
+          <span class="count" base="2">2</span>
+           Green Onions
+        </li>
+        <li>
+          <span class="count" base="3">3</span>
+           slices of Kamaboko
+        </li>
+        <li>Togarashi to taste</li>
       </ul>
       <h2>Directions:</h2>
       <ol>
@@ -33,5 +48,7 @@
         <li>add togarashi to ideal spice levels</li>
       </ol>
     </main>
+    <script src="../recipe.js">
+    </script>
   </body>
 </html>
