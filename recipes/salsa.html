@@ -5,32 +5,49 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-<div id="salsa">
-  <header>
-    <h1 style="font-size: 90px;">Grocery Prep</h1>
-    <div class="nav">
-        <ul>
-          <li class="home"><a href="../index.html">Home</a></li>
-          <li class="about"><a href="../about.html">About</a></li>
-        </ul>
-      </div>
-  </header>
 
+<div class="container">
+  <div id="salsa-image"></div>
+  <div class="bg-text">
+    <header>
+      <h1 style="font-size: 90px;">Grocery Prep</h1>
+      <div class="nav">
+          <ul>
+            <li class="home"><a href="../index.html">Home</a></li>
+            <li class="about"><a href="../about.html">About</a></li>
+          </ul>
+        </div>
+    </header>
+  </div>
+</div>
+<p><br><b>Salsa is a timeless classic that can be paired with many dishes</b>  </p>
+    <img src="../imgs/chips.jpg", style="height: 300px;"><br><br>
+    <p>The type of chips you use is very important.<br></p>
+    <img src="../imgs/jalapeno.jpg", style="height: 300px;"><br>
+    <p>If you would like your salsa to be less spicy, you can remove the seeds from the jalapenos. Alternatively, leave the seeds in for an extra kick.</p>
   <main>
     <h1>Salsa</h1>
     </div>
+    <div class="servings">
+      <h3>Servings</h3>
+      <button id="dec">-</button>
+      <span id="serving-count">4</span>
+      <button id="inc">+</button>
+    </div>
+  </div>
+
     <h2>Ingredients</h2>
     <ul>
-        <li>1 1/4 lbs ripe Roma tomatoes</li>
-        <li>1 (14.5 oz) can petite diced tomatoes*</li>
-        <li>2 green onios,** ends trimmed, chopped into thirds</li>
-        <li>1/3 cup chopped red onion</li>
-        <li>1 jalepeno pepper,*** seeded and roughly chopped</li>
-        <li>1/3 cup fresh cilantro</li>
-        <li>1 large clove garlic</li>
-        <li>2 Tbsp fresh lime juice</li>
-        <li>1/2 tsp chili powder</li>
-        <li>1/4 tsp ground cumin</li>
+        <li><span class="count">1.25</span> lbs ripe Roma tomatoes</li>
+        <li><span class="count">1</span> can petite diced tomatoes*</li>
+        <li><span class="count">2</span> green onions,** ends trimmed, chopped into thirds</li>
+        <li><span class="count">0.33</span> cup chopped red onion</li>
+        <li><span class="count">1</span> jalepeno pepper,*** seeded and roughly chopped</li>
+        <li><span class="count">0.33</span> cup fresh cilantro</li>
+        <li><span class="count">1</span> large clove garlic</li>
+        <li><span class="count">2</span> Tbsp fresh lime juice</li>
+        <li><span class="count">0.5</span> tsp chili powder</li>
+        <li><span class="count">0.25</span> tsp ground cumin</li>
     </ul>
 
     <h2>Instructions</h2>
@@ -39,5 +56,7 @@
       <li>Blend it and eat with chips.</li>
     </ol>
   </main>
+
+  <script src="../ingredients.js"></script>
 </body>
 </html>
