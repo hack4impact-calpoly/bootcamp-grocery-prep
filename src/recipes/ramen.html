@@ -2,25 +2,32 @@
 <head>
   <meta charset="utf-8">
   <title>Gusteau's</title>
-  <link rel="stylesheet" type="text/css" href="main.css" media="screen"/>
+  <link rel="stylesheet" type="text/css" href="../main.css" media="screen"/>
 </head>
 <body>
    <header>
       <h1>Gusteau's</h1>
       <nav>
-         <a href="home.html">Home</a>
-         <a href="aboutChef.html">About Me</a>
+         <a href="../index.html">Home</a>
+         <a href="random.html">Random Recipe</a>
+         <a href="../aboutChef/aboutChef.html">About Me</a>
       </nav>
    </header>
    <main>
       <h2>Instant Ramen</h2>
       <div class="ramen">
-         <p>A nice switch up after having popcorn for the past two nights.</p>
-         <img src="../images/ramen.jpg" alt="ramen" height="200" width="200">
+         <div class="nonpicture">
+            <p>A nice switch up after having popcorn for the past two nights.</p>
+            <h4>Servings</h4>
+            <button id="minus">-</button>
+            <span id="serving">1</span>
+            <button id="plus">+</button>
+         </div>
+         <img src="../../images/ramen.jpg" alt="ramen" height="200" width="200">
       </div>
       <h3>Ingredients</h3>
       <ul>
-         <li>Cup of instant ramen</li>
+         <li><span class="currServ">1</span> cup of instant ramen</li>
          <li>Pot</li>
          <li>Fire</li>
       </ul>
@@ -33,4 +40,6 @@
          <li>Uncover the lid, and dig in (watch out! the water is VERY hot)</li>
       </ol>
    </main>
+   <script src="../ingredients.js"></script>
+</body>
 </html>
