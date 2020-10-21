@@ -107,7 +107,7 @@ button {
    position: relative;
 }
 
-#rating {
+#curRate {
    display: block;
    position: absolute;
    top: 399px;
