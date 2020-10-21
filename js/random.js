@@ -5,7 +5,7 @@ const servings = document.getElementById("count")
 const ingredients = document.getElementById("ingredients")
 const instructions = document.getElementById("instructions")
 const image = document.getElementById("randomImage")
-const rating = document.getElementById("rating")
+const rating = document.getElementById("curRate")
 var id = "bluh"
 
 function getRecipe() {
@@ -35,8 +35,8 @@ function getRecipe() {
         var total = 0.0
         var count = 0.0
 
-        for (var i = 0; i < ratings.length; i++) {
-           total = total + ratings[i]
+        for (var i = 0; i < +(ratings.length); i++) {
+           total = total + +(ratings[i])
            count = count + 1
         }
 
@@ -49,17 +49,27 @@ function getRecipe() {
 getRecipe()
 
 function rateRecipe() {
-   var rate = document.getElementById("rate")
-   var curRating = rate.value
-   var user= {
+   var rate = document.getElementById("curRate")
+   console.log("CurRating: " + rate.innerHTML)
+   var data= {
       "id" : id,
-      "rating" : curRating
+      "rating" : rate.innerHTML
    }
 
-   var xhr = new XMLHttpRequest()
-   xhr.open("POST", URL, true)
-   xhr.setRequestHeader('Content-Type', 'application/json')
-   xhr.send(JSON.stringify(user))
+   fetch(URL, {
+      method: 'POST',
+      headers: {
+         'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+   })
+   .then(response => response.json())
+   .then(data => {
+      console.log('Success: ', data);
+   })
+   .catch((error) => {
+      console.error('Error: ', error);
+   });
 
    fetch(URL)
      .then(response => response.json())
@@ -68,12 +78,16 @@ function rateRecipe() {
         var total = 0.0
         var count = 0.0
 
-        for (var i = 0; i < ratings.length; ++i) {
-           total = total + ratings[i]
+        for (var i = 0; i < +(ratings.length); ++i) {
+           total = total + +(ratings[i])
            count = count + 1
         }
 
-        rating.innerHTML = (parseFloat(total/count).toFixed(1))
+        rating.innerHTML = (parseFloat(total/ratings.length).toFixed(1))
+        console.log("Total : " + total)
+        console.log("Count : " + ratings.length)
+        console.log("Count : " + count)
+        console.log("Final Rating: " + rating.innerHTML)
      })
 }
 
