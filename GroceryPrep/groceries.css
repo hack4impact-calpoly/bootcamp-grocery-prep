@@ -31,3 +31,11 @@ main {
   font-weight: 800;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+button {
+  background-color: bisque;
+  border: none;
+}
+button:hover {
+  background-color: aliceblue;
+} 

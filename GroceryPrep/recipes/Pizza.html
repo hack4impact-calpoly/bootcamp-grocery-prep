@@ -3,6 +3,7 @@
     <title>Grocery Prep</title>
     <link rel="stylesheet" href="../groceries.css">
   </head>
+  <script src="../recipe.js"></script>
   <body>
     <header>
       <h1 class="main-text">Grocery Prep</h1>
@@ -14,11 +15,19 @@
     <main>
       <h1>Pizza</h1>
       <img src="Pizza.jpeg" height="250" alt="Food">
+      <br>
+      <br>
+      <div>
+        <button id="subtract">-</button>
+        <span> Serves</span> 
+        <span id="servings"> 1 </span>
+        <button id="add">+</button>
+      </div>
       <h3> Ingredients</h3>
       <ul>
-        <li>Digorno Pizza</li>
-        <li>Pizza Slicer</li>
-        <li>Pan</li>
+        <li><span class="count" base="1">1</span> Boxes of Digorno Pizza</li>
+        <li>1 Pizza Slicer</li>
+        <li>1 Pan</li>
       </ul>
       <h3> Instructions</h3>
       <ol>
