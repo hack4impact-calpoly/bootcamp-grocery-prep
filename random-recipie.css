@@ -1,0 +1,38 @@
+/* Button Formatting */
+#new-recipie-button, #submit-user-rating {
+    background: var(--emphasis);
+    color: white;
+    height: 35px;
+    width: 110px;
+}
+
+#new-recipie-button {
+    margin-top: 32px;
+}
+
+#submit-user-rating {
+    margin-left: 20px;
+}
+
+#new-recipie-button:hover, #submit-user-rating:hover {
+    background: var(--primary);
+}
+
+/* Block Level Formatting */
+.centered-div {
+    align-items: center;
+}
+
+#title-holder {
+    justify-content: space-between;   
+}
+
+/* Other */
+h3 {
+    padding-right: 25px;
+}
+
+#num-ratings {
+    color: var(--emphasis);
+    padding-left: 10px;    
+}

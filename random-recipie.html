@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Random Recipie</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="recipies/recipies.css">
+    <link rel="stylesheet" href="random-recipie.css">
+    <script type="text/javascript" src="random-recipie.js" ></script>
+    <script type="text/javascript" src="recipies/recipies.js"></script>
+    <script type="text/javascript" src="ratings.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="title-holder">
+        <h1 id="title">Title</h1>
+        <button id="new-recipie-button" onClick="loadRecipieContent();">New Recipie</button>
+      </div>
+      <div>
+        <img id="picture" src="images/question-mark.jpg">
+        <div id='intro'>
+          <p id="desc">Description</p>
+
+          <div id="serving-counter" class="centered-div"> 
+            <h3>Servings</h3>
+            <button id="sub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/></svg>
+            </button>
+            <span id="num-servings">1</span>
+            <button id="add">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
+            </button>
+          </div>
+
+          <div class="centered-div">
+              <h3>Rating</h3>
+              <div id="ratings">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 6.76l1.379 4.246h4.465l-3.612 2.625 1.379 4.246-3.611-2.625-3.612 2.625 1.379-4.246-3.612-2.625h4.465l1.38-4.246zm0-6.472l-2.833 8.718h-9.167l7.416 5.389-2.833 8.718 7.417-5.388 7.416 5.388-2.833-8.718 7.417-5.389h-9.167l-2.833-8.718z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 6.76l1.379 4.246h4.465l-3.612 2.625 1.379 4.246-3.611-2.625-3.612 2.625 1.379-4.246-3.612-2.625h4.465l1.38-4.246zm0-6.472l-2.833 8.718h-9.167l7.416 5.389-2.833 8.718 7.417-5.388 7.416 5.388-2.833-8.718 7.417-5.389h-9.167l-2.833-8.718z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 6.76l1.379 4.246h4.465l-3.612 2.625 1.379 4.246-3.611-2.625-3.612 2.625 1.379-4.246-3.612-2.625h4.465l1.38-4.246zm0-6.472l-2.833 8.718h-9.167l7.416 5.389-2.833 8.718 7.417-5.388 7.416 5.388-2.833-8.718 7.417-5.389h-9.167l-2.833-8.718z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 6.76l1.379 4.246h4.465l-3.612 2.625 1.379 4.246-3.611-2.625-3.612 2.625 1.379-4.246-3.612-2.625h4.465l1.38-4.246zm0-6.472l-2.833 8.718h-9.167l7.416 5.389-2.833 8.718 7.417-5.388 7.416 5.388-2.833-8.718 7.417-5.389h-9.167l-2.833-8.718z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 6.76l1.379 4.246h4.465l-3.612 2.625 1.379 4.246-3.611-2.625-3.612 2.625 1.379-4.246-3.612-2.625h4.465l1.38-4.246zm0-6.472l-2.833 8.718h-9.167l7.416 5.389-2.833 8.718 7.417-5.388 7.416 5.388-2.833-8.718 7.417-5.389h-9.167l-2.833-8.718z"/></svg>
+              </div>
+              <h3 id="num-ratings">(20)</h3>
+          </div>
+
+          <div class="centered-div">
+            <h3>Submit a Rating</h3>
+            <input id="user-rating" type="number" min="1" max="5">
+            <button id="submit-user-rating" onclick="postRating()">Submit</button>
+          </div>
+        </div>
+      </div>
+  
+      <h2>Ingredients</h2>
+      <ul id="ingredients-list">
+      </ul>
+      
+      <h2>Instructions</h2>
+      <ol id="instructions-list">
+      </ol>
+    </main>
+
+  </body>
+</html>

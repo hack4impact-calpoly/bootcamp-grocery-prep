@@ -1,21 +1,28 @@
-const servings = document.getElementById("num-servings")
-const ingredients = Array.from(document.getElementsByClassName("ingredient"))
-const baseIngredients = ingredients.map(i => parseFloat(i.innerText))
-
 document.addEventListener('click', event => {
-    console.log(event.target.id)
-    if (event.target.id === 'sub' && parseInt(servings.innerText) > 1) {
-        updateServings(-1)
+    if (event.target.id === 'sub') {
+        updateServings(-1);
     }
     else if (event.target.id === 'add') {
-        updateServings(1)
+        updateServings(1);
     }
 })
 
 const updateServings = dir => {
-    servings.innerText = parseInt(servings.innerText) + dir
+    const servings = document.getElementById("num-servings");
+    const oldServings = parseInt(servings.innerText);
+    let numServings = oldServings;
+    const ingredients = Array.from(document.getElementsByClassName("ingredient"));
+    let numIngredients = ingredients.map(i => parseFloat(i.innerText))
+
+    numServings += dir
+    if (numServings < 1) {
+        return
+    }
+
+
+    servings.innerText = numServings
     for (i = 0; i < ingredients.length; i++) {
-        ingredients[i].innerText = improvedRound(baseIngredients[i] * parseInt(servings.innerText))
+        ingredients[i].innerText = improvedRound((numIngredients[i] / oldServings) * numServings);
     }
 }
 

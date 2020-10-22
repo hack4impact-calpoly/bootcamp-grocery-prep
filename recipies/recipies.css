@@ -14,10 +14,11 @@
 
 svg {
     pointer-events: none;
+    fill: var(--emphasis);
 }
 
-button:hover {
-    fill: var(--emphasis);
+button:hover svg {
+    fill: var(--primary);
 }
 
 button {
