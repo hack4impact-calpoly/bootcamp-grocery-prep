@@ -1,22 +1,21 @@
-const countElements = document.getElementsByClassName('count');
+const countElements = document.getElementsByClassName('count')
 
 document.addEventListener('click', event => {
   if (event.target.id === 'dec')
-    updateAmount(-1);
+    updateAmount(-1)
   if (event.target.id === 'inc')
-    updateAmount(1);
-});
+    updateAmount(1)
+})
 
 const updateAmount = (direction) => {
-  const currentAmount = document.getElementById('amount-count');
-  const amountCount = Number(currentAmount.textContent);
-  const newAmount = amountCount + direction;
+  const currAmount = document.getElementById('amount')
+  const amount = Number(currAmount.textContent)
+  const newAmount = amount + direction
 
-  if (newAmount < 1) return;
-  currentAmount.textContent = newAmount;
+  if (newAmount < 1) return
+  currAmount.textContent = newAmount
 
   Array.prototype.map.call(countElements, e => {
-    const itemAmount = Number(e.getAttribute('base'));
-    e.textContent = +(itemAmount * newAmount).toFixed(2);
+    e.textContent = +((e.textContent / amount) * newAmount).toFixed(2)
   })
 }
