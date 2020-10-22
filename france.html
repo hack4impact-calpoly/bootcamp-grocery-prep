@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="button.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;900&display=swap" rel="stylesheet">
     <title>Foodies - France</title>
 </head>
@@ -18,16 +19,22 @@
 
     <div class="middle-container">
         <h1>France</h1>
-        <img class="feature-img" src="https://hips.hearstapps.com/hmg-prod/images/delish-basic-crepes-horizontal-1545245797.jpg" alt="france-dog">
         <p>Crepes!</p>
+        <img class="feature-img" src="https://hips.hearstapps.com/hmg-prod/images/delish-basic-crepes-horizontal-1545245797.jpg" alt="france-dog">
+        <div class="servings">
+            <h3>Servings</h3>
+            <button id="sub">-</button>
+            <span id="serving-count">1</span>
+            <button id="add">+</button>
+        </div>
         <h2>Ingredients</h2>
         <ul>
             <li>
-                <span class="count" base="1">1/2</span>
+                <span class="count" base="0.5">1/2</span>
                  cup of milk and water
             </li>
             <li>
-                <span class="count" base="1">1/4</span>
+                <span class="count" base="0.25">1/4</span>
                  teaspoon salt
             </li>
             <li>
@@ -35,11 +42,11 @@
                  cup all purpose flour
             </li>
             <li>
-                <span class="count" base="1">2</span>
+                <span class="count" base="2">2</span>
                  large eggs
             </li>
             <li>
-                <span class="count" base="1">2</span>
+                <span class="count" base="2">2</span>
                  tablesppon butter, melted
             </li>
         </ul>

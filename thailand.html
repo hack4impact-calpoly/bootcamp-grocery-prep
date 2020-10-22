@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="button.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;900&display=swap" rel="stylesheet">
     <title>Foodies - Thailand</title>
 </head>
@@ -20,10 +21,16 @@
         <h1>Thailand</h1>
         <p>Pad Thai</p>
         <img class="feature-img" src="https://www.aheadofthyme.com/wp-content/uploads/2020/04/10-minute-chicken-pad-thai-7.jpg" alt="thailand-dog">
+        <div class="servings">
+            <h3>Servings</h3>
+            <button id="sub">-</button>
+            <span id="serving-count">1</span>
+            <button id="add">+</button>
+        </div>
         <h2>Ingredients</h2>
         <ul>
             <li>
-                <span class="count" base="1">1/2</span>
+                <span class="count" base="0.5">1/2</span>
                  Phad Thai Sauce
             </li>
             <li>
@@ -39,7 +46,7 @@
                  boneless chicken
             </li>
             <li>
-                <span class="count" base="1">3</span>
+                <span class="count" base="3">3</span>
                  eggs
             </li>
         </ul>

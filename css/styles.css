@@ -83,9 +83,19 @@ nav{
 }
 
 .feature-img{
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    height: 250px;
+    text-align: center;
+}
+
+.servings > button {
+    background-color: red;
+    border: none;
+    color: white;
+    font-size: 14px;
+    padding: 5px 14px;
+}
+
+#serving-count{
+    margin: 0 4px;
 }
 
