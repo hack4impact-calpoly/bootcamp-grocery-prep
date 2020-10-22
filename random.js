@@ -35,6 +35,13 @@ const postRating = () => {
   })
 }
 
+const avgRatings = (ratings) => {
+  let sum = 0
+  for (const i in ratings)
+    sum += +(ratings[i])
+  return (sum / ratings.length).toFixed(1)
+}
+
 const setRecipe = (data) => {
   recipe = data
 
@@ -65,11 +72,4 @@ const setRecipe = (data) => {
   })
 
   document.getElementById('rating').innerText = avgRatings(data.ratings)
-}
-
-const avgRatings = (ratings) => {
-  let sum = 0
-  for (const i in ratings)
-    sum += +(ratings[i])
-  return (sum / ratings.length).toFixed(1)
 }
