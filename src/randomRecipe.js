@@ -1,14 +1,16 @@
-const URL = "https://3blzgwgi13.execute-api.us-west-2.amazonaws.com/Live/recipe"
+let URL = "https://3blzgwgi13.execute-api.us-west-2.amazonaws.com/Live/recipe"
 const title = document.getElementById("title")
 const desc = document.getElementById("desc")
 const pic = document.getElementById("pic")
 const serv = document.getElementById("serving")
 const steps = document.getElementById("steps")
 const ingred = document.getElementById("ingredients")
+const rating = document.getElementById("rating")
+const currentHash = document.location.hash
+let ratingArray = []
 let id = ""
 
 const displayEasyText = (data) => {
-   id = data["id"]
    title.innerText = data["title"]
    desc.innerText = data["desc"]
    pic.src = data["picture"]
@@ -41,17 +43,59 @@ const displayServings = (data) => {
    }
 }
 
+const addRatings = (data) => {
+   for (i in data["ratings"]) {
+      ratingArray.push(+data["ratings"][i])
+   }
+}
+const displayRatings = (ratings) => {
+   let avg = 0
+   for (i in ratings) {
+      avg += ratings[i]
+   }
+   avg /= ratings.length
+   rating.innerText = Math.round(avg * 10) / 10
+}
+
 const displayRecipe = (data) => {
+   id = data["_id"]
+   document.location.hash = id
    displayEasyText(data)
    displayInstructions(data)
    //this is where I found that there's a for each loop in JS!
    displayServings(data)
+   addRatings(data)
+   displayRatings(ratingArray)
 }
 
 const getRecipe = () => {
+   if (currentHash !== "") {
+      URL += "?id="
+      URL += document.location.hash.substr(1)
+   }
    fetch(URL)
       .then(response => response.json())
       .then(data => displayRecipe(data))
 }
 
 getRecipe()
+
+const postRating = () => {
+   const newRating = +(document.getElementById("ratingDropdown").value)
+   const newData = {id: id, rating: newRating}
+   fetch(URL, {
+      method: "POST",
+      headers: {
+         "Content-Type": "application/json"
+      },
+      body: JSON.stringify(newData)
+   })
+      .then(ratingArray.push(newRating))
+      .then(displayRatings(ratingArray))
+}
+
+document.addEventListener("click", event => {
+   if (event.target.id === "post") {
+      postRating()
+   }
+})

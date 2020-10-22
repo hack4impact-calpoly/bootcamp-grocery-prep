@@ -15,6 +15,7 @@
    </header>
    <main>
       <h2><span id="title"></span></h2>
+      <span><span id="rating"></span> stars</span>
       <div class="random">
          <div class="nonpicture">
             <span id="desc"></span>
@@ -22,6 +23,24 @@
             <button id="minus">-</button>
             <span id="serving"></span>
             <button id="plus">+</button>
+            <div class="ratingSection">
+               <div class="ratingsGot">
+                  <br>
+                  <label for="ratingDropdown">How Good Was It?</label>
+                  <select id="ratingDropdown">
+                     <option value="1">1 star</option>
+                     <option value="2">2 stars</option>
+                     <option value="3">3 stars</option>
+                     <option value="4">4 stars</option>
+                     <option value="5">5 stars</option>
+                  </select>
+               </div>
+               <div class="ratingButton">
+                  <br>
+                  <br>
+                  <button id="post">Submit Rating</button>
+               </div>
+            </div>
          </div>
          <img id="pic" src="" alt="random" height="200" width="300">
       </div>
@@ -33,6 +52,6 @@
       </ol>
    </main>
    <script src="../ingredients.js"></script>
-   <script src="../randomrRecipe.js"></script>
+   <script src="../randomRecipe.js"></script>
 </body>
 </html>

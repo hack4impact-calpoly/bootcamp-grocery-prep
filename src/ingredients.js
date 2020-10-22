@@ -2,7 +2,7 @@ const serving = document.getElementById("serving")
 
 document.addEventListener('click', event => {
    if (event.target.id === 'minus' && serving.innerText > 1) changeServing(-1)
-   if (event.target.id === 'plus' && serving.innerText) changeServing(1)
+   if (event.target.id === 'plus') changeServing(1)
 })
 
 const changeServing = (dir) => {

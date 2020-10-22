@@ -43,3 +43,14 @@ h3 {
 img {
    max-width: 100%;
 }
+
+.ratingsGot {
+   display: flex;
+   flex-direction: column;
+   width: 140px;
+}
+
+.ratingSection {
+   display: flex;
+   justify-content: right;
+}
