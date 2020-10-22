@@ -68,18 +68,26 @@ const createLayout = (response) => {
     document.getElementById("averageRating").textContent = String(averageScore.toFixed(2));
 
     const ingredients = document.getElementById("ingredientList")
+    const ingredientSize = Object.entries(data.ingredients).length;
+    counter = 0;
     for (const [key, value] of Object.entries(data.ingredients)){
+        counter += 1;
+
         const name = document.createElement("li")
         const number = document.createElement("span")
 
         number.className = "ingredCount";
+        number.setAttribute("starter", value) //gives the custom attribute a value to work with
         number.innerText = value;
-        number.starter = value;
-
+        
         name.appendChild(number);
-        name.textContent += " " + key;
-
+        name.innerHTML += " " + key;
+        
         ingredients.appendChild(name);
+
+        if (counter === ingredientSize){
+            name.id = "last";
+        }
     }
 
     const steps = document.getElementById("stepsList")

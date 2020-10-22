@@ -1,6 +1,7 @@
 firstIter = true
 
 document.addEventListener('click', event => {
+    const counter = document.getElementById("counter");
     if (event.target.id === 'sub' && Number(counter.innerText) > 1){
         updateServingCount(-1);
     }
