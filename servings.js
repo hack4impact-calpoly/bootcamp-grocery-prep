@@ -36,24 +36,20 @@ const changeServings = function(direction) {
 
     const plurals = document.getElementsByClassName("plural");
 
-    const count = 0;
-    Array.prototype.map.call(plurals, e => {
-        const baseNum = Number(ingredients.item(count).getAttribute('ammount'));
-        const curNum = Number(ingredients.item(count).textContent);
-        if(direction === 1){
-            e.textContent = "s";
-        }
-        else if(baseNum != curNum){
-            e.textContent = "s";
+
+    for(i = 0; i < plurals.length; i++){
+        
+        let baseNum = Number(ingredients.item(i).getAttribute('ammount'));
+        let curNum = Number(ingredients.item(i).textContent);
+        
+        if(direction == 1 || baseNum != curNum){
+            plurals.item(i).textContent = "s";
         }
         else{
-            e.textContent = "";
+            plurals.item(i).textContent = "";
         }
-        
-        
-
-        count ++;
-    })
+    }
+   
 
     
 }
