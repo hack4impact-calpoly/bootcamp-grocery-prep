@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Milk</title>
     <link href="styles/styles.css" rel="stylesheet">
+    <script src="servings.js"></script>
   </head>
   <body>
     <header>
@@ -19,12 +20,20 @@
     <p></p>
     <p>The OG.</p>
 
+    <span>
+      <button id="down">-</button>
+    </span>
+      <span>Servings: <span id="serving-count">1</span></span>
+    <span>
+      <button id="up">+</button>
+    </span>
+
     <img class="pageimage" src="images/milk.PNG">
     
     <div class="ingredients">
       <h3>Ingredients</h3>
       <ul>
-          <li>Milk</li>
+          <li><span class="counter" ammount="1">1</span> Milk<span class="plural"></span></li>
       </ul>
     </div>
     
