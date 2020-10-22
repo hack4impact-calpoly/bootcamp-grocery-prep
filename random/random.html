@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>A-MEAL_IA - Random</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <header>
+    <h1>A-MEAL-IA</h1>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="random.html">Random Recipe</a>
+      <a href="../about.html">About the Chef</a>
+    </nav>
+  </header>
+  <main>
+    <div class="headline">
+      <h1 id="title" style="color:white; background-color: teal;"></h1>
+      <div id="ratings"><span id="rating"></span> &star;</div>
+    </div>
+    <div class="desc"></div>
+      <div class="servings">
+        <h2>Servings</h2>
+        <button id="add">+</button>
+        <span id="serving-count">1</span>
+        <button id="sub">-</button>
+      </div>
+        <div class="rating">
+             <img id="food-photo" height="250">
+            <div class="headline">
+              <label for="select-rating" id="rating-label">Rate Me!</label>
+            </div>
+            <select id="select-rating">
+              <option selected hidden disabled>Select Rating</option>
+              <option value="1">1 &starf;</option>
+              <option value="2">2 &starf;</option>
+              <option value="3">3 &starf;</option>
+              <option value="4">4 &starf;</option>
+              <option value="5">5 &starf;</option>
+            </select>
+            <button id="post-rating">Post Rating</button>
+    </div>
+
+    <h2 style="color:white; background-color: teal;">Ingredients</h2>
+    <ul id="ingredients"></ul>
+
+    <h2 style="color:white; background-color: teal;">Instructions</h2>
+    <ol id="instructions"></ol>
+  </main>
+
+  <script src="serving.js"></script>
+  <script src="random.js"></script>
+</body>
+</html>

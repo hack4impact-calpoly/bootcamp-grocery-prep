@@ -34,13 +34,6 @@ h2{
     padding: 5px;
 }
 
-.breakfast > img{
-    position: absolute;
-    right: 50%;
-    margin: -90px 0px;
-    height: 250;
-    width: 20%;
-}
 
 .lunch > img{
     position: absolute;
@@ -52,4 +45,32 @@ h2{
 
 .break{
     line-height: 900%;
+}
+
+.servings{
+    position: absolute;
+    right: 55%;
+    margin: 50px 0px;
+}
+
+.blt{
+    position: absolute;
+    right: 45%;
+    margin: 40px 0px;
+}
+
+.blt > button{
+    background-color: #17252A;
+    border: none;
+    color: white;
+    font-size: 17px;
+    padding: 5px 14px;
+}
+
+.servings > button{
+    background-color: #17252A;
+    border: none;
+    color: white;
+    font-size: 17px;
+    padding: 5px 14px;
 }

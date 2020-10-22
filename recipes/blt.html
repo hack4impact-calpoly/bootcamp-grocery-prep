@@ -8,26 +8,34 @@
         <h1>A-MEAL-IA</h1>
         <nav>
             <a href="../index.html">Home</a>
+            <a href="../random/random.html">Random Recipe</a>
             <a href="../about.html">About the Chef</a>
         </nav>
     </header>
   <main>
       <h1 style="color:white; background-color: teal;">BLT</h2>
+        <div class="blt">
+            <h2>Servings</h2>
+            <button id="add">+</button>
+            <span id="serving-count">1</span>
+            <button id="sub">-</button>
+          </div>
       <h3>Objectively the best type of sandwich</h3>
       <img src="images/blt.jpg" height="200">
       <h2 style="color:white; background-color: teal;">Ingredients</h2>
-      <li>Sourdough bread</li>
-      <li>Bacon</li>
-      <li>Lettuce</li>
-      <li>Tomato</li>
-      <li>Avocado</li>
-      <li>Mayonaise</li>
+      <li><span class="count" base="2">2</span> slices sourdough bread</li>
+      <li><span class="count" base="2">2</span> strips bacon</li>
+      <li><span class="count" base="1">1</span> head of lettuce</li>
+      <li><span class="count" base="1">1</span> tomato</li>
+      <li><span class="count" base="1">1</span> avocado</li>
+      <li><span class="count" base="1">1</span> tsp mayonaise</li>
       <h2 style="color:white; background-color: teal;">Instructions</h2>
       <li>Toast sourdough bread</li>
       <li>Cook bacon in frying pan until crispy</li>
       <li>Slice tomato and avocado</li>
       <li>Put bacon, lettuce, tomato, and avocado on bread</li>
       <li>Add mayonaise and enjoy!</li>
+      <script src="serving.js"></script>
   </main>
 </body>
 </html>
