@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Soy Milk</title>
     <link href="styles/styles.css" rel="stylesheet">
+    <script src="servings.js"></script>
   </head>
   <body>
     <header>
@@ -19,17 +20,25 @@
     <p></p>
     <p>Ummmmmmm.</p>
 
+    <span>
+      <button id="down">-</button>
+    </span>
+    <span>Servings: <span id="serving-count">1</span></span>
+    <span>
+      <button id="up">+</button>
+    </span>
+
     <img class="pageimage" src="images/soyMilk.PNG">
 
     <div class="ingredients">
       <h3>Ingredients</h3>
       <ul>
-        <li>Filtered Water</li>
-        <li>Soybeans</li>
-        <li>Cane Sugar</li>
-        <li>Vitamin and Mineral Blend</li>
-        <li>Natural Flavor</li>
-        <li>Gellan Gum</li>
+        <li><span class="counter" ammount="1">1</span> Filtered Water<span class="plural"></span></li>
+        <li><span class="counter" ammount="6">6</span> Soybeans</li>
+        <li><span class="counter" ammount="2">2</span> Cane Sugars</li>
+        <li><span class="counter" ammount="1">1</span> Vitamin and Mineral Blend<span class="plural"></span></li>
+        <li><span class="counter" ammount="100">100</span> Natural Flavors</li>
+        <li><span class="counter" ammount="1">1</span> Gellan Gum<span class="plural"></span></li>
       </ul>
     </div>
     
