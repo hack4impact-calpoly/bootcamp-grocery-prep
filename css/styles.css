@@ -8,6 +8,20 @@ h2{
     background-color: #41aea9;
 }
 
+ul{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+li{
+    margin: 4px 0;
+}
+
 header{
     background-color: #386460;
     justify-content: space-between;
@@ -58,13 +72,13 @@ nav{
     width: 35%;
 }
 
-#chuna-imgs{
+#tessa-imgs{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.chuna-img{
+.tessa-img{
     width: 25%;
 }
 
@@ -74,3 +88,4 @@ nav{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
