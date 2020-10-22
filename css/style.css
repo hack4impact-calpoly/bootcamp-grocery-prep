@@ -15,6 +15,7 @@ body {
 .container {
   position: relative;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 #home-image {
@@ -67,7 +68,6 @@ body {
     color: #fff;
     display: block;
     transition: .3s background-color;
-
   }
    
   .nav a:hover {
@@ -75,9 +75,9 @@ body {
   }
    
    
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 800px) {
     .nav li {
-      width: 120px;
+      width: 200px;
       border-bottom: none;
       height: 50px;
       line-height: 50px;
@@ -147,6 +147,14 @@ ol {
 
 button:hover {
   cursor: pointer;
+}
+
+#rating-label {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px 0 8px;
+  margin-bottom: 20px;
 }
 
 

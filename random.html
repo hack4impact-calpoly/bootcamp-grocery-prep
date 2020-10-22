@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Grocery Prep - Random</title>
+  <meta charset="utf-8">
+  <!-- Stylesheets. -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+  <div id="home-image"></div>
+  <div class="bg-text">
+  <header>
+    <h1 style="font-size: 90px;">Grocery Prep</h1>
+    <div class="nav">
+      <ul>
+        <li class="home"><a href="index.html">Home</a></li>
+        <li class="about"><a href="about.html">About</a></li>
+        <li class="random"><a href="random.html">Random Recipe</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+      <h1 id="title"><br></h1>
+  </div>
+</div>
+<div class="text"></div><br>
+<img id="photo" height="220"><br>
+  <div id="ratings"><span id="rating"></span> &star;</div>
+      
+
+    <div class="showcase">
+      <div class="info"></div>
+
+
+        <div class="servings">
+          <h3>Servings</h3>
+          <button id="dec">-</button>
+          <span id="serving-count"></span>
+          <button id="inc">+</button>
+        </div>
+
+        <div class="rating">
+          <label for="select-rating" id="rating-label">Post a Rating</label>
+          <select id="select-rating">
+            <option selected hidden disabled>Choose Rating</option>
+            <option value="1">1 &starf;</option>
+            <option value="2">2 &starf;</option>
+            <option value="3">3 &starf;</option>
+            <option value="4">4 &starf;</option>
+            <option value="5">5 &starf;</option>
+          </select>
+          <button id="post-rating">Post</button>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <h2>Ingredients</h2>
+    <ul id="ingredients"></ul>
+
+    <h2>Instructions</h2>
+    <ol id="instructions"></ol>
+  </main>
+
+  <script src="recipe.js"></script>
+  <script src="random.js"></script>
+</body>
+</html>
