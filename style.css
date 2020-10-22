@@ -70,3 +70,11 @@ header {
 #counter{
     font-size: 30px;
 }
+
+#averageRating{
+    display: flex;
+    padding: 20px;
+    font-size: 25px;
+    color: purple;
+    font-style: italic;
+}
