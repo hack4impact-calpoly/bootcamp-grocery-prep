@@ -14,6 +14,7 @@ const getRecipe = () => {
 
 const parseData = (data) => {
   alldata = data;
+  document.location.hash = data._id
   document.getElementById('title').innerText = data.title;
   document.getElementById('desc').innerText = data.desc;
   document.getElementById('picture').src = data.picture;
@@ -40,7 +41,6 @@ const parseData = (data) => {
     document.getElementById('instructions').appendChild(item)
   })
 
-  console.log(data)
   document.getElementById('rating').innerText = avgRatings(data.ratings)
 }
 
@@ -67,8 +67,6 @@ const postRating = () => {
 }
 
 const avgRatings = (ratings) => {
-  console.log(ratings)
-  console.log("hi")
   let sum = 0
   for (const i in ratings)
     sum += +(ratings[i])
