@@ -1,8 +1,10 @@
+const recipeHash = window.location.hash.substring(1)
+const getParam = recipeHash !== undefined ? '?id=' + recipeHash : null
 const URL = 'https://3blzgwgi13.execute-api.us-west-2.amazonaws.com/Live/recipe'
 let alldata;
 
 const getRecipe = () => {
-  fetch(URL)
+  fetch(URL + getParam)
     .then(response => response.json())
     .then(data => parseData(data))
 
