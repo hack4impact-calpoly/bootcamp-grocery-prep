@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+   <script>
+      const URL = 'https://3blzgwgi13.execute-api.us-west-2.amazonaws.com/Live/recipe'
+
+      const getRecipe = async() => {
+         try{
+            const response = await fetch(URL)
+            const jsonResponse = await response.json()
+         } catch (err) {
+            console.error(err)
+         }
+      }
+
+      getRecipe()
+   </script>
+
+</html>

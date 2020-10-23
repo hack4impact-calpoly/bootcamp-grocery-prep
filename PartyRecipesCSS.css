@@ -1,0 +1,28 @@
+navbar ul{
+   width: 97%;
+   background-color: #7093DB;
+   padding: 2;
+}
+
+navbar ul li{
+  list-style-type: none;  
+  margin: 0 1vw;
+  font-size: 3vh;
+  display: inline;
+}
+
+a{
+   text-decoration: none;
+   color: black;
+   font-size: 18px;
+   font-family: optima;
+}
+
+a:hover{
+  background-color: #C6E9FF;
+}
+
+p {
+   font-family: "Optima", Times, serif;
+}
+

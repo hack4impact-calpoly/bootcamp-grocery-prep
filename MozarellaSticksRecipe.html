@@ -1,49 +1,82 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Mozarella Sticks Recipe></title>
-</head>
-<body>
-<navbar>
-<ul class="nav-list">
-<li class="nav-item"></li>
-<a href="PartyRecipes.html">Home</a>
-<li class="nav-item"></li>
-<a href="AboutAuthor.html">About Author</a>
-</ul>
-<br>
-<h1>Easy Mozarella Sticks Recipe With Ingredients and Instructions</h1>
-<br>
-<img src="https://d3cizcpymoenau.cloudfront.net/images/32012/SFS_Mozzarella_Sticks-8.jpg" width="400" height="400">
-<br>
-<p1><b>Ingredients<b></p1>
-<br>
-<ul>
-<li>1-1/2 cups Italian-style dried breadcrumbs</li>
-<li>1-1/3 cups freshly grated Parmesan</li>
-<li>1 teaspoon salt</li>
-<li>2 (16oz) blocks pasteurized mozarella cut int 4 by 1/2-inch sticks</li>
-<li>4 large eggs, beaten to blend</li>
-<li>1-1/2 cups vegetable oil</li>
-<li>4 cups Marinara Sauce</li>
-</ul>
-<br>
-<p2><b>Instructions<b></p2>
-<br>
-<ol>
-<li>Stir bread crumbs, Parmesan, and salt in bowl to blend</li>
-<li>Dip cheese in eggs, coat completely</li>
-<li>Coat cheese in bread crump mixture</li>
-<li>Place cheese sticks on baking sheet</li>
-<li>Coat sticks with eggs and breadcrumbs second time</li>
-<li>Cover and freeze for 2 hours - 2 days</li>
-<li>Heat oil in frying pan</li>
-<li>Fry cheese until golden brown, 1 minute per side</li>
-<li>Sprinkle remaining cheese and serve with Marinara</li>
-</ol>
-<body style="background-color:teal;">
-<p style="color:aliceblue;">
-<p style="color:aliceblue;">
-<h1 style="background-color:teal;>
-</body>
+   <head>
+      <title>Mozarella Sticks Recipe></title>
+      <link rel="stylesheet" href="PartyRecipesCSS.css">
+   </head>
+   <body>
+      <navbar>
+         <ul class="nav-list">
+            <li class="nav-item"></li>
+            <a href="PartyRecipes.html">Home</a>
+            <li class="nav-item"></li>
+            <a href="AboutAuthor.html">About Author</a>
+         </ul>
+      </navbar>
+      <h1>Easy Mozarella Sticks Recipe With Ingredients and Instructions</h1>
+      <br>
+      <img src="https://d3cizcpymoenau.cloudfront.net/images/32012/SFS_Mozzarella_Sticks-8.jpg" width="200" height="200">
+      <br>
+      <br>
+      <p1><b>Serving Size<b></p1>
+       <div class="holder">
+          <button id="sub">-</button>
+          <span id="count">4</span>
+          <button id="add">+</button>
+       </div>
+       <script>
+          const count = document.getElementById('count')
+
+          document.addEventListener('click', event => {
+             if(event.target.id === 'sub')updateCount(-1)
+             if(event.target.id === 'sub')updateIngredients('sub')
+             if(event.target.id === 'add')updateCount(1)
+             if(event.target.id === 'add')updateIngredients('add')
+          })
+
+          const updateIngredients = (sign) => {
+             var ul = document.getElementById("Ingredients");
+             var ilist = ul.getElementsByTagName("li");
+
+             for(var i = 0; i < ilist.length; ++i){
+                var item = ilist[i].innerHTML;
+                var num = parseFloat(item.match(/[\d.]+/));
+                if(sign === 'add') ilist[i].innerHTML = (parseFloat(item.match(/[\d.]+/))/+(count.innerText) + num).toFixed(2) + item.substring(item.indexOf(" "));
+                if(sign === 'sub') ilist[i].innerHTML = (num - parseFloat(item.match(/[\d.]+/))/+(count.innerText)).toFixed(2) + item.substring(item.indexOf(" "));
+             }
+          }
+
+          const updateCount = dir => {
+             count.innerText = +(count.innerText) + dir
+             if(count.innerText < 0){
+                count.innerText = 0
+             }
+          }
+      </script>
+      <br>
+      <p2><b>Ingredients<b></p2>
+      <ul id="Ingredients">
+         <li>1-1/2 cups Italian-style dried breadcrumbs</li>
+         <li>1-1/3 cups freshly grated Parmesan</li>
+         <li>1 teaspoon salt</li>
+         <li>2 (16oz) blocks pasteurized mozarella cut into 4 by 1/2-inch sticks</li>
+         <li>4 large eggs, beaten to blend</li>
+         <li>1-1/2 cups vegetable oil</li>
+         <li>4 cups Marinara Sauce</li>
+      </ul>
+      <p3><b>Instructions<b></p3>
+      <br>
+      <ol>
+         <li>Stir bread crumbs, Parmesan, and salt in bowl to blend</li>
+         <li>Dip cheese in eggs, coat completely</li>
+         <li>Coat cheese in bread crump mixture</li>
+         <li>Place cheese sticks on baking sheet</li>
+         <li>Coat sticks with eggs and breadcrumbs second time</li>
+         <li>Cover and freeze for 2 hours - 2 days</li>
+         <li>Heat oil in frying pan</li>
+         <li>Fry cheese until golden brown, 1 minute per side</li>
+         <li>Sprinkle remaining cheese and serve with Marinara</li>
+      </ol>
+      <body style="background-color: aliceblue;">
+   </body>
 </html>

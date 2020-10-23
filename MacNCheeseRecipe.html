@@ -1,46 +1,79 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Mac n' Cheese Recipe></title>
-</head>
-<body>
-<navbar>
-<ul class="nav-list">
-<li class="nav-item"></li>
-<a href="PartyRecipes.html">Home</a>
-<li class="nav-item"></li>
-<a href="AboutAuthor.html">About Author</a>
-</ul>
-<br>
-<h1>Easy Mac n' Cheese Recipe With Ingredients and Instructions</h1>
-<br>
-<img src="http://www.blissfullydelicious.com/wp-content/uploads/2011/10/pumpkin-mac-n-cheese-2-1024x778.jpg" height="400" width="400">
-<br>
-<p1><b>Ingredients<b></p1>
-<br>
-<ul>
-<li>450g macaroni pasta</li>
-<li>450g mature cheddar cheese, sliced</li>
-<li>15g butter</li>
-<li>salt and pepper</li>
-<li>340mL evaporated milk</li>
-</ul>
-<br>
-<p2><b>Instructions<b></p2>
-<br>
-<ol>
-<li>Preheat oven to 374F</li>
-<li>Bring large pot of slightly salted water to boil</li>
-<li>Add pasta and cook for 8-10 minutes, drain</li>
-<li>Grease 2 liter baking dish. Place quarter of macaroni
+   <head>
+      <title>Mac n' Cheese Recipe></title>
+      <link rel="stylesheet" href="PartyRecipesCSS.css">
+   </head>
+   <body>
+      <navbar>
+         <ul class="nav-list">
+            <li class="nav-item"></li>
+            <a href="PartyRecipes.html">Home</a>
+            <li class="nav-item"></li>
+            <a href="AboutAuthor.html">About Author</a>
+         </ul>
+      </navbar>
+      <h1>Easy Mac n' Cheese Recipe With Ingredients and Instructions</h1>
+      <br>
+      <img src="http://www.blissfullydelicious.com/wp-content/uploads/2011/10/pumpkin-mac-n-cheese-2-1024x778.jpg" height="200" width="250">
+      <br>
+      <br>
+      <p1><b>Serving Size<b></p1>
+       <div class="holder">
+          <button id="sub">-</button>
+          <span id="count">4</span>
+          <button id="add">+</button>
+       </div>
+       <script>
+          const count = document.getElementById('count')
+
+          document.addEventListener('click', event => {
+             if(event.target.id === 'sub')updateCount(-1)
+             if(event.target.id === 'sub')updateIngredients('sub')
+             if(event.target.id === 'add')updateCount(1)
+             if(event.target.id === 'add')updateIngredients('add')
+          })
+
+          const updateIngredients = (sign) => {
+             var ul = document.getElementById("Ingredients");
+             var ilist = ul.getElementsByTagName("li");
+
+             for(var i = 0; i < ilist.length; ++i){
+                var item = ilist[i].innerHTML;
+                var num = parseFloat(item.match(/[\d.]+/));
+                if(sign === 'add') ilist[i].innerHTML = (parseFloat(item.match(/[\d.]+/))/+(count.innerText) + num).toFixed(2) + item.substring(item.indexOf(" "));
+                if(sign === 'sub') ilist[i].innerHTML = (num - parseFloat(item.match(/[\d.]+/))/+(count.innerText)).toFixed(2) + item.substring(item.indexOf(" "));
+             }
+          }
+
+          const updateCount = dir => {
+             count.innerText = +(count.innerText) + dir
+             if(count.innerText < 0){
+                count.innerText = 0
+             }
+          }
+      </script>
+      <br>
+      <p2><b>Ingredients<b></p2>
+      <ul id="Ingredients">
+         <li>450 grams macaroni pasta</li>
+         <li>450 grams mature cheddar cheese, sliced</li>
+         <li>15 grams butter</li>
+         <li>1 tbsp salt and pepper</li>
+         <li>340 mL evaporated milk</li>
+      </ul>
+      <p3><b>Instructions<b></p3>
+      <br>
+      <ol>
+         <li>Preheat oven to 374F</li>
+         <li>Bring large pot of slightly salted water to boil</li>
+         <li>Add pasta and cook for 8-10 minutes, drain</li>
+         <li>Grease 2 liter baking dish. Place quarter of macaroni
 in bottom, followed by even layer of one-quarter of the
 cheese slices. Dot with butter and season with salt and
 pepper. Repeat layering 3 times. Pour milk over top</li>
-<li>Bake, uncovered, for 1 hour</li>
-</ol>
-<body style="background-color:teal;">
-<p style="color:aliceblue;">
-<p style="color:aliceblue;">
-<h1 style="background-color:teal;>
-</body>
+         <li>Bake, uncovered, for 1 hour</li>
+      </ol>
+      <body style="background-color:aliceblue;">
+   </body>
 </html>
