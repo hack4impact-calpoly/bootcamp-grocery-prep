@@ -23,18 +23,20 @@ header{
 
 .top{
    color:#EFEAE3;
+   /*padding: 0 1em;*/
    
 }
 
-#about{
+#about, #random{
    margin-left: 1em;
    /*border:1px solid red;*/
 
 }
 
 nav{
-   
+   display:flex;
    margin-left: auto;
+   
    justify-content: space-around;
    /*border:1px solid red;*/
 }
@@ -60,11 +62,11 @@ a:hover{
    color: #76AEED;
    color: #B55000;
 }
-h1, h2{
+h1, h2, h4{
    color: #B55000;
 }
 
-.title, h2{
+.title, h2, h4{
    padding: 0.5em 0;
 }
 
