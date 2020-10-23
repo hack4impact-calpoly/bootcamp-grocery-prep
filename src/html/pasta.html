@@ -16,6 +16,7 @@
         <ul class="nav-links">
             <li class="nav-link"><a href="../../index.html">Home</a></li>
             <li class="nav-link"><a href="./about.html">About Me</a></li>
+            <li class="nav-link"><a href="./random.html">Random Recipe</a></li>
         </ul>        
     </nav>
   </header>
@@ -27,18 +28,24 @@
                 The best thing about pasta is that everything can be in one pot if you tried.
             </p>
             <img class="pic-description" src="../asset/picture/pasta.jpg">
+            <p class="serving">
+                Servings
+                <button id="sub">-</button>
+                <span id="count">4</span>
+                <button id="add">+</button>
+            </p>
         </div>
     </div>
     <section class="recipe">
         <h1 class="highlight">Ingredients</h1>
             <ul>
-                <li>12 oz. shrimp, peeled and deveined</li>
-                <li>8 oz. angel hair pasta</li>
-                <li>2 tbsp olive oil, divided</li>
-                <li>2 cloves garlic, minced</li>
-                <li>1 pt. grape tomatoes</li>
-                <li>1/4 c. basil pesto</li>
-                <li>1 tbsp grated Parmesan</li>
+                <li><span class="ingredient">12</span> oz. shrimp, peeled and deveined</li>
+                <li><span class="ingredient">8</span> oz. angel hair pasta</li>
+                <li><span class="ingredient">2</span> tbsp olive oil, divided</li>
+                <li><span class="ingredient">2</span> cloves garlic, minced</li>
+                <li><span class="ingredient">1</span> pt. grape tomatoes</li>
+                <li><span class="ingredient">0.25</span> c. basil pesto</li>
+                <li><span class="ingredient">1</span> tbsp grated Parmesan</li>
             </ul>
             <h1 class="highlight">Instructions</h1>
             <ol>
@@ -57,5 +64,6 @@
   </main>
   <footer>
   </footer>
+  <script src="../js/recipe.js"></script>
 </body>
 </html>

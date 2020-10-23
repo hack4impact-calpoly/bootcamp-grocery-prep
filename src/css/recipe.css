@@ -12,18 +12,23 @@ main {
     padding-left: 20%;
 }
 
+.recipe-title {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 25px;
+}
+
 #welcome {
     font-size: xx-large;
     font-weight: bold;
 }
 
-.description {
-    display: flex;
-    justify-content: space-between;
+#ratings {
+    font-size: large;
 }
 
 .text-description {
-    display: flex;
+    grid-area: des;
     font-size: 20px;
     font-weight: 100;
     margin-bottom: 5px;
@@ -31,8 +36,51 @@ main {
 }
 
 .pic-description {
+    grid-area: pic;
     width: 30%;
     border-radius: 20px;
+}
+
+.serving {
+    grid-area: serving;
+    font-size: 25px;
+    font-weight: 510;
+    margin-bottom: 5px;
+    margin-right: 70px;
+}
+
+.rating {
+    grid-area: rating;
+    font-size: 25px;
+    font-weight: 510;
+    margin-bottom: 5px;
+    margin-right: 70px;
+}
+
+button {
+    display: inline-block;
+    background-color: #ffb5a7;
+    border: none;
+    border-radius: 7px;
+    font-size: 20px;
+    margin: 4px 2px;
+    padding: 5px 12px;
+    color: white;
+}
+
+#count {
+    font-weight: 100;
+    font-size: 22px;
+}
+
+.description {
+    display: grid;
+    grid-template-columns: 25px 500px 0px 730px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        ". des . pic"
+        ". serving . pic"
+        ". rating . pic";
 }
 
 .highlight {

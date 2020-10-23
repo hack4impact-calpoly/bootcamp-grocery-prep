@@ -16,6 +16,7 @@
         <ul class="nav-links">
             <li class="nav-link"><a href="../../index.html">Home</a></li>
             <li class="nav-link"><a href="./about.html">About Me</a></li>
+            <li class="nav-link"><a href="./random.html">Random Recipe</a></li>
         </ul>        
     </nav>
   </header>
@@ -27,17 +28,23 @@
                 A convenient, quick and easy recipe for lunch.
             </p>
             <img class="pic-description" src="../asset/picture/chicken.jpg">
+            <p class="serving">
+                Servings
+                <button id="sub">-</button>
+                <span id="count">4</span>
+                <button id="add">+</button>
+            </p>
         </div>
     </div>
     <section class="recipe">
         <h1 class="highlight">Ingredients</h1>
             <ul>
-                <li>1/4 c. extra-virgin olive oil, divided</li>
-                <li>4 chicken breasts</li>
-                <li>1 clove garlic</li>
-                <li>2 pt. cherry tomatoes</li>
-                <li>2 c. frozen corn</li>
-                <li>4 oz. Velveeta, cubed</li>
+                <li><span class="ingredient">0.25</span> c. extra-virgin olive oil, divided</li>
+                <li><span class="ingredient">4</span> chicken breasts</li>
+                <li><span class="ingredient">1</span> clove(s) garlic</li>
+                <li><span class="ingredient">2</span> pt. cherry tomatoes</li>
+                <li><span class="ingredient">2</span> c. frozen corn</li>
+                <li><span class="ingredient">4</span> oz. Velveeta, cubed</li>
                 <li>Optional: other cheeses</li>
                 <li>Optional: fresh basil</li>
             </ul>
@@ -53,5 +60,6 @@
   </main>
   <footer>
   </footer>
+  <script src="../js/recipe.js"></script>
 </body>
 </html>

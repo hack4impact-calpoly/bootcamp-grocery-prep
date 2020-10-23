@@ -16,6 +16,7 @@
         <ul class="nav-links">
             <li class="nav-link"><a href="../../index.html">Home</a></li>
             <li class="nav-link"><a href="./about.html">About Me</a></li>
+            <li class="nav-link"><a href="./random.html">Random Recipe</a></li>
         </ul>        
     </nav>
   </header>
@@ -27,17 +28,23 @@
                 This recipe is yummy AND Keto-friendly!
             </p>
             <img class="pic-description" src="../asset/picture/bagels.jpg">
+            <p class="serving">
+                Servings
+                <button id="sub">-</button>
+                <span id="count">8</span>
+                <button id="add">+</button>
+            </p>
         </div>
     </div>
     <section class="recipe">
         <h1 class="highlight">Ingredients</h1>
             <ul>
-                <li>2 c. almond flour</li>
-                <li>1 tbsp. baking powder</li>
-                <li>3 c. shredded mozzarella cheese</li>
-                <li>2 oz. cream cheese</li>
-                <li>2 large eggs, plus 1 large egg lightly beaten</li>
-                <li>3 tbsp. everything bagel seasoning</li>
+                <li><span class="ingredient">2</span> c. almond flour</li>
+                <li><span class="ingredient">1</span> tbsp. baking powder</li>
+                <li><span class="ingredient">3</span> c. shredded mozzarella cheese</li>
+                <li><span class="ingredient">2</span> oz. cream cheese</li>
+                <li><span class="ingredient">2</span> large eggs, plus 1 large egg lightly beaten</li>
+                <li><span class="ingredient">3</span> tbsp. everything bagel seasoning</li>
             </ul>
             <h1 class="highlight">Instructions</h1>
             <ol>
@@ -54,5 +61,6 @@
   </main>
   <footer>
   </footer>
+  <script src="../js/recipe.js"></script>
 </body>
 </html>

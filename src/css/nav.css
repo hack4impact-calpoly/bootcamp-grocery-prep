@@ -10,13 +10,23 @@ header {
     display: flex;
     width: 100%;
     background-color: #ffb5a7;
-    padding-left: 30px;
-    padding-right: 10px;
+    justify-content: space-between;
     align-items: center;
 }
 
 .nav-head {
     display: flex;
+    margin-left: 30px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    color: black;
+    font-size: large;
+    font-weight: 500;
+    margin-right: 30px;
 }
 
 .logo {
@@ -34,18 +44,20 @@ header {
     font-weight: bold;
 }
 
-.nav-links {
-    display: flex;
-    align-items: center;
-    list-style-type: none;
+.nav-link a {
+    /*display:flex;
+    flex-wrap: nowrap;*/
+    margin: auto 10px;
     color: black;
-    font-size: large;
-    font-weight: 500;
-    margin: auto 10px auto 550px;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
-.nav-link {
-    display:flex;
-    flex-wrap: nowrap;
-    margin: auto 10px;
+.nav-link a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+.nav-link a:hover{
+    text-decoration: underline;
 }
