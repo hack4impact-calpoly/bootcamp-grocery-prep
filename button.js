@@ -1,22 +1,19 @@
-const countElements = document.getElementsByClassName('count');
+const countElements = document.getElementsByClassName('count')
 
 document.addEventListener('click', event => {
-  if (event.target.id === 'sub')
-    updateServings(-1);
-  if (event.target.id === 'add')
-    updateServings(1);
-});
+  if (event.target.id === 'sub') updateServings(-1)
+  if (event.target.id === 'add') updateServings(1)
+})
 
 const updateServings = (direction) => {
-  const currentServings = document.getElementById('serving-count');
-  const servingCount = Number(currentServings.textContent);
-  const newServings = servingCount + direction;
+  const currentServings = document.getElementById('serving-count')
+  const servingCount = Number(currentServings.textContent)
+  const newServings = servingCount + direction
 
   if (newServings < 1) return;
-  currentServings.textContent = newServings;
+  currentServings.textContent = newServings
 
   Array.prototype.map.call(countElements, e => {
-    const itemServing = Number(e.getAttribute('base'));
-    e.textContent = +(itemServing * newServings);
+    e.textContent = +((e.textContent / servingCount) * newServings).toFixed(2)
   })
 }

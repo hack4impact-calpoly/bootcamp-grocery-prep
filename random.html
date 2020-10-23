@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Foodies - Random</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Grocery Prep</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="random.html">Random Recipe</a>
+      <a href="about.html">About the Chef</a>
+    </nav>
+  </header>
+  <main>
+    <div class="headline">
+      <h1 id="title"></h1>
+      <br>
+      <div id="ratings"><span id="rating"></span> &star;</div>
+      <br>
+    </div>
+
+    <div class="showcase">
+      <div class="info">
+        <div class="desc"></div>
+
+        <div class="servings">
+          <h3>Servings</h3>
+          <button id="sub">-</button>
+          <span id="serving-count"></span>
+          <button id="add">+</button>
+        </div>
+
+        <br>
+
+        <div class="rating">
+          <label for="select-rating" id="rating-label">Rate Me!</label>
+          <select id="select-rating">
+            <option selected hidden disabled>Select Rating</option>
+            <option value="1">1 &starf;</option>
+            <option value="2">2 &starf;</option>
+            <option value="3">3 &starf;</option>
+            <option value="4">4 &starf;</option>
+            <option value="5">5 &starf;</option>
+          </select>
+          <button id="post-rating">Post Rating</button>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <img id="food-photo" class="feature-img">
+
+    <h2>Ingredients</h2>
+    <ul id="ingredients"></ul>
+
+    <h2>Instructions</h2>
+    <ol id="instructions"></ol>
+  </main>
+
+  <script src="button.js"></script>
+  <script src="randomRecipe.js"></script>
+</body>
+</html>
