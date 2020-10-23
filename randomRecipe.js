@@ -96,7 +96,6 @@ const createLayout = (response) => {
         newStep.innerText = data.instructions[i]
         steps.appendChild(newStep)
     }
-
 }
 
 getRandomData(URL)
