@@ -10,6 +10,7 @@
          <h1 class="top">~Grocery Prep~</h1>
          <nav>
             <a class="top"  href = "index.html">Home</a>
+            <a class="top"  id="random"href="random.html">Random Recipe</a>
             <a class="top" id= "about" href = "about.html">About the Chef</a>
          </nav>
       </header>
@@ -17,25 +18,41 @@
          <h1 class = "title">Milk Tea</h1>
          
          <div class = "intro">
-            <p class= "desc">This drink is a delicious alternative to coffee for those
-            who choose a high-caffeine tea, like myself. Perfect for morning, afternoon,
-            late night homework grind...
-            <br><br>
-            (boba not included)</p>
-            
-            
+            <div class="info">
+               <p class= "desc">This drink is a delicious alternative to coffee for those
+               who choose a high-caffeine tea. Perfect for morning, afternoon,
+               late night homework grind... boba not included
+               </p>
+               <h4>Servings</h4>
+               <div class="buttons">
+                  <button id="-"> – </button>
+                  <span id="num_servings">1</span>
+                  <button id="+"> + </button>
+               </div>
+               
+               
+            </div>
             
             <img class="food-img" src=https://www.thespruceeats.com/thmb/TT36-6z8WRFpMwRQOyXRMDmJaXI=/3556x2667/smart/filters:no_upscale()/real-thai-iced-tea-recipe-765458-hero-01-31f363ed2a9443fb8337657f52f704ba.jpg> </img>
          </div>
          
          <h3>Ingredients</h3>
          <ul>
-            <li>tea</li>
+            <li>
+               <span class="ingredient">2</span>
+               tea
+            </li>
             (I highly recommend using black tea, but choose any really)
-            <li>water</li>
-            <li>milk of choice</li>
+            <li>
+               <span class="ingredient">1</span>
+               cup water
+            </li>
+            <li>
+               <span class="ingredient">0.25</span>
+               cup milk of choice
+            </li>
             (oat, soy, whole, half&half, etc.)
-            <li>sweetener of choice</li>
+            <li> variable sweetener of choice</li>
             (Honey or brown sugar recommended)
          </ul>
          
@@ -56,5 +73,6 @@
          </ol>
          
       </main>
+      <script src="recipe.js"></script>
    </body>
 </html>

@@ -10,26 +10,56 @@
         <h1 class="top">~Grocery Prep~</h1>
          <nav>
             <a class="top"  href = "index.html">Home</a>
+            <a class="top"  id="random"href="random.html">Random Recipe</a>
             <a class="top" id= "about" href = "about.html">About the Chef</a>
          </nav>
       </header>
       <main>
          <h1 class = "title">Banana Toast</h1>
          <div class = "intro">
-            <p class= "desc">This tasty toast makes the perfect hunger tamer,
-            whether that be morning breakfast, morning snack,
-            afternoon snack, or late night snack...</p>
+            
+            <div class="info">
+               <p class= "desc">This tasty toast makes the perfect hunger tamer,
+                  whether that be morning breakfast, morning snack,
+                  afternoon snack, or late night snack...
+               </p>
+               <h4>Servings</h4>
+               <div class="buttons">
+                  <button id="-"> – </button>
+                  <span id="num_servings">1</span>
+                  <button id="+"> + </button>
+               </div>
+               
+               
+            </div>
+            
+            
             
             <img class="food-img" src=https://freshandfoodie.files.wordpress.com/2011/03/dsc_0075.jpg> </img>
          </div>
          
          <h3>Ingredients</h3>
          <ul>
-            <li>bread of choice (sliced)</li>
+            
+            <li>
+               <span class="ingredient">1</span>
+               slice(s) of bread
+            </li>
             (also recommend cinammon bread for extra yum)
-            <li>peanut butter</li>
-            <li>banana</li>
-            <li>honey</li>
+            <li>
+               <span class="ingredient">0.5</span>
+               banana(s)
+            </li>
+            <li>
+               <span class="ingredient">1</span>
+               tbsp peanut butter
+            </li>
+            <li>
+               <span class="ingredient">1</span>
+               tsp honey
+            </li>
+            
+            
          </ul>
          
          <h3>Instructions</h3>
@@ -41,5 +71,6 @@
          </ol>
          
       </main>
+      <script src="recipe.js"></script>
    </body>
 </html>

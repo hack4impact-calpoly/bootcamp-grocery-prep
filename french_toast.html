@@ -10,35 +10,55 @@
          <h1 class="top">~Grocery Prep~</h1>
          <nav>
             <a class="top"  href = "index.html">Home</a>
+            <a class="top"  id="random"href="random.html">Random Recipe</a>
             <a class="top" id= "about" href = "about.html">About the Chef</a>
          </nav>
       </header>
       <main>
          <h1 class = "title">French Toast</h1>
          <div class = "intro">
-            <p class= "desc">
-            Delicious french toast. Enjoy anytime, anywhere.
-            </p>
             
-            
+            <div class="info">
+               <p class= "desc">
+               Delicious french toast. Enjoy anytime, anywhere.
+               </p>
+               <h4>Servings</h4>
+               <div class="buttons">
+                  <button id="-"> – </button>
+                  <span id="num_servings">5</span>
+                  <button id="+"> + </button>
+               </div>
+               
+            </div>
             
             <img class="food-img" src=https://i2.wp.com/gimmedelicious.com/wp-content/uploads/2015/05/cinnamon-swirl-french-toast-1-of-7-731x1024.jpg> </img>
          </div>
          
          <h3>Ingredients</h3>
          <ul>
-            <li>Loaf of cinammon bread
-               <ul>
-                  <li>thick/unsliced recommended</li>
-                  <li>(option) 'tis fall; try pumkin cinnamon bread Ooo</li>
-               </ul>
+            
+            <li>
+               <span class="ingredient">1</span>
+               loaf of cinnamon bread
+            </li>
+            <li>
+               <span class="ingredient">5</span>
+               eggs
+            </li>
+            <li>
+               <span class="ingredient">0.5</span>
+               cup(s) milk
+            </li>
+            <li>
+               <span class="ingredient">1</span>
+               tsp vanilla liquid
+            </li>
+            <li>
+               <span class="ingredient">1</span>
+               stick(s) of butter
             </li>
             
             
-            <li>5+ eggs</li>
-            <li>milk</li>
-            <li>vanilla liquid</li>
-            <li>butter</li>
             
          </ul>
          
@@ -63,5 +83,6 @@
          </ol>
          
       </main>
+      <script src="recipe.js"></script>
    </body>
 </html>

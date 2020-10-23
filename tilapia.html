@@ -10,32 +10,44 @@
          <h1 class="top">~Grocery Prep~</h1>
          <nav>
             <a class="top"  href = "index.html">Home</a>
+            <a class="top"  id="random"href="random.html">Random Recipe</a>
             <a class="top" id= "about" href = "about.html">About the Chef</a>
          </nav>
       </header>
       <main>
          <h1 class = "title">Tilapia</h1>
          <div class = "intro">
-            <p class= "desc">
-            A dish of fish and rice/pasta, because what else would it go with. Can also be enjoyed
-            with your choice of side.
-            </p>
             
+             <div class="info">
+               <p class= "desc">
+               A dish of fish and rice/pasta, because what else would it go with. Can also be enjoyed
+               with your choice of side.
+               </p>
+               <h4>Servings</h4>
+               <div class="buttons">
+                  <button id="-"> – </button>
+                  <span id="num_servings">6</span>
+                  <button id="+"> + </button>
+               </div>
+            </div>
             
-            
-            <img class="food-img" src=tilapia.jpg> </img>
+            <img class="food-img" src=images/tilapia.jpg> </img>
          </div>
          
          <h3>Ingredients</h3>
          <ul>
-            <li>tilapia filets
+            <li>
+               <span class="ingredient">6</span>
+               tilapia filets
                <ul>
                   <li>I get the frozen ones from Costco</li>
                </ul>
             </li>
             
             
-            <li>seasonings
+            <li>
+              
+               variable amount of seasonings
                <ul>
                   <li>Mrs. Dash</li>
                   <li>dill</li>
@@ -44,20 +56,29 @@
                   <li>paprika</li>
                </ul>
             </li>
-            <li>white wine
+            <li>
+               <span class="ingredient">0.5</span>
+               bottle(s) white wine
                <ul>
-                  <li>does not have to be cooking wine, cheap $2 bottle will do</li>
+                  <li>does not have to be cooking wine; $2 bottle will do</li>
                </ul>
             </li>
-            <li>rice or pasta</li>
-            <li> optional sides
+            <li>
+               <span class="ingredient">4</span>
+               cup(s)? rice or pasta</li>
+            <li>
+               <span>1</span>
+               optional side stuff
                <ul>
-                  <li>tomato</li>
+                  <li>tomatoes</li>
                   <li>brussel sprouts</li>
                   <li>broccoli</li>
                </ul>
             </li>
-            <li>butter</li>
+            <li>
+               <span class="ingredient">0.5</span>
+               stick(s) butter
+            </li>
             
          </ul>
          
@@ -82,5 +103,7 @@
          </ol>
          
       </main>
+      <script src="recipe.js"></script>
+
    </body>
 </html>

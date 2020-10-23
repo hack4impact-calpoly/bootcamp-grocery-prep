@@ -1,0 +1,65 @@
+<html lang="en-US">
+   <head> 
+      <meta charset="utf-8">
+      <title>Sah Dude</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      
+   </head>
+   <body>
+      <header>
+        <h1 class="top">~Grocery Prep~</h1>
+         <nav>
+            <a class="top"  href = "index.html">Home</a>
+            <a class="top"  id="random"href="random.html">Random Recipe</a>
+            <a class="top" id= "about" href = "about.html">About the Chef</a>
+         </nav>
+      </header>
+      <main>
+         <h1 class = "title"> </h1>
+         <div class = "intro">
+            
+            <div class="info">
+               <p class= "desc">
+               </p>
+               <h4>Servings</h4>
+               <div class="buttons">
+                  <button id="-"> – </button>
+                  <span id="num_servings">1</span>
+                  <button id="+"> + </button>
+               </div>
+               <div id="ratings"><span id="rating"></span> &star;</div>
+               
+                <div class="rating">
+                  <label for="select-rating" id="rating-label">Rate Me!</label><br>
+                  <select id="select-rating">
+                    <option selected hidden disabled>Select Rating</option>
+                    <option value="1">1 &star;</option>
+                    <option value="2">2 &star;</option>
+                    <option value="3">3 &star;</option>
+                    <option value="4">4 &star;</option>
+                    <option value="5">5 &star;</option>
+                  </select>
+                  <button id="post-rating">Post Rating</button>
+                </div>
+               
+            </div>
+            
+            
+            <img class="food-img" > </img>
+         </div>
+         
+         <h3>Ingredients</h3>
+         <ul id="ingredients">
+            
+         </ul>
+         
+         <h3>Instructions</h3>
+         <ol id="instructions">
+            
+         </ol>
+         
+      </main>
+      <script src="recipe.js"></script>
+      <script src="random.js"></script>
+   </body>
+</html>

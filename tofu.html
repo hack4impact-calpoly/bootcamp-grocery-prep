@@ -10,45 +10,62 @@
          <h1 class="top">~Grocery Prep~</h1>
          <nav>
             <a class="top"  href = "index.html">Home</a>
+            <a class="top"  id="random"href="random.html">Random Recipe</a>
             <a class="top" id= "about" href = "about.html">About the Chef</a>
          </nav>
       </header>
       <main>
          <h1 class = "title">Spicy Tofu Soup</h1>
          <div class = "intro">
-            <p class= "desc">
-            Perfect for cold or even any weather. Spicy tofu soup.
-            </p>
+            
+            <div class="info">
+               <p class= "desc">
+               Perfect for cold or even any weather. Spicy tofu soup.
+               </p>
+               <h4>Servings</h4>
+               <div class="buttons">
+                  <button id="-"> – </button>
+                  <span id="num_servings">4</span>
+                  <button id="+"> + </button>
+               </div>
+            </div>
             
             
-            
-            <img class="food-img" src=tofu2.jpg> </img>
+            <img class="food-img" src=images/tofu2.jpg> </img>
          </div>
          
          <h3>Ingredients</h3>
          <ul>
-            <li>spicy tofu soup mix
+            <li>
+               <span class="ingredient">1</span>
+               spicy tofu soup kit
                <ul>
                   <li>from any Asian market near you</li>
                </ul>
             </li>
             
             
-            <li>extra tofu if you want
-               <ul>
-                  <li>soft recommended</li>
-                  
-               </ul>
-            </li>
-            <li>(option)egg
+            <li>
+               <span class="ingredient">4</span>
+               (optional) egg(s)
               
             </li>
-            <li>(option) rice</li>
-            <li> extras
+            <li>
+               <span class="ingredient">2</span>
+               (optional) cup(s) rice</li>
+            <li>
+               
+               extras
                <ul>
-                  <li>bok choi</li>
-                  <li>mushrooms</li>
-                  <li>kimchi</li>
+                  <li>
+                     <span class="ingredient">1</span>
+                     cup(s) bok choi</li>
+                  <li>
+                     <span class="ingredient">0.5</span>
+                     cup(s) mushrooms</li>
+                  <li>
+                     <span class="ingredient">1</span>
+                     unit(s) of kimchi</li>
                </ul>
             </li>
             
@@ -67,5 +84,6 @@
          </ol>
          
       </main>
+      <script src="recipe.js"></script>
    </body>
 </html>
