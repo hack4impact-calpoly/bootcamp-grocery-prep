@@ -115,6 +115,7 @@ ul, ol {
     width: 38px;
     margin-left: 20px;
     margin-right: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 button:hover {
@@ -123,4 +124,41 @@ button:hover {
 
 button:active {
     border: none;
+}
+
+nav {
+    display: flex;
+}
+
+.page {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#picture {
+    all: unset;
+    height: 300px;
+}
+
+#randomOverview {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 4%;
+}
+
+#post-rating {
+    margin-top: 20px;
+}
+
+#submit-rating {
+    background-color: #484848;
+    color: white;
+    border: none;
+    height: 30px;
+    width: 70px;
+    margin-left: 20px;
+    font-family: 'Montserrat', sans-serif;
 }

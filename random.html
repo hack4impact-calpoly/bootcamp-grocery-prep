@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <link href="styles/style.css"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title id="pageTitle">Taste of Campus - Random Recipe </title>
+</head>
+<body>
+    <div class="navbar">
+        <header><h1>Taste of Campus</h1></header>
+        <nav>
+            <div class="page"><a href="index.html">Home</a></div>
+            <div class="page"><a href="meet-the-chef.html">Meet the Chef</a></div>
+            <div class="page"><a href="random.html">Random Recipe</a></div>
+        </nav>
+    </div>
+    <div id="randomOverview">
+    <div class="overview-text">
+        <div id="top-bar">
+            <h1 id="title"></h1>
+            <h3 id="rating"></h3>
+        </div>
+    <p id="description">
+        
+    </p>
+    <div class="serving-info">
+    <div class="serving-adjust">
+        <div><h3>Servings</h3></div>
+        <div><button id="minus">-</button></div>
+        <div><span id="count"></span></div>
+        <div><button id="plus">+</button></div>
+    </div>
+    </div>
+    <div id="post-rating">
+            <label>Post a rating:  </label>
+            <select id="review">
+                <option value="5">5 ★</option>
+                <option value="4">4 ★</option>
+                <option value="3">3 ★</option>
+                <option value="2">2 ★</option>
+                <option value="1">1 ★</option>
+                <option value="0">0 ★</option>
+            </select>
+            <button id="submit-rating">Submit</button>
+    </div>
+    </div>
+    <div class="overview-image">
+        <img id="picture">
+    </div>
+    </div>
+    <div class="recipe">
+    <div class="ingredients">
+    <h2>Ingredients</h2>
+    <ul id="ingredientsList">
+ 
+    </ul>
+    </div>
+    <div class = instructions>
+    <h2>Instructions</h2>
+    <ol id="instructionsList">
+        
+    </ol>
+    </div>
+    </div>
+<script src="serving.js"></script>
+<script src="random.js"></script>
+</body>
+</html>
