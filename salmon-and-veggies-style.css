@@ -1,0 +1,66 @@
+header {
+    background-color: 00587a;
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar {
+    flex: 1;
+    color: white;
+    justify-content: left;
+    font-family: 'Lucida Sans';
+    margin-left: 20px;
+}
+
+nav {
+    flex: 1;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin-left: 50px;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+body {
+    background-color: e7e7de;
+    font-family: 'Lucida Sans';
+    margin: 0;
+}
+
+main {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 20px;
+}
+
+h2 {
+    background-color: 008891;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    padding: 5px;
+}
+
+.bio {
+    display: flex;
+}
+
+.description {
+    margin-right: 10px;
+}
+
+.salmon-and-veggies-img {
+    margin-left: auto;
+}

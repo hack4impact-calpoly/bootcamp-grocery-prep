@@ -1,0 +1,188 @@
+header {
+    background-color: 00587a;
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar {
+    flex: 1;
+    color: white;
+    justify-content: left;
+    font-family: 'Lucida Sans';
+    margin-left: 20px;
+}
+
+nav {
+    flex: 1;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin-left: 50px;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+body {
+    background-color: e7e7de;
+    font-family: 'Lucida Sans';
+    margin: 0;
+}
+
+main {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 20px;
+}
+
+.welcome {
+    text-align: center;
+    margin: auto;
+}
+
+ol li {
+    margin-bottom: 30px;
+    margin-right: 10px;
+}
+
+h2 {
+    background-color: 008891;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    padding: 5px;
+}
+
+.recipes {
+    text-align: left;
+}
+
+.breakfast-links {
+    list-style: none;
+    padding-left: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.breakfast-list {
+    display: flex;
+}
+
+.breakfast-item {
+    text-decoration: none;
+    color: e63946;
+}
+
+.breakfast-item:hover {
+    text-decoration: underline;
+}
+
+.breakfast-img {
+    margin-left: auto;
+}
+
+.lunch-links {
+    list-style: none;
+    padding-left: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.lunch-list {
+    display: flex;
+}
+
+.lunch-item {
+    text-decoration: none;
+    color: e63946;
+}
+
+.lunch-item:hover {
+    text-decoration: underline;
+}
+
+.lunch-img {
+    margin-left: auto;
+}
+
+.dinner-links {
+    list-style: none;
+    padding-left: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.dinner-list {
+    display: flex;
+}
+
+.dinner-item {
+    text-decoration: none;
+    color: e63946;
+}
+
+.dinner-item:hover {
+    text-decoration: underline;
+}
+
+.dinner-img {
+    margin-left: auto;
+}
+
+.desserts-links {
+    list-style: none;
+    padding-left: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.desserts-list {
+    display: flex;
+}
+
+.desserts-item {
+    text-decoration: none;
+    color: e63946;
+}
+
+.desserts-item:hover {
+    text-decoration: underline;
+}
+
+.desserts-img {
+    margin-left: auto;
+}
+
+.snacks-links {
+    list-style: none;
+    padding-left: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.snacks-list {
+    display: flex;
+}
+
+.snacks-item {
+    text-decoration: none;
+    color: e63946;
+}
+
+.snacks-item:hover {
+    text-decoration: underline;
+}
+
+.snacks-img {
+    margin-left: auto;
+}
