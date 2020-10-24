@@ -1,37 +1,44 @@
 <html lang="en-US">
     <head>
         <meta charset="utf-8">
-        <title>
-            Spaghetti Recipe
-        </title>
+        <title>Spaghetti Recipe</title>
         <link rel="stylesheet" href="../styles.css">
     </head>
     <body>
-        <header>
+        <header id="main-header">
             <h1>GROCERY PREP</h1>
                 <nav>
                     <a href="../index.html">HOME</a>
-                    <a href="../aboutTheChef.html" style="">ABOUT THE CHEF</a>
+                    <a href="../aboutTheChef.html">ABOUT THE CHEF</a>
+                    <a href="../random.html">RANDOM RECIPE</a>
                 </nav>
         </header>
         <main>
-            <h2>Spaghetti</h2>
-            <div class="food-section-recipepage">
+            <h2 class="title">Spaghetti</h2>
+            <div class="food-section-recipepage-wrapper">
                 <img src="../img/spaghettiIcon.jpg" height="350">
+                <div id="serving-wrapper">
+                    <h3>Servings</h3>
+                    <div id="button-wrapper">
+                        <button id="decrement">-</button>
+                        <span id="serving-count">1</span>
+                        <button id="increment">+</button>
+                    </div>
+                </div>
             </div>
             <h3>Ingredients</h3>
             <ul>
-                <li>1 pound of ground beef</li>
-                <li>1 onion, chopped</li>
-                <li>4 cloves garlinc, minced</li>
-                <li>1 small green bell pepper, diced</li>
-                <li>1 can diced tomatoes</li>
-                <li>1 can tomato sauce</li>
-                <li>1 can tomato paste</li>
-                <li>2 tsp dried oregano</li>
-                <li>2 tsp dried basil</li>
-                <li>1 tsp salt</li>
-                <li>1/2 tsp black pepper</li>
+                <li><span class="count">1</span> pound of ground beef</li>
+                <li><span class="count">1</span> onion, chopped</li>
+                <li><span class="count">4</span> cloves garlinc, minced</li>
+                <li><span class="count">1</span> small green bell pepper, diced</li>
+                <li><span class="count">1</span> can diced tomatoes</li>
+                <li><span class="count">1</span> can tomato sauce</li>
+                <li><span class="count">1</span> can tomato paste</li>
+                <li><span class="count">2</span> tsp dried oregano</li>
+                <li><span class="count">2</span> tsp dried basil</li>
+                <li><span class="count">1</span> tsp salt</li>
+                <li><span class="count">1/2</span> tsp black pepper</li>
             </ul>
             <br>
             <h3>Instructions</h3>
@@ -44,5 +51,6 @@
                 <li>Simmer for 1 hour, stirring occasionally</li>
             </ol>
         </main>
+        <script src="../js/recipes.js"></script>
     </body>
 </html>

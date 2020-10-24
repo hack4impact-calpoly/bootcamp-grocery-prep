@@ -1,31 +1,38 @@
 <html lang="en-US">
     <head>
         <meta charset="utf-8">
-        <title>
-            Salad Recipe
-        </title>
+        <title>Salad Recipe</title>
         <link rel="stylesheet" href="../styles.css">
     </head>
     <body>
-        <header>
+        <header id="main-header">
             <h1>GROCERY PREP</h1>
                 <nav>
                     <a href="../index.html">HOME</a>
-                    <a href="../aboutTheChef.html" style="">ABOUT THE CHEF</a>
+                    <a href="../aboutTheChef.html">ABOUT THE CHEF</a>
+\                   <a href="../random.html">RANDOM RECIPE</a>
                 </nav>
         </header>
         <main>
-            <h2>Salad</h2>
-            <div class="food-section-recipepage">
+            <h2 class="title">Salad</h2>
+            <div class="food-section-recipepage-wrapper">
                 <img src="../img/saladIcon.jpg" height="350">
+                <div id="serving-wrapper">
+                    <h3>Servings</h3>
+                    <div id="button-wrapper">
+                        <button id="decrement">-</button>
+                        <span id="serving-count">1</span>
+                        <button id="increment">+</button>
+                    </div>
+                </div>
             </div>
             <h3>Ingredients</h3>
             <ul>
-                <li>Fresh greens</li>
-                <li>Cucumbers</li>
-                <li>Red Onions</li>
-                <li>Nuts/Seeds</li>
-                <li>Dressing</li>
+                <li><span class="count">1</span> cup Fresh greens</li>
+                <li><span class="count">1/4</span> cup cucumbers</li>
+                <li><span class="count">1/4</span> cup red onions</li>
+                <li><span class="count">1/4</span> cup nuts/seeds</li>
+                <li><span class="count">1/2</span> cup dressing</li>
             </ul>
             <p>My favorite thing about salads is their flexibility - feel free to make adjustments to
                 the ingredients.
@@ -37,5 +44,6 @@
                 <li>Mix</li>
             </ol>
         </main>
+        <script src="../js/recipes.js"></script>
     </body>
 </html>

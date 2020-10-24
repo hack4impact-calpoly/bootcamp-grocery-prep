@@ -1,35 +1,42 @@
 <html lang="en-US">
     <head>
         <meta charset="utf-8">
-        <title>
-            French Toast Recipe
-        </title>
+        <title>French Toast Recipe</title>
         <link rel="stylesheet" href="../styles.css">
     </head>
     <body>
-        <header>
+        <header id="main-header">
             <h1>GROCERY PREP</h1>
                 <nav>
                     <a href="../index.html">HOME</a>
-                    <a href="../aboutTheChef.html" style="">ABOUT THE CHEF</a>
+                    <a href="../aboutTheChef.html">ABOUT THE CHEF</a>
+                    <a href="../random.html">RANDOM RECIPE</a>
                 </nav>
         </header>
         <main>
             <h2>French Toast</h2>
-            <div class="food-section-recipepage">
+            <div class="food-section-recipepage-wrapper">
                 <img src="../img/frenchTestIcon.jpg" height="350">
+                <div id="serving-wrapper">
+                    <h3>Servings</h3>
+                    <div id="buttons-wrapper">
+                        <button id="decrement">-</button>
+                        <span id="serving-count">1</span>
+                        <button id="increment">+</button>
+                    </div>
+                </div>
             </div>
             <h3>Ingredients</h3>
             <ul>
-                <li>1 tsp ground cinnamon</li>
-                <li>1/4 tsp ground nutmeg</li>
-                <li>2 tbsp sugar</li>
-                <li>4 tbsp butter</li>
-                <li>4 eggs</li>
-                <li>1/4 cup milk</li>
-                <li>1/2 tsp vanilla extract</li>
-                <li>8 slices of chllah, brioche, or white bread</li>
-                <li>1/2 cuper maple syrup</li>
+                <li><span class="count">1</span> tsp ground cinnamon</li>
+                <li><span class="count">1/4</span> tsp ground nutmeg</li>
+                <li><span class="count">2</span> tbsp sugar</li>
+                <li><span class="count">4</span> tbsp butter</li>
+                <li><span class="count">4</span> eggs</li>
+                <li><span class="count">1/4</span> cup milk</li>
+                <li><span class="count">1/2</span> tsp vanilla extract</li>
+                <li><span class="count">8</span> slices of challah, brioche, or white bread</li>
+                <li><span class="count">1/2</span> cup maple syrup</li>
             </ul>
             <br>
             <h3>Instructions</h3>
@@ -43,5 +50,6 @@
                 <li>Flip to cook other side</li>
             </ol>
         </main>
+        <script src="../js/recipes.js"></script>
     </body>
 </html>

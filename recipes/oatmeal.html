@@ -1,40 +1,48 @@
 <html lang="en-US">
     <head>
         <meta charset="utf-8">
-        <title>
-            Oatmeal Recipe
-        </title>
+        <title>Oatmeal Recipe</title>
         <link rel="stylesheet" href="../styles.css">
     </head>
     <body>
-        <header>
+        <header id="main-header">
             <h1>GROCERY PREP</h1>
                 <nav>
                     <a href="../index.html">HOME</a>
-                    <a href="../aboutTheChef.html" style="">ABOUT THE CHEF</a>
+                    <a href="../aboutTheChef.html">ABOUT THE CHEF</a>
+                    <a href="../random.html">RANDOM RECIPE</a>
                 </nav>
         </header>
         <main>
-            <h2>Oatmeal</h2>
-            <div class="food-section-recipepage">
+            <h2 class="title">Oatmeal</h2>
+            <div class="food-section-recipepage-wrapper">
                 <img src="../img/oatmealIcon.jpg" height="350">
+                <div id="serving-wrapper">
+                    <h3>Servings</h3>
+                    <div id="button-wrapper">
+                        <button id="decrement">-</button>
+                        <span id="serving-count">1</span>
+                        <button id="increment">+</button>
+                    </div>
+                </div>
             </div>
             <h3>Ingredients</h3>
             <ul>
-                <li>Quick oats, steel cut oats or rolled oats</li>
-                <li>Milk</li>
-                <li>Salt</li>
-                <li>Water</li>
+                <li><span class="count">1/2</span> cup quick oats, steel cut oats or rolled oats</li>
+                <li><span class="count">1/4</span> cup milk</li>
+                <li><span class="count">1</span> tsp salt</li>
+                <li><span class="count">1/4</span> cup water</li>
             </ul>
             <p>
                 Feel free to add any ingredients of your choosing, such as fruits or nuts.
             </p>
             <br>
             <ol>
-                <li>Combine oats and water/milk in a 1:2 ratio</li>
+                <li>Combine oats and water/milk</li>
                 <li>Microwave on high for 2 minutes</li>
                 <li>Mix any additional ingredients</li>
             </ol>
         </main>
+        <script src="../js/recipes.js"></script>
     </body>
 </html>

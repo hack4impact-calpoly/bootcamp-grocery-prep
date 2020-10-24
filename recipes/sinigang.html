@@ -1,35 +1,42 @@
 <html lang="en-US">
     <head>
         <meta charset="utf-8">
-        <title>
-            Sinigang Recipe
-        </title>
+        <title>Sinigang Recipe</title>
         <link rel="stylesheet" href="../styles.css">
     </head>
     <body>
-        <header>
+        <header id="main-header">
             <h1>GROCERY PREP</h1>
                 <nav>
                     <a href="../index.html">HOME</a>
-                    <a href="../aboutTheChef.html" style="">ABOUT THE CHEF</a>
+                    <a href="../aboutTheChef.html">ABOUT THE CHEF</a>
+                    <a href="../random.html">RANDOM RECIPE</a>
                 </nav>
         </header>
         <main>
-            <h2>Sinigang</h2>
-            <div class="food-section-recipepage">
+            <h2 class="title">Sinigang</h2>
+            <div class="food-section-recipepage-wrapper">
                 <img src="../img/sinigangIcon.jpg" height="350">
+                <div id="serving-wrapper">
+                    <h3>Servings</h3>
+                    <div id="button-wrapper">
+                        <button id="decrement">-</button>
+                        <span id="serving-count">1</span>
+                        <button id="increment">+</button>
+                    </div>
+                </div>
             </div>
             <h3>Ingredients</h3>
             <ul>
-                <li>1 tbsp vegetable oil</li>
-                <li>1 small onion, chopped</li>
-                <li>1 tsp salt</li>
-                <li>1 1/2 piece fresh ginger, chopped</li>
-                <li>2 medium whole plum tomatoes</li>
-                <li>1 pound bone-in pork chops</li>
-                <li>4 cups water</li>
-                <li>1 package tamarind soup base</li>
-                <li>1/2 pound fresh green beans, trimmed</li>
+                <li><span class="count">1</span> tbsp vegetable oil</li>
+                <li><span class="count">1</span> small onion, chopped</li>
+                <li><span class="count">1</span> tsp salt</li>
+                <li><span class="count">1 1/2</span> piece fresh ginger, chopped</li>
+                <li><span class="count">2</span> medium whole plum tomatoes</li>
+                <li><span class="count">1</span> pound bone-in pork chops</li>
+                <li><span class="count">4</span> cups water</li>
+                <li><span class="count">1</span> package tamarind soup base</li>
+                <li><span class="count">1/2</span> pound fresh green beans, trimmed</li>
             </ul>
             <br>
             <ol>
@@ -45,5 +52,6 @@
                 <li>Stir in green beans and cook until tender</li>
             </ol>
         </main>
+        <script src="../js/recipes.js"></script>
     </body>
 </html>

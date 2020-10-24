@@ -1,0 +1,60 @@
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title id="head-title"></title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header id="main-header">
+            <h1>GROCERY PREP</h1>
+                <nav>
+                    <a href="index.html">HOME</a>
+                    <a href="aboutTheChef.html">ABOUT THE CHEF</a>
+                    <a href="random.html">RANDOM RECIPE</a>
+                </nav>
+        </header>
+        <main>
+            <h2 class="title" id="title"></h2>
+            <div class="food-section-recipepage-wrapper">
+                <div id="avg-rating-wrapper">
+                    AVERAGE RATINGS: <span id="avg-rating"></span> ✩
+                </div>
+                <div id="description-image">
+                    <p id="description"></p>
+                    <img id="food-photo" height="350" >
+                </div>
+                <div id="serving-rateme-wrapper">
+                    <div id="serving-wrapper">
+                        <h3>Servings</h3>
+                        <div id="buttons-wrapper">
+                            <button id="decrement">-</button>
+                            <span id="serving-count"></span>
+                            <button id="increment">+</button>
+                        </div>
+                    </div>
+                    <div id="rate-me-wrapper">
+                        <label for="select-rating">Rate me here:</label>
+                        <select id="select-rating">
+                            <option value=0>Please Choose an Option</option>
+                            <option value=1>1 ✩</option>
+                            <option value=2>2 ✩</option>
+                            <option value=3>3 ✩</option>
+                            <option value=4>4 ✩</option>
+                            <option value=5>5 ✩</option>
+                        </select>
+                        <button id="submit-rating">Submit Rating</button>
+                    </div>
+                </div>
+            </div>
+            <h3>Ingredients</h3>
+            <ul id="ingredients">
+            </ul>
+            <br>
+            <h3>Instructions</h3>
+            <ol id="instructions"></ol>
+            </ol>
+        </main>
+        <script src="js/random.js"></script>
+        <script src="js/recipes.js"></script>
+    </body>
+</html>

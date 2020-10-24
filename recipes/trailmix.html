@@ -1,32 +1,39 @@
 <html lang="en-US">
     <head>
         <meta charset="utf-8">
-        <title>
-            Trail Mix Recipe
-        </title>
+        <title>Trail Mix Recipe</title>
         <link rel="stylesheet" href="../styles.css">
     </head>
     <body>
-        <header>
+        <header id="main-header">
             <h1>GROCERY PREP</h1>
                 <nav>
                     <a href="../index.html">HOME</a>
-                    <a href="../aboutTheChef.html" style="">ABOUT THE CHEF</a>
+                    <a href="../aboutTheChef.html">ABOUT THE CHEF</a>
+                    <a href="../random.html">RANDOM RECIPE</a>
                 </nav>
         </header>
         <main>
-            <h2>Trail Mix</h2>
-            <div class="food-section-recipepage">
+            <h2 class="title">Trail Mix</h2>
+            <div class="food-section-recipepage-wrapper">
                 <img src="../img/trailMixIcon.jpg" height="350">
+                <div id="serving-wrapper">
+                    <h3>Servings</h3>
+                    <div id="button-wrapper">
+                        <button id="decrement">-</button>
+                        <span id="serving-count">1</span>
+                        <button id="increment">+</button>
+                    </div>
+                </div>
             </div>
             <h3>Ingredients</h3>
             <ul>
-                <li>Pecans</li>
-                <li>Walnuts</li>
-                <li>Cashews</li>
-                <li>Almonds</li>
-                <li>Dried Cherries</li>
-                <li>Dried Cranberries</li>
+                <li><span class="count">1/4</span> cup pecans</li>
+                <li><span class="count">1/4</span> cup walnuts</li>
+                <li><span class="count">1/4</span> cup cashews</li>
+                <li><span class="count">1/4</span> cup almonds</li>
+                <li><span class="count">1/2</span> cup dried cherries</li>
+                <li><span class="count">1/2</span> cup dried cranberries</li>
             </ul>
             <p>
                 One thing I love about trail mix is its customizability. 
@@ -40,5 +47,6 @@
                 <li>Mix</li>
             </ol>
         </main>
+        <script src="../js/recipes.js"></script>
     </body>
 </html>
