@@ -29,7 +29,7 @@ app.get('/api/recipe/:name', (req, res) => {
 app.get('/api/cart', (req, res) => {
   const name = req.params.name
   res.status(200)
-  res.send(`Here are your cart items`)
+  res.send(`Here are the items in your cart!`)
 })
 
 app.post('/api/rating', (req, res) => {
