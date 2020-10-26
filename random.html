@@ -1,0 +1,56 @@
+<head>
+    <title>Grocery Prep - Random Recipe</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Serif+JP:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <h1>GROCERY PREP</h1>
+    <nav>
+        <a href = "index.html">HOME</a>
+        <a href = "random.html">RANDOM RECIPE</a>
+        <a href = "about.html">ABOUT THE CHEF</a>
+    </nav>
+</header>
+<main>
+    <div class="headline">
+        <h1 id="title"></h1>
+        <div id="ratings">
+            <span id="rating"> &#9734;</span>
+        </div>
+    </div>
+    <div class = "recipe-header">
+        <div class = "recipe-description">
+            <p id="description"></p>
+            <div class="servings">
+                <h3>Servings:</h3>
+                <button id = "dec">-</button>
+                <span id = "serving-count">1</span>
+                <button id = "inc">+</button>
+            </div>
+            <div class="rating">
+                <label for="select-rating" id="rating-label">Rate Me!</label>
+            <select id="select-rating">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <button id="post-rating">Post Rating</button>
+            </div>
+            </div>
+
+        <div><img alt = "food-pic" class="recipe_photo" id="recipe_photo" src=""/></div>
+    </div>
+    <h2>Ingredients</h2>
+    <ul id="ingredients">
+        <span class="count"></span>
+    </ul>
+    <h2>Instructions</h2>
+    <ol id="instructions"></ol>
+</main>
+<script src="random.js"></script>
+<script src="button.js"></script>
+</body>

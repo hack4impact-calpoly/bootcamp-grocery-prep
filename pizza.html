@@ -8,13 +8,22 @@
     <h1>GROCERY PREP</h1>
     <nav>
         <a href = "index.html">HOME</a>
+        <a href = "random.html">RANDOM RECIPE</a>
         <a href = "about.html">ABOUT THE CHEF</a>
     </nav>
 </header>
 <main>
     <h1>Summer Pizza</h1>
     <div class="recipe-header">
-        <div class="recipe-description"><p>Pizza is always so fun to make at home and is great to share with family and friends. If you're looking to try something new, definitely follow this recipe for a delicious, sweet, and summery pizza. </p></div>
+        <div class="recipe-description">
+            <p>Pizza is always so fun to make at home and is great to share with family and friends. If you're looking to try something new, definitely follow this recipe for a delicious, sweet, and summery pizza. </p>
+            <div class="servings">
+                <h3>Servings:</h3>
+                <button id = "dec">-</button>
+                <span id = "serving-count">1</span>
+                <button id = "inc">+</button>
+            </div>
+        </div>
         <img alt="pizza-pic" class="recipe_photo" src="https://lh3.googleusercontent.com/pw/ACtC-3fZ99jZ-qzh_kFOd7DF37_AvWBiiU2uABDMsTbNPNlM8gjycQUO9oKoHi6gtakQMBUHvlo8Bhnd3JXtOe0eZgxHgb1_sUxaASChMydH9alKsx5SWqQqTZgCDAXuWvYEdBoLZZYu67M3KEp2QVWjdcsM=w513-h684-no?authuser=0"/>
     </div>
     <h2>Ingredients</h2>
@@ -35,4 +44,5 @@
         <li>Cook the pizza in the oven according to dough instructions, then top with parmesan cheese.</li>
     </ol>
 </main>
+<script src="button.js"></script>
 </body>

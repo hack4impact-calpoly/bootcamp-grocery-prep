@@ -8,13 +8,22 @@
     <h1>GROCERY PREP</h1>
     <nav>
         <a href = "index.html">HOME</a>
+        <a href = "random.html">RANDOM RECIPE</a>
         <a href = "about.html">ABOUT THE CHEF</a>
     </nav>
 </header>
 <main>
     <h1>Veggie Sushi</h1>
     <div class="recipe-header">
-        <div class="recipe-description"><p>I love sushi, and with this recipe, I can make it any time I want! It's fully customizable, so feel free to add whatever you have in your fridge.</p></div>
+        <div class="recipe-description">
+            <p>I love sushi, and with this recipe, I can make it any time I want! It's fully customizable, so feel free to add whatever you have in your fridge.</p>
+            <div class="servings">
+                <h3>Servings:</h3>
+                <button id = "dec">-</button>
+                <span id = "serving-count">1</span>
+                <button id = "inc">+</button>
+            </div>
+        </div>
         <img alt="sushi-pic" class="recipe_photo" src="https://lh3.googleusercontent.com/pw/ACtC-3cUBQuTUCyxbrBoUgdpWKIgwHOttoKgTKYmso-h7FUuIal6Nt9gJE8r9eP40AdWB0f7IgO6KxTXIpL2do8sdHFWAO8YeVovRHwvcuZYr_9K2sgiuzUhXFdlcyt3Yj31tPBGreFaDXPjgTuIo3cr0xf7=w513-h684-no?authuser=0"/>
     </div>
     <h2>Ingredients</h2>
@@ -34,4 +43,5 @@
         <li>Slice the sushi roll and top with avocado if you wish.</li>
     </ol>
 </main>
+<script src="button.js"></script>
 </body>

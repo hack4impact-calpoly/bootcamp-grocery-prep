@@ -8,27 +8,37 @@
     <h1>GROCERY PREP</h1>
     <nav>
         <a href = "index.html">HOME</a>
+        <a href = "random.html">RANDOM RECIPE</a>
         <a href = "about.html">ABOUT THE CHEF</a>
     </nav>
 </header>
 <main>
     <h1>Apple Berry Baked Oatmeal</h1>
     <div class = "recipe-header">
-        <div class = "recipe-description"><p>What's better than oatmeal? Baked oatmeal! I love this recipe because you can throw everything into a pan, bake in the oven, and you have a sweet breakfast that tastes like dessert! Once you try this recipe, you will want to make it again and again.</p></div>
+        <div class = "recipe-description">
+            <p>What's better than oatmeal? Baked oatmeal! I love this recipe because you can throw everything into a pan, bake in the oven, and you have a sweet breakfast that tastes like dessert! Once you try this recipe, you will want to make it again and again.</p>
+            <div class="servings">
+                <h3>Servings:</h3>
+                <button id = "dec">-</button>
+                <span id = "serving-count">1</span>
+                <button id = "inc">+</button>
+            </div>
+        </div>
+
         <div><img alt = "baked-oatmeal-pic" class="recipe_photo" src="https://lh3.googleusercontent.com/pw/ACtC-3dz8Afa2kI-F0T_6vl-nshBGfHA07bM88e2Uz520GNv_zxSKt5lMBGcUUxgMC4DO2bZeCgWurIztl3f8g-NnrG0_p4gK8ooh8ony3ug0MzQ02IjbqtgB44OrpGlLJEDpHqBlP7T6iZ9LVfMjOFOppze=w549-h684-no?authuser=0"/></div>
     </div>
     <h2>Ingredients</h2>
     <ul>
-        <li>1 c. oat milk</li>
-        <li>1 T. chia seeds</li>
-        <li>Juice of 1/4 orange</li>
-        <li>1/2 tsp. vanilla extract</li>
-        <li>1/2 tsp. cinnamon</li>
-        <li>1/4 c. chopped pecans</li>
-        <li>1/4 c. coconut flakes</li>
-        <li>1/2 tsp. orange zest</li>
-        <li>1/2 chopped apple</li>
-        <li>1 c. frozen mixed berries</li>
+        <li><span class="count" >1</span> c. oat milk</li>
+        <li><span class="count">1</span> T. chia seeds</li>
+        <li>Juice of <span class="count">0.25</span> orange</li>
+        <li><span class="count">0.5</span> tsp. vanilla extract</li>
+        <li><span class="count">0.5</span> tsp. cinnamon</li>
+        <li><span class="count">0.25</span> c. chopped pecans</li>
+        <li><span class="count">0.25</span> c. coconut flakes</li>
+        <li><span class="count">0.5</span> tsp. orange zest</li>
+        <li><span class="count">0.5</span> chopped apple</li>
+        <li><span class="count">1</span> c. frozen mixed berries</li>
     </ul>
     <h2>Instructions</h2>
     <ol>
@@ -39,4 +49,5 @@
         <li>Top with more oat milk or maple syrup.</li>
     </ol>
 </main>
+<script src="button.js"></script>
 </body>
