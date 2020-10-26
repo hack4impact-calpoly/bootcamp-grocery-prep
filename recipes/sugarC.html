@@ -14,20 +14,32 @@
     <main>
         <h2>Sugar Cookies</h2> 
         <p>A sweet treat that is easy to make and is delicious!</p>
-        <img src="../Pictures/scookies.jpeg" height="400">
 
-        <h3>Ingredients</h3>
+        <div class="portion_align">
+            <img src="../Pictures/scookies.jpeg" height="400">
+            
+            <div class="servings_portions">
+                <h3>Servings</h3>
+                <div class="portions">
+                    <button id="minus">-</button>
+                    <span id="count">1</span>
+                    <button id="plus">+</button>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="sameh3">Ingredients</h3>
         <ul>
-            <li>2 3/4 cups of all-purpose flour</li>
+            <li>2.75 cups of all-purpose flour</li>
             <li>1 tsp. baking soda</li>
-            <li>1/2 tsp. baking powder</li>
+            <li>0.5 tsp. baking powder</li>
             <li>1 cup butter, softened</li>
-            <li>1 1/2 cups white sugar</li>
+            <li>1.5 cups white sugar</li>
             <li>1 egg</li>
             <li>1 tsp. vanilla extract</li>
         </ul>
         
-        <h3>Instructions</h3>
+        <h3 class="sameh3">Instructions</h3>
         <ol>
             <li>Preheat oven to 375 degrees F</li>
             <li>In a small bowl, stir together flour, baking soda, and baking powder</li>
@@ -39,5 +51,6 @@
             <li>Let stand on cookie sheet two minutes before removing to cool on wire racks</li>
             <li>Enjoy!</li>
     </main>
+    <script src="../portion.js"></script>
 </body>
 </html>
