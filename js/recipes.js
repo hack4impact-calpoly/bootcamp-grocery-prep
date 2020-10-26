@@ -3,7 +3,13 @@ let servingCount;
 let originalIngredientCount;
 
 const parseIngredientCount = (count) => {
-    if((count.innerText.search('/') !== -1)) {
+    if((count.innerText.search('/') !== -1)
+        && (count.innerText.search(' ') !== -1)) {
+        const arr = count.innerText.split('/');
+        const arr2 = arr[0].split(' ');
+        return parseFloat(arr2[0]) + (arr2[1]/arr[1]);
+    }
+    else if((count.innerText.search('/') !== -1)) {
         const arr = count.innerText.split('/');
         return (arr[0]/arr[1]);
     }
@@ -19,7 +25,7 @@ const initializeOriginalIngredientCount = async ()  => {
     originalIngredientCount =  Array.from(ingredientCount).map(item => {
             if(servingCount.innerText == 1) {
                 return parseIngredientCount(item);
-            } 
+            }
             else {
                 return (parseIngredientCount(item) / parseFloat(servingCount.innerText));
             }
@@ -39,7 +45,7 @@ const updateIngredientCount = async (count) => {
 const updateServingCount = async (count) => {
 
     try {
-        await initializeOriginalIngredientCount();       
+        await initializeOriginalIngredientCount();
         servingCount.innerText = (parseInt(servingCount.innerText) + count).toString();
         await updateIngredientCount(parseInt(servingCount.innerText));
     } catch (err) {
@@ -48,7 +54,7 @@ const updateServingCount = async (count) => {
 }
 
 
-const listenToServingCount  = async () => { 
+const listenToServingCount  = async () => {
     try {
         document.addEventListener('click', event => {
             if(event.target.id === 'increment') {
