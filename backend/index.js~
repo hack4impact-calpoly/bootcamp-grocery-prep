@@ -11,45 +11,64 @@ app.get('/', (req, res) => {
 
 app.get('/api/recipe', (req, res) => {
 	res.status(200)
-	res.send('list of recipes requested')
+	res.send('GET list of recipes')
 })
 
 app.get('/api/recipe/random', (req, res) => {
 	res.status(200)
-	res.send('random recipe requested')
+	res.send('GET random recipe')
 })
 
 app.get('/api/recipe/:name', (req, res) => {
 	const name = req.params.name
 	
+	//shouldn't happen
 	if(typeof name === undefined || name.length === 0){
 		res.status(400)
-		res.send('ERROR: NO NAME')
+		res.send('ERROR: NO NAME SPECIFIED')
 	}
 
 	res.status(200)
-	res.send(`instructions for ${name} requested`)
+	res.send(`GET instructions for recipe ${name}`)
 })
 
 app.post('/api/rating', (req, res) => {
-	console.log(req.body.id, req.body.rating)
+	console.log(req.body)
+	
+	const id = req.body.id
+	const rating = req.body.rating
+
+	if(typeof id === undefined || id.length === 0){
+		res.send("ERROR: NO ID SPECIFIED")
+	}
+	if(typeof rating === undefined || rating.length === 0){
+		res.send("ERROR: NO RATING SPECIFIED")
+	}
+
 	res.status(200)
-	res.send(`rating posted`)
+	res.send(`POST rating ${rating} for recipe ${id}`)
 })
 
 app.get('/api/cart', (req, res) => {
 	res.status(200)
-	res.send('list of items in cart requested')
+	res.send('GET items in cart')
 })
 
 app.post('/api/cart', (req, res) => {
-	var quantity = req.body.quantity
+	console.log(req.body)
+	
+	const quantity = req.body.quantity
 	const id = req.body.id
 
-	console.log(quantity, id)
+	if(quantity === undefined || quantity.length === 0){
+		res.send("ERROR: NO QUANTITY SPECIFIED")
+	}
+	if(id === undefined || id.length === 0){
+		res.send("ERROR: NO ID SPECIFIED")
+	}
 
 	res.status(200)
-	res.send(`${quantity} of recipe ${id} added to cart`)
+	res.send(`[POST] ${quantity} of recipe ${id} added to cart`)
 })
 
 app.listen(3000)
