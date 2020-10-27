@@ -13,11 +13,11 @@
             </nav>
     </header>
     <main>
-        <h2>BLT Sandwich</h2> 
-        <p>A simple but delicious sandwich!</p>
+        <h2 id='recipe_name'></h2> 
+        <p id="recipe_desc"></p>
 
         <div class="portion_align">
-            <img src="../Pictures/blt.jpeg" height="400">
+            <img id="rand_img">
             
             <div class="servings_portions">
                 <h3>Servings</h3>
@@ -31,23 +31,14 @@
 
         <h3 class="sameh3">Ingredients</h3>
         <ul>
-            <li><span class="ingred">2</span> slices of sourdough bread</li>
-            <li><span class="ingred">6</span> leaves of lettuce</li>
-            <li><span class="ingred">4</span> strips of bacon</li>
-            <li><span class="ingred">4</span> slices of tomatoe</li>
+            <li id="ingredName"><span class="ingred"></span> </li>
         </ul>
-        
+
         <h3 class="sameh3">Instructions</h3>
         <ol>
-            <li>Heat pan and cook bacon until desired doneness</li>
-            <li>Toast bread in toaster</li>
-            <li>Put your lettuce on the bottom slice of bread</li>
-            <li>Then tomoatoes</li>
-            <li>Then bacon</li>
-            <li>Then last piece of bread on top</li>
-            <li>Put onto a clean plate</li>
-            <li>Enjoy!</li>
+            <li id="steps"></li>
     </main>
     <script src="../portion.js"></script>
+    <script src="../randRecipe.js"></script>
 </body>
 </html>
