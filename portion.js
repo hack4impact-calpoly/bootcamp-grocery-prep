@@ -7,9 +7,11 @@ document.addEventListener('click', event => {
 })
 
 const updateCountandPortion = dir => {
-    count.innerText = +(count.innerText) + dir
     let currServings = +(count.innerText)
     let newServings = +(count.innerText) + dir
+    count.innerText = +(count.innerText) + dir
 
-    ingred.innerText = +(ingred.innerText) / currServings * newServings
+    for (let x = 0; x < ingred.length; x++){
+        ingred[x].innerText = +(ingred[x].innerText) / currServings * newServings
+    }
 }
