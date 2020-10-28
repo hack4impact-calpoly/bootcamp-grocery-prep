@@ -1,6 +1,17 @@
 const express = require('express')
 const app = express();
 const port = 3000;
+const path = require('path');
+
+app.use('/', express.static(path.join(__dirname, '../')));
+app.use('/lessons', express.static(path.join(__dirname, '../lessons')));
+app.use('/lessons/images',express.static(path.join(__dirname, '../lessons/images')) )
+
+
+app.get('/', (req, res) => {
+    res.status(200);
+    res.sendFile('/index.html');
+});
 
 app.get('/api/recipe', (req, res) => {
   res.status(200)
