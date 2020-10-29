@@ -10,6 +10,7 @@
 
 	<nav>
 		<a href="../../index.html"> Home </a>
+		<a href="../../randomRecipe.html"> Random Recipe</a>
 		<a href="../../AboutMe.html"> About Me </a>
 	</nav>
 	</header>
@@ -23,12 +24,19 @@
 
 		<img src="../../imgs/hot_chocolate.jpeg" height="200"><br>
 
+		<div class="serving">
+			<h3> Serving </h3>
+			<button id="minus"> - </button>
+			<span id="serving-count"> 1 </span>
+			<button id="plus"> + </button>
+		</div>
+
 
 		<p> Ingredients </p>
 		<ul>
-			<li> 1 abuelita hot chocolate tablet </li>
-			<li> about 3 cups of milk (i don't measure) </li>
-			<li> 2 cinammon sticks </li>
+			<li><span class="count" base="1"> 1 </span> abuelita hot chocolate tablet </li>
+			<li> about <span class="count" base="3"> 3 </span> cups of milk (i don't measure) </li>
+			<li><span class="count" base="2"> 2 </span> cinammon sticks </li>
 		</ul>
 
 		<p> Steps </p>
@@ -43,6 +51,8 @@
 
 
 	</main>
+
+	<script src="../../recipes.js"></script>
 
 
 </body>

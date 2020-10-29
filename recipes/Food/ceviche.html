@@ -10,25 +10,33 @@
 
 	<nav>
 		<a href="../../index.html"> Home </a>
+		<a href="../../randomRecipe.html"> Random Recipe</a>
 		<a href="../../AboutMe.html"> About Me </a>
 	</nav>
 	</header>
 
 	<main>
-
 		<h2> Ceviche </h2>
+
 		<div class="pcenter">
 			<p> This is fishy </p>
 		</div>
 
 		<img src="../../imgs/ceviche.jpeg" height="200"><br>
 
+		<div class="serving">
+			<h3> Serving </h3>
+			<button id="minus"> - </button>
+			<span id="serving-count"> 1 </span>
+			<button id="plus"> + </button>
+		</div>
+
 		<p> Ingredients </p>
 		<ul>
-			<li> fish </li>
-			<li> lemons (probably around 5-10) </li>
-			<li> 1/2 white onion (finely chopped) </li>
-			<li> 1 tomato (finely chopped) </li>
+			<li><span class="count" base="1"> 1 </span> lbs of fish </li>
+			<li><span class="count" base="5"> 5 </span> lemons </li>
+			<li><span class="count" base=".5"> 0.5 </span> white onion (finely chopped) </li>
+			<li><span class="count" base="1"> 1 </span> tomato (finely chopped) </li>
 			<li> cilantro (finely chopped) </li>
 		</ul>
 
@@ -46,6 +54,8 @@
 
 
 	</main>
+
+	<script src="../../recipes.js"></script>
 
 
 </body>

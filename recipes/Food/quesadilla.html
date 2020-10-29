@@ -10,6 +10,7 @@
 
 	<nav>
 		<a href="../../index.html"> Home </a>
+		<a href="../../randomRecipe.html"> Random Recipe</a>
 		<a href="../../AboutMe.html"> About Me </a>
 	</nav>
 	</header>
@@ -24,12 +25,19 @@
 
 		<img src="../../imgs/Quesadilla.jpg" height="200"><br>
 
+		<div class="serving">
+			<h3> Serving </h3>
+			<button id="minus"> - </button>
+			<span id="serving-count"> 1 </span>
+			<button id="plus"> + </button>
+		</div>
+
 		<p> Ingredients </p>
 		<ul>
 			<li> buy some meat (bistec) </li>
 			<li> cook meat and chop into small squares </li>
 			<li> tortilla (corn or flour; flour = bigger quesadilla) </li>
-			<li> cheese...........</li>
+			<li><span class="count" base=".5"> .5 </span> cup of cheese...........</li>
 			
 		</ul>
 
@@ -45,6 +53,8 @@
 
 
 	</main>
+
+	<script src="../../recipes.js"></script>
 
 
 </body>

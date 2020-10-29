@@ -1,0 +1,64 @@
+
+<html lang="en-US">
+<head>
+	<title>Random Recipe</title>
+  	<link rel="stylesheet" href="style.css">
+  	<meta charset="utf-8">
+</head>
+<body>
+	<header>
+	<h1> Vee-Guz Recipes </h1>
+
+	<nav>
+		<a href="index.html"> Home </a>
+		<a href="randomRecipe.html"> Random Recipe</a>
+		<a href="AboutMe.html"> About Me </a>
+	</nav>
+	</header>
+
+	<main>
+
+		<h2 id="title"></h2>
+		<div id="ratings">Rating: <span id="rating">  </span></div>
+		<div class="pcenter"></div>
+		
+
+		<img id="food-photo" height="200"><br>
+
+		
+		<div class="serving">
+			<h3> Serving </h3>
+			<button id="minus"> - </button>
+			<span id="serving-count"></span>
+			<button id="plus"> + </button>
+		</div>
+
+
+		<div class="rating">
+			<label id="rating-label" for="select-rating"></label>
+			<select id="select-rating">
+				<option selected hidden disabled>Give me a rating!</option>
+				<option value="1">1 </option>
+				<option value="2">2 </option>
+				<option value="3">3 </option>
+				<option value="4">4 </option>
+				<option value="5">5 </option>
+			</select>
+
+			<button id = "post-rating">Give Rating</button>
+
+		</div>
+
+	<h2>Ingredients</h2>
+    <ul id="ingredients"></ul>
+
+    <h2>Steps</h2>
+    <ol id="steps"></ol>
+
+	</main>
+
+	<script src="recipes.js"></script>
+	<script src="random.js"></script>
+
+</body>
+</html>

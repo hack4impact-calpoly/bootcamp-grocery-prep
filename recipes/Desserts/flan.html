@@ -10,6 +10,7 @@
 
 	<nav>
 		<a href="../../index.html"> Home </a>
+		<a href="../../randomRecipe.html"> Random Recipe</a>
 		<a href="../../AboutMe.html"> About Me </a>
 	</nav>
 	</header>
@@ -24,14 +25,21 @@
 
 		<img src="../../imgs/Flan.jpg" height="200"><br>
 
+		<div class="serving">
+			<h3> Serving </h3>
+			<button id="minus"> - </button>
+			<span id="serving-count"> 1 </span>
+			<button id="plus"> + </button>
+		</div>
+
 
 		<p> Ingredients </p>
 		<ul>
-			<li> 1 cup of white sugar </li>
-			<li> 3 large eggs </li>
-			<li> 1 can of sweetened condenced milk </li>
-			<li> 1 can of evaporated milk </li>
-			<li> 1 tbp of vanilla extract </li>
+			<li><span class="count" base="1"> 1 </span> cup of white sugar </li>
+			<li><span class="count" base="3"> 3 </span> large eggs </li>
+			<li><span class="count" base="1"> 1 </span> can of sweetened condenced milk </li>
+			<li><span class="count" base="1"> 1 </span> can of evaporated milk </li>
+			<li><span class="count" base="1"> 1 </span> tbp of vanilla extract </li>
 		</ul>
 
 		<p> Steps </p>
@@ -48,6 +56,7 @@
 
 	</main>
 
+	<script src="../../recipes.js"></script>
 
 </body>
 </html>
