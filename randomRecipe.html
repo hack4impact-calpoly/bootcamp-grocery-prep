@@ -1,0 +1,53 @@
+<html lang="en-US">
+<head>
+   <title> Grocery Prep </title>
+   <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+   <header>
+      <h1> Grocery Prep </h1>
+      <nav>
+         <a href="index.html">Home</a> 
+         <a href="recipes.html">Recipes</a>
+         <a href="about.html">About the Chef</a>
+         <a id="randRecipeLink" href="randomRecipe.html">Random Recipe</a>
+      </nav>
+   </header>
+   <main>
+      <h1 id="recipeName">  </h1>
+      <p> </p>
+      <div class="servings">
+          <h3>Servings</h3>
+          <button id="sub">-</button>
+          <span id="serving-count">1</span>
+          <button id="add">+</button>
+      </div>
+      <div class="ratings">
+        <h3>Ratings</h3>
+        <div id="avg-rating"> &starf; </div>
+       <p> </p>
+        <label for="select-rating" id="rating-label">Rate Recipe!</label>
+        <select id="select-rating">
+          <option selected hidden disabled>Select Rating</option>
+          <option value="1">&starf; 1 </option>
+          <option value="2">&starf; 2 </option>
+          <option value="3">&starf; 3</option>
+          <option value="4">&starf; 4</option>
+          <option value="5">&starf; 5</option>
+        </select>
+        <button id="post-rating">Post Rating</button>
+      </div>
+      <p> </p>
+      <img id="image" height="150">
+      <h2> Ingredients </h2>
+ 	    <ul id="ingredients">
+        </ul>
+    <h2> Instructions </h2>
+        <ol id="instructions">
+   	    </ol>
+   </main>
+
+   <script src="recipe.js"></script>
+   <script src="randomRecipe.js"></script>
+</body>
+</html>
