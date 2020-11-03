@@ -1,28 +1,92 @@
 navbar ul{
-   width: 97%;
+   width: 100%;
    background-color: #7093DB;
-   padding: 2;
+   background-size: auto;
+   font-family: Arial;
+   padding-left: 0;
+   padding-right: 1500;
 }
 
 navbar ul li{
   list-style-type: none;  
-  margin: 0 1vw;
+  margin-left: 0px;
   font-size: 3vh;
   display: inline;
+  font-family: Arial;
+}
+
+div{
+   margin-left: 32px;
+}
+
+p1{
+   margin-left: 20px;
+}
+
+p{
+   margin-left: 20px;
+}
+
+p2{
+   margin-left: 0px;
+   background-color: #C6E9FF;
+   background-size: 100%;
+   width: 100%;
+   padding: 4px 8px;
+   padding-right: 1500px;
+   padding-left: 20px;
+}
+
+p3{
+   margin-left: 0px;
+   background-color: #C6E9FF;
+   width: auto;
+   padding: 4px 8px;
+   padding-right: 1500px;
+   padding-left: 20px;
+}
+
+ul{
+   margin-left: 0px;
+   padding-left: 60px;
+}
+
+ol{
+   margin-left: 20px;
 }
 
 a{
    text-decoration: none;
    color: black;
    font-size: 18px;
-   font-family: optima;
+   font-family: Arial;
+   margin-left: 20px;
 }
 
 a:hover{
   background-color: #C6E9FF;
 }
 
-p {
-   font-family: "Optima", Times, serif;
-}
+body {
+   margin: 0;
+   background-color: aliceblue;
+   font-family: Arial;
+ }
 
+ h1{
+    margin-left: 20px;
+
+ }
+
+ h2 {
+   background-color:  #C6E9FF;
+   padding: 4px 8px;
+ }
+
+ li {
+   margin-left: 4px;
+ }
+
+ img{
+    margin: 20px;
+ }

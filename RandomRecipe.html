@@ -1,17 +1,51 @@
 <!DOCTYPE html>
-   <script>
-      const URL = 'https://3blzgwgi13.execute-api.us-west-2.amazonaws.com/Live/recipe'
-
-      const getRecipe = async() => {
-         try{
-            const response = await fetch(URL)
-            const jsonResponse = await response.json()
-         } catch (err) {
-            console.error(err)
-         }
-      }
-
-      getRecipe()
-   </script>
-
+<head>
+   <title>Random Recipe></title>
+   <link rel="stylesheet" href="PartyRecipesCSS.css">
+</head>
+<body>
+   <navbar>
+      <ul class="nav-list">
+         <li class="nav-item"></li>
+            <a href="PartyRecipes.html"><b>Home</b></a>
+         <li class="nav-item"></li>
+            <a href="AboutAuthor.html"><b>About Chef</b></a>
+         <li class="nav-item"></li>
+            <a href="RandomRecipe.html"><b>Random Recipe</b></a>
+      </ul>
+   </navbar>
+   <h1 id='randomRecipe'>
+      Random Recipe
+   </h1>
+   <img src id='imgSrc' width="250" height="200">
+   <br>
+   <div class="rating">
+      <label for="select-rating" id="rating-label"><b>Post a Rating</b></label>
+      <select id="select-rating">
+        <option selected hidden disabled>Select Rating</option>
+        <option value="1">1 &starf;</option>
+        <option value="2">2 &starf;</option>
+        <option value="3">3 &starf;</option>
+        <option value="4">4 &starf;</option>
+        <option value="5">5 &starf;</option>
+      </select>
+      <button id="post-rating">Post Rating</button>
+   </div>
+   <br>
+   </div>
+   <p1><b>Serving Size</b></p1>
+      <div class="servings">
+         <button id="sub">-</button>
+         <span id="servingCount">4</span>
+         <button id="add">+</button>
+      </div>
+      <br>
+      <br>
+      <p2><b>Ingredients</b></p2>
+         <ul id="Ingredients"></ul>
+      <p3><b>Instructions</b></p3>
+         <br>
+         <ol id="Instructions"></ol>
+      <script src="randomRecipe.js"></script>
+      <script src="recipe.js"></script>
 </html>
