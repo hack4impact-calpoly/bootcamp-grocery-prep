@@ -22,11 +22,11 @@ const updateCount = dir => {
 
     if (dir === -1){
 
-        if (servingCount.innerHTML <= 0){
-            for(let i=0, len=count.length; i<len; i++){
-                count[i].innerText = count[i].innerText;
-            }}
-        else{
+        // if (servingCount.innerHTML <= 0){
+        //     for(let i=0, len=count.length; i<len; i++){
+        //         count[i].innerText = count[i].innerText;
+        //     }}
+        if (servingCount.innerHTML > 0) {
             for(let i=0, len=count.length; i<len; i++){
                 let curr= parseFloat(count[i].innerHTML);
                 let orig = parseFloat(servingCount.innerHTML)+1;
@@ -36,11 +36,8 @@ const updateCount = dir => {
 
     else if (dir === 1){
 
-        if (servingCount.innerHTML <= 1){
-            for(let i=0, len=count.length; i<len; i++){
-                count[i].innerText = count[i].innerText;
-            }}
-        else{
+
+        if (servingCount.innerHTML > 1){
             for(let i=0; i<count.length; i++){
                 let curr = parseFloat(count[i].innerHTML);
                 let orig = parseFloat(servingCount.innerHTML)-1;
