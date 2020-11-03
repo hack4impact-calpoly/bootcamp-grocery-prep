@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Milk</title>
     <link href="styles/styles.css" rel="stylesheet">
+    <script src="recipes.js"></script>
     <script src="servings.js"></script>
   </head>
   <body>
@@ -18,7 +19,8 @@
     </header>
 
     <h1>Random Recipe</h1>
-    <p></p>
+    <h2 id="title">Random Recipe</h2>
+    <p id="desc"></p>
     <p></p>
 
     <span>
@@ -29,11 +31,20 @@
       <button id="up">+</button>
     </span>
 
-   
+   <div class="pageimage">
+     <img class="pageimage" id="imgSpot">
+   </div>
     
     <div class="ingredients">
-      
+      <h3>Ingredients</h3>
+      <ul id="ingredientList">
+        
+        
+      </ul>
+
+      <div id="before"></div>
     </div>
+    <p id="inst"></p>
     
 
     <h3>Reviews:</h3>
