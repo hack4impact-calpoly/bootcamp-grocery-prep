@@ -14,6 +14,7 @@ function displayData(data){
     const ingredients = data.ingredients        //another json object
     const recipeImg = data.picture
     const instructions = data.instructions
+    const ratings = data.ratings
 
     const descArea  = document.getElementById("desc")
     descArea.textContent = description
@@ -28,8 +29,7 @@ function displayData(data){
     imgArea.src = recipeImg
 
     const ingredientArea = document.getElementById("ingredientList")
-     
-    const count = 0
+    
     for(i in ingredients){
         var node = document.createElement("LI")
         var text = document.createTextNode(i)
@@ -48,6 +48,14 @@ function displayData(data){
         ingredientArea.appendChild(node)
         
     }
+
+    const ratingArea = document.getElementById("rating")
+    var totalCount = 0
+    Array.prototype.map.call(ratings, i => {
+        totalCount = totalCount + i
+    } )
+    totalCount = totalCount/ratings.length
+    ratingArea.textContent = totalCount.toFixed(2)
     
     //const newDiv = document.createElement("div")
     //newDiv.appendChild(description)
