@@ -120,3 +120,8 @@ button{
   margin-left: 50px;
   margin-top: 50px;
 }
+
+select{
+  padding: 5px;
+  margin-left: 10px;
+}
