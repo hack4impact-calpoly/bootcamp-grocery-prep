@@ -6,7 +6,20 @@ fetch(URL)
     .then(data => displayData(data))
 
 
+document.addEventListener('click', event =>{
+    if(event.target.id === "rating-post"){
+        postARating()
+    }
+})
 
+function postARating(){
+    const ratingSelector = document.getElementById("user-rating")
+    const rating = ratingSelector.options[ratingSelector.selectedIndex].value
+
+    const testObject = document.getElementById("test")
+    testObject.textContent = rating
+
+}
 
 function displayData(data){
     const title = data.title
