@@ -1,6 +1,6 @@
 const URL = 'https://3blzgwgi13.execute-api.us-west-2.amazonaws.com/Live/recipe'
 
-
+let allData
 fetch(URL)
     .then(response => response.json())      // convert it to json 
     .then(data => displayData(data))
@@ -19,9 +19,33 @@ function postARating(){
     const testObject = document.getElementById("test")
     testObject.textContent = rating
 
+    const postData = {
+        id: allData._id,
+        rating: rating
+    }
+
+    fetch(URL, {
+        method: 'POST',
+        body: JSON.stringify(postData)
+    })
+    .then(()=>{
+        allData.ratings.push(rating)
+    })
+    // .then(response => response.json())
+    // .then(data => {
+
+    // })
+    .catch((err) => {
+        console.error(err)
+    })
+
 }
 
 function displayData(data){
+    allData = data
+
+    document.location.hash = data._id
+
     const title = data.title
     const description = data.desc
     const ingredients = data.ingredients        //another json object
@@ -68,7 +92,7 @@ function displayData(data){
         totalCount = totalCount + i
     } )
     totalCount = totalCount/ratings.length
-    ratingArea.textContent = totalCount.toFixed(2)
+    ratingArea.textContent = totalCount.toFixed(10)
     
     //const newDiv = document.createElement("div")
     //newDiv.appendChild(description)
