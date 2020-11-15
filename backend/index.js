@@ -1,16 +1,91 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const app = express()
+const mongoose = require('mongoose')
+const uri = "mongodb+srv://garyh:gary777@bootcamp4.hgc0n.mongodb.net/Bootcamp4?retryWrites=true&w=majority"
+
+const Recipe = require('./models/recipe')
+const dbName = "Bootcamp4"
 
 app.use(bodyParser.json())
+app.use(express.static('html'))
 
+//Connect mongoose to Node
+mongoose.connect(uri, {
+	useNewUrlParser: true,
+	useUnifiedTopology: true,
+	useFindAndModify: false,
+	useCreateIndex: true
+}).then(() => console.log('Connected to MongoDB'))
+
+const createRecipe = async (title, desc, img, ratings, servings, ingredients, instructions) =>
+{
+	return new Recipe({
+		title,
+		desc,
+		img,
+		ratings,
+		servings,
+		ingredients,
+		instructions
+	}).save()
+}
+const toastMap = new Map()
+toastMap.set('pieces of bread', '1')
+//createRecipe("toast", "toasty", "img/toast.jpg", [1,2,3], "4", toastMap, ["get bread", "toast"])
+
+const soupMap = new Map()
+soupMap.set('tomatoes', "1")
+soupMap.set('chicken stock', '2')
+//createRecipe("soup", "smooth", "img/soup.jpg", [5,5,3,4], "2", soupMap, ["Pour ingredients into pot", "Heat at HIGH for 10 minutes", "Stir every minute"]) 
+
+const tacoMap = new Map()
+tacoMap.set('tortillas', '2')
+tacoMap.set('ground beef', '0.5')
+tacoMap.set('shredded cheese', '2')
+tacoMap.set('salsa', '1')
+//createRecipe("tacos", "zesty", "img/taco.jpg", [5,5,1,5,3], "2", tacoMap, ["Layer ingredients onto tortillas", "Wrap", "Consume", "Enjoy"])
+const getAllRecipes = async () => {
+	return await Recipe.find({})
+}
+
+const getRecipe = async (name) => {
+	return await Recipe.find({
+		title : name
+	})
+}
+
+const removeRecipe = async (name) => {
+	return Recipe.deleteOne({
+		title: name
+	})
+}
+
+
+//Custom endpoint -- used to remove recipe from database
+app.get('/rem/:name', async (req, res) => {
+	res.status(200)
+	const name = req.params.name
+
+	let recipe
+	recipe = await removeRecipe(name)
+	res.send(`${name} recipe deleted`)
+})
+
+
+//Recipe endpoints
 app.get('/', (req, res) => {
 	res.status(200)
 	res.send('hello world!')
 })
 
-app.get('/api/recipe', (req, res) => {
+app.get('/api/recipe', async (req, res) => {
 	res.status(200)
+
+	let recipes
+	recipes = await getAllRecipes()
+
+	res.json(recipes)
 	res.send('GET list of recipes')
 })
 
@@ -19,7 +94,7 @@ app.get('/api/recipe/random', (req, res) => {
 	res.send('GET random recipe')
 })
 
-app.get('/api/recipe/:name', (req, res) => {
+app.get('/api/recipe/:name', async (req, res) => {
 	const name = req.params.name
 	
 	//shouldn't happen
@@ -27,8 +102,12 @@ app.get('/api/recipe/:name', (req, res) => {
 		res.status(400)
 		res.send('ERROR: NO NAME SPECIFIED')
 	}
-
+	
 	res.status(200)
+	let recipe
+	recipe = await getRecipe(name)
+	
+	res.json(recipe)
 	res.send(`GET instructions for recipe ${name}`)
 })
 
@@ -46,6 +125,18 @@ app.post('/api/rating', (req, res) => {
 	}
 
 	res.status(200)
+	Recipe.findOneAndUpdate(
+		{_id: req.body.id },
+		{$push: { ratings: rating }},
+	
+		function(error, success) {
+		if(error) {
+			console.log(error);
+		} else {
+			console.log(success);
+		}
+		})
+
 	res.send(`POST rating ${rating} for recipe ${id}`)
 })
 
