@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Grocery Prep</title>
+      <link href="styles.css" rel="stylesheet">
+  </head>
+   <body>
+      <script src="servings.js"></script>
+      <header> 
+         <h1 id="title"> Grocery Prep </h1>
+         <nav><a class="nav" href="index.html">Home</a> <a class="nav" href="about">About the Chef</a>
+            <a class="nav" href="random.html">Random Recipe</a></nav>
+      </header>
+      
+      <main>
+         <div class="recipe-intro">
+            <div class="recipe-header">
+               <h1>Pizza</h1>
+               <p>Tasty pizza to give you a break from your work</p>
+               <h3 class="servings-title">Servings</h3> 
+               <button onclick="changeServingSize(-1)" class="serve-button">-</button>
+               <div id="servings-text">1</div>
+               <button onclick="changeServingSize(1)" class="serve-button">+</button>
+            </div>
+
+            <img src="images/pizza.jpg" alt="delicious pizza">
+            <br>
+         </div>
+         
+         <h2>Ingredients</h2>
+         <ul>
+            <li><div class="serving-num">1</div> pizza crust</li>
+            <li><div class="serving-num">4</div> tablespoons of marinara sauce</li>
+            <li><div class="serving-num">1</div> cup mozerella</li>
+            <li>Peperronis</li>
+            <li><div class="serving-num">.5</div> of a bell pepper</li>
+            <li>A few portobello mushrooms</li>
+         </ul>
+
+         <h2>Instructions</h2>
+         <ol>
+            <li>Add marinara sauce to crust spreading across the entire thing</li>
+            <li>Add mozerella cheese to cover the sauce completely</li>
+            <li>Throw on desired amount of pepperonis, bell peppers, and mushrooms</li>
+            <li>Cook in the over for 14 mins at 400</li>
+            <li>Optional: top with parmesean/arugula/crushed red peppers</li>
+            <li>Enjoy!</li>
+         </ol>
+      </main>
+   </body>
+</html>

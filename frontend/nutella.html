@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Grocery Prep</title>
+      <link href="styles.css" rel="stylesheet">
+  </head>
+   <body>
+      <script src="servings.js"></script>
+      <header> 
+         <h1 id="title"> Grocery Prep </h1>
+         <nav><a class="nav" href="index.html">Home</a> <a class="nav" href="about">About the Chef</a>
+            <a class="nav" href="random.html">Random Recipe</a></nav>
+      </header>
+      
+      <main>
+         <div class="recipe-intro">
+            <div class="recipe-header">
+               <h1>Nutella Bread</h1>
+               <p>Nutella based snack that you'll be thinking about all day</p>
+               <h3 class="servings-title">Servings</h3> 
+               <button onclick="changeServingSize(-1)" class="serve-button">-</button>
+               <div id="servings-text">1</div>
+               <button onclick="changeServingSize(1)" class="serve-button">+</button>
+            </div>
+            <img src="images/nutella.jpeg" alt="nutella on bread">
+            <br>
+         </div>
+         
+         <h2>Ingredients</h2>
+         <ul>
+            <li><div class="serving-num">1</div> tablespoon of Nutella</li>
+            <li><div class="serving-num">2</div> slices of bread of choice (white, pita, wheat, sour dough)</li>
+         </ul>
+
+         <h2>Instructions</h2>
+         <ol>
+            <li>Toast bread</li>
+            <li>Using a butter knife, spread nutella over warm bread till it covers the top completely</li>
+            <li>Devour your new favorite dessert</li>
+         </ol>
+      </main>
+   </body>
+</html>

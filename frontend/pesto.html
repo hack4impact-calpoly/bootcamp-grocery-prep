@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Grocery Prep</title>
+      <link href="styles.css" rel="stylesheet">
+  </head>
+   <body>
+      <script src="servings.js"></script>
+      <header> 
+         <h1 id="title"> Grocery Prep </h1>
+         <nav><a class="nav" href="index.html">Home</a> <a class="nav" href="about">About the Chef</a>
+            <a class="nav" href="random.html">Random Recipe</a></nav>
+      </header>
+      
+      <main>
+         <div class="recipe-intro">
+            <div class="recipe-header">
+               <h1>Chicken Pesto Pasta</h1>
+               <p>A fresh tasting meal to brighten your day</p>
+               <h3 class="servings-title">Servings</h3> 
+               <button onclick="changeServingSize(-1)" class="serve-button">-</button>
+               <div id="servings-text">2</div>
+               <button onclick="changeServingSize(1)" class="serve-button">+</button>
+            </div>
+
+            <img src="images/pesto.jpeg" alt="some tasty pesto">
+            <br>
+         </div>
+         
+         <h2>Ingredients</h2>
+         <ul>
+            <li><div class="serving-num">1</div> box of pasta of choice</li>
+            <li><div class="serving-num">2</div> chicken breasts</li>
+            <li>Chicken seasoning</li>
+            <li>Arugula</li>
+            <li><div class="serving-num">5</div> fresh mini tomatoes</li>
+            <li><div class="serving-num">2</div> tablespoons basil pesto</li>
+         </ul>
+
+         <h2>Instructions</h2>
+         <ol>
+            <li>Cook pasta in separate pot</li>
+            <li>Slice up chicken breast and add seasoning</li>
+            <li>Cook chicken in pan with olive oil until thoroughly cooked</li>
+            <li>Drain pasta and add chicken to the pot</li>
+            <li>Add 2 tablespoons of pesto and desired amount of arugula/tomatoes</li>
+            <li>Add parmesean if desired and salt to taste</li>
+            <li>Enjoy your lunch!</li>
+         </ol>
+      </main>
+   </body>
+</html>

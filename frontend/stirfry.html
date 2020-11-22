@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Grocery Prep</title>
+      <link href="styles.css" rel="stylesheet">
+  </head>
+   <body>
+      <script src="servings.js"></script>
+      <header> 
+         <h1 id="title"> Grocery Prep </h1>
+         <nav><a class="nav" href="index.html">Home</a> <a class="nav" href="about">About the Chef</a>
+            <a class="nav" href="random.html">Random Recipe</a></nav>
+      </header>
+      
+      <main>
+         <div class="recipe-intro">
+            <div class="recipe-header">
+               <h1>Stir Fry</h1>
+               <p>Delicious stir fry you'll be able to save and enjoy for days</p>
+               <h3 class="servings-title">Servings</h3> 
+               <button onclick="changeServingSize(-1)" class="serve-button">-</button>
+               <div id="servings-text">1</div>
+               <button onclick="changeServingSize(1)" class="serve-button">+</button>
+            </div>
+
+            <img src="images/stirfry.jpg" alt="tasty stir fry">
+            <br>
+         </div>
+      
+         <h2>Ingredients</h2>
+         <ul>
+            <li><div class="serving-num">1</div> chicken breast</li>
+            <li><div class="serving-num">1</div> bell pepper</li>
+            <li><div class="serving-num">.25</div> of a sweet or red onion</li>
+            <li>Garlic</li>
+            <li><div class="serving-num">1</div> cup of carrots - sliced</li>
+            <li><div class="serving-num">1</div> cup portobello mushrooms - sliced</li>
+            <li>Soy sauce</li>
+         </ul>
+
+         <h2>Instructions</h2>
+         <ol>
+            <li>Add all veggies to a pan with olive oil and cook on medium heat</li>
+            <li>Add ginger and salt/pepper</li>
+            <li>Slice and season chicken</li>
+            <li>Throw in chicken and soy sauce for it all to cook in</li>
+            <li>Cook until chicken is thoroughly cooked - add spices/soy sauce to taste</li>
+            <li>Optional: cook/heat up rice</li>
+            <li>Enjoy!</li>
+         </ol>
+      </main>
+   </body>
+</html>

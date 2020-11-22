@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Grocery Prep</title>
+      <link href="styles.css" rel="stylesheet">
+  </head>
+   <body>
+      <script src="servings.js"></script>
+      <header> 
+         <h1 id="title"> Grocery Prep </h1>
+         <nav><a class="nav" href="index.html">Home</a> <a class="nav" href="about">About the Chef</a>
+            <a class="nav" href="random.html" >Random Recipe</a></nav>
+      </header>
+      
+      <main>
+         <div class="recipe-intro">
+            <div class="recipe-header">
+               <h1>Fajitas</h1>
+               <p>A quick, easy dinner to leave you satisfied</p>
+               <h3 class="servings-title">Servings</h3> 
+               <button onclick="changeServingSize(-1)" class="serve-button">-</button>
+               <div id="servings-text">1</div>
+               <button onclick="changeServingSize(1)" class="serve-button">+</button>
+            </div>
+
+               <img src="images/fajitas.jpeg" alt="fajitas for the fam">
+               <br>
+         </div>
+         
+         <h2>Ingredients</h2>
+         <ul>
+            <li><div class="serving-num">1</div> red bell pepper</li>
+            <li><div class="serving-num">1</div> chicken breast</li>
+            <li>Chicken seasoning</li>
+            <li><div class="serving-num">1</div> avocado</li>
+            <li><div class="serving-num">1</div> cup rice</li>
+            <li><div class="serving-num">2</div> Tortillas</li>
+         </ul>
+
+         <h2>Instructions</h2>
+         <ol>
+            <li>Chop up bell peppers and add to pan with olive oil</li>
+            <li>Slice up chicken breast and add seasoning</li>
+            <li>Add chicken to pan and add desired seasoning (garlic powder, cumin, salt, pepper)</li>
+            <li>Warm up/cook rice and put some on a warmed tortilla</li>
+            <li>When chicken and peppers are finished cooking and taste as desired add to tortilla</li>
+            <li>Slice avocado and put a few slices on the fajita, too</li>
+            <li>Close tortilla and enjoy your meal!</li>
+         </ol>
+      </main>
+   </body>
+</html>

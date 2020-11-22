@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Grocery Prep</title>
+      <link href="styles.css" rel="stylesheet">
+  </head>
+   <body>
+      <script src="servings.js"></script>
+      <header> 
+         <h1 id="title"> Grocery Prep </h1>
+         <nav><a class="nav" href="index.html">Home</a> <a class="nav" href="about">About the Chef</a>
+            <a class="nav" href="random.html" >Random Recipe</a></nav>
+      </header>
+      
+      <main>
+         <div class="recipe-intro">
+            <div class="recipe-header">
+               <h1>Ice Cream and Fruit</h1>
+               <p>Healthy or not healthy? That is the question</p>
+               <h3 class="servings-title">Servings</h3> 
+               <button onclick="changeServingSize(-1)" class="serve-button">-</button>
+               <div id="servings-text">1</div>
+               <button onclick="changeServingSize(1)" class="serve-button">+</button>
+            </div>
+
+            <img src="images/icecream.jpeg" alt="icecream with fruit">
+            <br>
+         </div>
+         
+         <h2>Ingredients</h2>
+         <ul>
+            <li><div class="serving-num">2</div> scoops of Ice cream (flavor is up to opinions - I like vanilla most)</li>
+            <li><div class="serving-num">1</div> cup of fruits of choice (usually blackberries, raspberries, strawberries</li>
+         </ul>
+
+         <h2>Instructions</h2>
+         <ol>
+            <li>Slice up fruit</li>
+            <li>Scoop a few scoops of ice cream into a cup and add fruit</li>
+            <li>Feast on your cooling dessert</li>
+         </ol>
+      </main>
+   </body>
+</html>

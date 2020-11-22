@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Grocery Prep</title>
+      <link href="styles.css" rel="stylesheet">
+  </head>
+   <body>
+      <script src="servings.js"></script>
+      <header> 
+         <h1 id="title"> Grocery Prep </h1>
+         <nav><a class="nav" href="index.html">Home</a> <a class="nav" href="about">About the Chef</a>
+            <a class="nav" href="random.html">Random Recipe</a></nav>
+      </header>
+      
+      <main>
+         <div class="recipe-intro">
+            <div class="recipe-header">
+               <h1>Salsa</h1>
+               <p>A delicious snack that goes well with tacos/fajits/quesadillas</p>
+               <h3 class="servings-title">Servings</h3> 
+               <button onclick="changeServingSize(-1)" class="serve-button">-</button>
+               <div id="servings-text">1</div>
+               <button onclick="changeServingSize(1)" class="serve-button">+</button>
+            </div>
+
+            <img src="images/salsa.jpeg" alt="well made salsa">
+            <br>
+         </div>
+         
+         <h2>Ingredients</h2>
+         <ul>
+            <li><div class="serving-num">2</div> cups chopped tomatoes</li>
+            <li><div class="serving-num">.25</div> cup chopped red onion</li>
+            <li><div class="serving-num">.25</div> cup chopped yellow onion</li>
+            <li><div class="serving-num">2</div> tablespoons canned green chilies</li>
+            <li><div class="serving-num">2</div> tablespoons fresh lime juice</li>
+            <li><div class="serving-num">2</div> cloves garlic, peeled</li>
+            <li><div class="serving-num">1</div> tablespoon ground cumin</li>
+            <li><div class="serving-num">.25</div> teaspoon salt</li>
+         </ul>
+
+         <h2>Instructions</h2>
+         <ol>
+            <li>Add ingredients to a food processor/blender in the order listed above</li>
+            <li>Salt to taste</li>
+            <li>Add water if too thick</li>
+            <li>Grab some chips and enjoy!</li>
+         </ol>
+      </main>
+   </body>
+</html>
