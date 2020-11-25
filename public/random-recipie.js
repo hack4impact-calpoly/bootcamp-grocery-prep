@@ -2,15 +2,24 @@
 let curId;
 let curRecipie;
 
-const loadRecipieContent = () => {
-    fetch('https://3blzgwgi13.execute-api.us-west-2.amazonaws.com/Live/recipe')
+const loadRecipieContent = (id = '') => {
+    const request = id ? `https://3blzgwgi13.execute-api.us-west-2.amazonaws.com/Live/recipe?id=${id}`
+        : 'https://3blzgwgi13.execute-api.us-west-2.amazonaws.com/Live/recipe';
+    fetch(request)
     .then(response => response.json())
     .then(recipie => generateRecipie(recipie));
 }
 
-loadRecipieContent();
+if (window.location.hash) {
+    loadRecipieContent(window.location.hash.substring(1));
+} 
+else {
+    loadRecipieContent();
+}
+
 
 const generateRecipie = recipie => {
+    window.location.hash = recipie._id;
     curRecipie = recipie;
     document.getElementById("title").innerText = recipie.title;
     document.getElementById("picture").src = recipie.picture;
@@ -34,12 +43,6 @@ const generateRecipie = recipie => {
 
     displayRating(recipie.ratings);
 }
-// const updateRecipieRating = () => {
-//     fetch('https://3blzgwgi13.execute-api.us-west-2.amazonaws.com/Live/recipe?id=' + curId)
-//     .then(response => response.json())
-//     .then(recipie => { console.log(`Updating ratings for ${recipie.title}`)
-//         displayRating(recipie.ratings)});
-// }
 
 const displayRating = (ratings) => {
     const full_star = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>';
