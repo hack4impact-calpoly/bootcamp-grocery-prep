@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Fried Rice Recipe</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 <body>
 	<header>
@@ -16,7 +16,7 @@
 	<div class="content">
 		<h1>Fried Rice Recipe</h1>
 
-		<img src="friedRice.jpg" height="300">
+		<img src="../images/friedRice.jpg" height="300">
 
 		<p>Fried rice is a great because it isn't too hard to make, but it still produces a delicious, well-rounded meal. There are many different kinds of fried rice and its almost up to the chef ingredients to use, but we'll stick to a simple egg fried rice to start you off.</p>
 	</div>
@@ -26,17 +26,23 @@
 	</div>
 
 	<div class="content">
-		<ul>
+		<div class="servings">
+			<p>Servings</p>
+			<button id="sub">-</button>
+			<span id="count">1</span>
+			<button id="add">+</button>
+		</div>
+		<ul id="ingredientList">
 			<li>3 cups of jasmine rice (best if made the day before and stored in the fridge)</li>
 			<li>3 or 4 eggs</li>
-			<li>1/2 cup of peas</li>
-			<li>1/2 cup of diced carrots</li>
-			<li>1/2 cup of chopped green beans</li>
-			<li>1/2 of diced broccoli florets</li>
+			<li>0.5 cup of peas</li>
+			<li>0.5 cup of diced carrots</li>
+			<li>0.5 cup of chopped green beans</li>
+			<li>0.5 cup of diced broccoli florets</li>
 			<li>1 Lime</li>
 			<li>3 tablespoons of fish sauce</li>
 			<li>3 tablespoons of soy sauce</li>
-			<li>1/2 cup of cooking oil</li>
+			<li>0.5 cup of cooking oil</li>
 		</ul>
 	</div>
 
@@ -62,5 +68,6 @@
 		</ol>
 	</div>
 	
+	<script src="../scripts/servingAdjustment.js"></script>
 </body>
 </html>

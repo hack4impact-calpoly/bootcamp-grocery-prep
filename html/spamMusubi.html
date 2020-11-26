@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Spam Musubi Recipe</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 <body>
 	<header>
@@ -16,7 +16,7 @@
 	<div class="content">
 		<h1>Spam Musubi Recipe</h1>
 
-		<img src="Spam-Musubi.jpg" height="400">
+		<img src="../images/Spam-Musubi.jpg" height="400">
 	</div>
 
 	<div class="subHeader">
@@ -24,12 +24,18 @@
 	</div>
 	
 	<div class="content">
-		<ul>
+		<div class="servings">
+			<p>Servings</p>
+			<button id="sub">-</button>
+			<span id="count">1</span>
+			<button id="add">+</button>
+		</div>
+		<ul id="ingredientList">
 			<li>3 cups of jasmine rice</li>
 			<li>1 can of spam</li>
 			<li>3 sheets of nori (sushi-making seaweed)</li>
-			<li>Soy sauce</li>
-			<li>Brown sugar</li>
+			<li>1.5 cups of soy sauce</li>
+			<li>1.5 cups of brown sugar</li>
 		</ul>
 	</div>
 	
@@ -39,7 +45,7 @@
 	
 	<div class="content">
 		<ol>
-			<li>In a bowl, pour a mixture of soy sauce and brown sugar. A good ratio is 1:1, but it doesn't need to be exact.</li>
+			<li>In a bowl, pour both the soy sauce and brown sugar. A good ratio is 1:1, but it doesn't need to be exact.</li>
 			<li>Stir the mixture until the sugar dissolves in to the soy sauce. This is act as a sort of quick and easy teryaki glaze.</li>
 			<li>Open your can of spam and put the block on a cutting board.</li>
 			<li>There are many molds out there to buy and use at home, but in my personal opinion, the best one is the one that comes with the ingredients. Wash out the can and try to get the inside as clean as possible for minimal mess.</li>
@@ -58,5 +64,7 @@
 			<li>Enjoy!</li>
 		</ol>
 	</div>
+
+	<script src="../scripts/servingAdjustment.js"></script>
 </body>
 </html>
