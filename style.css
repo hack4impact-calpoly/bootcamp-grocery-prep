@@ -1,0 +1,104 @@
+body{
+	background-color: #FFEBD6;
+	font-family: Arial, Helvetica, sans-serif; 
+}
+
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+	padding: 0 10px;
+	background-color: #4C061D;
+	color: white;
+}
+
+li{
+	font-size: 18px;
+}
+
+hr{
+	border-top: 2px dashed #4A576D;
+}
+
+header h1{
+	font-size: 50px;
+}
+
+header a{
+	font-size: 20px;
+	color: white;
+	margin: 10px;
+}
+
+.food{
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: space-between;
+}
+
+.food a{
+	font-size: 30px;
+	margin-left: 50px;
+	color: black;
+	text-decoration: none;
+}
+
+.food img{
+	height: 200px;
+	width: auto;
+	margin-right: 50px;
+}
+
+.subHeader{
+	display: flex;
+	align-items: center;
+	height: 65px;
+	padding: 0 10px;
+	background-color: #4A576D;
+	color: white;
+	margin-top: 30px;
+}
+
+.servings{
+	text-align: center;
+}
+
+.content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 100px;
+	font-size: 25px;
+}
+
+.content li{
+	font-size: 20px;
+}
+
+.content img{
+	width: 300px;
+	height: auto;
+}
+
+.servings button{
+	background-color: #4C061D;
+	color: white;
+	font-size: 20px;
+	width: 35px;
+	padding: 7px;
+	border-radius: 8px;
+	margin: 5px;
+}
+
+#mainIntro{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#chef{
+	width: 40%;
+	height: auto;
+}
