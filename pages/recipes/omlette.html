@@ -8,44 +8,52 @@
 		<meta charset="utf-8">
 	</head>
 	<body>
-		<header>
-			<h1><a href="../../index.html">Anna's Recipes</a></h1>
-			<nav>
-				<a href="../recipes.html">Recipes</a>
-				<a href="../about.html">About Me</a>
-			</nav>
-		</header>
-		<h1 class="box2">Omlette</h1>
-		<div class="box3"></div>
-		<div>
-			<img class="recipe-page-display" src="../../images/recipefoods/omlette.png" alt="almondbars">
-		</div>
-		<div class="recipe-instrutions-display">
-			<div class="recipe-instructions-container">
-				<p class="recipe-instructions-text">Ingredients</p>
-				<div class="recipe-instructions-text2">
-					<ul>
-						<li>3 eggs</li>
-						<li>1/3 cup cheese (or substitute)</li>
-						<li>Spinach</li>
-						<li>Basil</li>
-						<li>5 baby Tomatoes</li>
-					</ul>
+		<main>
+			<header>
+				<h1><a href="../../index.html">Anna's Recipes</a></h1>
+				<nav>
+					<a href="../recipes.html">Recipes</a>
+					<a href="../about.html">About Me</a>
+				</nav>
+			</header>
+			<h1 class="box2">Omlette</h1>
+			<div class="box3"></div>
+			<div>
+				<img class="recipe-page-display" src="../../images/recipefoods/omlette.png" alt="almondbars">
+			</div>
+			<div class="serving-size-display">
+				<div id="serving-size-text">Serving Size: </div>
+				<button id="subtract" class="serving-button">-</button>
+				<div id="serving-size">1</div>
+				<button id="add" class="serving-button">+</button>
+			</div>			
+			<div class="recipe-instrutions-display">
+				<div class="recipe-instructions-container">
+					<p class="recipe-instructions-text">Ingredients</p>
+					<div class="recipe-instructions-text2">
+						<ul>
+							<li><b class="quantity">3</b> eggs</li>
+							<li><b class="quantity">0.25</b> cup cheese (or substitute)</li>
+							<li>Spinach</li>
+							<li>Basil</li>
+							<li><b class="quantity">5</b> baby Tomatoes</li>
+						</ul>
+					</div>
+				</div>
+				<div class="recipe-instructions-container">
+					<p class="recipe-instructions-text">Instructions</p>
+					<div class="recipe-instructions-text2">
+						<ol>
+							<li>Stir eggs in a separate container.  </li>
+							<li>Pour mix onto hot pan, moving the eggs as necessary.  </li>
+							<li>Place cheese, spinach, and tomatoes on half of egg sheet.</li>
+							<li>Fold other half over, cook until prepared.</li>
+						</ol>
+					</div>
 				</div>
 			</div>
-			<div class="recipe-instructions-container">
-				<p class="recipe-instructions-text">Instructions</p>
-				<div class="recipe-instructions-text2">
-				    <ol>
-						<li>Stir eggs in a separate container.  </li>
-						<li>Pour mix onto hot pan, moving the eggs as necessary.  </li>
-						<li>Place cheese, spinach, and tomatoes on half of egg sheet.</li>
-						<li>Fold other half over, cook until prepared.</li>
-					</ol>
-				</div>
-			</div>
-		</div>
-	
+		</main>
 	</body>
 	<footer class="footer">Made by Anna Reid:)</footer>
 </html>
+<script src="../../actions/recipes.js"></script> 

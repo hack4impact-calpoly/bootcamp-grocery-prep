@@ -8,43 +8,51 @@
 		<meta charset="utf-8">
 	</head>
 	<body>
-		<header>
-			<h1><a href="../../index.html">Anna's Recipes</a></h1>
-			<nav>
-				<a href="../recipes.html">Recipes</a>
-				<a href="../about.html">About Me</a>
-			</nav>
-		</header>
-		<h1 class="box2">Unique Pancakes</h1>
-		<div class="box3"></div>
-		<div>
-			<img class="recipe-page-display" src="../../images/recipefoods/pancakes.png" alt="almondbars">
-		</div>
-		<div class="recipe-instrutions-display">
-			<div class="recipe-instructions-container">
-				<p class="recipe-instructions-text">Ingredients</p>
-				<div class="recipe-instructions-text2">
-					<ul>
-						<li>6 Eggs</li>
-						<li>1 Cup Milk</li>
-						<li>½ Cup Butter</li>
-						<li>1 Cup Flour</li>
-						<li>1 tsp. Salt</li>
-					</ul>
+		<main>
+			<header>
+				<h1><a href="../../index.html">Anna's Recipes</a></h1>
+				<nav>
+					<a href="../recipes.html">Recipes</a>
+					<a href="../about.html">About Me</a>
+				</nav>
+			</header>
+			<h1 class="box2">Unique Pancakes</h1>
+			<div class="box3"></div>
+			<div>
+				<img class="recipe-page-display" src="../../images/recipefoods/pancakes.png" alt="almondbars">
+			</div>
+			<div class="serving-size-display">
+				<div id="serving-size-text">Serving Size: </div>
+				<button id="subtract" class="serving-button">-</button>
+				<div id="serving-size">1</div>
+				<button id="add" class="serving-button">+</button>
+			</div>			
+			<div class="recipe-instrutions-display">
+				<div class="recipe-instructions-container">
+					<p class="recipe-instructions-text">Ingredients</p>
+					<div class="recipe-instructions-text2">
+						<ul>
+							<li><b class="quantity">6</b> Eggs</li>
+							<li><b class="quantity">1</b> Cup Milk</li>
+							<li><b class="quantity">0.5</b> Cup Butter</li>
+							<li><b class="quantity">1</b> Cup Flour</li>
+							<li><b class="quantity">1</b> tsp. Salt</li>
+						</ul>
+					</div>
+				</div>
+				<div class="recipe-instructions-container">
+					<p class="recipe-instructions-text">Instructions</p>
+					<div class="recipe-instructions-text2">
+						<ol>
+							<li>Preheat oven to 425 degrees. Put butter in 9x13 cake pan and melt by putting in oven.   </li>
+							<li>Mix the eggs, milk, flour, and salt. Pour in pan and bake for 25-30 minutes. </li>
+							<li>Serve with anything else you want or by itself. </li>
+						</ol>
+					</div>
 				</div>
 			</div>
-			<div class="recipe-instructions-container">
-				<p class="recipe-instructions-text">Instructions</p>
-				<div class="recipe-instructions-text2">
-				    <ol>
-						<li>Preheat oven to 425 degrees. Put butter in 9x13 cake pan and melt by putting in oven.   </li>
-						<li>Mix the eggs, milk, flour, and salt. Pour in pan and bake for 25-30 minutes. </li>
-						<li>Serve with anything else you want or by itself. </li>
-					</ol>
-				</div>
-			</div>
-		</div>
-	
+		</main>
 	</body>
 	<footer class="footer">Made by Anna Reid:)</footer>
 </html>
+<script src="../../actions/recipes.js"></script> 

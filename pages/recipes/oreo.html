@@ -8,39 +8,47 @@
 		<meta charset="utf-8">
 	</head>
 	<body>
-		<header>
-			<h1><a href="../../index.html">Anna's Recipes</a></h1>
-			<nav>
-				<a href="../recipes.html">Recipes</a>
-				<a href="../about.html">About Me</a>
-			</nav>
-		</header>
-		<h1 class="box2">Oreo</h1>
-		<div class="box3"></div>
-		<div>
-			<img class="recipe-page-display" src="../../images/recipefoods/oreos.png" alt="almondbars">
-		</div>
-		<div class="recipe-instrutions-display">
-			<div class="recipe-instructions-container">
-				<p class="recipe-instructions-text">Ingredients</p>
-				<div class="recipe-instructions-text2">
-					<ul>
-						<li>1 Oreo</li>
-						<li>2 tbsp peanut butter</li>
-					</ul>
+		<main>
+			<header>
+				<h1><a href="../../index.html">Anna's Recipes</a></h1>
+				<nav>
+					<a href="../recipes.html">Recipes</a>
+					<a href="../about.html">About Me</a>
+				</nav>
+			</header>
+			<h1 class="box2">Oreo</h1>
+			<div class="box3"></div>
+			<div>
+				<img class="recipe-page-display" src="../../images/recipefoods/oreos.png" alt="almondbars">
+			</div>
+			<div class="serving-size-display">
+				<div id="serving-size-text">Serving Size: </div>
+				<button id="subtract" class="serving-button">-</button>
+				<div id="serving-size">1</div>
+				<button id="add" class="serving-button">+</button>
+			</div>			
+			<div class="recipe-instrutions-display">
+				<div class="recipe-instructions-container">
+					<p class="recipe-instructions-text">Ingredients</p>
+					<div class="recipe-instructions-text2">
+						<ul>
+							<li><b class="quantity">1</b> Oreo</li>
+							<li><b class="quantity">1</b> tbsp peanut butter</li>
+						</ul>
+					</div>
+				</div>
+				<div class="recipe-instructions-container">
+					<p class="recipe-instructions-text">Instructions</p>
+					<div class="recipe-instructions-text2">
+						<ol>
+							<li>Obtain Oreo and place peanut butter on top.  </li>
+							<li>Consume.  </li>
+						</ol>
+					</div>
 				</div>
 			</div>
-			<div class="recipe-instructions-container">
-				<p class="recipe-instructions-text">Instructions</p>
-				<div class="recipe-instructions-text2">
-				    <ol>
-						<li>Obtain Oreo and place peanut butter on top.  </li>
-						<li>Consume.  </li>
-					</ol>
-				</div>
-			</div>
-		</div>
-	
+		</main>
 	</body>
 	<footer class="footer">Made by Anna Reid:)</footer>
 </html>
+<script src="../../actions/recipes.js"></script> 

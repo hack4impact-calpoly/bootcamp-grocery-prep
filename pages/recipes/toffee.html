@@ -8,42 +8,50 @@
 		<meta charset="utf-8">
 	</head>
 	<body>
-		<header>
-			<h1><a href="../../index.html">Anna's Recipes</a></h1>
-			<nav>
-				<a href="../recipes.html">Recipes</a>
-				<a href="../about.html">About Me</a>
-			</nav>
-		</header>
-		<h1 class="box2">Toffee</h1>
-		<div class="box3"></div>
-		<div>
-			<img class="recipe-page-display" src="../../images/recipefoods/toffee.png" alt="almondbars">
-		</div>
-		<div class="recipe-instrutions-display">
-			<div class="recipe-instructions-container">
-				<p class="recipe-instructions-text">Ingredients</p>
-				<div class="recipe-instructions-text2">
-					<ul>
-						<li>1 lb butter</li>
-						<li>2 cups brown sugar</li>
-						<li>16 oz Hershey’s chocolate bar broken in pieces</li>
-						<li>2 cups chopped salted peanuts</li>
-					</ul>
+		<main>
+			<header>
+				<h1><a href="../../index.html">Anna's Recipes</a></h1>
+				<nav>
+					<a href="../recipes.html">Recipes</a>
+					<a href="../about.html">About Me</a>
+				</nav>
+			</header>
+			<h1 class="box2">Toffee</h1>
+			<div class="box3"></div>
+			<div>
+				<img class="recipe-page-display" src="../../images/recipefoods/toffee.png" alt="almondbars">
+			</div>
+			<div class="serving-size-display">
+				<div id="serving-size-text">Serving Size: </div>
+				<button id="subtract" class="serving-button">-</button>
+				<div id="serving-size">1</div>
+				<button id="add" class="serving-button">+</button>
+			</div>			
+			<div class="recipe-instrutions-display">
+				<div class="recipe-instructions-container">
+					<p class="recipe-instructions-text">Ingredients</p>
+					<div class="recipe-instructions-text2">
+						<ul>
+							<li><b class="quantity">1</b> lb butter</li>
+							<li><b class="quantity">2</b> cups brown sugar</li>
+							<li><b class="quantity">16</b> oz Hershey’s chocolate bar broken in pieces</li>
+							<li><b class="quantity">2</b> cups chopped salted peanuts</li>
+						</ul>
+					</div>
+				</div>
+				<div class="recipe-instructions-container">
+					<p class="recipe-instructions-text">Instructions</p>
+					<div class="recipe-instructions-text2">
+						<ol>
+							<li>Cook butter and brown sugar to 300 degrees, stirring constantly (use candy thermometer).  </li>
+							<li>Pour immediately into a buttered jelly roll pan.  </li>
+							<li>Lay broken up chocolate on bar top and let melt…then spread.  Sprinkle with chopped nuts.</li>
+						</ol>
+					</div>
 				</div>
 			</div>
-			<div class="recipe-instructions-container">
-				<p class="recipe-instructions-text">Instructions</p>
-				<div class="recipe-instructions-text2">
-				    <ol>
-						<li>Cook butter and brown sugar to 300 degrees, stirring constantly (use candy thermometer).  </li>
-						<li>Pour immediately into a buttered jelly roll pan.  </li>
-						<li>Lay broken up chocolate on bar top and let melt…then spread.  Sprinkle with chopped nuts.</li>
-					</ol>
-				</div>
-			</div>
-		</div>
-	
+		</main>
 	</body>
 	<footer class="footer">Made by Anna Reid:)</footer>
 </html>
+<script src="../../actions/recipes.js"></script> 

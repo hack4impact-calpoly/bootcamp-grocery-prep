@@ -8,43 +8,51 @@
 		<meta charset="utf-8">
 	</head>
 	<body>
-		<header>
-			<h1><a href="../../index.html">Anna's Recipes</a></h1>
-			<nav>
-				<a href="../recipes.html">Recipes</a>
-				<a href="../about.html">About Me</a>
-			</nav>
-		</header>
-		<h1 class="box2">Corn Foam</h1>
-		<div class="box3"></div>
-		<div>
-			<img class="recipe-page-display" src="../../images/recipefoods/cornfoam.png" alt="cornfoam">
-		</div>
-		<div class="recipe-instrutions-display">
-			<div class="recipe-instructions-container">
-				<p class="recipe-instructions-text">Ingredients</p>
-				<div class="recipe-instructions-text2">
-					<ul>
-						<li>1 Can Creamed Corn</li>
-						<li>1 Can Whole Kernel Corn</li>
-						<li>8 oz Sour Cream</li>
-						<li>½ Cup butter</li>
-						<li>2 Eggs</li>
-						<li>1 Box Jiffy Corn Meal Mix</li>
-					</ul>
+		<main>
+			<header>
+				<h1><a href="../../index.html">Anna's Recipes</a></h1>
+				<nav>
+					<a href="../recipes.html">Recipes</a>
+					<a href="../about.html">About Me</a>
+				</nav>
+			</header>
+			<h1 class="box2">Corn Foam</h1>
+			<div class="box3"></div>
+			<div>
+				<img class="recipe-page-display" src="../../images/recipefoods/cornfoam.png" alt="cornfoam">
+			</div>
+			<div class="serving-size-display">
+				<div id="serving-size-text">Serving Size: </div>
+				<button id="subtract" class="serving-button">-</button>
+				<div id="serving-size">1</div>
+				<button id="add" class="serving-button">+</button>
+			</div>
+			<div class="recipe-instrutions-display">
+				<div class="recipe-instructions-container">
+					<p class="recipe-instructions-text">Ingredients</p>
+					<div class="recipe-instructions-text2">
+						<ul>
+							<li><b class="quantity">1</b> Can Creamed Corn</li>
+							<li><b class="quantity">1</b> Can Whole Kernel Corn</li>
+							<li><b class="quantity">8</b> oz Sour Cream</li>
+							<li><b class="quantity">0.5</b> Cup butter</li>
+							<li><b class="quantity">2</b> Eggs</li>
+							<li><b class="quantity">1</b> Box Jiffy Corn Meal Mix</li>
+						</ul>
+					</div>
+				</div>
+				<div class="recipe-instructions-container">
+					<p class="recipe-instructions-text">Instructions</p>
+					<div class="recipe-instructions-text2">
+						<ol>
+							<li>Mix all ingredients in large bowl…pour into 9/13 greased baking dish.  </li>
+							<li>Cook at 350 degrees for 45 minutes or until edges brown.  Can be made in crockpot 4 hours on high.  </li>
+						</ol>
+					</div>
 				</div>
 			</div>
-			<div class="recipe-instructions-container">
-				<p class="recipe-instructions-text">Instructions</p>
-				<div class="recipe-instructions-text2">
-				    <ol>
-						<li>Mix all ingredients in large bowl…pour into 9/13 greased baking dish.  </li>
-						<li>Cook at 350 degrees for 45 minutes or until edges brown.  Can be made in crockpot 4 hours on high.  </li>
-					</ol>
-				</div>
-			</div>
-		</div>
-	
+		</main>
 	</body>
 	<footer class="footer">Made by Anna Reid:)</footer>
 </html>
+<script src="../../actions/recipes.js"></script>
