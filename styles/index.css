@@ -1,47 +1,128 @@
 html{
-    background-color: #9EF0D5;
-    font-family: 'Montserrat', sans-serif;
+	overflow-x: hidden;
+}
+
+a:hover, a:visited, a:link, a:active {
+
+    text-decoration: none!important;
+
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+}
+
+html, body{
+	height: 100%;
+    background-color: #d5f2e2;
+    font-family: 'Cormorant', serif;
+}
+
+body{
+	min-height:100%;
+}
+
+.content {
+	margin-top: auto;
 }
 
 header{
-    background-color: #4A7063;
+    background-color: #4E3247;
     margin: -10px;
+	height: 78px;
     display: flex;
-    justify-content: space-between;
+	justify-content: space-between;
+	align-items: center;
+	filter: drop-shadow(0px 8px 4px #464D73);
 }
+
 nav{
+	font-size: 25px;
     display: block;
-    padding-top: 25px;
 }
 
-nav>a{
-    color:azure;
-    padding: 0 100 100 0;
+header>nav>a{
+    color: #d5f2e2;
+	padding-right: 15px;
+}
+header>h1>a{
+	padding-left: 15px;
+	font-size: 30px;
+	color: #d5f2e2;
 }
 
-main{
-    padding: 5% 10% 5% 10%;
+
+.intro-img {
+	width: 110%;
+	margin: -10px;
+	height: auto;
 }
+
+.circle-img {
+	display: block;
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50%;
+	margin-top: -20%;
+	margin-bottom: 100px;
+	filter: drop-shadow(0px 8px 4px #464D73);
+}
+
+
 .box1{
     display: flex;
-    padding: 0% 20% 0% 20%;
+	justify-content: center;
+	text-align: center;
+    margin: 0% 20% 10% 20%;
+	padding: 5%;
+	background-color: #F2f2f2;
+	font-size: 20px;
+	border-radius: 20px;
+	color: #464D73;
+	filter: drop-shadow(0px 8px 4px #464D73);
 
 }
+
 .box2{
     display: flex;
-    padding: 1%;
     justify-content: center;
     background-color: #7DBDA7;
+	color: #464D73;
+	font-size: 60px;
+	margin: -10px;
+	padding: 60px;
 }
 
 .box3{
-    display: flex;
-    background-color: #BCF5DD;
-    padding: 1%;
+	background-color: #464D73;
+    height: 15px;
+	margin-left: -10px;
+	margin-right: -10px;
 }
 
-.box4{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.buttons{
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 40px;
+}
+
+.button{
+	background-color: #4E3247;
+	border-radius: 20px;
+	height: 100px;
+	width: 250px;
+	border: none;
+	filter: drop-shadow(0px 8px 4px #464D73);
+	font-family: 'Cormorant', serif;
+	color: #d5f2e2;
+	font-size: 30px;
+}
+
+.footer{
+	text-align: center;
+	margin: -10px;
+	padding-top: 15px;
+	height: 30px;
+	flex-shrink: 0;
+	color: #d5f2e2;
+	background-color: #464D73;
 }
