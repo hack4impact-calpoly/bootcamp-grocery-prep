@@ -14,46 +14,57 @@
 </header>
 
 <main>
-   <h1 id="title">Title</h1>
-   <p id="des">Description</p>
 
-   <div class="servingAndrating">
-      <h2 id="serving">Servings</h2>
-   </div>
+<div id="topHalf">
+   <div id= "leftSide">
+      <h1 id="title">Title</h1>
+      <p id="des">Description</p>
 
-      <p id="curRate">5</p>
+      <div class="servingAndrating">
+         <h2 id="serving">Servings</h2>
+      </div>
+
       <p> </p>
-<body>
-   <div class="holder">
-      <button id="sub">-</button>
-      <span id="count">1</span>
-      <button id="add">+</button>
-   </div>
-
-<h2> </h2>
-
-   <div>
-      <form action = >
-         <p id="RateMe">Rate Me! Currently</p>
-         <p id="stars">Stars</p>
-         <fieldset id = "fieldset">
-         <select>
-            <option value=""> Select Rating
-            <option value = "1">1</option>
-            <option value = "2">2</option>
-            <option value = "3">3</option>
-            <option value = "4">4</option>
-            <option value = "5">5</option>
-         </select>
-         <input id="rate" type = "button"
-            value = "rate"
-            onclick = "rateRecipe()" />
-         </fieldset>
-      </form>
-   </div>
-
-   <img id="randomImage" src="./images/crepes.JPG" height="250">
       
+      <div class="holder">
+         <button id="sub">-</button>
+         <span id="count">1</span>
+         <button id="add">+</button>
+      </div>
+
+      <h2> </h2>
+
+      <div>
+         <form action = >
+            <h2 id="RateMe">Rate Me!</p>
+            <h2> </h2>
+            <fieldset id = "fieldset">
+            <select>
+               <option value=""> Select Rating
+               <option value = "1">1</option>
+               <option value = "2">2</option>
+               <option value = "3">3</option>
+               <option value = "4">4</option>
+               <option value = "5">5</option>
+            </select>
+            <input id="rate" type = "button"
+               value = "rate"
+               onclick = "rateRecipe()" />
+            </fieldset>
+         </form>
+      </div>
+   </div>
+   <div id="rightSide">
+      <div id="ratingStar">
+         <h2 id="curRate">5</h2>
+         <span> &starf; </span> 
+      </div>
+
+         <img id="randomImage" src="./images/crepes.JPG" height="250">
+   </div>
+</div>
+
+<div id="bottomHalf">
    <div>
       <h1 class="boxMeals">Ingredients</h1>
       <ul id='ingredients'>
@@ -68,6 +79,7 @@
 
    <script src="js/random.js"></script>
    <script src="js/script.js"></script>
-</body>
+</div>
+
 </main>
 <html>
