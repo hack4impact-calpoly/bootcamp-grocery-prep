@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<link rel="stylesheet" href="../styles/index.css">
+		<link rel="stylesheet" href="../styles/recipes.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<main>
+			<header>
+				<h1><a href="../index.html">Anna's Recipes</a></h1>
+				<nav>
+					<a href="recipes.html">Recipes</a>
+					<a href="randomrecipe.html">Random Recipe</a>
+					<a href="about.html">About Me</a>
+				</nav>
+			</header>
+			<h1 id="title" class="box2"></h1>
+			<div class="box3"></div>
+			<div id="rating1"></div>
+			<div id="rating2" class="rating">
+				<label for="rating">Post Rating: </label>
+				<select class="posting-button" name="rating" id="rating-value">
+					<option class="rating-dropdown-content" value="1">1 / 5</option>
+					<option class="rating-dropdown-content" value="2">2 / 5</option>
+					<option class="rating-dropdown-content" value="3">3 / 5</option>
+					<option class="rating-dropdown-content" value="4">4 / 5</option>
+					<option class="rating-dropdown-content" value="5">5 / 5</option>
+				</select>
+				<button id="submit" class="posting-button">Submit</button>
+			</div>
+			<div id="img-display"></div>
+			<div class="serving-size-display">
+				<div id="serving-size-text">Serving Size: </div>
+				<button id="subtract" class="serving-button">-</button>
+				<div id="serving-size"></div>
+				<button id="add" class="serving-button">+</button>
+			</div>
+			<div class="recipe-instrutions-display">
+				<div class="recipe-instructions-container">
+					<p class="recipe-instructions-text">Ingredients</p>
+					<div id="insertUL" class="recipe-instructions-text2">
+					</div>
+				</div>
+				<div class="recipe-instructions-container">
+					<p class="recipe-instructions-text">Instructions</p>
+					<div id="insertOL" class="recipe-instructions-text2">
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+	<footer class="footer">Made by Anna Reid:)</footer>
+</html>
+<script src="../actions/recipes.js"></script> 
+<script src="../actions/randomrecipe.js"></script> 
