@@ -1,6 +1,6 @@
 <html lang="en-US">
   <head>
-    <title>Grocery Prep - Avocado Toast</title>
+    <title>Grocery Prep - !!INSERT_TITLE!!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
   </head>
@@ -9,37 +9,35 @@
       <h1>Grocery Prep</h1>
       <nav>
         <a href="../index.html">Home</a>
+        <a href="../random_recipe.html">Random Recipe</a>
         <a href="../about.html">About the Chef</a>
       </nav>
     </header>
     <main>
-      <h1>Avocado Toast</h1>
+      <h1>!!INSERT_TITLE!!</h1>
       <div class="recipe-desc">
         <div class="recipe-desc-txt">
-          <p>Embrace your inner millienal with this quirky recipe</p>
+          !!INSERT_DESC_TXT!!
           <h3>Servings</h3>
           <div id="servings">
             <button id="decrement-serving">-</button>
-            <p id="serving-size">2</p>
+            <p id="serving-size">!!INSERT_SERVING_SIZE!!</p>
             <button id="increment-serving">+</button>
           </div>
         </div>
-        <img src="../imgs/food/avocado_toast.jpg" height="250">
+        <img src="../imgs/food/!!INSERT_PIC_URL!!.jpg" height="250">
       </div>
 
       <h2>Ingredients</h2>
       <ul id="ingredients">
-        <li>2 slices of bread</li>
-        <li>1 avocado</li>
-        <li>1 tbsp of pepper</li>
+        !!INSERT_INGREDIENTS!!
       </ul>
 
       <h2>Instructions</h2>
       <ol>
-        <li>Toast the bread</li>
-        <li>Spread the insides of the avocado onto the bread</li>
-        <li>Add pepper</li>
+        !!INSERT_INSTRUCTIONS!!
       </ol>
+      !!INSERT_EXTRA_AFTER!!
     </main>
     <script src="../index.js"></script>
   </body>

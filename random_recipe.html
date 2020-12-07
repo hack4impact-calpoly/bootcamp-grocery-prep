@@ -1,0 +1,56 @@
+<html lang="en-US">
+  <head>
+    <title>Grocery Prep - Random</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="random.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Grocery Prep</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="random_recipe.html">Random Recipe</a>
+        <a href="about.html">About the Chef</a>
+      </nav>
+    </header>
+    <main>
+      <h1 id="recipe-title"></h1>
+      <div class="recipe-desc">
+        <div class="recipe-desc-txt">
+          <h3>Servings</h3>
+          <div id="servings">
+            <button id="decrement-serving">-</button>
+            <p id="serving-size"></p>
+            <button id="increment-serving">+</button>
+          </div>
+          <h3 for="rating-options">Rate Me!</h3>
+          <div id="ratings">
+            <select name="ratings" id="rating-options">
+              <option value="-1" selected hidden disabled>Select Rating</option>
+              <option value="1">1 ★</option>
+              <option value="2">2 ★</option>
+              <option value="3">3 ★</option>
+              <option value="4">4 ★</option>
+              <option value="5">5 ★</option>
+            </select>
+            <button id="post-rating">Post Rating</button>
+          </div>
+        </div>
+        <div class="desc-nontxt">
+          <p id="avg-rating"></p>
+        </div>
+        <!--<img src="" height="250">-->
+      </div>
+
+      <h2>Ingredients</h2>
+      <ul id="ingredients">
+      </ul>
+
+      <h2>Instructions</h2>
+      <ol>
+      </ol>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

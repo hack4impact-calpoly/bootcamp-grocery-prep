@@ -1,39 +1,47 @@
 <html lang="en-US">
-<head>
-  <title>Grocery Prep - Brownies and Ice Cream</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../styles.css">
-</head>
-<body>
-  <header>
-    <h1>Grocery Prep</h1>
-    <nav>
-      <a href="../index.html">Home</a>
-      <a href="../about.html">About the Chef</a>
-    </nav>
-  </header>
-  <main>
-    <h1>Brownies and Ice Cream</h1>
-    <div class="recipe-desc">
-      <p>Desserts simply don't get better than this</p>
+  <head>
+    <title>Grocery Prep - Brownies and Ice Cream</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>Grocery Prep</h1>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About the Chef</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Brownies and Ice Cream</h1>
+      <div class="recipe-desc">
+        <div class="recipe-desc-txt">
+          <p>Desserts simply don't get better than this</p>
+          <h3>Servings</h3>
+          <div id="servings">
+            <button id="decrement-serving">-</button>
+            <p id="serving-size">6</p>
+            <button id="increment-serving">+</button>
+          </div>
+        </div>
+        <img src="../imgs/food/brownies_and_icecream.jpg" height="250">
+      </div>
 
-      <img src="../imgs/food/brownie_and_icecream.jpg" height="250">
-    </div>
+      <h2>Ingredients</h2>
+      <ul id="ingredients">
+        <li>1 bag of brownie mix</li>
+        <li>3 eggs</li>
+        <li>1/2 cup of vegetable oil</li>
+        <li>1 pint of ice cream</li>
+      </ul>
 
-    <h2>Ingredients</h2>
-    <ul>
-      <li>1 bag of brownie mix</li>
-      <li>3 eggs</li>
-      <li>1/2 cup of vegetable oil</li>
-      <li>1 pint of ice cream</li>
-    </ul>
-
-    <h2>Instructions</h2>
-    <ol>
-      <li>Mix brownie mix, eggs, and vegetable oil</li>
-      <li>Bake for 20 mins at 350</li>
-      <li>Serve over ice cream</li>
-    </ol>
-  </main>
-</body>
+      <h2>Instructions</h2>
+      <ol>
+        <li>Mix brownie mix, eggs, and vegetable oil</li>
+        <li>Bake for 20 mins at 350</li>
+        <li>Serve over ice cream</li>
+      </ol>
+    </main>
+    <script src="../index.js"></script>
+  </body>
 </html>

@@ -1,43 +1,52 @@
 <html lang="en-US">
-<head>
-  <title>Grocery Prep - Breakfast for Dinner</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../styles.css">
-</head>
-<body>
-  <header>
-    <h1>Grocery Prep</h1>
-    <nav>
-      <a href="../index.html">Home</a>
-      <a href="../about.html">About the Chef</a>
-    </nav>
-  </header>
-  <main>
-    <h1>Breakfast for Dinner</h1>
-    <div class="recipe-desc">
-      <p>For when you're too lazy to really cook, but still want to have a complete meal</p>
-      <img src="../imgs/food/bfd.jpg" height="250">
-    </div>
+  <head>
+    <title>Grocery Prep - Breakfast for Dinner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>Grocery Prep</h1>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About the Chef</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Breakfast for Dinner</h1>
+      <div class="recipe-desc">
+        <div class="recipe-desc-txt">
+          <p>For when you're too lazy to really cook, but still want to have a complete meal</p>
+          <h3>Servings</h3>
+          <div id="servings">
+            <button id="decrement-serving">-</button>
+            <p id="serving-size">1</p>
+            <button id="increment-serving">+</button>
+          </div>
+        </div>
+        <img src="../imgs/food/bfd.jpg" height="250">
+      </div>
 
-    <h2>Ingredients</h2>
-    <ul>
-      <li>3 eggs</li>
-      <li>1 cup of coffee (decaf)</li>
-      <li>1 Jimmy Dean sausage</li>
-      <li>1 slice of bread</li>
-      <li>2 scoops of jam</li>
-      <li>Salt and pepper</li>
-    </ul>
+      <h2>Ingredients</h2>
+      <ul id="ingredients">
+        <li>3 eggs</li>
+        <li>1 cup of coffee (decaf)</li>
+        <li>1 Jimmy Dean sausage</li>
+        <li>1 slice of bread</li>
+        <li>2 scoops of jam</li>
+        <li>Salt and pepper</li>
+      </ul>
 
-    <h2>Instructions</h2>
-    <ol>
-      <li>Cook the sausage</li>
-      <li>Cook the eggs</li>
-      <li>Add salt and pepper to taste</li>
-      <li>Make the coffee using a Mr. Coffee</li>
-      <li>Toast the bread</li>
-      <li>Add jam to toast</li>
-    </ol>
-  </main>
-</body>
+      <h2>Instructions</h2>
+      <ol>
+        <li>Cook the sausage</li>
+        <li>Cook the eggs</li>
+        <li>Add salt and pepper to taste</li>
+        <li>Make the coffee using a Mr. Coffee</li>
+        <li>Toast the bread</li>
+        <li>Add jam to toast</li>
+      </ol>
+    </main>
+    <script src="../index.js"></script>
+  </body>
 </html>
