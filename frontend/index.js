@@ -30,7 +30,7 @@ const setNewIngredients = (oldSize, newSize) => {
         const fractionValue = calcIfFraction(expectedNumber);
         if (isNumeric(expectedNumber) || fractionValue !== null) {
             const unitServingSize = (fractionValue !== null ? fractionValue : +expectedNumber) / oldSize;
-            liEle.innerHTML = `${(unitServingSize * newSize)} ${splitInnerHTML.slice(1).join(' ')}`;
+            liEle.innerHTML = `${Math.round((unitServingSize * newSize) * 100) / 100} ${splitInnerHTML.slice(1).join(' ')}`;
         }
     }
 }

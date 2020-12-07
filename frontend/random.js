@@ -21,6 +21,9 @@ const setNewRating = (rating) => {
 };
 
 const getAvgRating = (ratings) => {
+    if (ratings.length == 0) {
+        return 0;
+    }
     return ratings.reduce((a, b) => (+a) + (+b)) / ratings.length;
 };
 
