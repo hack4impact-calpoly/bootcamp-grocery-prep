@@ -1,11 +1,13 @@
 
 const randomRecipe = document.getElementById('random-recipe');
 const URL = 'https://3blzgwgi13.execute-api.us-west-2.amazonaws.com/Live/recipe';
+
+
 const getRecipe = async () => {
     try {
         const response = await fetch(URL);
         const jsonResponse = await response.json();
-
+        console.log(URL);
         const title = document.getElementById('title');
         title.innerText = jsonResponse['title'];
 
@@ -44,6 +46,9 @@ const getRecipe = async () => {
         average = (sum/count).toFixed(1);
         ratings.innerHTML = average + "&#9734;";
 
+        const id = jsonResponse['_id']
+        window.location.hash = jsonResponse['_id'];
+
     } catch (err){
         console.log(err)
     }
@@ -57,27 +62,30 @@ document.addEventListener('click', event => {
     if (event.target.id === 'post-rating') {
         console.log("minus");
         postRating();
-
-
     }
 });
 
+
 const postRating = async () => {
-    const response = await fetch(URL);
-    const jsonResponse = await response.json();
+    try {
+        const response = await fetch(URL);
+        const jsonResponse = await response.json();
 
-    console.log(jsonResponse)
+        await fetch(URL, {
+            method: 'POST',
+            body: JSON.stringify({
+                'id': window.location.href.split('#')[1],
+                'rating': document.getElementById('select-rating').value
+                })
+            })
 
-    const rating = document.getElementById('select-rating')
-    let toPost = {
-        'id': jsonResponse['id'],
-        'rating': rating };
+            .then(response => response.json())
+            .then(json => console.log(json));
 
 
-    await fetch(URL, {method: 'POST', body: toPost})
-        .then(response => response.json())
-        .then(data => console.log(data));
-
+    } catch (err){
+             console.log(err)
+         }
 };
 
 

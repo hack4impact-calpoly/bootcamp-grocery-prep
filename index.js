@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 
 
+
 app.get('/api/recipe', (req, res) => {
     res.status(200);
     res.send('list of recipes requested')
@@ -29,7 +30,6 @@ app.get('/api/cast', (req, res) => {
     res.status(200);
     res.send('quantity of recipe id added to cart')
 });
-
 
 
 app.listen(3000);

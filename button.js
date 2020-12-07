@@ -6,8 +6,10 @@ const count = document.getElementsByClassName("count");
 document.addEventListener('click', event => {
 
     if (event.target.id === 'dec'){
-        updateServingCount(-1);
-        updateCount(-1)}
+        console.log(document.getElementById("serving-count").innerText)
+        if (document.getElementById("serving-count").innerText > 1){
+            updateServingCount(-1);
+            updateCount(-1)}}
     if (event.target.id === 'inc'){
         updateServingCount(1);
         updateCount(1)}
@@ -22,10 +24,6 @@ const updateCount = dir => {
 
     if (dir === -1){
 
-        // if (servingCount.innerHTML <= 0){
-        //     for(let i=0, len=count.length; i<len; i++){
-        //         count[i].innerText = count[i].innerText;
-        //     }}
         if (servingCount.innerHTML > 0) {
             for(let i=0, len=count.length; i<len; i++){
                 let curr= parseFloat(count[i].innerHTML);
