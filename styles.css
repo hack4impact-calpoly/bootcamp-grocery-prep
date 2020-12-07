@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    background-color: #f8edeb;
+    padding-bottom: 2%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffadad;
+    padding: 0 2%;
+}
+
+nav a {
+    color: #264653;
+    margin: 0 10px;
+    font-size: large;
+}
+
+main {
+    margin: 0 auto;
+    margin-top: 2%;
+    width: 65%;
+}
+
+.my-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#recipe-lists > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
+    width: 98%; /* Make sure crap lines up */
+    background-color: #fec89a;
+    padding: 1% 1%;
+}
+
+#recipe-lists ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+#recipe-lists ul > li {
+    font-size: large;
+    margin-top: 10px;
+}
+
+#recipe-lists ul li:nth-child(1) {
+    margin-top: 0;
+}
+
+#recipe-lists a {
+    color: #2a9d8f !important;
+}
+
+#recipe-lists img.recipes {
+    display: inline;
+}
+
+.recipe-desc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recipe-desc > img {
+    display: inline;
+    padding-left: 4px;
+}
