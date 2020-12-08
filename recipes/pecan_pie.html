@@ -2,26 +2,38 @@
 <head>
   <meta charset="utf-8">
   <title>Pecan Pie Recipe</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
+
   <header>
     <h1>From Store to Plate!</h1>
     <nav>
-        <a href="chef.html">About the Chef</a>
-        <a href="index.html">Home</a>
+        <a href="../chef.html">About the Chef</a>
+        <a href="../index.html">Home</a>
     </nav>
   </header>
+
   <main>
     <h1>Pecan Pie</h1>
-    <p class="recpie_descrp">
+
+    <p class="recipe_descrp">
       A wonderful treat sure to liven any post dinner eatings! 
     </p>
+
+    <button class="serving_button" name="servings"> 
+      <span name="minus">-</span>
+      <span name="servings">0</span>
+      <span name="plus">+</span>
+    </button>
+
     <span title="My very own pecan pie I made!">
-      <img src="images/pecan_pie.jpg" alt="My very own pumpkin pie I made!" width="300" height="300">
+      <img src="../images/pecan_pie.jpg" alt="My very own pumpkin pie I made!" width="300" height="300">
     </span>
+    
     <section name="Ingredient List">
       <h2>Ingredients</h2>
+
       <ul>
         <li>Pie crust</li>
         <li>3 eggs</li>
@@ -33,8 +45,10 @@
         <li>1 teaspoon of vanilla</li>
       </ul>
     </section>
+
     <section name="Instructions">
       <h2>Instructions</h2>
+
       <ol>
         <li>Preheat oven to 375°</li>
         <li>Mix and beat all but the vanilla until well blended</li>
@@ -43,11 +57,17 @@
         <li>Bake pie for 40 to 50 minutes or until inserted knife comes out clean</li>
         <li>Serve warm, cold, or with ice cream!</li>
       </ol>
-      <p>
+
+      <p class="advice">
         <strong>Chef's Advice:</strong> If you are not sure how much pecans to put in the 
         pie crust you can instead stir in a cup pecans into the mix and then fill the mix into the pie crust.
       </p>
+
     </section>
   </main>
 </body>
+
+<footer>
+  <script>src="js.js"</script>
+</footer>
 </html>
