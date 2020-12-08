@@ -4,6 +4,8 @@ const app = express()
 
 app.use(bodyParser.json())
 
+app.use(express.static("../public"))
+
 app.get("/api/recipe", (req, res) => {
 	res.status(200)
 	res.send("This request will return all of the recipes.")
@@ -30,8 +32,8 @@ app.post("/api/rating", (req, res) => {
 	
 })
 
-app.get('/', (req, res) => {
-  res.send('Hello world!')
-})
+//app.get('/', (req, res) => {
+//  res.send('Hello world!')
+//})
 
 app.listen(3000)
