@@ -1,3 +1,6 @@
+main {
+    background-color: #f4f1de;
+}
 h1 {
     font-size: 2.8em;
     padding: 0px 0;
@@ -18,34 +21,38 @@ nav {
     font-weight: 1000;
     letter-spacing: 1px;
     position: fixed;
-    left: 900px
+    left: 70%;
   }
-body p {
-    padding-left: 90px;
-}
 
 section {
     font-family: fantasy;
 }
 
+.featured {
+    width: 50%;
+    margin: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.featured a {
+    font-size: 50px;
+}
+
+section h3{
+    text-align: center;
+    font-size: 50px;
+    background-color: teal;
+    /* width: 200px; */
+}
+
 section h2 {
-    padding-left: 300px;
+    text-align: center;
     font-size: 80px;
-    width: 1000px;
-    height: 100px;
     background: #E9C46A;
     color: white;
 }
 
-
-
-section section h3{
-    padding-left: 15%;
-}
-
-section a{
-    padding-left: 25%;
-}
 
 .first_title {
     font-size: large;
@@ -54,25 +61,28 @@ section a{
     padding-top: 30px;
     width: 1000px;
     height: 0px;
-    background: white;
 } 
-body h3 {
-    padding-left:50px;
-}
+
+
 body img{
     position: relative;
-    left: 400px;
-    /* padding-left: 400px; */
+    padding-top: 30px;
+    left: 15%;
 }
 
-.recpie_descrp {
+.recipe_descrp {
     font-family: fantasy;
 }
 
+/* Only in chef.html */
 #now_sentence{
-    /* color: rebeccapurple; */
     padding-left: 90px;
 }
+
+/* Only effects recipe sites */
+body p {
+    padding-left: 90px;
+} 
 
 .serving_button {
     border: 0;
