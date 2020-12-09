@@ -124,7 +124,7 @@ app.post('/api/rating', (req, res) => {
 		res.send("ERROR: NO RATING SPECIFIED")
 	}
 
-	res.status(200)
+	//res.status(200)
 	Recipe.findOneAndUpdate(
 		{_id: req.body.id },
 		{$push: { ratings: rating }},
@@ -162,4 +162,4 @@ app.post('/api/cart', (req, res) => {
 	res.send(`[POST] ${quantity} of recipe ${id} added to cart`)
 })
 
-app.listen(3001)
+app.listen(3000)
