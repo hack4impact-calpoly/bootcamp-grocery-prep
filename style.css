@@ -84,7 +84,13 @@ body p {
     padding-left: 90px;
 } 
 
-.serving_button {
+.button_controls {
+    font-family: fantasy;
+    font-size: 25px;
+    
+}
+
+#serving_button_plus, #serving_button_minus {
     border: 0;
     line-height: 2.5;
     padding: 0 20px;

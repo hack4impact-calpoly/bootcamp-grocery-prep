@@ -21,11 +21,16 @@
       A wonderful treat sure to liven any post dinner eatings! 
     </p>
 
-    <button class="serving_button" name="servings"> 
-      <span name="minus">-</span>
-      <span name="servings">0</span>
-      <span name="plus">+</span>
-    </button>
+    <div class="button_controls">
+      Servings
+      <button id="serving_button_minus" > 
+        -
+      </button>
+      <span class="current_serving">1</span>
+      <button id="serving_button_plus" > 
+        +
+      </button>
+    </div>
 
     <span title="My very own pecan pie I made!">
       <img src="../images/pecan_pie.jpg" alt="My very own pumpkin pie I made!" width="300" height="300">
@@ -35,14 +40,14 @@
       <h2>Ingredients</h2>
 
       <ul>
-        <li>Pie crust</li>
-        <li>3 eggs</li>
-        <li>1 cup of sugar</li>
-        <li>1/1 teaspoon of salt</li>
-        <li>1/3 cup of melted butter</li>
-        <li>1 cup of light corn syrup (can be subbed with honey)</li>
-        <li>1 or more cup of pecan halves</li>
-        <li>1 teaspoon of vanilla</li>
+        <li><span class="num">1</span> Pie crust</li>
+        <li><span class="num">3</span> eggs</li>
+        <li><span class="num">1</span> cup of sugar</li>
+        <li><span class="num">.5</span> teaspoon of salt</li>
+        <li><span class="num">.3</span> cup of melted butter</li>
+        <li><span class="num">1</span> cup of light corn syrup (can be subbed with honey)</li>
+        <li><span class="num">1</span> or more cup of pecan halves</li>
+        <li><span class="num">1</span> teaspoon of vanilla</li>
       </ul>
     </section>
 
@@ -65,9 +70,7 @@
 
     </section>
   </main>
+  <script src="../js.js"></script>
 </body>
 
-<footer>
-  <script>src="js.js"</script>
-</footer>
 </html>
