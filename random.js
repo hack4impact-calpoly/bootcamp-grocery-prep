@@ -9,7 +9,6 @@ const getFullURL = () => {
         fullURL = URL
     else {
         fullURL = URL + "?id=" + hash
-        console.log(fullURL)
     }
 }
 
