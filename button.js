@@ -6,7 +6,7 @@ const count = document.getElementsByClassName("count");
 document.addEventListener('click', event => {
 
     if (event.target.id === 'dec'){
-        console.log(document.getElementById("serving-count").innerText)
+        console.log(document.getElementById("serving-count").innerText);
         if (document.getElementById("serving-count").innerText > 1){
             updateServingCount(-1);
             updateCount(-1)}}

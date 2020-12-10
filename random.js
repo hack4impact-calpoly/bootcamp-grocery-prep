@@ -46,23 +46,21 @@ const getRecipe = async () => {
         average = (sum/count).toFixed(1);
         ratings.innerHTML = average + "&#9734;";
 
-        const id = jsonResponse['_id']
+        const id = jsonResponse['_id'];
         window.location.hash = jsonResponse['_id'];
 
     } catch (err){
         console.log(err)
     }
 };
-
 getRecipe();
-
 
 
 document.addEventListener('click', event => {
     if (event.target.id === 'post-rating') {
         console.log("minus");
         postRating();
-    }
+    };
 });
 
 
@@ -78,21 +76,10 @@ const postRating = async () => {
                 'rating': document.getElementById('select-rating').value
                 })
             })
-
             .then(response => response.json())
             .then(json => console.log(json));
-
 
     } catch (err){
              console.log(err)
          }
 };
-
-
-
-
-
-
-
-
-
