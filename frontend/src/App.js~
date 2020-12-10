@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Header from './components/Header.js'
 
+import Header from './components/Header.js'
+import About  from './pages/About.js'
 
 class App extends React.Component {
 	
@@ -9,6 +10,9 @@ class App extends React.Component {
 		return (
 			<BrowserRouter>
 				<Header />
+				<Route exact path='/about'>
+					<About />
+				</Route>
 			</BrowserRouter>
 		);
 	}

@@ -1,0 +1,14 @@
+main#about {
+	padding: 15px 20% 40px;
+}
+
+#chef_photo {
+	display: flex;
+	justify-content: right;
+	flex-wrap: wrap;
+}
+
+#chef_photo > img {
+	height: 210px;
+	padding: 3px 1px;
+}
