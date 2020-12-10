@@ -1,0 +1,14 @@
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	background-color: #777777;
+	color: #FFF;
+	padding: 0 20px;
+}
+
+nav > a {
+	color: #FFF;
+	margin: 0 12px;
+}
