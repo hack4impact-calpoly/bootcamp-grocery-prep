@@ -20,6 +20,6 @@ const updateCount = dir => {
 const updateIngredients = (prev, curr) => {
 	for(let i = 0; i < ingredientList.length; i++){
 		const strings = ingredientList[i].innerText.split(" ")
-		ingredientList[i].innerText = (+(strings[0])*curr/prev).toString() + " " + strings.splice(1).join(" ")
+		ingredientList[i].innerText = (+(strings[0])*curr/prev).toFixed(2).toString() + " " + strings.splice(1).join(" ")
 	}
 }
