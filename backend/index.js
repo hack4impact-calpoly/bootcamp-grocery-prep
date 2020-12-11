@@ -1,19 +1,21 @@
 const express = require("express")
 const app = express()
+const recipeAPI = require('./api/recipeAPI.js')
+const mongoose = require('mongoose')
 
+// MongoDB Connection
+const dbURL = "mongodb+srv://Vance:sGkh9rbWwBBEAtjc@cluster0.5lpyb.mongodb.net/bootcamp-grocery-prep?retryWrites=true&w=majority";
+mongoose.connect(dbURL, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useFindAndModify: false,
+    useCreateIndex: true
+  }).then(() => console.log('Connected to MongoDB'))
+
+// Express Routes
 app.use(express.static('../public'))
 app.use(express.json())
+app.use(recipeAPI)
 
-app.get('/api/recipie', (req, res) => {
-    res.send('List of recipes requested');
-})
-
-app.get('/api/recipie/:name', (req, res) => {
-    res.send(`Instructions for ${req.params.name} requested`);
-})
-
-app.post('/api/rating', (req, res) => {
-    res.send(`Rating of ${req.body.rating} received for recipie ${req.body.id}`);
-})
-
+// Express Connection
 app.listen(3000)
