@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Random Recipe</title>
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	
+</head>
+<body>
+	<header>
+		<h1 class="siteName">Cole's Kitchen</h1>
+		<nav class="headerLinks">
+			<a href="index.html">Home</a>
+			<a href="randomRecipe.html">Random Recipe</a>
+			<a href="aboutTheChef.html">About the chef</a>
+		</nav>
+	</header>
+
+	<div class="content">
+		<h2 id="title"></h2>
+
+		<img id="image" src="" height="400">
+
+		<p id="description"></p>
+	</div>
+
+	<div id="ratingSection">
+		<h3 id="avgRating">Average Rating:</h3>
+		<h3>Rate Me!</h3>
+		<select id="ratingBox">
+			<option value="Select Rating">Select Rating</option>
+			<option value="1">1 ☆</option>
+			<option value="2">2 ☆☆</option>
+			<option value="3">3 ☆☆☆</option>
+			<option value="4">4 ☆☆☆☆</option>
+			<option value="5">5 ☆☆☆☆☆</option>
+		</select>
+		<button id="ratingSubmit">Submit</button>
+	</div>
+
+	<div class="subHeader">
+		<h2>What you'll need:</h2>
+	</div>
+
+	<div class="content">
+		<div class="servings">
+			<p>Servings</p>
+			<button id="sub">-</button>
+			<span id="count"></span>
+			<button id="add">+</button>
+		</div>
+		<ul id="ingredientList"></ul>
+	</div>
+
+	<div class="subHeader">
+		<h2>Steps:</h2>
+	</div>
+
+	<div class="content">
+		<ol id="instructions"></ol>
+	</div>
+	
+	<script src="../scripts/servingAdjustment.js"></script>
+	<script src="../scripts/recipeRandomizer.js"></script>
+</body>
+</html>
