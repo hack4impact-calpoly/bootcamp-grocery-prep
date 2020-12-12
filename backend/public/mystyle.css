@@ -1,0 +1,50 @@
+header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #006d77;
+   color: #FFF;
+   padding: 20px;
+}
+
+h1 {
+   display: block;
+   font-weight: bold;
+}
+
+h2 {
+   padding: 10px; 
+   display: block;
+   font-weight: bold;
+   background-color: 83c5be;
+}
+
+nav > a {
+   color: ffddd2;
+   margin-left: 0.5em;
+}
+
+body {
+   display: block;
+   background-color: edf6f9;
+   font-family: Helvetica;
+}
+
+food {
+   display: flex;
+   justify-content: space-between;   
+   padding: 20px;
+}
+
+servings{
+   padding-bottom: 100px;
+
+}
+
+main {
+   margin: 30px;
+}
+
+section {
+   display: block;
+}
