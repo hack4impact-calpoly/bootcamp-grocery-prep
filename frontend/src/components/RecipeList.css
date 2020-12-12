@@ -1,0 +1,16 @@
+.link-collection > a {
+	color: #7fe5f0;
+	line-height: 26px;
+}
+
+.link-collection {
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+
+@media screen and (max-width: 900px) {
+	.link-collection {
+		display: grid;
+		grid-template-columns: auto auto;
+	}
+}

@@ -8,6 +8,15 @@ class RecipeList extends React.Component {
 		super(props);
 		this.state = { list: [] };
 	}
+	
+	componentDidMount() {
+		fetch('http://localhost:3001/api/recipe')
+		.then(res => res.json())
+		.then(data => {
+			this.setState({list : data})})
+		
+		document.title = 'My Favorite Recipes';
+	}
 
 	render() {
 		return (
@@ -15,6 +24,14 @@ class RecipeList extends React.Component {
 				<h1>Welcome!</h1>
 
 				<h2>Recipes</h2>
+				<div className='link-collection'>
+					{this.state.list && this.state.list.map(item => {
+						const id = item._id;
+						const title = item.title;
+
+						return <Link to={'/recipe/#' + id}>{title}</Link>;
+					})}
+				</div>
 			</div>
 		);
 	}
