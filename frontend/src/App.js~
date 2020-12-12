@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header.js'
 import Cart   from './components/Cart.js'
+import RecipeList from './components/RecipeList.js'
 import About  from './pages/About.js'
 
 class App extends React.Component {
@@ -34,7 +35,7 @@ class App extends React.Component {
 				<Header />
 				<Route exact path='/'>
 					<main id='browse'>
-						<Cart />
+						<Cart cart={this.state.cart} emptyCart={this.emptyCart} />
 					</main>
 				</Route>
 				<Route exact path='/about'>
