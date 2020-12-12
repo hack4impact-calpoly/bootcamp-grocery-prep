@@ -33,6 +33,11 @@ h2 {
     padding: 0px 5px;
 }
 
+#recipe_name {
+    margin: 0;
+    padding: 0;
+}
+
 .sameh3 {
     background-color: cadetblue;
     padding: 0px 5px;
@@ -49,10 +54,23 @@ h2 {
     align-content: flex-start;
 }
 
-.portion_align {
+.showcase {
     display: flex;
-    flex-direction: row-reverse;
     justify-content: space-between;
+}
+
+.ratingContainer {
+    background-color: cadetblue;
+    padding: 0px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20;
+}
+
+#portion_rate {
+    display: flex;
+    flex-direction: column;
 }
 
 button {
@@ -63,6 +81,15 @@ button {
     width: 40px;
     height: 30px;
     font-size: 20px;
+}
+
+#post {
+    width: 120px;
+    height: 30px;
+    font-size: 14px;
+    padding: 5px 14px;
+    align-items: flex-start;
+    
 }
 
 #count {
