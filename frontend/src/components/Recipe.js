@@ -26,10 +26,11 @@ class Recipe extends React.Component {
 		.then(recipe => {
 			this.setState({...recipe});
 
-			//let rating = recipe.ratings.reduce((a,b) => a+b) / recipe.ratings.length;
-			//rating = rating.toFixed(2);
-			//this.setState({rating: rating});
+			let rating = recipe.ratings.reduce((a,b) => a+b) / recipe.ratings.length;
+			rating = rating.toFixed(2);
+			this.setState({rating: rating});
 			console.log(recipe);
+			console.log(this.state);
 			document.title = recipe.title + ' - My Favorite Recipes';
 		});
 	}
