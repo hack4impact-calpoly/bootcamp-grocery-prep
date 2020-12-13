@@ -5,6 +5,7 @@ import './App.css';
 import Header from './components/Header.js'
 import Cart   from './components/Cart.js'
 import RecipeList from './components/RecipeList.js'
+import Recipe from './components/Recipe.js'
 import About  from './pages/About.js'
 
 class App extends React.Component {
@@ -33,14 +34,23 @@ class App extends React.Component {
 		return (
 			<BrowserRouter>
 				<Header />
+				<Switch>
 				<Route exact path='/'>
 					<main id='browse'>
+						<RecipeList />
+						<Cart cart={this.state.cart} emptyCart={this.emptyCart} />
+					</main>
+				</Route>
+				<Route path='/recipe'>
+					<main id='browse'>
+						<Recipe updateCart={this.updateCart} />
 						<Cart cart={this.state.cart} emptyCart={this.emptyCart} />
 					</main>
 				</Route>
 				<Route exact path='/about'>
 					<About />
 				</Route>
+				</Switch>
 			</BrowserRouter>
 		);
 	}

@@ -29,7 +29,7 @@ class RecipeList extends React.Component {
 						const id = item._id;
 						const title = item.title;
 
-						return <Link to={'/recipe/#' + id}>{title}</Link>;
+						return <Link to={'/recipe/' + title}>{title}</Link>;
 					})}
 				</div>
 			</div>

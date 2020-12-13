@@ -3,6 +3,15 @@ body {
 	background-color: #ffe4e1;
 }
 
+h2 {
+	background-color: #81b29a;
+	padding: 4px 8px;
+}
+
+#recipe-list {
+	padding: 15px 10% 40px;
+}
+
 main#browse {
 	display: grid;
 	grid-template-columns: 75% 25%;
