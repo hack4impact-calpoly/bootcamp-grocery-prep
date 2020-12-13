@@ -11,7 +11,14 @@ header{
 
 nav{
   padding: 20px;
+}
 
+a:visited{
+  color: white;
+}
+
+a:link{
+  color: white;
 }
 
 img.carton{
