@@ -24,7 +24,7 @@ class Recipe extends React.Component {
 		fetch('http://localhost:3001/api/recipe/' + title)
 		.then(res => res.json())
 		.then(recipe => {
-			this.setState({...recipe[0]});
+			this.setState({...recipe});
 
 			let rating = recipe[0].ratings.reduce((a,b) => a+b) / recipe[0].ratings.length;
 			rating = rating.toFixed(2);
