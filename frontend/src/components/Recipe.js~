@@ -15,11 +15,10 @@ class Recipe extends React.Component {
 		var name_ind;
 		for (i = url.length-1; i >= 0; i--) {
 			if(url[i] === '/'){
-				name_ind = i;
+				name_ind = i+1;
 				break;
 			}
 		}
-
 		const title = url.substring(name_ind, url.length);
 
 		fetch('http://localhost:3001/api/recipe/' + title)

@@ -19,7 +19,6 @@ class Recipe extends React.Component {
 				break;
 			}
 		}
-
 		const title = url.substring(name_ind, url.length);
 
 		fetch('http://localhost:3001/api/recipe/' + title)
@@ -77,18 +76,18 @@ class Recipe extends React.Component {
 				</div>
 				
 				<h2>Ingredients</h2>
-				<u1>
+				<ul>
 					{this.state.ingredients && Object.keys(this.state.ingredients).map((name) => {
 						return <li key={name}><span className='count'>{this.state.ingredients[name]}</span> {name}</li>;
 					})}
-				</u1>
+				</ul>
 
 				<h2>Instructions</h2>
-				<o1>
+				<ol>
 					{this.state.instructions && this.state.instructions.map((instruction, count) => {
 						return <li key={count}>{instruction}</li>;
 					})}
-				</o1>
+				</ol>
 			</div>
 		);
 	}
