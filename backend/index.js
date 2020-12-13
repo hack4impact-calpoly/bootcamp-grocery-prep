@@ -1,7 +1,12 @@
 
 import express from 'express';
 import bodyParser from 'body-parser';
+import dotenv from 'dotenv';
+import MongooseConector from './db.js';
 
+dotenv.config();
+
+// .env not in .gitignore so should be viewable
 const app = express();
 
 app.use(express.static('../frontend'));
@@ -17,21 +22,35 @@ app.use((req, res, next) => {
     });
 });
 
-app.get('/api/recipe', (req, res) => {
-    console.log('list of recipes requested');
-    res.status(200).json({
-        message: 'Recipes...',
-    });
+app.get('/api/recipe', async (req, res, next) => {
+    const recipes = await MongooseConector.getAllRecipes();
+    if (!recipes) {
+        res.status(500).json({
+            message: 'Server error',
+        });
+        return next();
+    }
+    res.status(200).json(recipes);
 });
 
-app.get('/api/recipe/:name', (req, res) => {
-    console.log(`instructions for ${req.params.name} requested`);
-    res.status(200).json({
-        message: `Sending back recipes for ${req.params.name}...`,
-    });
+app.get('/api/recipe/:name', async (req, res, next) => {
+    if (!req.params.name) {
+        res.status(400).json({
+            message: 'Name of recipe must be given',
+        });
+        return next();
+    }
+    const recipe = await MongooseConector.getRecipeByName(req.params.name);
+    if (!recipe) {
+        res.status(500).json({
+            message: 'Server error',
+        });
+        return next();
+    }
+    res.status(200).json(recipe);
 });
 
-app.post('/api/rating', (req, res, next) => {
+app.post('/api/rating', async (req, res, next) => {
     const rating = req.body.rating;
     const id = req.body.id;
     if (!rating || !id) {
@@ -46,10 +65,22 @@ app.post('/api/rating', (req, res, next) => {
         return next();
     }
 
-    console.log(`rating of ${rating} received for recipe ${id}`);
+    const successful = await MongooseConector.addRating(id, rating);
+    if (!successful) {
+        res.status(500).json({
+            message: 'Server error',
+        });
+        return next();
+    }
+
     res.status(200).json({
         message: `Successfully posted ${rating} for recipe ${id}`,
     });
 });
 
-app.listen(3000);
+(async () => {
+    await MongooseConector.connect();
+    app.listen(3000, 'localhost', () => {
+        console.log('Listeneing on port 3000');
+    });
+})();
