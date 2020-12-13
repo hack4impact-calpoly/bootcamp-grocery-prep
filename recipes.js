@@ -1,7 +1,15 @@
+const bookmark = window.location.hash.substring(1)
+let bookmarkSpot = null
 const URL = 'https://3blzgwgi13.execute-api.us-west-2.amazonaws.com/Live/recipe'
 
+if(bookmark !== undefined){
+    
+    bookmarkSpot = '?id=' + bookmark
+}
+
+
 let allData
-fetch(URL)
+fetch(URL + bookmarkSpot)
     .then(response => response.json())      // convert it to json 
     .then(data => displayData(data))
 
@@ -16,8 +24,7 @@ function postARating(){
     const ratingSelector = document.getElementById("user-rating")
     const rating = ratingSelector.options[ratingSelector.selectedIndex].value
 
-    const testObject = document.getElementById("test")
-    testObject.textContent = rating
+    
 
     const postData = {
         id: allData._id,
@@ -31,10 +38,7 @@ function postARating(){
     .then(()=>{
         allData.ratings.push(rating)
     })
-    // .then(response => response.json())
-    // .then(data => {
-
-    // })
+    
     .catch((err) => {
         console.error(err)
     })
@@ -94,9 +98,5 @@ function displayData(data){
     totalCount = totalCount/ratings.length
     ratingArea.textContent = totalCount.toFixed(10)
     
-    //const newDiv = document.createElement("div")
-    //newDiv.appendChild(description)
-    //document.body.insertBefore(newDiv, document.getElementById("before"))
-
 
 }
