@@ -1,39 +1,52 @@
 const express = require('express')
 const bodyParser = require("body-parser")
 const app = express()
+const mongoose = require('mongoose')
+const Recipe = require('./models/recipe');
+
+mongoose.connect("mongodb+srv://dbUser:1234..!ahqQ@annabootcamp.tsiur.mongodb.net/recipe?retryWrites=true&w=majority", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useFindAndModify: false,
+  useCreateIndex: true
+}).then(() => console.log('Connected to MongoDB'))
 
 app.use(bodyParser.json())
+app.use(express.static("../"))
 
-app.use(express.static("../public"))
+const getRecipes = async () => {
+	return await Recipe.find({})
+}
 
-app.get("/api/recipe", (req, res) => {
-	res.status(200)
-	res.send("This request will return all of the recipes.")
+const getRecipe = async (recipe) => {
+	return await Recipe.find({food: recipe})
+}
+
+const newRating = async (food, rating) => {
+	return await Recipe.updateOne( 
+  	{ food : food },
+  	{ $push: { ratings: rating } })
+}
+
+app.get("/api/recipe", async (req, res) => {
+	res.json(await getRecipes())
 })
 
-app.get("/api/recipe/:name", (req, res) => {
+app.get("/api/recipe/:name", async (req, res) => {
 	const name = req.params.name
 	if(typeof name === undefined || name.length === 0){
-		res.status(400)
-		res.send("Error: No Name")
+		res.json(await getRecipes())
 	}
-	res.status(200)
-	res.send(`This request will return the instructions for ${name}.`)
+	res.json(await getRecipe(name))
 })
 
-app.post("/api/rating", (req, res) => {
-	console.log(req.body.food, req.body.rating)
-	res.status(200)
+app.post("/api/rating", async (req, res) => {
 	if(typeof req.body.food === undefined || typeof req.body.rating === undefined){
-		res.status(400)
-		res.send("Error: Undefined Values")
+		res.json(await getRecipes())
 	}
-	res.send(`The rating for ${req.body.food} has been posted, which was ${req.body.rating} out of 5`)
+	await newRating(req.body.food, req.body.rating)
+	res.send(`Rating for ${req.body.food}, ${req.body.rating}/5, has been posted.`)
 	
 })
-
-//app.get('/', (req, res) => {
-//  res.send('Hello world!')
-//})
 
 app.listen(3000)
