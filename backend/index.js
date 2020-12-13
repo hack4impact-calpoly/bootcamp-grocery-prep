@@ -1,6 +1,9 @@
 const express = require("express");
+const mongoose = require("mongoose");
 const bodyParser = require("body-parser")
 const app = express();
+
+const Foods = require("./models/schema.js");
 
 app.use(bodyParser.json()) //replaced confusion with JSON
 
@@ -10,9 +13,18 @@ app.use("/images", express.static("../images"))
 
 const cart = [];
 
-app.get("/api/recipe", (req, res) => {
-    res.status(200)
-    res.send('list of recipes requested')
+mongoose.connect("mongodb+srv://TestUser:Testing1234@cluster0.c3xdk.mongodb.net/Recipes?retryWrites=true&w=majority", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useFindAndModify: false,
+    useCreateIndex: true
+  }).then(() => console.log('Connected to MongoDB'))
+
+app.get("/api/recipe", async (req, res) => {
+    res.status(200);
+    const food = await Foods.find({});
+    console.log(food);
+    res.send('list of recipes requested');
 
 });
 
@@ -22,7 +34,7 @@ app.get("/api/recipe/random", (req, res) => {
 
 });
 
-app.get("/api/recipe/:name", (req, res) => {
+app.get("/api/recipe/:name", async (req, res) => {  //async because database request
     const recipeName = req.params.name
 
     if (typeof recipeName === undefined || recipeName.length === 0){
@@ -31,13 +43,32 @@ app.get("/api/recipe/:name", (req, res) => {
     }
     else{
         res.status(200);
-        res.send(`instructions for ${recipeName} requested`)
+        const food = await Foods.find({"foodTitle" : recipeName})
+        if (food.length == 0){
+            res.send("No food in database!")
+        }
+        else{
+            //res.send(`instructions for ${recipeName} requested`);
+            res.json(food)
+        }
     }
 });
 
-app.post("/api/rating", (req, res) => {
+app.post("/api/rating", async (req, res) => {
     res.status(200);
-    res.send(`rating of ${req.body.rating} received for recipe ${req.body.food}`)
+    const food = await Foods.find({"foodTitle" : req.body.food});
+    if (food.length == 0){
+        res.send("No food in database!")
+    }
+    else{
+        await Foods.updateOne(
+            {"foodTitle" : req.body.food},
+            {"$push" : { "ratings" : Number(req.body.rating)}}
+        )
+        res.send("Rating added!")
+    }
+    //res.send(`rating of ${req.body.rating} received for recipe ${req.body.food}`)
+
 });
 
 app.get("/api/cart", (req, res) => {
