@@ -48,7 +48,6 @@ app.get("/api/recipe/:name", async (req, res) => {  //async because database req
             res.send("No food in database!")
         }
         else{
-            //res.send(`instructions for ${recipeName} requested`);
             res.json(food)
         }
     }
@@ -67,7 +66,6 @@ app.post("/api/rating", async (req, res) => {
         )
         res.send("Rating added!")
     }
-    //res.send(`rating of ${req.body.rating} received for recipe ${req.body.food}`)
 
 });
 
@@ -82,4 +80,4 @@ app.post("/api/cart", (req, res) => {
     res.send(`${req.body.quantity} quantity of ${req.body.food}s added to cart`)
 })
 
-app.listen(3000);
+app.listen(3001);
