@@ -25,9 +25,14 @@ class Recipe extends React.Component {
 		.then(res => res.json())
 		.then(recipe => {
 			this.setState({...recipe[0]});
-
-			let rating = recipe[0].ratings.reduce((a,b) => a+b) / recipe[0].ratings.length;
-			rating = rating.toFixed(2);
+			
+			let rating;
+			if(recipe[0].ratings.length == 0){
+				rating = "NO RATING";
+			} else{
+				rating = recipe[0].ratings.reduce((a,b) => a+b) / recipe[0].ratings.length;
+				rating = rating.toFixed(2);
+			}
 			this.setState({rating: rating});
 			document.title = recipe[0].title + ' - My Favorite Recipes';
 		});
