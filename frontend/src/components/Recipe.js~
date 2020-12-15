@@ -72,6 +72,10 @@ class Recipe extends React.Component {
 		}
 		this.setState({ ingredients: newCounts, servings: Number(this.state.servings) + Number(dir)})
 	}
+
+	addToCart() {
+		this.state.updateCart(this.state.ingredients);
+	}
 	
 	render() {
 		return (
@@ -83,8 +87,7 @@ class Recipe extends React.Component {
 							<span id='rating'>{this.state.rating}</span> &#9734;
 						</div>
 						&nbsp;
-						//ADD ADD-TO-CART FUNCTIONALITY
-						<button id='add-to-cart'>Add to Cart</button>
+						<button id='add-to-cart' onClick={() => this.addToCart()>Add to Cart</button>
 					</div>
 				</div>
 				<div className='showcase'>
@@ -106,7 +109,7 @@ class Recipe extends React.Component {
 								<option value='4'>4 &#9733;</option>
 								<option value='5'>5 &#9733;</option>
 							</select>
-							&nbsp;<button id='post-rating' onClick={() this.postRating()}>Post Rating</button>
+							&nbsp;<button id='post-rating' onClick={() => this.postRating()}>Post Rating</button>
 						</div>
 					</div>
 					<img src={this.state.img} height='250px' alt={'Photo of ' 
