@@ -112,7 +112,7 @@ class Recipe extends React.Component {
 							&nbsp;<button id='post-rating' onClick={() => this.postRating()}>Post Rating</button>
 						</div>
 					</div>
-					<img src={this.state.img} height='250px' alt={'Photo of ' 
+					<img src={process.env.PUBLIC_URL + this.state.img} height='250px' alt={'Photo of ' 
 						 + this.state.title}></img>
 				</div>
 				

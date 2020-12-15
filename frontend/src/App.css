@@ -1,10 +1,11 @@
 body {
 	margin: 0;
-	background-color: #ffe4e1;
+	background-color: #cbf3f0;
+	font-family: Helvetica;
 }
 
 h2 {
-	background-color: #81b29a;
+	background-color: #ffe6a7;
 	padding: 4px 8px;
 }
 
