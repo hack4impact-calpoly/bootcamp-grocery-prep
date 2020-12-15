@@ -27,19 +27,53 @@ class Recipe extends React.Component {
 			this.setState({...recipe[0]});
 			
 			let rating;
-			if(recipe[0].ratings.length == 0){
-				rating = -1;
+			if(recipe[0].ratings.length === 0){
+				rating = "NO RATING";
 			} else{
 				rating = recipe[0].ratings.reduce((a,b) => a+b) / recipe[0].ratings.length;
+				rating = rating.toFixed(2);
 			}
-			rating = rating.toFixed(2);
 			this.setState({rating: rating});
 			document.title = recipe[0].title + ' - My Favorite Recipes';
 		});
 	}
+
+	postRating() {
+		const newRating = +(document.getElementById('select-rating').value);
+		if (isNaN(newRating)) return;
+
+		this.setState({ratings: [...this.state.ratings, newRating]});
+		let rating = this.state.ratings.reduce((a,b) => a+b) / this.state.ratings.length;
+		rating = rating.toFixed(2);
+		this.setState({rating: rating});
+
+		const ratingBody = {
+			id: this.state._id,
+			rating: newRating
+		}
+
+		fetch('http://localhost:3001/api/rating', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify(ratingBody)
+		});
+	}
+
+	updateCount(dir) {
+		if (this.state.servings + dir <= 0) return;
+
+		const currentServings = +(this.state.servings);
+		const newCounts = {};
+		for (const ingredient in this.state.ingredients) {
+			const currentCount = +(this.state.ingredients[ingredient]);
+			newCounts[ingredient] = Number(((currentCount / currentServings) * (currentServings + dir)).toFixed(2)).toString();
+		}
+		this.setState({ ingredients: newCounts, servings: Number(this.state.servings) + Number(dir)})
+	}
 	
 	render() {
-		console.log(this.state)
 		return (
 			<div id='recipe'>
 				<div className='headline'>
@@ -58,10 +92,9 @@ class Recipe extends React.Component {
 						<p className='desc'>{this.state.desc}</p>
 						<div className='servings'>
 							<h3>Servings</h3>
-							//ADD BUTTON FUNCTIONALITY
-							<button>-</button>
+							<button onClick={() => this.updateCount(-1)}>-</button>
 							<span id='serving-count'>{this.state.servings}</span>
-							<button>+</button>
+							<button onClick={() => this.updateCount(1)}>+</button>
 						</div>
 						<div className='rating'>
 							<label id='rating-label' for='selecting-rating'>Rate Me!</label>
@@ -73,11 +106,11 @@ class Recipe extends React.Component {
 								<option value='4'>4 &#9733;</option>
 								<option value='5'>5 &#9733;</option>
 							</select>
-							//ADD POST RATING FUNCTIONALITY
-							&nbsp;<button id='post-rating'>Post Rating</button>
+							&nbsp;<button id='post-rating' onClick={() this.postRating()}>Post Rating</button>
 						</div>
 					</div>
-						//ADD IMAGE
+					<img src={this.state.img} height='250px' alt={'Photo of ' 
+						 + this.state.title}></img>
 				</div>
 				
 				<h2>Ingredients</h2>
