@@ -5,6 +5,12 @@ var recipe
 var recipeId
 var postButton
 
+if (window.location.hash) {
+   url = url + `?id=${window.location.hash.substring(1)}`
+}
+
+console.log(url)
+
 function getRecipe() {
     fetch(url)
     .then(response => recipe = response.json())
@@ -12,6 +18,7 @@ function getRecipe() {
 }
 
 function formatPage(data) {
+    window.location.hash = data._id
     document.getElementById("random-name").innerText = data.title
     document.getElementById("desc").innerText = data.desc
     document.getElementById("random-image").src = data.picture
