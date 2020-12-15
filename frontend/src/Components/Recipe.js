@@ -1,7 +1,11 @@
 
 
 function Recipe(){
-    return(null)
+    return(
+        <main>
+            where is this
+        </main>
+    )
 }
 
 export default Recipe;

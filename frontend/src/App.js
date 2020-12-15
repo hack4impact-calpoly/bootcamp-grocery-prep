@@ -6,7 +6,7 @@ import Cart from "./Components/Cart.js";
 
 function App() {
   return (
-    <div className={StyleSheet.main}>
+    <div>
       <Header />
       <main>
         <Recipe />

@@ -1,14 +1,15 @@
 
-import './Header.css';
+import Styles from './Header.module.css';
 
 function Header() {
   return (//what will be sent to the screen
-    <header className={StyleSheet.header}>
+    <header>
       <h1>Grocery Prep</h1>
-      <nav>
-          <li><a className={StyleSheet.backButton} href="about.html">About The Chef!</a></li>
-          <li><a className={StyleSheet.random} href="randomPage.html">Random Recipe</a></li>
-      </nav>
+        <nav>
+          <a className={Styles.linkText} href="/">Home</a>
+          <a className={Styles.linkText} href="about.html">About The Chef!</a>
+          <a className={Styles.linkText} href="randomPage.html">Random Recipe</a>
+        </nav>
     </header>
   );
 }

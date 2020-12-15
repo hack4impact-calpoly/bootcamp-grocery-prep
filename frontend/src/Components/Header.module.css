@@ -1,0 +1,16 @@
+header {
+    display: flex;
+    justify-content: space-evenly;
+
+    background-color: #3D405B;
+    color: #FFF;
+    padding: 5px;
+}
+
+.linkText{
+    display: flex;
+    justify-content: right;
+
+    color: red;
+    font-size: 20px;
+}
