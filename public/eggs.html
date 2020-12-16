@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
+    <script src="servings.js"></script>
     <head>
         <link rel="stylesheet" href="styles.css">
         <title>Knife's Edge - Scrambled Eggs</title>
@@ -7,8 +8,11 @@
     </head>
     <body>
         <header>
-            <h1>Knife's Edge</h1>
-            <nav><a class="navbar" href="index.html">Home</a> <a class="navbar" href="about.html">About the Team</a></nav>
+            <h1><a href="index.html">Knife's Edge</a></h1>
+            <nav>
+                <a class="navbar" href="about.html">About the Team</a>
+                <a class="navbar" href="random.html">Random Recipe</a>
+            </nav>
         </header>
         <main>
             <h2>Cantonese Style Scrambled Eggs</h2>
@@ -19,17 +23,23 @@
             </p>
             <img src="eggs.jpg">
             <h2>Ingredients</h2>
+            <div class="servings">
+                <p>Servings:</p>
+                <button class="button minus" id="minus">-</button>
+                <span id="count">1</span>
+                <button class="button plus" id="plus">+</button>
+            </div>
             <ul>
-                <li>5 eggs</li>
-                <li>1/2 tsp salt</li>
-                <li>1/2 tsp sugar</li>
-                <li>1/8 tsp white pepper</li>
-                <li>1/8 tsp MSG/Chicken boullion powder</li>
-                <li>(Optional)1/2 tsp Shaoxing Wine</li>
-                <li>1tsp cornstarch</li>
-                <li>1tbsp water</li>
-                <li>1 tsp sesame oil or lard (Neutral flavored oil such as vegetable oil will also work)</li>
-                <li>(Optional) 1/2 lb. of shrimp, cooked</li>
+                <li><span class='amount' data-base="5">5</span> eggs</li>
+                <li><span class='amount' data-base="0.5">0.5</span> tsp salt</li>
+                <li><span class='amount' data-base="0.5">0.5</span> tsp sugar</li>
+                <li><span class='amount' data-base="0.125">0.125</span> tsp white pepper</li>
+                <li><span class='amount' data-base="0.125">0.125</span> tsp MSG/Chicken boullion powder</li>
+                <li><span class='amount' data-base="0.125">0.125</span> tsp Shaoxing Wine</li>
+                <li><span class='amount' data-base="1">1</span> tsp cornstarch</li>
+                <li><span class='amount' data-base="1">1</span> tbsp water</li>
+                <li><span class='amount' data-base="1">1</span> tsp sesame oil or lard (Neutral flavored oil such as vegetable oil will also work)</li>
+                <li><span class='amount' data-base="0.5">0.5</span> lb. of shrimp, cooked</li>
             </ul>
             <h2>Instructions</h2>
             <ol>

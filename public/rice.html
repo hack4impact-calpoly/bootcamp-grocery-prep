@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <script src="servings.js"></script>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Knife's Edge - Fried Rice</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <header>
+            <h1><a href="index.html">Knife's Edge</a></h1>
+            <nav>
+                <a class="navbar" href="about.html">About the Team</a>
+                <a class="navbar" href="random.html">Random Recipe</a>
+            </nav>
+        </header>
+        <main>
+            <h2 id="title">Pineapple Fried Rice</h2>
+            <p id="desc">The simple people pleaser dish gets an acidic upgrade that'll make you forget the 3 bowls you already ate</p>
+            <img src="rice.jpg" id="picture" height="500">
+            <h2>Ingredients</h2>
+            <div class="servings" id="servings">
+                <p>Servings:</p>
+                <button class="button minus" id="minus">-</button>
+                <span id="count" data-base="1">1</span>
+                <button class="button plus" id="plus">+</button>
+            </div>
+            <ul id="ingredients">
+                <li><span class='amount' data-base="2">2</span> tbsp vegetable oil or a any neutral flavored oil</li>
+                <li><span class='amount' data-base="2">2</span> eggs, beaten with salt</li>
+                <li><span class='amount' data-base="1.5">1.5</span> cups of chopped pineapple</li>
+                <li><span class='amount' data-base="1">1</span> red bell pepper, diced</li>
+                <li><span class='amount' data-base="0.75">0.75</span> cup chopped green onions</li>
+                <li><span class='amount' data-base="2">2</span> cloves garlic, pressed or minced</li>
+                <li><span class='amount' data-base="2">2</span> tsp sriracha</li>
+                <li><span class='amount' data-base="2">2</span> cups of cooked rice</li>
+                <li><span class='amount' data-base="1">1</span> tbsp soy sauce</li>
+                <li><span class='amount' data-base="1">1</span> small lime, halved</li>
+                <li>Salt, to taste</li>
+                <li>Cilantro leaves for garnish</li>
+            </ul>
+            <h2>Instructions</h2>
+            <ol id="instructions">
+                <li>Heat a large frying pan over medium high heat until it starts to steam. Add a small amount of oil along with the eggs and begin scrambling for about a minute. Transfer the eggs to a bowl and clean the pan</li>
+                <li>Add more oil into the pan and cook the pineapple and bell pepper, stirring constantly until the  pineapple is caramelized. Add green onions and garlic and continue to cook until fragrant. Add contents to your bowl of eggs</li>
+                <li>Reduce the heat to medium and add the rest of the oil. Add the rice and continue cooking until it's hot, about 3 minutes</li>
+                <li>Pour the contents of the egg bowl into the pan and stir to combine with the rice. Cook until the contents are hot then turn off the heat. Add soy sauce, sriracha, and the squeeze of 1/2 a lime. Season to taste and set aside.</li>
+                <li>Slice the remaining half of the lime into 4 wedges and plate up the rice, serving with each plate a wedge of lime.</li>
+            </ol>
+            <div class="ratings" id="ratings">
+            <label id="rating-label" for="select-rating">Rating:</label>
+                <select id="select-rating">
+                    <option selected="" disabled="" hidden="">Select</option>
+                    <option value="1">1 ★</option>
+                    <option value="2">2 ★</option>
+                    <option value="3">3 ★</option>
+                    <option value="4">4 ★</option>
+                    <option value="5">5 ★</option>
+                </select>
+            <button class="button submit" id="submit">Submit</button>
+            </div>
+        </main>
+    </body>
+</html> 
