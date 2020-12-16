@@ -1,14 +1,27 @@
 const express = require('express')
 const app = express()
+const bodyParser = require('body-parser')
 
+const mongoose = require('mongoose')
+
+const Recipe = require('./models/recipe')
+
+mongoose.connect("mongodb+srv://VeeUser1:t0Rtl300p@milestone5-h4i.dna8l.mongodb.net/GroceryWebsite?retryWrites=true&w=majority", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useFindAndModify: false,
+  useCreateIndex: true
+}).then() => console.log('Connect to MongoDB')
 app.get('/', (req, res) => {
   res.send('Hello world!')
 })
 
+app.use(bodyParser.json())
 
 app.get('/api/recipe', (req, res) => {
   console.log("list of recipes requested")
   res.send("list of recipes requested")
+  return await Recipe.find({})
 })
 
 app.get('/api/recipe/:name', (req, res) => {
@@ -29,6 +42,6 @@ app.post('/api/rating', (req, res) => {
   //res.send("okay")
 })
 
-//app.use(express.static('public'))
+app.use(express.static('public'))
 
 app.listen(3000)
