@@ -3,7 +3,7 @@ const bodyParser = require('body-parser')
 const app = express()
 
 app.use(bodyParser.json())
-//app.use(express.static("./../public"))
+
 //app.use(express.static("./../"))
 
 //app.use(express.static("./.."))
@@ -33,5 +33,7 @@ app.post("/api/rating", (req, res) =>{
   let id = req.body.id
   res.send(`rating of ${rating} for recipe ${id}`)
 })
+
+app.use(express.static("./.."))
 
 app.listen(3000)
