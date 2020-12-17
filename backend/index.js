@@ -1,7 +1,8 @@
 const express = require('express')
+const bodyParser = require('body-parser')
 const app = express()
 
-
+app.use(bodyParser.json())
 //app.use(express.static("./../public"))
 //app.use(express.static("./../"))
 
@@ -25,6 +26,12 @@ app.get("/api/recipe", (req,res) => {
 app.get("/api/recipe/:name", (req,res) =>{
   let name = req.params.name
   res.send(`instructions for ${name} requested`)
+})
+
+app.post("/api/rating", (req, res) =>{
+  let rating = req.body.rating
+  let id = req.body.id
+  res.send(`rating of ${rating} for recipe ${id}`)
 })
 
 app.listen(3000)
