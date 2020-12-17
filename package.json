@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/KennaReed/bootcamp-grocery-prep/issues"
   },
-  "homepage": "https://github.com/KennaReed/bootcamp-grocery-prep#readme"
+  "homepage": "https://github.com/KennaReed/bootcamp-grocery-prep#readme",
+  "dependencies": {
+    "mongoose": "^5.11.6"
+  }
 }
