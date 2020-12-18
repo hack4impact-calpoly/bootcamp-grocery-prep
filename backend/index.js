@@ -34,6 +34,6 @@ app.post("/api/rating", (req, res) =>{
   res.send(`rating of ${rating} for recipe ${id}`)
 })
 
-app.use(express.static("./.."))
+app.use(express.static("./../public")) //serves index, but cannot link index to site
 
 app.listen(3000)
