@@ -7,7 +7,7 @@ const Recipe = require("./models/recipe");
 
 const app = express();
 
-app.use(express.static("public"));
+app.use(express.static("frontend"));
 app.use(bodyParser.urlencoded({extended: true}));
 
 mongoose.connect(DATABASE_URL, {
@@ -38,18 +38,18 @@ const createRating = async(id, rating) => {
     Recipe endpoints
 */
 
-app.get('/api/recipe', (req, res) => {
+app.get('/api/recipe', async (req, res) => {
     let recipes = await getRecipes();
     res.json(recipes);
 });
 
-app.get('/api/recipe/:name', (req, res) => {
+app.get('/api/recipe/:name', async (req, res) => {
     const name = req.body.name;
     let recipes = await getRecipeName(name);
     return recipes;
 });
 
-app.post('/api/rating', (req, res) => {
+app.post('/api/rating', async (req, res) => {
     const rating = req.body.rating;
     const id = req.body.id;
     
@@ -77,5 +77,3 @@ app.post('/api/cart', (req, res) => {
 app.listen(3000, function(){
     console.log("Server running on port 3000");
 });
-
-
