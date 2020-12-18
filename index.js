@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const DATABASE_URL = "mongodb+srv://recipes:Nine1234@grocery-prep-cluster.x4hms.mongodb.net/<dbname>?retryWrites=true&w=majority";
 
-const Recipe = require("./backend/models/recipe");
+const Recipe = require("./models/recipe");
 
 const app = express();
 
