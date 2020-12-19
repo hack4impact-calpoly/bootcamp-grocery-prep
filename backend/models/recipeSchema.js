@@ -6,9 +6,9 @@ const recipeSchema = new mongoose.Schema({
   picture: String, 
   ratings: [Number],
   servings: Number,
-  ingredients: [String],
+  ingredients: Map,
   instructions: [String]
-}, {collection: "recipes"})
+}, {collection: "MyRecipes"})
 
 const Recipe = mongoose.model('MyRecipes', recipeSchema)
 

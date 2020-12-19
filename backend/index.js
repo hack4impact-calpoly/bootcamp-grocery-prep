@@ -37,7 +37,8 @@ app.get('/api/recipe', async (request, response) => {
     response.status(200)
     //response.send('List of recipes requested')
     recipes = await Recipe.find({})
-    response.send(recipes)
+    console.log(recipes)
+    response.json(recipes)
 })
 
 // `GET - /api/recipe/:name` - "instructions for `name` requested"
