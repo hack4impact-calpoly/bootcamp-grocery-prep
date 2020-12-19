@@ -17,7 +17,7 @@ class App extends React.Component{
         <Switch>
 
           <Route exact path='/'>
-            <main className={Style.home}>
+            <main className={Style.home} id="home">
               <AllRecipes />
               <Cart items={[1,2,3]}/>
             </main>

@@ -14,7 +14,9 @@ class AllRecipes extends React.Component{
     render(){
         return(
             <main>
+                <h1>
                 This is all the Recipes
+                </h1>
             </main>
         );
 }}

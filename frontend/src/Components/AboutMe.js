@@ -8,12 +8,10 @@ class AboutMe extends React.Component{
     render(){
         return(
             <div className={Styles.header}>
-                <header>
-                    <h1> 
-                        Tis I, Samuel Sehnert!
-                        Coder and chef extraordinaire!
-                    </h1>
-                </header>
+                <h1> 
+                    Tis I, Samuel Sehnert!
+                    Coder and chef extraordinaire!
+                </h1>
                 <p>
                     <img src={me} height="350" width="200"></img>
                 </p>

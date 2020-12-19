@@ -1,6 +1,9 @@
-.root{
+.header{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+}
 
-    background-color: cyan;
+.header > *{
+    margin: 0 auto;
+    padding: 20px;
 }

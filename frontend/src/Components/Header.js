@@ -8,7 +8,7 @@ class Header extends React.Component{
   render() {
     return (//what will be sent to the screen
       <header className={Styles.header}>
-        <h1></h1>
+        <hi></hi>
         <h1 className={Styles.title}>Grocery Prep</h1>
           <nav>
             <a className={Styles.linkText} href="/">Home</a>
