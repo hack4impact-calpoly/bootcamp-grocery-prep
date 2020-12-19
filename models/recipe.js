@@ -1,13 +1,13 @@
 const mongoose = require("mongoose");
 
 const recipeSchema = new mongoose.Schema({
-    title: String,
+    title: {
+        type: String,
+        required: true
+    },
     desc: String,
     pictureURL: String,
-    ratings: [{
-        type: Number,
-        required: true
-    }],
+    ratings: [Number],
     servings: {
         type: Number,
         default: 1
@@ -17,7 +17,7 @@ const recipeSchema = new mongoose.Schema({
         of: Number
     },
     instructions: [String]
-});
+}, { collection: "book" });
 
 const Recipe = mongoose.model("recipe", recipeSchema);
 

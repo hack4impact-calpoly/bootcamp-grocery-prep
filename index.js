@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
-const DATABASE_URL = "mongodb+srv://recipes:Nine1234@grocery-prep-cluster.x4hms.mongodb.net/<dbname>?retryWrites=true&w=majority";
+const DATABASE_URL = "mongodb+srv://recipes:Nine1234@grocery-prep-cluster.x4hms.mongodb.net/grocery-prep?retryWrites=true&w=majority";
 
 const Recipe = require("./models/recipe");
 
@@ -21,17 +21,17 @@ const getRecipes = async() => {
     return await Recipe.find({});
 }
 
-const getRecipeName = async(title) => {
+const getRecipeByName = async(title) => {
     return await Recipe.find({
         title: title
     });
 }
 
-const createRating = async(id, rating) => {
-    return new Recipe({
-        _id: id,
-        rating: rating
-    }).save();
+const appendRating = async(name, rating) => {
+    return await Recipe.updateOne(
+        {title: name},
+        {$push: {ratings: rating}}
+    );
 }
 
 /*
@@ -44,17 +44,15 @@ app.get('/api/recipe', async (req, res) => {
 });
 
 app.get('/api/recipe/:name', async (req, res) => {
-    const name = req.body.name;
-    let recipes = await getRecipeName(name);
-    return recipes;
+    const name = req.params.name;
+    let recipes = await getRecipeByName(name);
+    res.json(recipes);
 });
 
 app.post('/api/rating', async (req, res) => {
-    const rating = req.body.rating;
-    const id = req.body.id;
-    
-    const recipe = await createRating(id, rating);
-    res.json(recipe);
+    console.log(req.body.id, req.body.rating);
+    await appendRating(req.body.id, req.body.rating);
+    res.send("Successfully posted rating");
 });
 
 app.get('/api/recipe/random', (req, res) => {
@@ -68,7 +66,7 @@ app.get('/api/cart', (req, res) => {
 })
 
 app.post('/api/cart', (req, res) => {
-    const id = req.body.id;
+    const id = req.params.id;
     const quantity = req.body.quantity;
     res.status(200);
     res.send(quantity + ' of recipe' + id + ' added to cart');
