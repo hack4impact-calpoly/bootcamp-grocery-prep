@@ -84,13 +84,13 @@ body p {
     padding-left: 90px;
 } 
 
-.button_controls {
+.button_controls, .ratings {
     font-family: fantasy;
     font-size: 25px;
     
 }
 
-#serving_button_plus, #serving_button_minus {
+#serving_button_plus, #serving_button_minus, #submit_rating {
     border: 0;
     line-height: 2.5;
     padding: 0 20px;

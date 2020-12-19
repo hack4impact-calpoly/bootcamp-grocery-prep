@@ -1,6 +1,6 @@
 const url = "https://3blzgwgi13.execute-api.us-west-2.amazonaws.com/Live/recipe"
 
-const awaitFunction = async () => {
+const build_site = async () => {
   let response = await fetch(url);
   if(response.ok){
     json = await response.json();
@@ -26,14 +26,32 @@ const awaitFunction = async () => {
     const instructions = json.instructions
     for(let key in instructions){
         const new_list_element = document.createElement('li');
-
         const text = document.createTextNode(instructions[key]) 
 
         new_list_element.appendChild(text)
-
         document.getElementsByTagName('ol')[0].appendChild(new_list_element);
     }
+    document.getElementsByName('title')[0].id = json._id
+
+    const ratings = json.ratings
+    const rating_ele = document.getElementById('current_rating')
+    let counter = 0;
+    let total = 0;
+    for(let key in ratings){
+        counter++;
+        total += parseInt(ratings[key]);
+    }
+    // console.log(total)
+    // console.log(counter)
+    let avg = 0
+    if(counter === 0){
+        avg = "No ratings"
+    }
+    else{
+        avg = total/counter;
+    }
+    rating_ele.innerHTML = Number.parseFloat(avg).toFixed(2)
   }
   return false;
 }
-awaitFunction()
+build_site()

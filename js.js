@@ -2,7 +2,6 @@ document.addEventListener('click', event  => {
 
   if(event.target.id === 'serving_button_minus')
   {
-    console.log('click minus')
     // Getting the current serving number
     let serving_element = document.getElementsByClassName('current_serving')[0]
     // if its at one then don't update
@@ -25,7 +24,6 @@ document.addEventListener('click', event  => {
   }
   else if(event.target.id === 'serving_button_plus')
   {
-    console.log('click plus')
     // Getting the current serving number
     let serving_element = document.getElementsByClassName('current_serving')[0]  
     // Since plus was hit add 1 to servings   
@@ -39,4 +37,48 @@ document.addEventListener('click', event  => {
       counts[i].innerHTML = Number.parseFloat(counts[i].innerHTML).toFixed(1)
     }
   }
+  else if(event.target.id === 'submit_rating'){
+    console.log('sumbit')
+    const dropdown = document.getElementsByName('rating_numbers')[0]
+    let selectedText = dropdown.options[dropdown.selectedIndex].text;
+    const spefic_url = "https://3blzgwgi13.execute-api.us-west-2.amazonaws.com/Live/recipe" + '?id=' + document.getElementsByName('title')[0].id
+    post_ratings(selectedText, spefic_url)
+
+    console.log(spefic_url)
+  }
 })
+
+const post_ratings = async (rating, webiste) => {
+  const data = {
+    id: document.getElementsByName('title')[0].id,
+    rating: parseInt(rating)
+  };
+
+  fetch(webiste, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data),
+  })
+  let response = await fetch(webiste);
+  if(response.ok){
+    json = await response.json();
+    const ratings = json.ratings
+    const rating_ele = document.getElementById('current_rating')
+    let counter = 0;
+    let total = 0;
+    for(let key in ratings){
+        counter++;
+        total += parseInt(ratings[key]);
+    }
+    let avg = 0
+    if(counter === 0){
+        avg = "No ratings"
+    }
+    else{
+        avg = total/counter;
+    }
+    rating_ele.innerHTML = Number.parseFloat(avg).toFixed(2)
+  }
+}
