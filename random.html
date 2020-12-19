@@ -1,0 +1,56 @@
+
+<html lang="en-US">
+	<head>
+
+		<link rel="stylesheet" href="index.css">
+		<title>Grocery - Random</title>
+	</head>
+	<body>
+		<header>
+			<h1 id='title'></h1>
+			<nav>
+				<a href = "index.html">Home</a>
+				<a href = "random.html">Random Recipe</a>
+				<a href = "about.html">About the Chef</a>
+			</nav>
+		</header>
+
+		<main>
+			<div id='ratings'><span id='rating'></span>&star;</div>
+
+			<p id='desc'></p>
+			<img id='food-photo' height="270">
+
+			<h2>Serving Size: </h2> 
+			<button id="sub">-</button>
+			<span id="count">1</span>
+			<button id ="add">+</button>
+
+			<div class='rating'>
+				<label for='rating-select'>Rate me:</label>
+
+				<select name='rating-select' id='rateSelect'>
+					<option value="">--Please choose an option--</option>
+					<option value="1">1 &starf;</option>
+					<option value="2">2 &starf;</option>
+					<option value="3">3 &starf;</option>
+					<option value="4">4 &starf;</option>
+					<option value="5">5 &starf;</option>
+				</select>'
+				<button id='postRating'>Rate!</button>
+			</div>
+
+			<h2> Ingredients</h2>
+			
+			<ul id='ingredients'></ul>
+
+			<h2>Instructions</h2>
+			
+			<ol id='instructions'></ol>
+			
+		</main>
+
+		<script src = "index.js"></script>
+		<script src = "random.js"></script>
+	</body>
+</html>
