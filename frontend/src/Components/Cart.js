@@ -1,10 +1,8 @@
-
 import React from 'react';
 
 import Styles from './Cart.module.css';
 
 class Cart extends React.Component{
-
 
     constructor(props){
         super(props);
@@ -31,12 +29,12 @@ class Cart extends React.Component{
     render(){
         this.updateCart(this.props.items)
         return (
-            <main className={Styles.main}>
+            <main>
                 <h1>
                     Your Cart:
                 </h1>
                 {this.displayContents()}
-                <button className={Styles.button} onClick={() => {console.log("clicked"); this.emptyCart()}}>click</button>
+                <button onClick={() => {console.log("clicked"); this.emptyCart()}}>click</button>
             </main>
 
         );

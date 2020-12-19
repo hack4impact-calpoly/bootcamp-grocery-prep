@@ -4,14 +4,12 @@
 
     color: red;
     font-size: 20px;
-
 }
- header{
+.header{
     display: flex;
     justify-content: space-between;
-} 
 
-.title{
-    display: flex;
-    justify-content: flex-start;
-}
+    background-color: #3D405B;
+    color: #FFF;
+    padding: 5px;
+} 
