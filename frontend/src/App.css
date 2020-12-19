@@ -12,3 +12,8 @@ main{
   justify-content: space-between;
   margin: 20px;
 }
+
+cart{
+  display: flex;
+  justify-content: center;
+  }

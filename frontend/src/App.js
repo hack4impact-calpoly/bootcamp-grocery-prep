@@ -8,36 +8,17 @@ import Cart from "./Components/Cart.js";
 
 class App extends React.Component{
 
-  constructor(props){
-    super(props);
-    this.state = {
-      currentCart : []
-    }
-  }
-
-  clearCart(){
-    this.setState({currentCart : []})
-  }
-
-
   render() {
     return (
       <div>
           <Header className={Style.header} />
         <main>
-          <recipes>
+          <div>
             <AllRecipes />
-          </recipes>
-          <cart>
-            <Cart className={Style.cart} />
-            {
-              this.state.currentCart.map(current => {
-                return <div>
-                  test
-                </div>
-              })
-            }
-          </cart>
+          </div>
+          <div>
+            <Cart className={Style.cart} items={[1,2,3]}/>
+          </div>
         </main>
       </div>
     );
