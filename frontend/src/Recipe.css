@@ -1,0 +1,120 @@
+
+.recipe, .about {
+
+    display: block;
+    padding-left: 10% ;
+    padding-right: 10%;
+}
+
+p {
+    display: block;
+
+    font-family: 'Montserrat', sans-serif;
+}
+h1 {
+    display: block;
+    font-weight: bold;
+    font-family: 'Noto Serif JP', serif;
+}
+h2 {
+    background-color: #84a98c;
+    padding: 4px 8px;
+    font-family: 'Montserrat', sans-serif;
+}
+.showcase {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: -80px;
+    margin-right: -80px;
+
+}
+.showcase > .links {
+    margin: 30px 6%;
+}
+.links a{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+.about_photos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.about_photos > img {
+    height: 300px;
+    padding: 3px 20px;
+}
+.recipe_photo {
+    height: 500px;
+    background-size: cover;
+}
+ul, li{
+    font-family: 'Montserrat', sans-serif;
+}
+.grid-img > img{
+    height: 375px;
+
+}
+.grid-item{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+.links{
+    padding-top: 25px;
+}
+.recipe-header{
+    display: flex;
+    justify-content: space-between;
+}
+.recipe-header > img{
+    height: 500px;
+}
+.recipe-description{
+    padding-right: 50px;
+}
+.servings > button {
+    background-color: #cad2c5;
+    border: none;
+    color: black;
+    font-size: 14px;
+    padding: 5px 14px;
+}
+#serving-count{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.servings > button, #post-rating {
+    background-color: #cad2c5;
+    border: none;
+    color: black;
+    font-size: 14px;
+    padding: 5px 14px;
+}
+.headline{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#ratings{
+    font-size: 18px;
+    padding-right: 20px;
+
+}
+.servings{
+    padding-bottom: 20px;
+}
+#actions{
+    display: flex;
+    align-items: center;
+
+}
+#rating-label{
+    padding-right: 10px;
+}
+#select-rating{
+    margin-right: 10px;
+}

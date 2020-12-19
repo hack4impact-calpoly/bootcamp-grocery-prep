@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Serif+JP:wght@300;500&display=swap");
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cad2c5;
+    color: #FFF;
+    padding: 0 20px;
+    height: 8%;
+}
+header a {
+    color: #6b705c;
+    margin: 0 12px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+h1 {
+    display: block;
+    font-weight: bold;
+    font-family: 'Noto Serif JP', serif;
+}

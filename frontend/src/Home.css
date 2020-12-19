@@ -1,0 +1,34 @@
+.home {
+    display: block;
+    padding-left: 10% ;
+    padding-right: 10%;
+}
+p {
+    display: block;
+
+    font-family: 'Montserrat', sans-serif;
+}
+h1 {
+    display: block;
+    font-weight: bold;
+    font-family: 'Noto Serif JP', serif;
+}
+h2 {
+    background-color: #84a98c;
+    padding: 4px 8px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.links a{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+.links{
+    padding-top: 25px;
+}
+.home_photo{
+    width: 40%;
+
+    padding: 5%;
+}
