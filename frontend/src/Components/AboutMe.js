@@ -13,7 +13,7 @@ class AboutMe extends React.Component{
                     Coder and chef extraordinaire!
                 </h1>
                 <p>
-                    <img src={me} height="350" width="200"></img>
+                    <img src={me} height="350" width="200" alt="pic of me"></img>
                 </p>
                 <ol>
                     <li>My name is Sam</li>

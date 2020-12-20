@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Styles from './Cart.module.css';
+// import Styles from './Cart.module.css';
 
 class Cart extends React.Component{
 
@@ -16,10 +16,6 @@ class Cart extends React.Component{
     }
 
     updateCart(items){
-        console.log(items);
-        const newCart = this.state.cart;
-        for (const item in items){
-        }
     }
 
     displayContents(){

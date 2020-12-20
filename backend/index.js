@@ -11,8 +11,6 @@ app.use("/", express.static("../rawHTMLFiles"))
 app.use("/scripts", express.static("../scripts"))
 app.use("/images", express.static("../images"))
 
-const cart = [];
-
 mongoose.connect("mongodb+srv://TestUser:Testing1234@cluster0.c3xdk.mongodb.net/Recipes?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -20,10 +18,15 @@ mongoose.connect("mongodb+srv://TestUser:Testing1234@cluster0.c3xdk.mongodb.net/
     useCreateIndex: true
   }).then(() => console.log('Connected to MongoDB'))
 
+app.use((req, res, next) => {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+});
+
 app.get("/api/recipe", async (req, res) => {
     res.status(200);
     const food = await Foods.find({});
-    console.log(food);
     res.send('list of recipes requested');
 
 });
@@ -71,7 +74,6 @@ app.post("/api/rating", async (req, res) => {
 
 app.get("/api/cart", (req, res) => {
     res.status(200);
-    res.send(cart)
 })
 
 app.post("/api/cart", (req, res) => {
