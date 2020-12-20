@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>fried_rice</title>
-    <link rel="stylesheet" href="/Users/mandyko/Desktop/Hack4Impact_GroceryPrep/bootcamp-grocery-prep/style.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Piazzolla&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
       <h1>Grocery Prep</h1>
       <nav>
-        <a href="/Users/mandyko/Desktop/Hack4Impact_GroceryPrep/bootcamp-grocery-prep/index.html">Home</a>
-        <a href="/Users/mandyko/Desktop/Hack4Impact_GroceryPrep/bootcamp-grocery-prep/about.html">About the Chef</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About the Chef</a>
       </nav>
       </header>
     <main>
@@ -32,7 +32,7 @@
       </div>
 
       <div class="item3">
-      <img src="/Users/mandyko/Desktop/Hack4Impact_GroceryPrep/bootcamp-grocery-prep/Images/fried_rice.jpg" alt="Fried Rice" height="230" style="float:right">
+      <img src="../Images/fried_rice.jpg" alt="Fried Rice" height="230" style="float:right">
       </div>
 
     </div>
@@ -40,11 +40,11 @@
   </div>
     <h2>Ingredients</h2>
     <ul>
-      <li><span id = "oil">0.5</span> tablespoon oil</li>
-      <li><span id = "rice">1</span> cup cold rice</li>
-      <li><span id = "veggies">0.5</span> cup veggies of your choice</li>
-      <li><span id = "eggs">2</span> eggs</li>
-      <li><span id = "soy">1</span> tablespoon soy sauce</li>
+      <li><span id="oil">0.5</span> tablespoon oil</li>
+      <li><span id="rice">1</span> cup cold rice</li>
+      <li><span id="veggies">0.5</span> cup veggies of your choice</li>
+      <li><span id="eggs">2</span> eggs</li>
+      <li><span id="soy">1</span> tablespoon soy sauce</li>
     </ul>
     <h2>Instructions</h2>
     <ol>
@@ -54,28 +54,9 @@
       <li>Once rice is heated through, stir in soy sauce</li>
       <li>Plate and enjoy!</li>
     </ol>
-    <script>
-    const count = document.getElementById('count')
-    const oil = document.getElementById('oil')
-    const rice = document.getElementById('rice')
-    const veggies = document.getElementById('veggies')
-    const eggs = document.getElementById('eggs')
-    const soy = document.getElementById('soy')
 
-    document.addEventListener('click', event => {
-      if (event.target.id === 'sub') updateCount(-1)
-      if (event.target.id === 'add') updateCount(1)
-    })
+        <script src="servings.js"></script>
 
-    const updateCount = dir => {
-      count.innerText = +(count.innerText) + dir
-      oil.innerText = count.innerText * 0.5
-      rice.innerText = count.innerText * 1
-      veggies.innerText = count.innerText * 0.5
-      eggs.innerText = count.innerText * 2
-      soy.innerText = count.innerText * 1
-    }
-  </script>
   </main>
   </body>
 </html>
