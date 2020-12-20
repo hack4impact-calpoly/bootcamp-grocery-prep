@@ -8,11 +8,12 @@
 <body>
     <header>
         <div class="nav-bar">
-            <h1 class="web-name">Grocery Prep</h1>
+            <h1 class="web-name">Grocery Prep - Veggie Wrap</h1>
         </div>
         <nav>
             <ul class="nav-links">
                 <li><a class="nav-item" href="home.html">Home</a></li>
+                <li><a class="nav-item" href="random-recipe.html">Random Recipe</a></li>
                 <li><a class="nav-item" href="about-the-chef.html">About the Chef</a></li>
             </ul>
         </nav>
@@ -24,6 +25,12 @@
         <div class="bio">
             <div class="description">
                 <p>A colorful and filling wrap.</p>
+                <div class="portions"> 
+                    <h3>Servings</h3>
+                    <button id="decrease">-</button>
+                    <span id="serving-size">1</span>
+                    <button id="increase">+</button>
+                </div>
             </div>
             <div class="veggie-wrap-img">
                 <img src="lunch-image.jpg" alt="veggie-wrap" height="250px"/>
@@ -35,14 +42,14 @@
             </div>
             <div class="ingredients-list">
                 <ul class="ingredients-list">
-                    <li><a class="ingredient-item">1 tortilla (whole wheat, flour)</a></li>
-                    <li><a class="ingredient-item">1/2 sliced red onion</a></li>
-                    <li><a class="ingredient-item">1 sliced red pepper</a></li>
-                    <li><a class="ingredient-item">1/2 cup shredded carrots</a></li>
-                    <li><a class="ingredient-item">3 cups leafy greens (i.e. Romaine lettuce, Iceberg lettuce)</a></li>
-                    <li><a class="ingredient-item">1 tbsp hummus</a></li>
-                    <li><a class="ingredient-item">1/2 sliced avocado</a></li>
-                    <li><a class="ingredient-item">Handful crumbled feta cheese</a></li>
+                    <li><span class="serving-count" base="1">1</span> tortilla (whole wheat, flour)</li>
+                    <li><span class="serving-count" base="0.5">1/2</span> sliced red onion</li>
+                    <li><span class="serving-count" base="1">1</span> sliced red pepper</li>
+                    <li><span class="serving-count" base="0.5">1/2</span> cup shredded carrots</li>
+                    <li><span class="serving-count" base="3">3</span> cups leafy greens (i.e. Romaine lettuce, Iceberg lettuce)</li>
+                    <li><span class="serving-count" base="1">1</span> tbsp hummus</li>
+                    <li><span class="serving-count" base="0.5">1/2</span> sliced avocado</li>
+                    <li><span class="serving-count" base="1">1</span> handful crumbled feta cheese</li>
                     <li><a class="ingredient-item">Honey balsamic vinegar (optional)</a></li>
                 </ul>
             </div>
@@ -58,5 +65,6 @@
             </div>
         </div>
     </main>
+    <script src="recipes-script.js"></script>
 </body>
 </html>

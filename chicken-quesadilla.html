@@ -1,7 +1,7 @@
 <html lang="en-US">
 <head>
   <meta charset="utf-8">
-  <title>Grocery Prep</title>
+  <title>Grocery Prep - Chicken Quesadilla</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="chicken-quesadilla-style.css">
 </head>
@@ -13,6 +13,7 @@
         <nav>
             <ul class="nav-links">
                 <li><a class="nav-item" href="home.html">Home</a></li>
+                <li><a class="nav-item" href="random-recipe.html">Random Recipe</a></li>
                 <li><a class="nav-item" href="about-the-chef.html">About the Chef</a></li>
             </ul>
         </nav>
@@ -24,6 +25,12 @@
         <div class="bio">
             <div class="description">
                 <p>A cheesy, delicious hot pocket of joy.</p>
+                <div class="portions"> 
+                    <h3>Servings</h3>
+                    <button id="decrease">-</button>
+                    <span id="serving-size">1</span>
+                    <button id="increase">+</button>
+                </div>
             </div>
             <div class="chicken-quesadilla-img">
                 <img src="chicken-quesadilla-image.jpg" alt="chicken quesadilla" height="250px"/>
@@ -35,9 +42,9 @@
             </div>
             <div class="ingredients-list">
                 <ul class="ingredients-list">
-                    <li><a class="ingredient-item">2 tortillas (i.e. flour, whole wheat)</a></li>
-                    <li><a class="ingredient-item">1 cup shredded cheddar cheese</a></li>
-                    <li><a class="ingredient-item">4 oz diced, cooked chicken </a></li>
+                    <li><span class="serving-count" base="2">2</span> tortillas (i.e. flour, whole wheat)</li>
+                    <li><span class="serving-count" base="1">1</span> cup shredded cheddar cheese</li>
+                    <li><span class="serving-count" base="4">4</span> oz diced, cooked chicken</li>
                 </ul>
             </div>
             <div class="instructions">
@@ -52,5 +59,6 @@
             </div>
         </div>
     </main>
+    <script src="recipes-script.js"></script>
 </body>
 </html>

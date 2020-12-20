@@ -1,7 +1,7 @@
 <html lang="en-US">
 <head>
   <meta charset="utf-8">
-  <title>Grocery Prep</title>
+  <title>Grocery Prep - Avocado Toast</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="avocado-toast-style.css">
 </head>
@@ -13,6 +13,7 @@
         <nav>
             <ul class="nav-links">
                 <li><a class="nav-item" href="home.html">Home</a></li>
+                <li><a class="nav-item" href="random-recipe.html">Random Recipe</a></li>
                 <li><a class="nav-item" href="about-the-chef.html">About the Chef</a></li>
             </ul>
         </nav>
@@ -24,6 +25,12 @@
         <div class="bio">
             <div class="description">
                 <p>An easy-to-make snack that will always be tasty.</p>
+                <div class="portions"> 
+                    <h3>Servings</h3>
+                    <button id="decrease">-</button>
+                    <span id="serving-size">2</span>
+                    <button id="increase">+</button>
+                </div>
             </div>
             <div class="avocado-toast-img">
                 <img src="avocado-toast-image.jpg" alt="avocado toast" height="250px"/>
@@ -35,9 +42,9 @@
             </div>
             <div class="ingredients-list">
                 <ul class="ingredients-list">
-                    <li><a class="ingredient-item">2 slices of bread (i.e. whole wheat, white)</a></li>
-                    <li><a class="ingredient-item">1 avocado</a></li>
-                    <li><a class="ingredient-item">1 tbsp of pepper (optional)</a></li>
+                    <li><span class="serving-count" base="1">2</span> slices of bread (i.e. whole wheat, white)</li>
+                    <li><span class="serving-count" base="0.5">1</span> avocado</li>
+                    <li><span class="serving-count" base="0.5">1</span> tbsp of pepper (optional)</li>
                 </ul>
             </div>
             <div class="instructions">
@@ -52,5 +59,6 @@
             </div>
         </div>
     </main>
+    <script src="recipes-script.js"></script>
 </body>
 </html>

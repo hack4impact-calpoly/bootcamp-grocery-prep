@@ -1,7 +1,7 @@
 <html lang="en-US">
 <head>
   <meta charset="utf-8">
-  <title>Grocery Prep</title>
+  <title>Grocery Prep - Brownie in a Mug</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="brownie-in-a-mug-style.css">
 </head>
@@ -13,6 +13,7 @@
         <nav>
             <ul class="nav-links">
                 <li><a class="nav-item" href="home.html">Home</a></li>
+                <li><a class="nav-item" href="random-recipe.html">Random Recipe</a></li>
                 <li><a class="nav-item" href="about-the-chef.html">About the Chef</a></li>
             </ul>
         </nav>
@@ -24,6 +25,12 @@
         <div class="bio">
             <div class="description">
                 <p>A gooey, chocolatey dessert.</p>
+                <div class="portions"> 
+                    <h3>Servings</h3>
+                    <button id="decrease">-</button>
+                    <span id="serving-size">1</span>
+                    <button id="increase">+</button>
+                </div>
             </div>
             <div class="brownies-img">
                 <img src="brownie-in-a-mug-image.jpg" alt="brownie in a mug" height="250px"/>
@@ -35,14 +42,14 @@
             </div>
             <div class="ingredients-list">
                 <ul class="ingredients-list">
-                    <li><a class="ingredient-item">3 tbsp all purpose flour</a></li>
-                    <li><a class="ingredient-item">3 tbsp brown sugar</a></li>
-                    <li><a class="ingredient-item">3 tbsp cocoa powder</a></li>
-                    <li><a class="ingredient-item">3 tbsp oil (i.e. coconut oil, canola oil, sunflower oil)</a></li>
-                    <li><a class="ingredient-item">3 tbsp water</a></li>
-                    <li><a class="ingredient-item">1/2 tsp vanilla extract</a></li>
-                    <li><a class="ingredient-item">2 tsp chocolate chips</a></li>
-                    <li><a class="ingredient-item">Pinch of salt</a></li>
+                    <li><span class="serving-count" base="3">3</span> tbsp all purpose flour</li>
+                    <li><span class="serving-count" base="3">3</span> tbsp brown sugar</li>
+                    <li><span class="serving-count" base="3">3</span> tbsp cocoa powder</li>
+                    <li><span class="serving-count" base="3">3</span> tbsp oil (i.e. coconut oil, canola oil, sunflower oil)</li>
+                    <li><span class="serving-count" base="3">3</span> tbsp water</li>
+                    <li><span class="serving-count" base="0.5">1/2</span> tsp vanilla extract</li>
+                    <li><span class="serving-count" base="2">2</span> tsp chocolate chips</li>
+                    <li><span class="serving-count" base="1">1</span> pinch(es) of salt</li>
                 </ul>
             </div>
             <div class="instructions">
@@ -56,5 +63,6 @@
             </div>
         </div>
     </main>
+    <script src="recipes-script.js"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 <html lang="en-US">
 <head>
   <meta charset="utf-8">
-  <title>Grocery Prep</title>
+  <title>Grocery Prep - Rice Krispies</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="rice-krispies-style.css">
 </head>
@@ -13,6 +13,7 @@
         <nav>
             <ul class="nav-links">
                 <li><a class="nav-item" href="home.html">Home</a></li>
+                <li><a class="nav-item" href="random-recipe.html">Random Recipe</a></li>
                 <li><a class="nav-item" href="about-the-chef.html">About the Chef</a></li>
             </ul>
         </nav>
@@ -24,6 +25,12 @@
         <div class="bio">
             <div class="description">
                 <p>A nostaligic dessert from everyone's childhood.</p>
+                <div class="portions"> 
+                    <h3>Servings</h3>
+                    <button id="decrease">-</button>
+                    <span id="serving-size">12</span>
+                    <button id="increase">+</button>
+                </div>
             </div>
             <div class="rice-krispies-img">
                 <img src="rice-krispies-image.jpg" alt="rice krispies" height="250px"/>
@@ -35,9 +42,9 @@
             </div>
             <div class="ingredients-list">
                 <ul class="ingredients-list">
-                    <li><a class="ingredient-item">6 cups Rice Krispies cereal</a></li>
-                    <li><a class="ingredient-item">1 package marshmallows</a></li>
-                    <li><a class="ingredient-item">3 tbsp butter</a></li>
+                    <li><span class="serving-count" base="0.5">6</span> cups Rice Krispies cereal</li>
+                    <li><span class="serving-count" base="0.083">1</span> package marshmallows</li>
+                    <li><span class="serving-count" base="0.25">3</span> tbsp butter</li>
                 </ul>
             </div>
             <div class="instructions">
@@ -54,5 +61,6 @@
             </div>
         </div>
     </main>
+    <script src="recipes-script.js"></script>
 </body>
 </html>

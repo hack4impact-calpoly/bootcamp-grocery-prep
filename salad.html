@@ -1,7 +1,7 @@
 <html lang="en-US">
 <head>
   <meta charset="utf-8">
-  <title>Grocery Prep</title>
+  <title>Grocery Prep - Salad</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="salad-style.css">
 </head>
@@ -13,6 +13,7 @@
         <nav>
             <ul class="nav-links">
                 <li><a class="nav-item" href="home.html">Home</a></li>
+                <li><a class="nav-item" href="random-recipe.html">Random Recipe</a></li>
                 <li><a class="nav-item" href="about-the-chef.html">About the Chef</a></li>
             </ul>
         </nav>
@@ -24,6 +25,12 @@
         <div class="bio">
             <div class="description">
                 <p>A light and healthy meal that is easily customizable.</p>
+                <div class="portions"> 
+                    <h3>Servings</h3>
+                    <button id="decrease">-</button>
+                    <span id="serving-size">1</span>
+                    <button id="increase">+</button>
+                </div>
             </div>
             <div class="salad-img">
                 <img src="salad-image.jpg" alt="salad" height="250px"/>
@@ -35,11 +42,11 @@
             </div>
             <div class="ingredients-list">
                 <ul class="ingredients-list">
-                    <li><a class="ingredient-item">3 cups of leafy greens (i.e., Romaine lettuce, Iceberg lettuce)</a></li>
-                    <li><a class="ingredient-item">1 handful sliced red onion</a></li>
-                    <li><a class="ingredient-item">1/2 cup sliced cherry tomatoes</a></li>
-                    <li><a class="ingredient-item">1/2 cup sliced black olives</a></li>
-                    <li><a class="ingredient-item">1/4 cup Parmesan shavings</a></li>
+                    <li><span class="serving-count" base="3">3</span> cups of leafy greens (i.e., Romaine lettuce, Iceberg lettuce)</li>
+                    <li><span class="serving-count" base="1">1</span> handful sliced red onion</li>
+                    <li><span class="serving-count" base="0.5">1/2</span> cup sliced cherry tomatoes</li>
+                    <li><span class="serving-count" base="0.5">1/2</span> cup sliced black olives</li>
+                    <li><span class="serving-count" base="0.25">1/4</span> cup Parmesan shavings</li>
                     <li><a class="ingredient-item">Croutons (optional)</a></li>
                     <li><a class="ingredient-item">Italian dressing (optional)</a></li>
                 </ul>
@@ -56,5 +63,6 @@
             </div>
         </div>
     </main>
+    <script src="recipes-script.js"></script>
 </body>
 </html>

@@ -55,12 +55,31 @@ h2 {
 
 .bio {
     display: flex;
+    justify-content: space-between;
 }
 
 .description {
     margin-right: 10px;
+    position: relative;
 }
 
-.snacks-img {
-    margin-left: auto;
+.portions {
+    position: absolute;
+    bottom: 0;
+}
+
+.portions > button {
+    border: none;
+    cursor: pointer;
+    outline-style: none;
+    background-color: e63946;
+    color: white;
+    width: 35px;
+    height: 25px;
+    border-radius: 8px;
+}
+
+#serving-size {
+    margin-left: 8px;
+    margin-right: 8px;
 }
