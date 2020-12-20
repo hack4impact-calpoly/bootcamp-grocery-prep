@@ -15,10 +15,24 @@ class AllRecipes extends React.Component{
     }
 
     async componentDidMount(){
-        const URL = "http://localhost:3001/api/recipe";
-        const res = await fetch(URL);
-        const data = await res.json();
-        console.log(data)
+        const URL = "http://localhost:3001/api/recipe/egg";
+
+        fetch(URL)
+        .then(res => {
+            if (res.ok){
+                return res
+            }
+            else{
+                let error = new Error("ERROR AND I DON'T KNOW WHY!!!")
+                throw(error)
+            }
+        })
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+            this.setState({list : data.data})
+        })
+        .catch(err => console.log(err))
      }
 
     render(){
