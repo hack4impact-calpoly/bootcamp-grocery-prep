@@ -3,7 +3,6 @@ const bodyParser = require('body-parser')
 const app = express()
 const mongoose = require('mongoose')
 const Recipes = require('./models/recipeSchema.js') /*may need to check path*/
-const recipe = require('./models/recipeSchema.js')
 
 app.use(express.static(__dirname + "/../public"))
 app.use(bodyParser.json())
@@ -41,8 +40,8 @@ app.get('/api/recipe/:name', async (req, res) => { // when testing on Postman - 
     res.status(200)    
     const name = req.params.name
     let recipe = await getRecipe(name)
-    console.log(recipe)
     res.send(recipe)
+    console.log(recipe)
 } )
 
 app.post('/api/rating', async (req, res) => {
