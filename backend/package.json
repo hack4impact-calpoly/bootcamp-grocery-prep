@@ -11,6 +11,7 @@
   "author": "Maggie Yang <myang57@calpoly.edu>",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.11.8"
   }
 }
