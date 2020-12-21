@@ -1,4 +1,4 @@
-const URL = "https://3blzgwgi13.execute-api.us-west-2.amazonaws.com/Live/recipe"
+const URL = ""https://3blzgwgi13.execute-api.us-west-2.amazonaws.com/Live/recipe"
 const title = document.getElementById("title")
 const des = document.getElementById("des")
 const servings = document.getElementById("count")

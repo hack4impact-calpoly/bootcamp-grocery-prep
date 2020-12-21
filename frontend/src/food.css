@@ -1,0 +1,21 @@
+.food {
+   display: flex;
+   padding-right: 10%;
+   flex-direction:column;
+   margin-left: 10%;
+}
+
+.head {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.box {
+   background-color: #E29578;
+   margin-right: 50%;
+}
+
+.change {
+   margin-top: 4%;
+}

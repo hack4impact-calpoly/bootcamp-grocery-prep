@@ -1,0 +1,23 @@
+html {
+   background-color: #FFDDD2;
+}
+
+#about {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-left: 7%;
+   margin-right:10%;
+}
+
+#LifeTitle {
+   background-color: #83C5BE;
+   padding-left: 2%
+}
+
+img {
+   display: grid-row;
+   width: 33%;
+   height: auto;
+}
+

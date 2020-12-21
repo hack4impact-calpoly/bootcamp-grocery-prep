@@ -1,0 +1,18 @@
+html {
+   background-color: #FFDDD2;
+}
+
+.Header {
+   display: flex;
+   background-color: #83C5BE;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+
+.navBar {
+   padding: 3%
+}
+
+
+

@@ -1,0 +1,30 @@
+.Recipe {
+   display: flex;
+   flex-direction: column;
+   margin-left: 7%;
+}
+
+.RecipeBox {
+   display: flex;
+   background-color: #83C5BE;
+   padding-left: 2%;
+}
+
+.RecipeList {
+   display: flex;
+   flex-direction: column;
+}
+
+.display {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.images {
+   margin-left: 20%;
+   margin-top: 2%;
+   display: flex;
+   justify-content: space-around;
+}
+

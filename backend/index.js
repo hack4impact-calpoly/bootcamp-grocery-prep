@@ -16,6 +16,12 @@ app.use(bodyParser.json())
 
 
 app.use((req, res, next) => {
+   res.header("Access-Control-Allow-Origin","*");
+   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Typer, Accept");
+   next();
+});
+
+app.use((req, res, next) => {
    req.timestamp = new Date()
    console.log(req.timestamp)
    next()
@@ -26,7 +32,7 @@ const getAllRecipes = async () => {
 }
 
 const getSpecifiedRecipe = async (name) => {
-   return await recipe.find({title : name})
+   return await recipe.find({_id : name})
 }
 
 app.get('/api/recipe', async (req, res) => {
@@ -72,5 +78,5 @@ app.post('/api/cart', (req, res) => {
 
 app.use(express.static('public'))
 
-app.listen(3000)
+app.listen(3001)
 
