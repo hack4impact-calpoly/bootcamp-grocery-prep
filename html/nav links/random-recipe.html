@@ -1,0 +1,72 @@
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>Grocery Prep - Random Recipe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../../css/nav links/random-recipe-style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <h1 class="web-name">Grocery Prep</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a class="nav-item" href="../nav links/home.html">Home</a></li>
+                <li><a class="nav-item" href="random-recipe.html">Random Recipe</a></li>
+                <li><a class="nav-item" href="../nav links/about-the-chef.html">About the Chef</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="header">
+            <h1 id="recipe-name"></h1>
+            <div id="ratings"><span id="rating"></span> &star;</div>
+        </div>
+        <div class="bio">
+            <div class="information">
+                <div class="description"></div>
+                <div class="portions"> 
+                    <h3>Servings</h3>
+                    <button id="decrease">-</button>
+                    <span id="serving-size"></span>
+                    <button id="increase">+</button>
+                </div>
+                <div class="rating">
+                    <label for="select-rating" id="rating-label">Rate Me!</label>
+                    <select id="select-rating">
+                        <option selected hidden disabled>Select Rating</option>
+                        <option value="1">1 &starf;</option>
+                        <option value="2">2 &starf;</option>
+                        <option value="3">3 &starf;</option>
+                        <option value="4">4 &starf;</option>
+                        <option value="5">5 &starf;</option> 
+                    </select>
+                    <button id="post-rating">Post Rating</button>
+                </div>
+            </div>
+            <div class="recipe-img">
+                <img id="recipe-image" height="250px"/>
+            </div>
+        </div>
+        <div class="ingredients">
+            <div class="subheader">
+                <h2>Ingredients</h2>
+            </div>
+            <div class="ingredients-list">
+                <ul id="ingredients">
+                </ul>
+            </div>
+            <div class="instructions">
+                <div class="subheader">
+                    <h2>Instructions</h2>
+                </div>
+                <ol id="instructions">
+                </ol>
+            </div>
+        </div>
+    </main>
+    <script src="../../javascript/recipes-script.js"></script>
+    <script src="../../javascript/random-recipe-script.js"></script>
+</body>
+</html>
