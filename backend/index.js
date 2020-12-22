@@ -3,6 +3,8 @@ const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 const app = express()
 
+const recipeEndpoints = require("./api/recipes.js")
+
 app.use(bodyParser.json())
 
 //app.use(express.static("./../"))
@@ -18,34 +20,16 @@ app.use(bodyParser.json())
 //   res.send(page)
 // })
 
-
-app.get("/api/recipe", (req,res) => {
-  res.status(200)
-  res.send("list of recipes requested")
-})
-
-
-app.get("/api/recipe/:name", (req,res) =>{
-  res.status(200)
-  let name = req.params.name
-  res.send(`instructions for ${name} requested`)
-})
-
-app.post("/api/rating", (req, res) =>{
-  res.status(200)
-  let rating = req.body.rating
-  let id = req.body.id
-  res.send(`rating of ${rating} for recipe ${id}`)
-})
+app.use('/api/', recipeEndpoints)
 
 app.use(express.static("./../public")) //serves index/html which leads to main site
 
-mongoose.connect("DATABASE_URL", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-  useFindAndModify: false,
-  useCreateIndex: true
-}).then(() => console.log('Connected to MongoDB'))
+// mongoose.connect("DATABASE_URL", {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+//   useFindAndModify: false,
+//   useCreateIndex: true
+// }).then(() => console.log('Connected to MongoDB'))
 
 
 app.listen(3000)
