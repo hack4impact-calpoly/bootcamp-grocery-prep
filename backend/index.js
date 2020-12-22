@@ -3,6 +3,12 @@ const app = express()
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 
+app.use((req, res, next) => {
+   res.header("Access-Control-Allow-Origin", "*");
+   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+   next();
+});
+
 mongoose.connect("mongodb+srv://mReed:H4IGPDatabase@groceryprepcluster.jxgph.mongodb.net/GroceryPrepRecipes", {
    useNewUrlParser: true, 
    useUnifiedTopology: true,
@@ -13,13 +19,6 @@ mongoose.connect("mongodb+srv://mReed:H4IGPDatabase@groceryprepcluster.jxgph.mon
 const recipe = require('../models/standardSchema');
 
 app.use(bodyParser.json())
-
-
-app.use((req, res, next) => {
-   res.header("Access-Control-Allow-Origin","*");
-   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Typer, Accept");
-   next();
-});
 
 app.use((req, res, next) => {
    req.timestamp = new Date()
@@ -50,7 +49,7 @@ app.get('/api/recipe/random', (req, res) => {
 app.get('/api/recipe/:name', async (req, res) => {
    const name = req.params.name
 
-   res.status(400)
+   res.status(200)
    let recipe
    recipe = await getSpecifiedRecipe(name)
    res.json(recipe)
@@ -64,6 +63,7 @@ app.get('/api/cart', (req, res) => {
 app.post('/api/rating', async (req, res) => {
    res.status(200)
    let doc
+   console.log('here');
    doc = await recipe.findOne({_id : req.body._id})
    doc.ratings.push(req.body.rating)
    doc.save()

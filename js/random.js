@@ -58,8 +58,6 @@ function rateRecipe() {
 
    fetch(URL, {
       method: 'POST',
-      headers: {
-         'Content-Type': 'application/json',
       },
       body: JSON.stringify(data),
    })

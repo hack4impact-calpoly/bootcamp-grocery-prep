@@ -6,9 +6,9 @@ function Cart(props) {
       <div className="cart"> 
          <h2>Your Shopping Cart</h2>
 
-         <button onClick={() => props.empty()}>Trash It</button>
-         { Object.keys(props.cart).map(item => {
-            return <div key={item}>{item} - {Number((props.cart[item]).toFixed(2)).toString()}</div>
+         <button className="button" onClick={() => props.emptyCart()}>Trash It</button>
+         {Object.keys(props.cart).map(item => {
+            return <div className="food" key={item}> {item} - {Number((props.cart[item]).toFixed(2)).toString()}</div>
          })}
       </div>
    );

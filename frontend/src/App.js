@@ -9,25 +9,25 @@ import './App.css';
 
 class App extends React.Component {
    
-      constructor(props) {
-         super(props);
-         this.state = { cart: []};
-      }
+   constructor(props) {
+      super(props);
+      this.state = { cart: []};
+   }
 
-      empty = () => this.setState({cart : []});
+   emptyCart = () => this.setState({cart : []});
 
-      update = (items) => {
-         const cart = this.state.cart;
-         for(const i in items) {
-            if (cart[i] === undefined) {
-               cart[i] = +(items[i]);
-            } else {
-               cart[i] += +(items[i]);
-            }
+   updateCart = (items) => {
+      const cart = this.state.cart;
+      for(const i in items) {
+         if (cart[items[i].Item] === undefined) {
+            cart[items[i].Item] = items[i].Amount;
+         } else {
+            cart[items[i].Item] += items[i].Amount;
          }
-
-         this.setState({cart: cart});
       }
+
+      this.setState({cart: cart});
+   }
    
    render() {
 
@@ -38,14 +38,14 @@ class App extends React.Component {
             <Route exact path = '/'>
                <main>
                   <Recipe />
-                  <Cart cart={this.state.cart} empty={this.emptyCart} />
+                  <Cart cart={this.state.cart} emptyCart={this.emptyCart} />
                </main>
             </Route>
 
             <Route path='/recipe'>
                <main>
-                  <Food update={this.update}/>
-                  <Cart cart={this.state.cart} empty={this.empty} />
+                  <Food updateCart={this.updateCart}/>
+                  <Cart cart={this.state.cart} emptyCart={this.emptyCart} />
                </main>
             </Route>
          
