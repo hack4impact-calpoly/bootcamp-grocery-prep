@@ -2,3 +2,22 @@
     display: flex;
     justify-content: space-evenly;
 }
+
+.intro{
+    display: flex;
+    justify-content: center;
+
+    font-size: 30px;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+}
+
+.links > *{
+    margin: 0 auto;
+    padding: 10px;
+
+    font-size: 20px;
+}

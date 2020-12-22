@@ -1,9 +1,8 @@
 import React from "react";
-
 import Styles from "./AllRecipes.module.css";
 
-import egg from "../imgs/egg.jpeg"
-import milk from "../imgs/golden_milk.jpeg"
+// import egg from "imgs/egg.jpeg"
+// import milk from "imgs/golden_milk.jpeg"
 
 class AllRecipes extends React.Component{
 
@@ -15,7 +14,7 @@ class AllRecipes extends React.Component{
     }
 
     async componentDidMount(){
-        const URL = "http://localhost:3001/api/recipe/egg";
+        const URL = "http://localhost:3001/api/recipe";
 
         fetch(URL)
         .then(res => {
@@ -29,8 +28,7 @@ class AllRecipes extends React.Component{
         })
         .then(res => res.json())
         .then(data => {
-            console.log(data);
-            this.setState({list : data.data})
+            this.setState({list : data})
         })
         .catch(err => console.log(err))
      }
@@ -42,10 +40,17 @@ class AllRecipes extends React.Component{
                 These is all the Recipes on my site!
                 </h1>
                 <div className={Styles.pics}>
-                    <img src={egg} height="200" width="225" alt="egg"></img>
-                    <img src={milk} height="200" width="150" alt="golden milk"></img>
+                    <img src={process.env.PUBLIC_URL+"/imgs/egg.jpeg"} height="200" width="225" alt="egg"></img>
+                    <img src={process.env.PUBLIC_URL+"/imgs/golden_milk.jpeg"} height="200" width="150" alt="golden milk"></img>
                 </div>
-                <p>Check out the links below:</p>
+                <p className={Styles.intro}>Check out the links below:</p>
+                <div className={Styles.links}>
+                    {this.state.list.map(item => {
+                        // const id = item._id;
+                        const name = item.foodTitle;
+                        return <a href={'/recipe/'+name} key={name}>{name}</a>;
+                    })}
+                </div>
             </main>
         );
 }}

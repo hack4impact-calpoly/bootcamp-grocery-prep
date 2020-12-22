@@ -27,13 +27,17 @@ app.use((req, res, next) => {
 app.get("/api/recipe", async (req, res) => {
     res.status(200);
     const food = await Foods.find({});
-    res.send('list of recipes requested');
+    res.json(food);
 
 });
 
-app.get("/api/recipe/random", (req, res) => {
+app.get("/api/recipe/random", async (req, res) => {
     res.status(200)
-    res.send('random recipe requested')
+    const randomPage = ["GoldenMilk", "appleSmoothie", "egg", "tofuScramble"]
+    const index = Math.floor(4 * Math.random());
+    const food = await Foods.find({"foodTitle" : randomPage[index]})
+    console.log(food)
+    res.json(food)
 
 });
 
