@@ -5,10 +5,19 @@ let recipeData
 
 const getRecipe = async () => { 
     try {
-        const response = await fetch(URL)
-        const jsonResponse = await response.json()
-        recipeData = jsonResponse
-        setRecipe(recipeData)
+        if (hash != undefined) {
+            const response = await fetch(URL + '?id='+ hash)
+            const jsonResponse = await response.json()
+            recipeData = jsonResponse 
+            setRecipe(recipeData)
+        } else {
+            const response = await fetch(URL)
+            const jsonResponse = await response.json()
+            recipeData = jsonResponse 
+            setRecipe(recipeData)
+        }
+        // when I move the duplicated lines out here it stops working??????SD???S?DF?LJSDFL? EXCUSE ME?!
+
     } catch (err) {
         console.error(err)
     }
@@ -17,6 +26,8 @@ const getRecipe = async () => {
 getRecipe()
 
 const setRecipe = (data) => {
+    document.location.hash = data._id
+
     document.getElementById('title').innerText = data.title
     document.getElementById('food-photo').src = data.picture
     document.getElementById('desc').innerText = data.desc
@@ -44,7 +55,7 @@ const setRecipe = (data) => {
     }
 
     document.getElementById('rating').innerText = avgRatings(data.ratings)
-    document.location.hash = data._id
+
 }
 
 //posting rating
