@@ -4,6 +4,8 @@ const mongoose = require('mongoose')
 const app = express()
 
 const recipeEndpoints = require("./api/recipes.js")
+const url = "mongodb+srv://bmcmann:H3ll0W0rld@bootcampc1.shnyh.mongodb.net/database?retryWrites=true&w=majority"
+
 
 app.use(bodyParser.json())
 
@@ -24,12 +26,12 @@ app.use('/api/', recipeEndpoints)
 
 app.use(express.static("./../public")) //serves index/html which leads to main site
 
-// mongoose.connect("DATABASE_URL", {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true,
-//   useFindAndModify: false,
-//   useCreateIndex: true
-// }).then(() => console.log('Connected to MongoDB'))
+mongoose.connect(url, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useFindAndModify: false,
+  useCreateIndex: true
+}).then(() => console.log('Connected to MongoDB'))
 
 
 app.listen(3000)
