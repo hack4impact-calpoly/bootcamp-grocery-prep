@@ -1,5 +1,6 @@
 const express = require('express')
 const bodyParser = require('body-parser')
+const mongoose = require('mongoose')
 const app = express()
 
 app.use(bodyParser.json())
@@ -38,5 +39,13 @@ app.post("/api/rating", (req, res) =>{
 })
 
 app.use(express.static("./../public")) //serves index/html which leads to main site
+
+mongoose.connect("DATABASE_URL", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useFindAndModify: false,
+  useCreateIndex: true
+}).then(() => console.log('Connected to MongoDB'))
+
 
 app.listen(3000)
