@@ -1,0 +1,78 @@
+/* CSS Document */
+
+.divider {
+  display: grid;
+  grid-template-columns: 75% 25%;
+}
+
+h1 {
+	color: #464D73;
+}
+
+h3 {
+	color: #464D73;
+}
+
+.box2{
+    display: flex;
+    justify-content: center;
+    background-color: #7DBDA7;
+	color: #464D73;
+	font-size: 60px;
+	margin: -10px;
+	padding: 60px;
+}
+
+.box3{
+	background-color: #464D73;
+    height: 15px;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+
+.recipe-flex{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.recipe-icon{
+	margin: 10px;
+	width: 87%;
+	border-radius: 50%;
+	filter: drop-shadow(0px 8px 4px #464D73);
+}
+
+.recipe-text{
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: -15px;
+	text-align: center;
+	color: #464D73;
+}
+
+.recipe-page-display{
+	margin-top: 15px;
+	height: 250px;
+	display: block;
+	border-radius: 50%;
+	filter: drop-shadow(0px 8px 4px #464D73);
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.cart-button{
+	width:200px;
+	height: 40px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: 'Cormorant', serif;
+	background-color: #4E3247;
+	border-radius: 5px;
+	border: none;
+	filter: drop-shadow(0px 8px 4px #464D73);
+	color: #d5f2e2;
+	font-size: 30px;
+}

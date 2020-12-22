@@ -11,6 +11,12 @@ mongoose.connect("mongodb+srv://dbUser:1234..!ahqQ@annabootcamp.tsiur.mongodb.ne
   useCreateIndex: true
 }).then(() => console.log('Connected to MongoDB'))
 
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 app.use(bodyParser.json())
 app.use(express.static("../"))
 
@@ -19,12 +25,12 @@ const getRecipes = async () => {
 }
 
 const getRecipe = async (recipe) => {
-	return await Recipe.find({food: recipe})
+	return await Recipe.find({_id: recipe})
 }
 
-const newRating = async (food, rating) => {
+const newRating = async (id, rating) => {
 	return await Recipe.updateOne( 
-  	{ food : food },
+  	{ _id : id },
   	{ $push: { ratings: rating } })
 }
 
@@ -37,16 +43,17 @@ app.get("/api/recipe/:name", async (req, res) => {
 	if(typeof name === undefined || name.length === 0){
 		res.json(await getRecipes())
 	}
+	console.log(name)
 	res.json(await getRecipe(name))
 })
 
 app.post("/api/rating", async (req, res) => {
-	if(typeof req.body.food === undefined || typeof req.body.rating === undefined){
+	if(typeof req.body.id === undefined || typeof req.body.rating === undefined){
 		res.json(await getRecipes())
 	}
-	await newRating(req.body.food, req.body.rating)
+	await newRating(req.body.id, req.body.rating)
 	res.send(`Rating for ${req.body.food}, ${req.body.rating}/5, has been posted.`)
 	
 })
 
-app.listen(3000)
+app.listen(3001)

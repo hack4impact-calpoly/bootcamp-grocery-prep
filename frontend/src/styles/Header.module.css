@@ -1,0 +1,37 @@
+/* CSS Document */
+body{
+	height: 100%;
+    background-color: #d5f2e2;
+    font-family: 'Cormorant', serif;
+}
+
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none!important;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+}
+
+header{
+	margin: -10px;
+    background-color: #4E3247;
+	height: 78px;
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+	filter: drop-shadow(0px 8px 4px #464D73);
+}
+
+nav{
+	font-size: 25px;
+    display: block;
+}
+
+header>nav>a{
+    color: #d5f2e2;
+	padding-right: 15px;
+}
+header>h1>a{
+	padding-left: 15px;
+	font-size: 30px;
+	color: #d5f2e2;
+}
