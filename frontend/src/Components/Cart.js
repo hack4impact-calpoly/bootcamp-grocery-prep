@@ -4,33 +4,23 @@ import React from 'react';
 
 class Cart extends React.Component{
 
-    constructor(props){
-        super(props);
-        this.state = {
-            cart : []
-        }
-    }
-
-    emptyCart(){
-        this.setState({cart : []})
-    }
-
-    updateCart(items){
-    }
-
-    displayContents(){
-        return (null)
-    }
-
     render(){
-        this.updateCart(this.props.items)
         return (
             <main>
                 <h1>
                     Your Cart:
                 </h1>
-                {this.displayContents()}
-                <button onClick={() => {console.log("clicked"); this.emptyCart()}}>click</button>
+                <ul>
+                {this.props.cart && Object.keys(this.props.cart).map(item =>{
+                        if (this.props.cart[item] > 0){
+                            return <li key={item}>{this.props.cart[item] + " " + item}</li>
+                        }
+                        else{
+                            return <li key={item}>{item}</li>
+                        }
+                    })}
+                </ul>
+                <button onClick={() => {this.props.empty()}}>click</button>
             </main>
 
         );

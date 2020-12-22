@@ -2,8 +2,6 @@ import React from 'react';
 
 import Styles from './AboutMe.module.css';
 
-import me from "../imgs/me.jpg"
-
 class AboutMe extends React.Component{
     render(){
         return(
@@ -13,7 +11,7 @@ class AboutMe extends React.Component{
                     Coder and chef extraordinaire!
                 </h1>
                 <p>
-                    <img src={me} height="350" width="200" alt="pic of me"></img>
+                    <img src={process.env.PUBLIC_URL+"/../imgs/me.jpg"} height="350" width="200" alt="pic of me"></img>
                 </p>
                 <ol>
                     <li>My name is Sam</li>

@@ -12,8 +12,37 @@ import AboutMe from "./Components/AboutMe.js"
 class App extends React.Component{
 
   //put cart state here
+  constructor(props){
+    super(props);
+    this.state = {
+      cart : {}
+    }
+  }
+
+  emptyCart = () => {
+    console.log("Cart gone")
+    this.setState({
+      cart : {}
+    })
+  }
+
+  updateCart = (ingredients) => {
+    const newCart = this.state.cart;
+    for (const index in ingredients){
+      if (newCart[index]){
+        newCart[index] += ingredients[index]
+      }
+      else{
+        newCart[index] = ingredients[index]
+      }
+    }
+    this.setState({
+      cart : newCart
+    })
+  }
 
   render() {
+    console.log(this.state.cart)
     return (
       <BrowserRouter>
         <Header />
@@ -22,7 +51,7 @@ class App extends React.Component{
           <Route exact path='/'>
             <main className={Style.root} id="home">
               <AllRecipes />
-              <Cart items={[1,2,3]}/>
+              <Cart empty={this.emptyCart} cart={this.state.cart}/>
             </main>
           </Route>
 
@@ -34,8 +63,8 @@ class App extends React.Component{
 
           <Route path="/recipe/">
             <main className={Style.root} id="home">
-              <Recipe />
-              <Cart />
+              <Recipe update={this.updateCart}/>
+              <Cart empty={this.emptyCart} cart={this.state.cart}/>
             </main>
 
           </Route>

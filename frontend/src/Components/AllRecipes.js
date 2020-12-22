@@ -37,7 +37,7 @@ class AllRecipes extends React.Component{
         return(
             <main>
                 <h1>
-                These is all the Recipes on my site!
+                These are all the Recipes on my site!
                 </h1>
                 <div className={Styles.pics}>
                     <img src={process.env.PUBLIC_URL+"/imgs/egg.jpeg"} height="200" width="225" alt="egg"></img>

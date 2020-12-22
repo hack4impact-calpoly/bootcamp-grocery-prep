@@ -1,3 +1,8 @@
 .buttons > *{
     padding: 10px;
 }
+
+.topOfPage{
+    display: flex;
+    justify-content: space-between;
+}

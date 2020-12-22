@@ -7,9 +7,9 @@ class Recipe extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            ratingAverage : Number,
-            picturePath : String
+            update : this.props.update
         };
+        console.log(this.state.update)
     }
 
     async componentDidMount(){
@@ -40,7 +40,8 @@ class Recipe extends React.Component{
             const food = data[0]
             this.setState({...food});
             this.setState({
-                origionalIngredients : this.state.ingredients
+                origionalIngredients : this.state.ingredients,
+                origionalSize : this.state.servingSize
             })
         })
         .catch(err => console.log("Error!!!! : " + err));
@@ -54,17 +55,17 @@ class Recipe extends React.Component{
         return (total / ratings.length).toFixed(2)
     }
 
-    updateSize(direction){
-        if (this.state.servingSize + direction < 1){return}
+    updateSize(multiply){
+        if (this.state.servingSize * multiply < 1){return}
         let newIngredients = {};
 
         for (const ingredient in this.state.ingredients){
-            const tempSize = this.state.ingredients[ingredient] + direction;
+            const tempSize = this.state.origionalIngredients[ingredient] * multiply;
             newIngredients[ingredient] = tempSize
         }
 
         this.setState({
-            servingSize : this.state.servingSize + direction,
+            servingSize : this.state.origionalSize * multiply,
             ingredients : newIngredients
         })
     }
@@ -92,24 +93,34 @@ class Recipe extends React.Component{
                 ratings : tempRatings
             })
         )
+    }
 
+    addToCart(){
+        this.state.update(this.state.ingredients)
     }
 
     render(){
         return(
             <main>
                 <div>
-                    <h1>{this.state.foodTitle}</h1>
+                    <div className={Styles.topOfPage}>
+                        <h1>{this.state.foodTitle}</h1>
+                        <button onClick={() => this.addToCart()}>Add to Cart!</button>
+                    </div>
                     <p>{this.state.foodDesc}</p>
                 </div>
                 <img src={process.env.PUBLIC_URL+"/../"+this.state.picturePath} height="200" width="150" alt=""></img>
 
                 <div className={Styles.buttons}>
-                    <button id="sub" onClick={() => this.updateSize(-1)}>-</button>
-                    <span id="counter">{
-                        this.state.servingSize
-                    }</span>
-                    <button id="add" onClick={() => this.updateSize(1)}>+</button>
+                    <button id="sub" onClick={() => {
+                                                    const mult = Number(document.getElementById("counter").innerText);
+                                                    this.updateSize(mult - 1);
+                        }}>-</button>
+                    <span id="counter">{this.state.servingSize}</span>
+                    <button id="add" onClick={() => {
+                                                    const mult = Number(document.getElementById("counter").innerText);
+                                                    this.updateSize(mult + 1);
+                        }}>+</button>
                     <div>
                         <span>Rated: {
                             this.state.ratings && this.findAverage(this.state.ratings)
@@ -132,7 +143,12 @@ class Recipe extends React.Component{
                     <h1>Ingredients</h1>
                     <ul>
                         {this.state.ingredients && Object.keys(this.state.ingredients).map(ingredient => {
-                            return <li key={ingredient}>{this.state.ingredients[ingredient] + " " + ingredient}</li>
+                            if (Number(this.state.ingredients[ingredient]) > 0){
+                                return <li key={ingredient}>{this.state.ingredients[ingredient] + " " + ingredient}</li>
+                            }
+                            else {
+                                return <li key={ingredient}>{ingredient}</li>
+                            }
                         })}
                     </ul>
                     <h1>Steps</h1>
