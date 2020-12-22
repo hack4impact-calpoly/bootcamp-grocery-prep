@@ -22,6 +22,12 @@ app.use((req, res, next) => {
     });
 });
 
+app.use((req, res, next) => {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+});
+
 app.get('/api/recipe', async (req, res, next) => {
     const recipes = await MongooseConector.getAllRecipes();
     if (!recipes) {
@@ -31,6 +37,18 @@ app.get('/api/recipe', async (req, res, next) => {
         return next();
     }
     res.status(200).json(recipes);
+});
+
+app.get('/api/random-recipe', async (req, res, next) => {
+    const recipes = await MongooseConector.getAllRecipes();
+    if (!recipes) {
+        res.status(500).json({
+            message: 'Server error',
+        });
+        return next();
+    }
+    const randomRecipe = recipes[Math.floor(Math.random() * recipes.length)];
+    res.status(200).json(randomRecipe);
 });
 
 app.get('/api/recipe/:name', async (req, res, next) => {
@@ -78,9 +96,13 @@ app.post('/api/rating', async (req, res, next) => {
     });
 });
 
+const PORT = 3001;
+
 (async () => {
     await MongooseConector.connect();
-    app.listen(3000, 'localhost', () => {
-        console.log('Listeneing on port 3000');
+
+    // Satisfy react default port
+    app.listen(PORT, 'localhost', () => {
+        console.log(`Listening on port ${PORT}`);
     });
 })();

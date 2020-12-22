@@ -1,0 +1,22 @@
+section#home {
+    margin: auto;
+    width: 80%;
+}
+
+#img-holder {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#recipes-holder {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-bottom: 2%;
+}
+
+#recipes-holder a {
+    padding: 4px 0;
+    color: #2a9d8f !important;
+    font-size: large;
+}

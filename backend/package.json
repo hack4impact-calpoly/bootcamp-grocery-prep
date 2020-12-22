@@ -4,6 +4,7 @@
   "description": "bootcamp for h4i",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.js",
     "add-db-file": "node add_file_data_to_recipedb.mjs"
