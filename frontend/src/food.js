@@ -38,10 +38,9 @@ class Food extends React.Component {
       this.state.ingredients && this.state.ingredients.map((item) => {
             const curC = item.Amount; 
             const place = item.Item;
-            newC.push({Item: place, Amount: Number(((curC/ curS) * (curS + dir)).toFixed(2)).toString()});
+            newC.push({Item: place, Amount: Number(((curC/ curS) * (curS + dir)).toFixed(2))});
       })
 
-      console.log(newC);
       this.setState({ingredients: newC, servings: this.state.servings + dir})
    }
 

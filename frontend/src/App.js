@@ -19,6 +19,8 @@ class App extends React.Component {
    updateCart = (items) => {
       const cart = this.state.cart;
       for(const i in items) {
+         console.log(items[i]);
+         console.log(items[i].Amount);
          if (cart[items[i].Item] === undefined) {
             cart[items[i].Item] = items[i].Amount;
          } else {
