@@ -1,0 +1,9 @@
+.cart {
+    float: right;
+    width: 200px;
+    padding: 60px 20px 40px;
+}
+
+.empty-cart-btn {
+    width: 120px;
+}

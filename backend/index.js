@@ -56,9 +56,15 @@ app.get("/api/recipe/random", (request, response) => {
 app.get("/api/recipe/:name", (request, response) => {
     let name = request.params.name
     Recipe.findOne({ 'title': name },  function (err, recipe) {
-        if (err) return handleError(err);
-        console.log('%s Recipe coming right up', recipe.title);
-        response.send(recipe);
+        console.log(recipe)
+        if (!recipe) {
+            console.log("Unable to find recipe")
+            response.send("error", 404)
+        }
+        else {
+            console.log('%s Recipe coming right up', recipe.title);
+            response.send(recipe);
+        }
     });
 });
 

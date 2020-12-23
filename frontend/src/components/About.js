@@ -1,21 +1,11 @@
-<!DOCTYPE html>
-<html>
+import React, { Component } from "react";
 
-	<head>
-		<title>Chef Emily Gavrilenko</title>
-		<link rel="stylesheet" type= "text/css" href="index.css">
-		<link rel="stylesheet" type= "text/css" href="about.css">
-	</head>
+import '../css/about.css'
 
-	<body>
-		<header id="topbar">
-			<div id = "name">Yummy Food</div>
-			<a class="link" id= "homepage" href="index.html">Home</a>
-			<a class="link" id="random" href="random.html">Surprise Recipe</a>
-			<a class="link" id="projects" href="aboutme.html">About the Chef</a>
-		</header>
-		<main>
-			<div class="aboutPage">
+class About extends Component {
+    render() {
+        return (
+            <div class="aboutPage">
 				<h1>About the Chef</h1>
 				<p>
 					Greetings! If you're like me, nothing compares to a delicious homemade meal. 
@@ -32,10 +22,12 @@
 					Notice: Cook at your own risk. Yummy Food is not responsible for burnt food or allergic reactions
 				 </p>
 				 <div class="images">
-					<img src = "images/me1.jpg" alt="Picture of Me!" class = "image"></img>
-					<img src = "images/me2.jpg" alt="Picture of Me!" class = "image"></img>
+					<img src = "images/me1.jpg" alt="Emily" class = "image"></img>
+					<img src = "images/me2.jpg" alt="Emily" class = "image"></img>
 				</div>
 			</div>
-		</main>
-	</body>
-</html>
+        );
+    }
+}
+
+export default About;

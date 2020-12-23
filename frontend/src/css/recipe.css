@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
 	margin: 20px 40px 40px;
+    width: calc(100vw - 400px)
 }
 
 .recipe-page li {
@@ -67,8 +68,11 @@
     margin-bottom: 10px;
 }
 
+
 #submit-rating {
     margin-left: 10px;
+    width: 80px;
+    padding: 2px
 }
 
 .recipe-topbar {
@@ -82,10 +86,16 @@
 #rating-display, #star {
     margin: 0px 0px 20px;
     padding-top: 40px;
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
 #star {
     padding-top: 38px;
     margin-left: 5px;
+}
+
+.add-cart-btn {
+    width: 120px;
+    margin-top: 20px;
+    margin-left: 70px;
 }
