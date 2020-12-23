@@ -9,6 +9,7 @@
         <nav class = "nav-bar">
             <a class = "nav-item" href="../index.html">Home</a>
             <a class = "nav-item" href="../about.html">About the Chef</a>
+            <a class = "nav-item" href="../recipes/random.html">Random Recipe</a>
         </nav>
     </header>
     <main>
@@ -16,14 +17,22 @@
             <h1>Ratatouille</h1>
             <p>Easy, tasty, and it has a wild name</p>
             <img src="../images/ratatouille.jpg" height=400>
+
+            <div class="serving-size">
+                <h4>Number of Servings:</h4>
+                <button id="more">-</button>
+                <span id="servings">4</span>
+                <button id="less">+</button>
+            </div>
+
             <h2>Ingredients</h2>
             <ul>
-                <li>2 eggplants</li>
-                <li>2 zucchinis</li>
-                <li>2/3 jar marinara sauce</li>
-                <li>1/4 cup parmesean or mozarella cheese</li>
-                <li>1/2 bunch fresh basil</li>
-                <li>1 tsp oregano</li>
+                <li><span class="amount" >2</span> eggplants</li>
+                <li><span class="amount" >2</span> zucchinis</li>
+                <li><span class="amount" >0.66</span> jar marinara sauce</li>
+                <li><span class="amount" >0.25</span> cup parmesean or mozarella cheese</li>
+                <li><span class="amount" >0.5</span> bunch fresh basil</li>
+                <li><span class="amount" >1</span> tsp oregano</li>
                 <li>Salt and pepper to taste</li>
             </ul>
             <h2>Instructions</h2>
@@ -38,6 +47,7 @@
             </ol>
         </section>
     </main>
+    <script src="../javascript/recipeFunctions.js"></script>
 </body>
 <footer>
     <p></p>

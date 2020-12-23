@@ -87,8 +87,10 @@ body {
   }
   img {
     margin-left: 35px;
+    margin-top: 20px;
+    
   }
-  p {
+  .desc, p {
     margin-left: 35px;
   }
   ol {
@@ -100,6 +102,31 @@ body {
     border-left: 2px solid tomato;
 
   }
+  .serving-size {
+    margin-left: 35px;
+  }
+  #more, #less, #servings {
+    margin-left: 30px;
+  }
 #home {
   color: #1A535C;
+}
+.recipe-body {
+  justify-content: center;
+}
+
+.rating {
+  margin-left: 35px;
+  margin-top: 35px;
+}
+#ratings {
+  margin-left: 35px;
+  color:  #81763b;
+}
+
+#rating-label {
+  color: #FF6B6B;
+  margin-left: 35px; 
+  
+
 }

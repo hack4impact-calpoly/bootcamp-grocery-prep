@@ -1,0 +1,60 @@
+
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1> Jillian's Grocery Prep</h1>
+        <nav class = "nav-bar">
+            <a class = "nav-item" href="../index.html">Home</a>
+            <a class = "nav-item" href="../random.html">About the Chef</a>
+            <a class = "nav-item" href="../recipes/random.html">Random Recipe</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="recipe-body">
+                <h1 id="title"></h1>
+                <div class="desc"></div>
+                <img id='food-photo' height=250>
+
+                <div class="rating">
+                    <div id="ratings"><span id="rating"></span> &star;</div>
+                    <label for="select-rating" id="rating-label">Rate Me!</label>
+                    <select id="select-rating">
+                      <option selected hidden disabled>Select Rating</option>
+                      <option value="1">1 &starf;</option>
+                      <option value="2">2 &starf;</option>
+                      <option value="3">3 &starf;</option>
+                      <option value="4">4 &starf;</option>
+                      <option value="5">5 &starf;</option>
+                    </select>
+                    <button id="post-rating">Post Rating</button>
+                </div>
+
+            <div class="serving-size">
+                <h4>Number of Servings:</h4>
+                <button id="more">-</button>
+                <span id="servings">4</span>
+                <button id="less">+</button>
+            </div>
+
+            </div>
+            
+            <h2>Ingredients</h2>
+            <ul id="ingredients"></ul>
+            <h2>Instructions</h2>
+            <ol id="instructions"> </ol>
+            
+         
+        </section>
+    </main>
+    <script src="../javascript/recipeFunctions.js"></script>
+    <script src="../javascript/random.js"></script>
+</body>
+<footer>
+    <p></p>
+</footer>
+</html>

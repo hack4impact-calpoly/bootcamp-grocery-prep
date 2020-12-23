@@ -9,6 +9,7 @@
         <nav class = "nav-bar">
             <a class = "nav-item" href="../index.html">Home</a>
             <a class = "nav-item" href="../about.html">About the Chef</a>
+            <a class = "nav-item" href="../recipes/random.html">Random Recipe</a>
         </nav>
     </header>
     <main>
@@ -16,25 +17,34 @@
             <h1>Tamales</h1>
             <p>Quinn fam Christmas dinner</p>
             <img src="../images/tamales.jpg" height=300>
+
+            <div class="serving-size">
+                <h4>Number of Servings:</h4>
+                <p>Serving Size: 1 Tamale</p>
+                <button id="more">-</button>
+                <span id="servings">30</span>
+                <button id="less">+</button>
+            </div>
+
             <h2>Ingredients</h2>
         <h4>Dough </h4>
             <ul>
-                <li>2 cups Masa Harina Corn Flour</li>
-                <li>1/2 tsp salt</li>
-                <li>1.5-2 cups warm water</li>
-                <li>30 corn husks</li>
+                <li><span class="amount" >2</span> cups Masa Harina Corn Flour</li>
+                <li><span class="amount" >0.5</span> tsp salt</li>
+                <li><span class="amount" >1.75</span> cups warm water</li>
+                <li><span class="amount" >30</span> corn husks</li>
             </ul>
         <h4>Filling </h4>
             <ul>
-                <li>1 white onion</li>
-                <li>2 tbsp butter</li>
-                <li>1.5 cups shredded chicken or turkey</li>
-                <li>1 poblano pepper</li>
-                <li>2 habanero peppers</li>
-                <li>4 jalepeño peppers</li>
-                <li>4 cloves garlic</li>
-                <li>1 can sliced Black olives</li>
-                <li>1 bunch Cilantro</li>
+                <li><span class="amount" >1</span> white onion</li>
+                <li><span class="amount" >2</span> tbsp butter</li>
+                <li><span class="amount" >1.5</span> cups shredded chicken or turkey</li>
+                <li><span class="amount" >1</span> poblano pepper</li>
+                <li><span class="amount" >2</span> habanero peppers</li>
+                <li><span class="amount" >4</span> jalepeño peppers</li>
+                <li><span class="amount" >4</span> cloves garlic</li>
+                <li><span class="amount" >1</span> can sliced Black olives</li>
+                <li><span class="amount" >1</span> bunch Cilantro</li>
                 <li>Chili powder</li>
                 <li>Oregano</li>
                 <li>Cumin</li>
@@ -65,6 +75,7 @@
             </ol>
         </section>
     </main>
+    <script src="../javascript/recipeFunctions.js"></script>
 </body>
 <footer>
     <p></p>

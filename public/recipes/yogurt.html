@@ -9,6 +9,7 @@
         <nav class = "nav-bar">
             <a class = "nav-item" href="../index.html">Home</a>
             <a class = "nav-item" href="../about.html">About the Chef</a>
+            <a class = "nav-item" href="../recipes/random.html">Random Recipe</a>
         </nav>
     </header>
     <main>
@@ -18,24 +19,34 @@
             <p>It's like sourdough because you keep the yogurt starter going but it's less work than sourdough</p>
             <p>Also this photo looks so ugly but its actually good</p>
             <img src="../images/yogurt.jpg" height=400>
+
+            <div class="serving-size">
+                <h4>Number of Servings:</h4>
+                <button id="more">-</button>
+                <span id="servings">10</span>
+                <button id="less">+</button>
+            </div>
+
             <h2>Ingredients</h2>
             <ul>
-                <li>52 ounces Ultra Pasteurized/Ultra-Filtered Milk </li>
+                <li><span class="amount" >52</span> ounces Ultra Pasteurized/Ultra-Filtered Milk </li>
                 <dd>•  if you use normal milk there's an extra boiling process :(</dd>
-                <li>2 tablespoons yogurt</li>
+                <li><span class="amount" >2</span> tablespoons yogurt</li>
             </ul>
             <h2>Instructions</h2>
             <ol>
                 <li>Santize hand mixer beaters in the Instant Pot bowl with boiling water on the stove</li>
                 <li>Mix together yogurt and milk with hand mixer in Instant Pot until well blended.</li>
                 <li>Place lid on Instant Pot and select the yogurt button and "normal" setting</li>
-                <li>Let incubate for 8 hours</li>
+                <li>Let incubate for 6-8 hours (the longer you go the more tangy it becomes)</li>
                 <li>Open lid and remove inner pot</li>
                 <li>Scoop/pour yogurt into a strainer and let sit in the fridge on the strainer overnight to make it Greek yogurt</li>
                 <li>Once strained, discard strained whey and use the hand mixer to blend berries in with the yogurt</li>
+                <li>Store in a glass container in the fridge for 10-14 days</li>
             </ol>
         </section>
     </main>
+    <script src="../javascript/recipeFunctions.js"></script>
 </body>
 <footer>
     <p></p>

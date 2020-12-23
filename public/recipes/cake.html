@@ -9,6 +9,7 @@
         <nav class = "nav-bar">
             <a class = "nav-item" href="../index.html">Home</a>
             <a class = "nav-item" href="../about.html">About the Chef</a>
+            <a class = "nav-item" href="../recipes/random.html">Random Recipe</a>
         </nav>
     </header>
     <main>
@@ -16,19 +17,28 @@
             <h1>Midnight Chocolate Cake</h1>
             <p>My family's go to recipe for birthdays and bonus there's COFFEE IN THE CAKE</p>
             <img src="../images/cake.jpg" height=400>
+
+            <div class="serving-size">
+                <h4>Number of Servings:</h4>
+                <p>Serving Size: 9 in cake</p>
+                <button id="more">-</button>
+                <span id="servings">1</span>
+                <button id="less">+</button>
+            </div>
+
             <h2>Ingredients</h2>
             <ul>
-                <li>1 cup flour</li>
-                <li>1 cup sugar</li>
-                <li>1/2 cup unsweetened cocoa powder</li>
-                <li>1 tsp baking soda</li>
-                <li>1/2 cup milk</li>
-                <li>1 tsp vanilla</li>
-                <li>1/2 tsp baking powder</li>
-                <li>1/4 tsp salt</li>
-                <li>1 egg</li>
-                <li>1/2 cup black coffee</li>
-                <li>1/2 cup vegetable oil</li>
+                <li><span class="amount" >1</span> cup flour</li>
+                <li><span class="amount" >1</span> cup sugar</li>
+                <li><span class="amount" >0.5</span> cup unsweetened cocoa powder</li>
+                <li><span class="amount" >1</span> tsp baking soda</li>
+                <li><span class="amount" >0.5</span> cup milk</li>
+                <li><span class="amount" >1</span> tsp vanilla</li>
+                <li><span class="amount" >0.5</span> tsp baking powder</li>
+                <li><span class="amount" >0.25</span> tsp salt</li>
+                <li><span class="amount" >1</span> egg</li>
+                <li><span class="amount" >0.25</span> cup black coffee</li>
+                <li><span class="amount" >0.25</span> cup vegetable oil</li>
             </ul>
             <h2>Instructions</h2>
             <ol>
@@ -43,11 +53,11 @@
             <h2>Bonus Recipe: Buttercream Frosting</h2>
             <p>makes a crap ton so I'd recommend halving this recipe</p>
             <ul>
-                <li>1/2 cup butter</li>
-                <li>2/3 cup cocoa powder</li>
-                <li>3 cups powdered sugar</li>
-                <li>1/3 cup milk</li>
-                <li>1 tsp vanilla</li>
+                <li><span class="amount" >0.5</span> cup butter</li>
+                <li><span class="amount" >0.66</span> cup cocoa powder</li>
+                <li><span class="amount" >3</span> cups powdered sugar</li>
+                <li><span class="amount" >0.33</span> cup milk</li>
+                <li><span class="amount" >1</span> tsp vanilla</li>
             </ul>
             <ol>
                 <li>Melt butter and stir in cocoa</li>
@@ -57,10 +67,10 @@
             <h2>Bonus Recipe: Chocolate Frosting</h2>
             <p>I'd also recommend halving this recipe</p>
             <ul>
-                <li>3 cups confectioners' sugar</li>
-                <li>1 cup butter</li>
-                <li>1 tsp vanilla extract</li>
-                <li>1-2 tbsp whipping cream</li>
+                <li><span class="amount" >3</span> cups confectioners' sugar</li>
+                <li><span class="amount" >1</span> cup butter</li>
+                <li><span class="amount" >1</span> tsp vanilla extract</li>
+                <li><span class="amount" >1</span> tbsp whipping cream</li>
                 <li>(Optional) Meringue to make it thicc</li>
             </ul>
             <ol>
@@ -73,6 +83,8 @@
          
         </section>
     </main>
+    <script src="../javascript/recipeFunctions.js"></script>
+    <script src="../javascript/random.js"></script>
 </body>
 <footer>
     <p></p>

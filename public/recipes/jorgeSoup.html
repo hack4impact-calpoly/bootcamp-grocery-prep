@@ -9,6 +9,7 @@
         <nav class = "nav-bar">
             <a class = "nav-item" href="../index.html">Home</a>
             <a class = "nav-item" href="../about.html">About the Chef</a>
+            <a class = "nav-item" href="../recipes/random.html">Random Recipe</a>
         </nav>
     </header>
     <main>
@@ -16,16 +17,24 @@
             <h1>Jorge's Chicken Soup Mexico City Style Copycat: </h1>
             <p>My fav mexican restaurant from when I lived in California and I missed it so this is my recreation</p>
             <img src="../images/Jorges.jpg" height=300>
+
+            <div class="serving-size">
+                <h4>Number of Servings:</h4>
+                <button id="more">-</button>
+                <span id="servings">5</span>
+                <button id="less">+</button>
+            </div>
+
             <h2>Ingredients</h2>
             <ul>
-                <li>1/2 diced onion</li>
-                <li>2 diced medium tomatoes</li>
-                <li>32 oz chicken broth</li>
-                <li>4 chicken breasts boiled</li>
-                <li>1 bunch chopped cilantro</li>
-                <li>2 tsp Knorr tomato boullion with chicken flavor</li>
-                <li>1 jalapeño</li>
-                <li>1 avocado</li>
+                <li><span class="amount" >2</span> shredded chicken breasts or <span class="amount" >1</span> shredded rotisserie chicken</li>
+                <li><span class="amount" >32</span> oz chicken broth</li>
+                <li><span class="amount" >0.5</span> diced onion</li>
+                <li><span class="amount" >2</span> diced medium tomatoes</li>
+                <li><span class="amount" >1</span> bunch chopped cilantro</li>
+                <li><span class="amount" >2</span> tsp Knorr tomato boullion with chicken flavor</li>
+                <li><span class="amount" >1</span> jalapeño</li>
+                <li><span class="amount" >1</span> avocado</li>
             </ul>
             <h2>Instructions</h2>
             <ol>
@@ -38,6 +47,8 @@
          
         </section>
     </main>
+    <script src="../javascript/recipeFunctions.js"></script>
+    <script src="../javascript/random.js"></script>
 </body>
 <footer>
     <p></p>

@@ -9,6 +9,7 @@
         <nav class = "nav-bar">
             <a class = "nav-item" href="../index.html">Home</a>
             <a class = "nav-item" href="../about.html">About the Chef</a>
+            <a class = "nav-item" href="../recipes/random.html">Random Recipe</a>
         </nav>
     </header>
     <main>
@@ -16,19 +17,27 @@
             <h1>Zucchini Boats</h1>
             <p>Easy, tasty, and similar ingredients to ratatouille so meal prep is easy</p>
             <img src="../images/zuchinni.jpg" height=400>
+
+            <div class="serving-size">
+                <h4>Number of Servings:</h4>
+                <button id="more">-</button>
+                <span id="servings">1</span>
+                <button id="less">+</button>
+            </div>
+
             <h2>Ingredients</h2>
             <ul>
-                <li>1 zucchini</li>
-                <li>1/2 bell pepper zucchini</li>
-                <li>1/2 cup marinara sauce</li>
-                <li>1/4 cup parmesean cheese</li>
-                <li>1/4 cup diced onion</li>
-                <li>1 tsp minced garlic</li>
-                <li>1/2 bunch fresh basil</li>
-                <li>1/2 tsp salt</li>
-                <li>1/2 tsp pepper</li>
-                <li>1 tsp oregano</li>
-                <li>3 oz shredded chicken or ground turkey</li>
+                <li><span class="amount" >1</span> zucchini</li>
+                <li><span class="amount" >0.5</span> bell pepper</li>
+                <li><span class="amount" >0.5</span> cup marinara sauce</li>
+                <li><span class="amount" >0.25</span> cup parmesean cheese</li>
+                <li><span class="amount" >0.25</span> cup diced onion</li>
+                <li><span class="amount" >1</span> tsp minced garlic</li>
+                <li><span class="amount" >0.5</span> bunch fresh basil</li>
+                <li><span class="amount" >0.5</span> tsp salt</li>
+                <li><span class="amount" >0.5</span> tsp pepper</li>
+                <li><span class="amount" >1</span> tsp oregano</li>
+                <li><span class="amount" >3</span> oz shredded chicken or ground turkey</li>
             </ul>
             <h2>Instructions</h2>
             <ol>
@@ -43,6 +52,7 @@
             </ol>
         </section>
     </main>
+    <script src="../javascript/recipeFunctions.js"></script>
 </body>
 <footer>
     <p></p>
