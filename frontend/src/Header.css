@@ -1,0 +1,20 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #006d77;
+    color: #FFF;
+    padding: 20px;
+ }
+
+
+h1 {
+    display: block;
+    font-weight: bold;
+ }
+
+ nav > a {
+    color: #ffddd2;
+    margin-left: 0.5em;
+    padding-top: 100px;
+ }

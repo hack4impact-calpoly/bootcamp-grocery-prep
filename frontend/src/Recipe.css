@@ -1,0 +1,58 @@
+main {
+   margin: 30px;
+}
+
+h1 {
+    display: block;
+    font-weight: bold;
+ }
+ 
+ h2 {
+    padding: 10px; 
+    display: block;
+    font-weight: bold;
+    background-color: #85bdba;
+   
+ }
+ 
+ body {
+    display: block;
+    background-color: #edf6f9;
+    font-family: Helvetica;
+ }
+ 
+#RecipeLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFF;
+    padding: 30px;
+ }
+
+ #ratingStuff{
+    display: flex;
+    margin-left: 10px;
+   
+ }
+
+ #avg-rating {
+    margin-left: 10px;
+ }
+
+ #BoxContainer{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin-left: 40px;
+ }
+
+ #RecipeHeader{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 400px;
+ }
+
+ #imgDisplay {
+    margin: 30px;
+ }
