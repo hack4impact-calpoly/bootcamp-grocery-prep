@@ -9,7 +9,6 @@ class Recipe extends React.Component{
         this.state = {
             update : this.props.update
         };
-        console.log(this.state.update)
     }
 
     async componentDidMount(){

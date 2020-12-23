@@ -36,7 +36,6 @@ app.get("/api/recipe/random", async (req, res) => {
     const randomPage = ["GoldenMilk", "appleSmoothie", "egg", "tofuScramble"]
     const index = Math.floor(4 * Math.random());
     const food = await Foods.find({"foodTitle" : randomPage[index]})
-    console.log(food)
     res.json(food)
 
 });

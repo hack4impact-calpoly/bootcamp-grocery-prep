@@ -42,7 +42,6 @@ class App extends React.Component{
   }
 
   render() {
-    console.log(this.state.cart)
     return (
       <BrowserRouter>
         <Header />
@@ -66,7 +65,6 @@ class App extends React.Component{
               <Recipe update={this.updateCart}/>
               <Cart empty={this.emptyCart} cart={this.state.cart}/>
             </main>
-
           </Route>
             
         </Switch>
