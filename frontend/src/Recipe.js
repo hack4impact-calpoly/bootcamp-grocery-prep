@@ -36,7 +36,7 @@ class Recipe extends React.Component {
         //updating the rating
         const avgrating = document.getElementById('avg-rating')
         const updatedRatings = this.state.ratings
-        avgrating.innerHTML = "&star; "  + this.calculateRatings(updatedRatings)
+        avgrating.innerHTML =  '★ '  + this.calculateRatings(updatedRatings)
     }
 
     //posting the new rating 
@@ -99,11 +99,8 @@ class Recipe extends React.Component {
             <section>
             <div id="RecipeHeader">
                 <h1 id="recipeName"> {this.state.title} </h1>
-                <div id="avg-rating"> 
-                   <h3>★ {this.state.avgRating} </h3> 
-                </div>
+                <h3 id="avg-rating"> ★ {this.state.avgRating} </h3> 
             </div>
-
             <button id="addCart" onClick={() => this.addRecipeToCart()}>Add to Cart</button>
             <p> </p>
             <br></br>
