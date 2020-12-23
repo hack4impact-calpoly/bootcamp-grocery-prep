@@ -4,10 +4,10 @@ const router = express.Router();
 // router.get('../api/recipe', (req, res) => {
 //     res.json({ 'recipes': [...] });
 // })
-res.use(express.static('../public/'))
-// router.get('/', (req, res) => {
-//     res.use(express.static('../public/'))
-// })
+// res.use(express.static('../public/'))
+router.get('/', (req, res) => {
+    res.use(express.static('../public/'))
+})
 // router.get('/', (req, res) => {
 //     // res.json({ 'recipes': [...] });
 //     res.use(express.static('../public/'))
