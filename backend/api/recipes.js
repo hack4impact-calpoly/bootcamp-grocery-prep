@@ -1,9 +1,20 @@
 const express = require('express');
 const router = express.Router();
 
-router.get("/recipe", (req,res) => {
+
+const Recipe = require("../models/recipeSchema.js")
+
+
+const getRecipe = async () => {
+    return Recipe.findOne()
+}
+
+
+router.get("/recipe", async (req,res) => {
     res.status(200)
-    res.send("list of recipes requested")
+    res.send("one recipe requested")
+    recipe = await getRecipe()
+    console.log(recipe)
 })
   
   

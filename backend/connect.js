@@ -12,11 +12,23 @@ async function run() {
 
         const db = client.db(dbName)
 
-        const col = db.collection("people")
+        const col = db.collection("recipes")
 
         let personDocument = {
 
-            "data": "Poggers, this is data #3"
+            "title": "Vanilla Cinnamon Milk",
+            //required: true,
+            "desc": "I'm sorry",
+            "picture": "images/vanilla.png",
+            "ratings": [],
+            "servings": 1,
+            "ingredients":{
+                "Vanilla Extracts": 2,
+                "Strawberry JamGround Cinnamon": 1,
+                "Milk": 1,
+                "Jars": 1
+            },
+            "instructions": "Enjoy!" 
 
         }
 
