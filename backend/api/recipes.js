@@ -9,19 +9,26 @@ const getRecipe = async () => {
     return Recipe.find()
 }
 
+const getOneRecipe = async (name) => {
+    return Recipe.find({title: name})
+}
+
 
 router.get("/recipe", async (req,res) => {
     res.status(200)
     res.send("All recipes requested")
-    recipe = await getRecipe()
-    console.log(recipe)
+    recipes = await getRecipe()
+    console.log(recipes)
 })
   
   
-router.get("/recipe/:name", (req,res) =>{
+router.get("/recipe/:name", async (req,res) =>{
     res.status(200)
     let name = req.params.name
+    recipe = await getOneRecipe(name)
     res.send(`instructions for ${name} requested`)
+    console.log("ONE RECIPE____________________________")
+    console.log(recipe)
 })
   
 router.post("/rating", (req, res) =>{
