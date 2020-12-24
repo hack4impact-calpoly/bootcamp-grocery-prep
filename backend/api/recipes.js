@@ -6,13 +6,13 @@ const Recipe = require("../models/recipeSchema.js")
 
 
 const getRecipe = async () => {
-    return Recipe.findOne()
+    return Recipe.find()
 }
 
 
 router.get("/recipe", async (req,res) => {
     res.status(200)
-    res.send("one recipe requested")
+    res.send("All recipes requested")
     recipe = await getRecipe()
     console.log(recipe)
 })
