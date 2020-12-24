@@ -7,7 +7,7 @@ const Recipe = require("./models/recipe");
 
 const app = express();
 
-app.use(express.static("frontend"));
+app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
 
 mongoose.connect(DATABASE_URL, {
@@ -72,6 +72,6 @@ app.post('/api/cart', (req, res) => {
     res.send(quantity + ' of recipe' + id + ' added to cart');
 })
 
-app.listen(3000, function(){
+app.listen(3001, function(){
     console.log("Server running on port 3000");
 });

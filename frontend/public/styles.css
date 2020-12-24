@@ -1,0 +1,22 @@
+main {
+  display: grid;
+  grid-template-columns: 75% 25%;
+}
+
+button {
+  background-color: red;
+  padding: 10px;
+  border: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#tessa-imgs{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.tessa-img{
+  width: 25%;
+}
