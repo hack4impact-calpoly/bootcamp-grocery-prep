@@ -17,6 +17,12 @@ mongoose.connect(DATABASE_URL, {
     useCreateIndex: true
 }).then(() => console.log('Connected to MongoDB'))
 
+app.use((req, res, next) => {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+});
+
 const getRecipes = async() => {
     return await Recipe.find({});
 }
@@ -73,5 +79,5 @@ app.post('/api/cart', (req, res) => {
 })
 
 app.listen(3001, function(){
-    console.log("Server running on port 3000");
+    console.log("Server running on port 3001");
 });

@@ -1,14 +1,40 @@
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  background-color: #e8ffff;
+}
+
+h2{
+  background-color: #41aea9;
+}
+
+header {
+  background-color: #386460;
+  justify-content: space-between;
+  padding: 0 20px;
+  display: flex;
+  color: #fff;
+  align-items: center;
+}
+
+header .a {
+  color: #fff;
+  margin: 0 12px;
+  text-decoration: none;
+}
+
+header .a:hover {
+  color: rgb(185, 185, 185);
+}
+
+.container{
+  padding: 15px 20% 40px;
+  display: block;
+}
+
 main {
   display: grid;
   grid-template-columns: 75% 25%;
-}
-
-button {
-  background-color: red;
-  padding: 10px;
-  border: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 #tessa-imgs{
@@ -19,4 +45,15 @@ button {
 
 .tessa-img{
   width: 25%;
+}
+
+.recipeLink {
+  text-decoration: none;
+  color: rgb(66, 66, 202);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.recipeLink:hover {
+  color: rgb(162, 162, 218);
 }
