@@ -1,0 +1,65 @@
+.recipe {
+	margin: 0;
+	background-color: #D8DBE2;
+	color: #1B1B1E;
+	font-family: Tisa;
+
+	padding: 15px 10% 40px;
+}
+
+
+.recipe h2 {
+	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	font-size: 30;
+}
+
+.recipe h3 {
+	background-color: #58A4B0;
+	padding: 4px 8px;
+	font-size: 25;
+}
+
+.topImg {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.topImg > img {
+	width: 60%;
+}
+
+.items {
+	display: flex;
+	align-items: center;
+}
+
+.items > img {
+	height: 200px;
+	margin: 15px;
+}
+
+.items > .recipeLinks > a {
+	color: #373F51;
+	margin: 25px;
+	line-height: 35px;
+	font-size: 20;
+}
+
+.serving {
+	margin: 0 30px;
+}
+
+button {
+  background-color: #58A4B0;
+  border: none;
+  color: white;
+  font-size: 14px;
+  padding: 4px 10px;
+}
+
+#count {
+	margin: 0 5px;
+}

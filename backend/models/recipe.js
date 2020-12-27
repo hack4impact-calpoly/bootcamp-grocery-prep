@@ -2,11 +2,12 @@ const mongoose = require('mongoose')
 
 const recipeSchema = new mongoose.Schema({
   title: String, 
+  name: String,
   desc: String,
   picture: String, 
   ratings: [Number],
   servings: Number,
-  ingredients: [Object], 
+  ingredients: Map, 
   instructions: [String],
 }, {collection: 'recipes'})
 

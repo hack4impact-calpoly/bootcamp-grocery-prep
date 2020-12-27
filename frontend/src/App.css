@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+body {
+	background-color: #D8DBE2;
+}

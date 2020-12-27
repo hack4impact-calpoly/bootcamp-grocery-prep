@@ -1,0 +1,29 @@
+.cart {
+	margin: 0;
+	background-color: #D8DBE2;
+	color: #1B1B1E;
+	font-family: Tisa;
+
+    border-left-style: solid;
+    border-color: white;
+
+    padding: 0 10px;
+
+    column-count: 1;
+    text-align: left
+ }
+
+.emptyCart {
+    background-color: #373F51;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+ }
+
+ .cartItem {
+    padding: 0 10px;
+    font-size: 14px;
+    margin: 4px 2px;
+ }
