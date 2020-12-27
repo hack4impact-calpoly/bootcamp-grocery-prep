@@ -13,7 +13,6 @@ const updateRecipe = mult => {
     var amount = document.getElementsByClassName("amount")
     for (var i = 0; i < amount.length; i++){
         var amnt = +(amount[i].dataset.base) + (mult * (amount[i].dataset.base))
-        console.log(amnt)
         amount[i].innerText = String(amnt.toFixed(2))
     }
 }
