@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-function Recipe() {
+function Recipe(props) {
     const title = window.location.hash.substring(1);
     const [desc, setDesc] = useState("");
     const [servings, setServings] = useState(1);
@@ -71,6 +71,10 @@ function Recipe() {
         fetch("http://localhost:3001/api/rating", requestOptions);
     }
 
+    function addRecipeToCart() {
+        props.addToCart(ingredients);
+    }
+
     return (
         <div className="container">
             <div className="headline">
@@ -78,6 +82,7 @@ function Recipe() {
                 <h2>{desc}</h2>
                 <p>{rating} ⭐</p>
             </div>
+            <button onClick={addRecipeToCart}>Add to Cart</button>
             <div className="showcase">
                 <h3>Servings</h3>
                 <button onClick={decreaseServings} id="sub">-</button>

@@ -4,8 +4,28 @@ import Recipe from "./Recipe"
 import About from "./About"
 import RecipeOverview from "./RecipeOverview";
 import { BrowserRouter, Route, Switch } from "react-router-dom"
+import { useState } from "react";
 
 function App() {
+  const [cart, setCart] = useState([]);
+
+  function addToCart(newItems) {
+    const newCart = cart;
+    for (const item in newItems) {
+      if (item in newCart) {
+        newCart[item] += newItems[item];
+      }
+      else {
+        newCart[item] = newItems[item];
+      }
+    }
+    setCart(newCart);
+  }
+
+  function emptyCart() {
+    setCart([]);
+  }
+
   return (
     <BrowserRouter>
       <Header />
@@ -13,13 +33,21 @@ function App() {
         <Route exact path="/">
           <main>
             <RecipeOverview />
-            <Cart />
+            <Cart
+              addToCart={addToCart}
+              emptyCart={emptyCart}
+              cart={cart}
+            />
           </main>
         </Route>
         <Route exact path="/recipe">
           <main>
-            <Recipe />
-            <Cart />
+            <Recipe
+              addToCart={addToCart}
+            />
+            <Cart
+              cart={cart}
+            />
           </main>
         </Route>
         <Route exact path="/about">
