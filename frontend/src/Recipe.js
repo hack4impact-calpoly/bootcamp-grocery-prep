@@ -100,7 +100,7 @@ function Recipe(props) {
                     <option value="4">4 ⭐</option>
                     <option value="5">5 ⭐</option>
                 </select>
-                <button onClick={postRating} id="post-rating">Post Rating</button>
+                <button style={{marginLeft: "10px"}} onClick={postRating} id="post-rating">Post Rating</button>
             </div>
             <br />
             <br />
