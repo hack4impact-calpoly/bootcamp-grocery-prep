@@ -38,24 +38,6 @@ router.get("/recipe/:name", async (req, res) => {
 	res.send(await getSpecificRecipe(name))
 })
 
-/*router.post("/post", async (req, res) => {
-	console.log('Posted recipe')
-	const obj = new Object()
-	obj.ingredient1 = "bread"
-	obj.ingredient2 = "salt"
-	const sample = await new Recipe({
-		title: "Sample recipe",
-		desc: "This is a sample recipe and hopefully it shows up",
-		picture: "not/an/actual/picture.jpg",
-		ratings: [1,2,3],
-		servings: 2,
-		ingredients: obj,
-		instructions: ["Instruction 1", "Instruction 2", "Instruction 3"]
-	}).save()
-	res.json(sample)
-})
-*/
-
 router.get("/rating", async (req, res) => {
 	console.log("all good")
 	res.status(200)
