@@ -1,0 +1,27 @@
+
+.cart {
+    color: #17252A;
+    background-color:#DEF2F1;
+    padding: 0px 20px;
+    margin: 0;
+}
+
+#empty-cart {
+    background-color: teal;
+    border: none;
+    color: white;
+    font-size: 14px;
+    padding: 10px 25px;
+    margin: 0;
+}
+
+.cart-item {
+    margin: 5px 0;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.test {
+    height:10vh;
+    width:50vh;
+}

@@ -1,0 +1,98 @@
+#recipe{
+    color: #17252A;
+    background-color:#DEF2F1;
+    text-align: left;
+  }
+
+body {
+    margin: 0;
+    background-color:#DEF2F1;
+  }
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color:#17252A;
+  padding: 15px;
+}
+
+header a{
+    color: white;
+    margin: 0 12px;
+}
+  
+main{
+    padding:60px 20% 40px;
+}
+main a{
+    color: #17252A;
+}
+h1{
+    padding: 15px;
+}
+
+h2{
+    justify-content: stretch;
+    color: #17252A;
+    padding: 5px;
+}
+
+
+.lunch > img{
+    position: absolute;
+    right: 45%;
+    margin: -80px -60px;
+    height: 250;
+    width: 30%;
+}
+
+.break{
+    line-height: 900%;
+}
+
+.servings{
+    position: absolute;
+    right: 55%;
+    margin: 50px 0px;
+}
+
+.blt{
+    position: absolute;
+    right: 45%;
+    margin: 40px 0px;
+}
+
+.blt > button{
+    background-color: #17252A;
+    border: none;
+    color: white;
+    font-size: 17px;
+    padding: 5px 14px;
+}
+
+.servings > button{
+    background-color: #17252A;
+    border: none;
+    color: white;
+    font-size: 17px;
+    padding: 5px 14px;
+}
+
+#title{
+    text-align: left;
+    padding: 0px 10px;
+    color: white;
+    background-color: teal;
+
+}
+
+#add-to-cart{
+    background-color: teal;
+    border: none;
+    color: white;
+    font-size: 14px;
+    padding: 5px 25px;
+    margin: 15px 0px;
+}

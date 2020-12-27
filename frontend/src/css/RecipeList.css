@@ -1,0 +1,33 @@
+.link-collection > a {
+    color: #17252A;
+    line-height: 26px;
+    background-color: #DEF2F1;
+}
+
+.link-collection {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.food-pics {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 15px 10px;
+}
+
+#recipes{
+    text-align: left;
+    padding: 0px 10px;
+    color: white;
+    background-color: teal;
+
+}
+
+@media screen and (max-width: 900px) {
+    .link-collection {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+}

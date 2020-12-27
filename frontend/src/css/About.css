@@ -1,0 +1,31 @@
+
+p{
+    padding: 0px 10px;
+}
+
+
+main{
+    padding:0px 20% 0px;
+    margin:0;
+}
+
+body {
+    margin: 0;
+    background-color:#DEF2F1;
+  }
+
+.about {
+    background-color: teal;
+    text-align: left;
+    color: white;
+    justify-content: stretch;
+    padding:0px 0px;
+    margin:0;
+}
+
+.aboutImage  {
+    padding: 10px 10px;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+}
