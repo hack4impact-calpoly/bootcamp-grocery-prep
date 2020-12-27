@@ -44,12 +44,12 @@ main {
 }
 
 .tessa-img{
-  width: 25%;
+  height: 300px;
 }
 
 .recipeLink {
   text-decoration: none;
-  color: rgb(66, 66, 202);
+  color: rgb(66, 102, 202);
   display: block;
   margin-bottom: 10px;
 }
