@@ -34,7 +34,6 @@ function App() {
           <main>
             <RecipeOverview />
             <Cart
-              addToCart={addToCart}
               emptyCart={emptyCart}
               cart={cart}
             />
@@ -46,6 +45,7 @@ function App() {
               addToCart={addToCart}
             />
             <Cart
+              emptyCart={emptyCart}
               cart={cart}
             />
           </main>

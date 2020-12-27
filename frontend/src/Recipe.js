@@ -32,7 +32,7 @@ function Recipe(props) {
                 setInstructions(singleRecipe[0].instructions);
             });
 
-    }, []);
+    }, [title]);
 
     function updateIngredientCount(num) {
         Object.keys(ingredients).map((item) => {
