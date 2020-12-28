@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik);
+
+header{
+  background: #394753;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+nav{
+  padding: 20px;
+}
+
+a:visited{
+  color: white;
+}
+
+a:link{
+  color: white;
+}
+
+img.carton{
+  width: 100px;
+  height: auto;
+}
+
+img.carton:hover{
+  width: 200px;
+  height: auto;
+}
+
+img#reg:hover{
+  filter: drop-shadow(0px 0px 25px white);
+}
+
+img#almond:hover{
+  filter: drop-shadow(0px 0px 25px blanchedalmond);
+}
+
+img#chocolate:hover{
+  filter: drop-shadow(0px 0px 25px #CE9653);
+}
+
+img#soy:hover{
+  filter: drop-shadow(0px 0px 25px #d2c29d);
+}
+
+img#strawberry:hover{
+  filter: drop-shadow(0px 0px 25px #FAD3ED);
+}
+
+img#vanilla:hover{
+  filter: drop-shadow(0px 0px 25px blanchedalmond);
+}
+
+td{
+  padding: 50px;
+}
+
+th{
+  font-size: 150%;
+}
+
+td{
+  text-align: center;
+}
+
+table{
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+body{
+  margin: 0;
+  font-family: "Rubik";
+  font-size: 20px;
+  background: rgb(230, 236, 234);
+}
+
+ul{
+  list-style-type: circle;
+}
+
+h3{
+  padding: 15px;
+  margin: 0;
+}
+
+h2{
+  padding: 20px;
+  font-style: italic;
+  text-align: left;
+}
+
+h1{
+  padding: 20px;
+}
+
+p{
+  padding-left: 30px;
+}
+
+.ingredients{
+  background: #54A5F2;
+  border: #394753;
+  border-style: dashed hidden dashed hidden;
+  border-width: 6px;
+  padding: 10px;
+}
+
+img.pageimage{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  padding: 5px;
+  width: 500px;
+  filter: drop-shadow(20px 10px 10px #3C3E40)
+}
+
+button{
+  padding: 10px;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+select{
+  padding: 5px;
+  margin-left: 10px;
+}
