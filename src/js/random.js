@@ -119,6 +119,6 @@ const createRecipe = (data) => {
     </section>`
     random.innerHTML = createHTML
     document.getElementById("ratings-num").innerText = avgRating(data.ratings)
-    console.log(document.getElementById("count").innerText)
+    
 }
 getRecipe()
