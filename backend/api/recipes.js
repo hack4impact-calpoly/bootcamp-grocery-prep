@@ -38,11 +38,6 @@ router.get("/recipe/:name", async (req, res) => {
 	res.send(await getSpecificRecipe(name))
 })
 
-router.get("/rating", async (req, res) => {
-	console.log("all good")
-	res.status(200)
-	res.send("worked")
-})
 
 router.post("/rating", async (req, res) => {
 	const foodId = req.body._id
