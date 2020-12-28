@@ -13,6 +13,9 @@
                     <a href="./index.html">Home</a>
                 </div>
                 <div class="click">
+                    <a href="./random.html">Random Recipe</a>
+                </div>
+                <div class="click">
                     <a href="./about.html">About the Chef</a>
                 </div>
             </div>
@@ -22,16 +25,22 @@
         <h2>Chipotle Guacamole</h2>
         <div class="description">
             <p>$1 for guac??? That ain't it chief. Or should I say chef ;) because you're gonna make it yourself</p>
-            <img src="./images/guac.jpg" height="200" width="250"> 
+            <img src="./images/guac.jpg" height="200" width="250">
+        </div>
+        <div class="servings">
+            <h3>Servings</h3>
+                <button id="sub">-</button>
+                <span id="serving-count">8</span>
+                <button id="plus">+</button>
         </div>
         <h4>Ingredients</h4>
         <ul>
-            <li>2 ripe ha$$ avocados</li>
-            <li>2 tsp lime juice</li>
-            <li>2 tbsp chopped cilantro (sorry soap gene people)</li>
-            <li>1/4 cup chopped red onion</li>
-            <li>1/2 jalepeno, chopped</li>
-            <li>1/4 tsp salt</li>
+            <li><span class="count" base=".25">2</span> ripe ha$$ avocados</li>
+            <li><span class="count" base=".25">2</span> tsp lime juice</li>
+            <li><span class="count" base=".5">2</span> tbsp chopped cilantro (sorry soap gene people)</li>
+            <li><span class="count" base=".03125">0.25</span> cup chopped red onion</li>
+            <li><span class="count" base=".0625">0.5</span> jalepeno, chopped</li>
+            <li><span class="count" base=".03125">0.25</span> tsp salt</li>
         </ul>
         <h4>Instructions</h4>
         <ol>
@@ -42,5 +51,6 @@
             <li>Taste and add more of whatever you think it's missing.</li>
         </ol>
     </main>
+    <script src="./recipes.js"></script>
 </body>
 </html>

@@ -60,3 +60,39 @@ nav {
 .click {
     padding: 5px 5px 5px 5px; 
 }
+
+.servings {
+    padding: 0 20px;
+}
+
+button {
+    background-color:#720026;
+    color: #ffffff; 
+    border: none; 
+    border-radius: 2px; 
+}
+
+.headline {
+    display: flex; 
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.desc {
+    display: flex; 
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.ratings {
+    display: flex; 
+    justify-content: right;
+    justify-items: right;
+}
+
+.rating {
+    justify-items: left;
+    justify-content: space-between; 
+    padding: 5px; 
+    float: right; 
+}

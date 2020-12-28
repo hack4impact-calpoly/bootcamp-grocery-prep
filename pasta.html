@@ -12,6 +12,9 @@
                 <div class="click">
                     <a href="./index.html">Home</a>
                 </div>
+                <div class="click">
+                    <a href="./random.html">Random Recipe</a>
+                </div>
                     <div class="click">
                         <a href="./about.html">About the Chef</a>
                     </div>
@@ -24,18 +27,24 @@
             <p>aka bougie mac n cheese you can pretend is healthy</p>
             <img src="./images/pasta.jpg" height="250" width="250"> 
         </div>
+        <div class="servings">
+            <h3>Servings</h3>
+                <button id="sub">-</button>
+                <span id="serving-count">4</span>
+                <button id="plus">+</button>
+        </div>
         <h4>Ingredients</h4>
         <ul>
             <li>Kosher salt and black pepper</li>
-            <li>8 oz rigatoni, ziti or campanelle</li>
-            <li>6 tbsp olive oil</li>
-            <li>3/4 cup bread crumbs</li>
-            <li>1/2 grated pecorino cheese</li>
-            <li>1 large shallot, finely chopped</li>
-            <li>1 medium head of cauliflower, sliced into 1/2 thick pieces (it will be v crumbly)</li>
-            <li>1 cup heavy cream</li>
-            <li>1 tbsp lemon zest</li>
-            <li>1/2 chives, finely chopped</li>
+            <li><span class="count" base="2">8</span> oz rigatoni, ziti or campanelle</li>
+            <li><span class="count" base="1.5">6</span> tbsp olive oil</li>
+            <li><span class="count" base=".1875">0.75</span> cup bread crumbs</li>
+            <li><span class="count" base=".125">0.5</span> grated pecorino cheese</li>
+            <li><span class="count" base=".25">1</span> large shallot, finely chopped</li>
+            <li><span class="count" base=".25">1</span> medium head of cauliflower, sliced into 1/2 thick pieces (it will be v crumbly)</li>
+            <li><span class="count" base=".25">1</span> cup heavy cream</li>
+            <li><span class="count" base=".25">1</span> tbsp lemon zest</li>
+            <li><span class="count" base=".125">0.5</span> cup chives, finely chopped</li>
             <li>Crushed red pepper flakes (optional)</li>
         </ul>
         <h4>Instructions</h4>
@@ -49,5 +58,6 @@
             <li>Remove from heat. Divide pasta among bowls and top with pecorino bread crumbs, chives, more lemon zest, red-pepper flakes (if using) and more cheese if you like.</li>
         </ol>
     </main>
+    <script src="./recipes.js"></script>
 </body>
 </html>
