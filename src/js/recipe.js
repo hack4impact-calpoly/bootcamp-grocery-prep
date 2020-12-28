@@ -7,12 +7,12 @@ document.addEventListener('click', event => {
 
 function updateCount(dir){
     const count = document.getElementById("count")
-    console.log(count)
+    const currCount = +(count.innerText)
 
     if (dir == -1 && count.innerText == 1) return
     
     for (i=0; i < ingredients.length; i++){
-        ingredients[i].innerText = +(ingredients[i].innerText) + dir*(ingredients[i].innerText / count.innerText)
+        ingredients[i].innerText = (+(ingredients[i].innerText) / currCount) * (currCount + dir )
     }
-    count.innerText = +(count.innerText) + dir
+    count.innerText = currCount + dir
 }
