@@ -41,10 +41,13 @@ router.get("/recipe/:name", async (req, res) => {
 
 router.post("/rating", async (req, res) => {
 	const foodId = req.body._id
-	console.log(foodId)
 	const rating = req.body.rating
-	console.log(`foodId: ${foodId}, rating: ${rating}`)
-	await Recipe.update({_id: foodId}, {$push: {ratings: rating}})
+	if(rating > 0 && rating < 6) {
+		console.log(`foodId: ${foodId}, rating: ${rating}`)
+		await Recipe.update({_id: foodId}, {$push: {ratings: rating}})
+	}else{
+		console.log("rating is not in range 1-5")
+	}
 	res.status(200)
 	res.send(`Recipe ${foodId} recieved a rating of ${rating}`)
 })
