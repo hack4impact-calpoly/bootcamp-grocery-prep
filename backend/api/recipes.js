@@ -26,6 +26,7 @@ const updateRating = async (id, rating) => {
 router.get("/recipe", async (req,res) => {
     res.status(200)
     res.send("All recipes requested")
+    console.log("ALL RECPIES")
     recipes = await getRecipe()
     // console.log(recipes)
 })
@@ -35,7 +36,10 @@ router.get("/recipe/:name", async (req,res) =>{
     res.status(200)
     let name = req.params.name
     recipe = await getOneRecipe(name)
-    res.send(`instructions for ${name} requested`)
+    console.log(`instructions for ${name} requested`)
+    //console.log(JSON.stringify(recipe))
+    console.log(recipe)
+    res.json(recipe)
     // console.log("ONE RECIPE____________________________")
     // console.log(recipe)
 })
