@@ -1,0 +1,46 @@
+.background {
+  border: 2px solid lightseagreen;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.mealText {
+  color: blue;
+  background: none;
+  border: none;
+}
+
+.mealText:focus, .mealText:active, .buyButton:focus, .buyButton:active {
+  outline: none;
+}
+
+.mealText:hover {
+  color: rgb(29, 89, 255);
+}
+
+.mealPadding {
+  margin-left: 12px;
+}
+
+.mealName {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.mealDescription {
+  font-size: 18px;
+}
+
+.mealRating {
+  position: absolute;
+  right: 5%;
+}
+
+.buyButton {
+  padding: 4px;
+  margin-left: 16px;
+  font-size: 16px;
+  background-color: bisque;
+  border: 2px solid rgb(117, 117, 117);
+  position: relative;
+  top: -3px;
+}
