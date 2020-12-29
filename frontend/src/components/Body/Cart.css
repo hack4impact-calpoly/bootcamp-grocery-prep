@@ -1,0 +1,20 @@
+.cart-cart > h1 {
+    padding: 20px 25px 10px 5px;
+}
+
+.cart-empty-cart-feature {
+    padding: 10px 25px 10px 10px;
+}
+
+.cart-ingredients-list {
+    padding: 10px 25px 10px 10px; 
+}
+
+.cart-ingredient {
+    margin-bottom: 10px;
+}
+
+#cart-empty-cart {
+    width: 100px;
+    height: 25px;
+}

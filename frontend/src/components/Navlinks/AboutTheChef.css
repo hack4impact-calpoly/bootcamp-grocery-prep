@@ -1,0 +1,34 @@
+.about-the-chef-title {
+    padding: 20px 0px 10px 45px;
+}
+
+.about-the-chef-welcome {
+    display: flex;
+    padding: 10px 25px 00px 45px;
+}
+
+.about-the-chef-intro {
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
+}
+
+.about-the-chef-intro > p {
+    margin-bottom: 5px;
+}
+
+.about-the-chef-bio-title {
+    padding: 20px 25px 20px 45px;
+    background: #008891;
+    background-clip: content-box;
+}
+
+.about-the-chef-bio {
+    padding: 0px 25px 20px 45px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-the-chef-bio > p {
+    margin-bottom: 5px;
+}

@@ -1,0 +1,175 @@
+.recipes-recipes > h1 {
+    padding: 20px 25px 10px 45px;
+    /* background: #008891;
+    background-clip: content-box; */
+}
+
+.recipes-breakfast > h2 {
+    padding: 20px 25px 10px 45px;
+    background: #008891;
+    background-clip: content-box;
+}
+
+.recipes-lunch > h2 {
+    padding: 10px 25px 10px 45px;
+    background: #008891;
+    background-clip: content-box;
+}
+
+.recipes-dinner > h2 {
+    padding: 10px 25px 10px 45px;
+    background: #008891;
+    background-clip: content-box;
+}
+
+.recipes-desserts > h2 {
+    padding: 10px 25px 10px 45px;
+    background: #008891;
+    background-clip: content-box;
+}
+
+.recipes-snacks > h2 {
+    padding: 10px 25px 10px 45px;
+    background: #008891;
+    background-clip: content-box;
+}
+
+.recipes-breakfast-list {
+    display: flex;
+    padding: 10px 25px 10px 45px;
+    list-style: none;
+    align-items: center;
+}
+
+.recipes-breakfast-img {
+    margin-left: auto;
+}
+
+.recipes-breakfast-list > ol li {
+    margin-bottom: 30px;
+}
+
+.recipes-breakfast-links {
+    list-style: none;
+}
+
+.recipes-breakfast-item {
+    color: #e63946;
+    text-decoration: none;
+}
+
+.recipes-breakfast-item:hover {
+    font-weight: bold;
+}
+
+.recipes-lunch-list {
+    display: flex;
+    padding: 10px 25px 10px 45px;
+    list-style: none;
+    align-items: center;
+}
+
+.recipes-lunch-list > ol li {
+    margin-bottom: 30px;
+}
+
+.recipes-lunch-links {
+    list-style: none;
+}
+
+.recipes-lunch-img {
+    margin-left: auto;
+}
+
+.recipes-lunch-item {
+    color: #e63946;
+    text-decoration: none;
+}
+
+.recipes-lunch-item:hover {
+    font-weight: bold;
+}
+
+.recipes-dinner-list {
+    display: flex;
+    padding: 10px 25px 10px 45px;
+    list-style: none;
+    align-items: center;
+}
+
+.recipes-dinner-list > ol li {
+    margin-bottom: 30px;
+}
+
+.recipes-dinner-links {
+    list-style: none;
+}
+
+.recipes-dinner-img {
+    margin-left: auto;
+}
+
+.recipes-dinner-item {
+    color: #e63946;
+    text-decoration: none;
+}
+
+.recipes-dinner-item:hover {
+    font-weight: bold;
+}
+
+.recipes-desserts-list {
+    display: flex;
+    padding: 10px 25px 10px 45px;
+    list-style: none;
+    align-items: center;
+}
+
+.recipes-desserts-list > ol li {
+    margin-bottom: 30px;
+}
+
+.recipes-desserts-links {
+    list-style: none;
+}
+
+.recipes-desserts-img {
+    margin-left: auto;
+}
+
+.recipes-desserts-item {
+    color: #e63946;
+    text-decoration: none;
+}
+
+.recipes-desserts-item:hover {
+    font-weight: bold;
+}
+
+.recipes-snacks-list {
+    display: flex;
+    padding: 10px 25px 10px 45px;
+    list-style: none;
+    align-items: center;
+}
+
+.recipes-snacks-list > ol li {
+    margin-bottom: 30px;
+}
+
+.recipes-snacks-links {
+    list-style: none;
+}
+
+.recipes-snacks-img {
+    margin-left: auto;
+}
+
+.recipes-snacks-item {
+    color: #e63946;
+    text-decoration: none;
+}
+
+.recipes-snacks-item:hover {
+    font-weight: bold;
+}

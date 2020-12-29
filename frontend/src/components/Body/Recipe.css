@@ -1,0 +1,95 @@
+.recipe-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 25px 10px 45px;
+}
+
+.recipe-bio {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recipe-description {
+    padding: 10px 25px 10px 45px;
+}
+
+.recipe-portions {
+    padding: 10px 25px 10px 45px;
+}
+
+.recipe-rating {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 25px 10px 45px;
+}
+.recipe-recipe-img {
+    padding-top: 10px;
+    padding-right: 25px;
+}
+
+.recipe-subheader > h2 {
+    padding: 10px 25px 10px 45px;
+    background-color: #008891;
+    background-clip: content-box;
+}
+
+#recipe-ingredients {
+    padding: 10px 25px 10px 45px;
+}
+
+#recipe-instructions {
+    padding: 10px 25px 20px 45px;
+}
+
+#recipe-average-rating-and-add-to-cart-feature {
+    display: flex;
+}
+
+#recipe-average-rating {
+    padding-right: 10px;
+}
+
+#recipe-add-to-cart-button {
+    width: 100px;
+    height: 25px;
+}
+
+#recipe-decrease {
+    width: 20px;
+    font-size: large;
+}
+
+#recipe-increase {
+    width: 20px;
+    font-size: large;
+}
+
+#recipe-serving-size {
+    margin: 10px;
+}
+
+#recipe-decrease, #recipe-increase, #recipe-serving-size {
+    margin-top: 10px;
+}
+
+#recipe-rating-label {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#recipe-post-rating {
+    margin-top: 5px;
+    width: 100px;
+    height: 25px;
+}
+
+#recipe-select-rating {
+    margin-right: 5px;
+}
