@@ -1,25 +1,40 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from './Header.js';
-import Recipe from './Recipe.js';
-import Cart from './Cart.js';
+import Home from './AdditionalLinks/Home/Home.js';
+import Header from './AdditionalLinks/Header/Header.js';
+import AboutMe from './AdditionalLinks/AboutMe/AboutMe.js';
+import RandomRecipe from './AdditionalLinks/RandomRecipe/RandomRecipe.js';
+import Recipe from './AdditionalLinks/Recipe/Recipe.js';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 
 function App() {
   return (
-    //<Header />
-    <div className = 'App'>
-        <body>
+    <BrowserRouter>
+       <div className='App'>    
+       	  <Header /> 
+          
+	  <Switch>
+	  <Route exact path='/'>
+	     <Home />
+	  </Route>
 
-        <Header />
-    	
-        <main>
-      	  <Recipe />
-      	  <Cart />
-    	</main>
+	  <Route exact path='/about-me'>
+	     <AboutMe />
+	  </Route>
 
-        </body>
-    </div>
+	  <Route exact path='/random-recipe'>
+	     <RandomRecipe />
+	  </Route>
+
+	  <Route path='/recipe'>
+	     <Recipe />
+	  </Route>
+
+          </Switch>
+
+       </div>
+    </BrowserRouter>
 
     //TUTORIAL BELOW
     //<div className="App">

@@ -1,0 +1,15 @@
+aboutMe-main {
+	padding: 15px 20% 50px;
+}
+
+aboutMe-body {
+  margin: 0;
+  background-color: #fae6cf;
+  font-family: Century Gothic;
+}
+
+
+p{
+	display: flex;
+	justify-content: center;
+}

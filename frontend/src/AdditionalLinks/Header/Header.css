@@ -7,3 +7,13 @@ header {
 	color: #FFF;
   	padding: 0 20px;
 }
+
+nav {
+	padding: 0;
+}
+
+a {
+	margin: 0px 5px;
+	color: #5e3885;
+        line-height: 3;
+}

@@ -64,4 +64,5 @@ app.post('/api/rating', async (req, res) => {
 
 app.use(express.static('public'))
 
-app.listen(3000)
+// port 3001
+app.listen(3001)

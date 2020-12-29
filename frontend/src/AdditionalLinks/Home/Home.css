@@ -1,0 +1,12 @@
+main {
+  display: grid;
+  grid-template-columns: 75% 25%;
+}
+
+home-body {
+  margin: 0;
+  background-color: #fae6cf;
+  font-family: Century Gothic;
+}
+
+
