@@ -13,6 +13,13 @@ mongoose.connect("mongodb+srv://VeeUser1:t0Rtl300p@milestone5-h4i.dna8l.mongodb.
   useCreateIndex: true
 }).then(() => console.log('Connect to MongoDB'))
 
+
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 app.get('/', (req, res) => {
   res.send('Hello world!')
 })

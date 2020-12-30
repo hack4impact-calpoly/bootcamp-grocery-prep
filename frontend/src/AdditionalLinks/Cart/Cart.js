@@ -7,7 +7,7 @@ function Cart(props){
        <h2>Cart</h2>
       
        <div className='emptyCart'>
-	  <button id='empty'> Empty Cart </button>
+	  <button id='empty' onClick={() => props.emptyCart()}> Empty Cart </button>
        </div>
  
        <ul>

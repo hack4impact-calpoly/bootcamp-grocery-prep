@@ -24,7 +24,10 @@ class App extends React.Component {
 
      this.setState({ cart: cart });
   }
+
 	
+  emptyCart = () => { this.setState({ cart: {} }); }
+ 
 
   render() {
   return (
@@ -34,7 +37,10 @@ class App extends React.Component {
           
 	  <Switch>
 	  <Route exact path='/'>
+	     <main>
 	     <Home />
+	     <Cart cart={this.state.cart} emptyCart={this.emptyCart} />
+	     </main>
 	  </Route>
 
 	  <Route exact path='/about-me'>
