@@ -10,7 +10,9 @@ class Recipe extends React.Component{
     }
 
     componentDidMount(){
-        fetch("http://localhost:3001/api/recipe/Milk", {
+        const name = window.location.hash.substr(1)
+        console.log(name)
+        fetch(`http://localhost:3001/api/recipe/` + name, {
             method: "GET"
         })
             .then(res => res.json())
