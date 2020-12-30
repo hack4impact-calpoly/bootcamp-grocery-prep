@@ -3,3 +3,46 @@
   background-color: #fae6cf;
   font-family: Century Gothic;
 }
+
+.serving {
+	margin: 0px 0px 0px 75px;
+}
+
+.serving > button {
+	background-color: #BC4524;
+	color: black;
+	font-size: 12px;
+	padding: 5px 14px;
+}
+
+#serving-count {
+  margin: 0 4px;
+}
+
+#ratings {
+  font-size: 20px;
+  color: black;
+}
+
+#rating-label {
+  font-size: 20px;
+}
+
+.addCart {
+        margin: 0px 0px 0px 75px;
+}
+
+.addCart > button {
+        background-color: #BC4524;
+        color: black;
+        font-size: 12px;
+        padding: 5px 14px;
+}
+
+ul{
+	padding: 15px 20% 50px;
+}
+
+ol{
+        padding: 15px 20% 50px;
+}

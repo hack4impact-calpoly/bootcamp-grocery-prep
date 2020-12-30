@@ -5,10 +5,28 @@ import Header from './AdditionalLinks/Header/Header.js';
 import AboutMe from './AdditionalLinks/AboutMe/AboutMe.js';
 import RandomRecipe from './AdditionalLinks/RandomRecipe/RandomRecipe.js';
 import Recipe from './AdditionalLinks/Recipe/Recipe.js';
+import RecipeDisplay from './AdditionalLinks/Recipe/RecipeDisplay.js';
+import Cart from './AdditionalLinks/Cart/Cart.js';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import React from 'react';
 
+class App extends React.Component {
+  constructor(props) {
+     super(props);
+     this.state = {cart: {}};
+  }
 
-function App() {
+  updateCart =  (ingredients) => {
+     const cart = this.state.cart;
+     for (const key in ingredients){
+     	cart[key] = ingredients[key];
+     }
+
+     this.setState({ cart: cart });
+  }
+	
+
+  render() {
   return (
     <BrowserRouter>
        <div className='App'>    
@@ -24,11 +42,17 @@ function App() {
 	  </Route>
 
 	  <Route exact path='/random-recipe'>
-	     <RandomRecipe />
+	     <main>
+	     <RandomRecipe updateCart={this.updateCart}/>
+             <Cart cart={this.state.cart} emptyCart={this.emptyCart} />
+	     </main>
 	  </Route>
 
 	  <Route path='/recipe'>
-	     <Recipe />
+	     <main>
+	     <Recipe updateCart={this.updateCart}/>
+             <Cart cart={this.state.cart} emptyCart={this.emptyCart} />
+	     </main>
 	  </Route>
 
           </Switch>
@@ -53,7 +77,7 @@ function App() {
     //    </a>
     //  </header>
     //</div>
-  );
+  );}
 }
 
 export default App;
