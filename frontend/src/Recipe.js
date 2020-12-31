@@ -107,7 +107,11 @@ class Recipe extends React.Component{
                 <div className="ingredients">
                 <h3>Ingredients</h3>
                 <ul id="ingredientList">
-                    
+                    {
+                        this.state.ingredients && Object.keys(this.state.ingredients).map((curKey) => {
+                            return <li><span className="counter">{this.state.ingredients[curKey]}</span> {curKey}</li>;
+                        })
+                    }
                     
                 </ul>
 

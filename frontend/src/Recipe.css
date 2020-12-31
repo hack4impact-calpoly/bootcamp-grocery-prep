@@ -135,3 +135,7 @@ select{
   margin-left: 1px;
   
 }
+
+ul li{
+  text-align: left;
+}
