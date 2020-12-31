@@ -113,16 +113,14 @@ class Recipe extends React.Component{
 	    <span id='serving-count'> {this.state.serving} </span>
 	    <button id='plus' onClick={() => this.updateServings(1)}> + </button>
 	</div>
-
-	<p> Ingredients </p>
+	
+	<div class='ingredients'> Ingredients </div>
 	   <ul>
 		{ this.state.ingredients && Object.keys(this.state.ingredients[0]).map((item, i) => {
 		     return (
-		     	<li key={i}> 
-				<span class='count' base={this.state.ingredients[0][item]}>
-					{this.state.ingredients[0][item]}
-				</span>
-			  {item}  
+		     	<li key={i} > 
+				<span class='count' base={this.state.ingredients[0][item]}> {this.state.ingredients[0][item]} </span>
+			  {" " + item}  
 			</li>
 		);}
 		)}

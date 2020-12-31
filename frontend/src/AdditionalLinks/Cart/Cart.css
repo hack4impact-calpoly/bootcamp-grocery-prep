@@ -5,12 +5,13 @@
 }
 
 .emptyCart {
-        margin: 0px 0px 0px 75px;
+        margin: 0px 0px 0px 15px;
 }
 
 .emptyCart > button {
         background-color: #BC4524;
         color: black;
         font-size: 12px;
-        padding: 5px 14px;
+        padding: 10px 14px;
 }
+
