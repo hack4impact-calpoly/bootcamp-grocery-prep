@@ -31,7 +31,7 @@ class RecipeLinks extends React.Component {
 	   <div className='links'>
 		{ this.state.RecipeList && this.state.RecipeList.slice(2,4).map(item => {
 		    return (
-			<a href={'/recipe/' + item.title}> {item.title} </a>
+			<Link to={'/recipe/' + item.title}> {item.title} </Link>
 		    );}
 		)}
 	   </div>
@@ -40,7 +40,7 @@ class RecipeLinks extends React.Component {
 	   <div className='links'>                                                      
                 { this.state.RecipeList && this.state.RecipeList.slice(0,1).map(item => {
                     return (
-                        <a href={'/recipe/' + item.title}> {item.title} </a>
+                        <Link to={'/recipe/' + item.title}> {item.title} </Link>
                     );}
                 )}
            </div>
@@ -49,7 +49,7 @@ class RecipeLinks extends React.Component {
            <div className='links'>
                 { this.state.RecipeList && this.state.RecipeList.slice(1,2).map(item => {
                     return (
-                        <a href={'/recipe/' + item.title}> {item.title} </a>
+                        <Link to={'/recipe/' + item.title}> {item.title} </Link>
                     );}
                 )}
            </div>

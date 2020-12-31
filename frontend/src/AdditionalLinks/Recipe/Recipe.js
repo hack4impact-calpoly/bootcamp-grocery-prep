@@ -22,10 +22,12 @@ class Recipe extends React.Component{
 	//const newServings = curServings + dir;
         //this.state.serving = newServings;
 	let newIngredients = {};
+	
 
         if (curServings + dir > 0){
            //const curServings = this.state.serving;
            const newServings = curServings + dir;
+	   console.log(newServings)
 	   const ingredients = this.state.ingredients;
 	   
 	   for (const i in ingredients){
@@ -34,16 +36,20 @@ class Recipe extends React.Component{
 		for (const key in ing){
 		   let count = ing[key];
 		
-		   count = +((count * newServings)).toFixed(2);
+		   count = +(((count / curServings) * newServings)).toFixed(2);
 		   newIngredients[key] = count;
 		}
 	   }
-	   this.setState({ ingredients : newIngredients, serving : newServings })
-           
+	   console.log(newIngredients)
+	   this.setState({ ingredients : [newIngredients], serving : newServings })
+           console.log(this.state.ingredients)
 	}
   }
 
-  addToCart() { this.state.updateCart(this.state.ingredients && this.state.ingredients[0]) }
+  addToCart() { 
+	this.state.updateCart(this.state.ingredients && this.state.ingredients[0]); 
+	console.log("added to cart")
+	}
 
   updateRatings(ratings) {
      let sum = 0
@@ -112,7 +118,12 @@ class Recipe extends React.Component{
 	   <ul>
 		{ this.state.ingredients && Object.keys(this.state.ingredients[0]).map((item, i) => {
 		     return (
-		     	<li key={i}> {this.state.ingredients[0][item]} {item}  </li>
+		     	<li key={i}> 
+				<span class='count' base={this.state.ingredients[0][item]}>
+					{this.state.ingredients[0][item]}
+				</span>
+			  {item}  
+			</li>
 		);}
 		)}
 	   </ul>
