@@ -1,0 +1,8 @@
+.div {
+    display: flex;
+    align-items: center;
+}
+
+.numRatings {
+    margin-left: 10px;
+}

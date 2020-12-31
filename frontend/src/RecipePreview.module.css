@@ -1,0 +1,24 @@
+.div {
+    border-radius: 50px;
+    border: 1px solid var(--border);
+    overflow: auto;
+    margin: 20px 0;
+    background: var(--background-dark);
+}
+
+.div:hover {
+    background: var(--emphasis);
+}
+
+.img {
+    float: left;
+    object-fit: cover;
+    height: 200px;
+    width: 300px;
+    padding-right: 25px;
+}
+
+.noStyling {
+    color: inherit;
+    text-decoration: inherit;
+}

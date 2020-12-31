@@ -1,0 +1,32 @@
+.cart {
+    position: absolute;
+    width: 12vw;
+    right: 2vw;
+    margin-top: 15px;
+
+    border-radius: 50px;
+    border: 1px solid var(--border);
+    background: var(--background-dark);
+    
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px 10px;
+}
+
+.ingredient {
+    margin: 2px 0;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button {
+    border: none;
+    outline: none;
+    background: transparent;
+    margin-right: -20px;
+    cursor: pointer;
+}

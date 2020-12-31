@@ -1,0 +1,67 @@
+/* Button Formatting */
+.submitUserRating, .addToCart {
+    background: var(--emphasis);
+    color: white;
+    height: 35px;
+    width: 110px;
+    margin-left: 20px;
+}
+
+.submitUserRating:hover, .addToCart:hover {
+    background: var(--primary);
+}
+
+.addToCart {
+    margin-top: 20px;
+    margin-right: 100px;
+}
+
+/* Block Level Formatting */
+.centeredDiv {
+    display: flex;
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.titleHolder {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Other */
+.h3 {
+    padding-right: 25px;
+}
+
+.img {
+    height: 250px;
+    padding-right: 20px;
+}
+
+.button, .submitUserRating, .addToCart {
+    border: none;
+    outline: none;
+}
+
+.button {
+    background: transparent;
+}
+
+.svg {
+    pointer-events: none;
+    fill: var(--emphasis);
+}
+
+.numServings {
+    padding: 0 20px;
+    font-size: 30px;
+    font-family: monospace;
+}
+
+.h2 {
+    font-size: 35px;
+    border-bottom: 5px solid var(--emphasis);
+}

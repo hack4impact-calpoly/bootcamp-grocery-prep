@@ -1,0 +1,36 @@
+.nav {
+    background-color: var(--emphasis);
+    padding: 20px;
+}
+
+.title, .a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    margin: 10px 10px 0;
+}
+
+.title {
+    font: italic 25px Georgia, Serif;
+    margin-right: 20px;
+}
+
+.a:hover {
+    border-bottom: 3px solid var(--primary) ;
+}
+
+/* Cart */
+
+.cartButton {
+    float: right;
+    margin-right: 10vw;
+    margin-top: -5px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.cartIcon {
+    fill: white;
+    cursor: pointer;
+}

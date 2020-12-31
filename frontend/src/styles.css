@@ -1,0 +1,11 @@
+:root {
+    --primary: rgb(71, 129, 255);
+    --emphasis: rgb(155, 186, 226);
+    --background: rgb(235, 243, 255);
+    --background-dark: rgb(224, 237, 255);
+    --border: grey;
+}
+
+html {
+    background: var(--background);
+}

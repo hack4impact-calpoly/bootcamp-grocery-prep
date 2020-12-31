@@ -1,0 +1,8 @@
+.wrapper {
+    background: var(--background);
+    min-height: 100vh;
+}
+
+.content {
+    margin: 0 15%;
+}
