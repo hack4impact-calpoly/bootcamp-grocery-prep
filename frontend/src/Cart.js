@@ -1,8 +1,8 @@
-import './Cart.css';
+import './Cart.style.css';
 
 function Cart() {
   return (
-    <div>
+    <div class="bord">
       <p>This is the cart component</p>
     </div>
   );

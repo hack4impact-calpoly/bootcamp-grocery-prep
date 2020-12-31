@@ -1,5 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Rubik);
 
+.bord{
+  
+  border-left: dashed #394753;
+  border-width: 6px;
+}
+
 header{
   background: #394753;
   color: white;
@@ -101,14 +107,6 @@ h1{
 
 p{
   padding-left: 30px;
-}
-
-.ingredients{
-  background: #54A5F2;
-  border: #394753;
-  border-style: dashed hidden dashed hidden;
-  border-width: 6px;
-  padding: 10px;
 }
 
 img.pageimage{
