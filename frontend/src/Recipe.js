@@ -18,6 +18,7 @@ class Recipe extends React.Component{
             .then(res => res.json())
             .then(data => {
                 this.setState({...data})
+                this.setState({servNum: 1})
                 let sum = 0
                 for(var i = 0; i < data.ratings.length; i++){
                     
@@ -70,6 +71,22 @@ class Recipe extends React.Component{
         this.setState({avgRating: rate})
     }
 
+    updateCount(ammount){
+
+        if(this.state.servings + ammount < 1) return;
+
+        const newIngredients = {}
+        let curServ = this.state.servings
+
+        this.setState({servings: curServ + ammount})
+
+        for(let i in this.state.ingredients){
+            let curAmmount = this.state.ingredients[i]
+            newIngredients[i] = (this.state.ingredients[i]/curServ) * ammount + curAmmount
+        }
+
+        this.setState({ingredients: newIngredients})
+    }
 
     render(){
 
@@ -93,11 +110,11 @@ class Recipe extends React.Component{
                 
 
                 <span>
-                <button id="down">-</button>
+                <button onClick={() => this.updateCount(-1)}>-</button>
                 </span>
-                <span>Servings: <span id="serving-count">1</span></span>
+                <span>Servings: <span id="serving-count">{this.state.servings}</span></span>
                 <span>
-                <button id="up">+</button>
+                <button onClick={() => this.updateCount(1)}>+</button>
                 </span>
 
                 <div className="pageimage">
@@ -109,7 +126,7 @@ class Recipe extends React.Component{
                 <ul id="ingredientList">
                     {
                         this.state.ingredients && Object.keys(this.state.ingredients).map((curKey) => {
-                            return <li><span className="counter">{this.state.ingredients[curKey]}</span> {curKey}</li>;
+                            return <li key={curKey}><span className="counter">{this.state.ingredients[curKey]}</span> {curKey}</li>;
                         })
                     }
                     
