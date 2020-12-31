@@ -87,6 +87,7 @@ ul{
 h3{
   padding: 15px;
   margin: 0;
+  text-align: left;
 }
 
 h2{
@@ -97,6 +98,7 @@ h2{
 
 h1{
   padding: 20px;
+  text-align: left;
 }
 
 p{
@@ -130,5 +132,6 @@ button{
 
 select{
   padding: 5px;
-  margin-left: 10px;
+  margin-left: 1px;
+  
 }
