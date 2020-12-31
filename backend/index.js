@@ -9,19 +9,6 @@ const url = "mongodb+srv://bmcmann:H3ll0W0rld@bootcampc1.shnyh.mongodb.net/datab
 
 app.use(bodyParser.json())
 
-//app.use(express.static("./../"))
-
-//app.use(express.static("./.."))
-
-// app.get('/', (req, res) => {
-//   res.send('Hello world!')
-// })
-
-// app.get('/hola/:page', (req, res) => {
-//   let page = req.params.page
-//   res.send(page)
-// })
-
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");

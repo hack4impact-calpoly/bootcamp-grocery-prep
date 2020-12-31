@@ -10,7 +10,7 @@ const getRecipe = async () => {
 }
 
 const getOneRecipe = async (name) => {
-    return Recipe.find({title: name})
+    return Recipe.findOne({title: name})
 }
 
 const updateRating = async (id, rating) => {
