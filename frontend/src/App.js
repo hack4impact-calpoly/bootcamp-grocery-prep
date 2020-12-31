@@ -48,8 +48,16 @@ class App extends React.Component {
 	  </Route>
 
 	  <Route exact path='/random-recipe'>
+             <main>
+             <RandomRecipe />
+             <Cart cart={this.state.cart} emptyCart={this.emptyCart} />
+             </main>
+          </Route>
+
+
+	  <Route path='/random-recipe'>
 	     <main>
-	     <RandomRecipe updateCart={this.updateCart}/>
+	     <Recipe updateCart={this.updateCart}/>
              <Cart cart={this.state.cart} emptyCart={this.emptyCart} />
 	     </main>
 	  </Route>
