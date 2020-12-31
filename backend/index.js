@@ -3,9 +3,7 @@ const app = express();
 const port = 3000;
 const path = require('path');
 
-app.use('/', express.static(path.join(__dirname, '../')));
-app.use('/lessons', express.static(path.join(__dirname, '../lessons')));
-app.use('/lessons/images',express.static(path.join(__dirname, '../lessons/images')) )
+app.use(express.static('../'))
 
 const mongoose = require('mongoose')
 const databaseURL = "mongodb+srv://noximus:password1234@cluster0.jnln5.mongodb.net/Crafts?retryWrites=true&w=majority";
