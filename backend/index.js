@@ -6,6 +6,8 @@ const path = require('path');
 app.use(express.static('../'))
 
 const mongoose = require('mongoose')
+var bodyParser = require('body-parser')
+var jsonParser = bodyParser.json()
 const databaseURL = "mongodb+srv://noximus:password1234@cluster0.jnln5.mongodb.net/Crafts?retryWrites=true&w=majority";
 
 mongoose.connect(databaseURL, {
@@ -56,7 +58,7 @@ app.get('/api/craft/:name', (req, res) => {
     });
 })
 
-app.post('/api/rating', (req, res) => {
+app.post('/api/rating', jsonParser, (req, res) => {
   const rating = req.body.rating
   const id = req.body.id
   res.status(200)
@@ -78,7 +80,7 @@ app.get('/api/cart', (req, res) => {
     
 })
 
-app.post('/api/cart', (req, res) => {
+app.post('/api/cart', jsonParser, (req, res) => {
   res.status(200)
   const quantity = req.body.quantity
   const id = req.body.id
@@ -88,4 +90,3 @@ app.post('/api/cart', (req, res) => {
 app.listen(port, () => {
   console.log(`app listening on port ${port}!`)
 });
-
