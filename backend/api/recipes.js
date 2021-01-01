@@ -27,7 +27,10 @@ router.get("/recipe", async (req,res) => {
     res.status(200)
     res.send("All recipes requested")
     console.log("ALL RECPIES")
+    
     recipes = await getRecipe()
+    console.log(recipes)
+    res.json()
     // console.log(recipes)
 })
   
