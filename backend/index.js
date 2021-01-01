@@ -2,7 +2,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const app = express()
 
-app.use('/', express.static('../public'))
+app.use('/', express.static('../'))
 
 app.use(bodyParser.json())
 
@@ -34,6 +34,16 @@ app.get('/api/recipe/:name', (req, res) => {
 app.post('/api/rating', (req, res) => {
     const rating = req.body.rating
     const id = req.body.id
+
+    if (typeof rating === undefined || rating.length === 0){
+        res.status(400)
+        res.send(`Error: NO RATING`)
+    }
+
+    if (typeof id === undefined || id.length === 0){
+        res.status(400)
+        res.send(`Error: NO ID`)
+    }
 
     console.log(req.body.rating, req.body.id)
     console.log(`rating of ${rating} recieved for recipe ${id}`)
