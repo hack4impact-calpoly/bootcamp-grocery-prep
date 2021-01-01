@@ -55,6 +55,7 @@ class Recipe extends React.Component{
             },
             body: JSON.stringify(postData)
         })
+        
     
     }
 
@@ -93,7 +94,11 @@ class Recipe extends React.Component{
         return(
             <div>
                 <h1 id="title">{this.state.title}</h1>
+
                 <p>Rating: <span id="rating">{this.state.avgRating} </span></p>
+
+                <button onClick={() => this.postARating()}>POST</button>
+
                 <select id="user-rating">
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -102,12 +107,9 @@ class Recipe extends React.Component{
                     <option value="5">5</option>
                 </select>
 
-                <button onClick={() => this.postARating()}>POST</button>
-                <p id="test"></p>
-                <p id="desc">{this.state.desc}</p>
-                <p></p>
-
                 
+                
+                <p></p>
 
                 <span>
                 <button onClick={() => this.updateCount(-1)}>-</button>
@@ -117,8 +119,10 @@ class Recipe extends React.Component{
                 <button onClick={() => this.updateCount(1)}>+</button>
                 </span>
 
+                
+
                 <div className="pageimage">
-                    <p>Images have to be local...</p>
+                    
                 </div>
                 
                 <div className="ingredients">

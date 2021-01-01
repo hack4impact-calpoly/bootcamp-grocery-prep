@@ -4,7 +4,7 @@ function Cart() {
   return (
     <div class="bord">
       <p>This is the cart component</p>
-      <button>Hello</button>
+      <button>Empty</button>
     </div>
   );
 }
