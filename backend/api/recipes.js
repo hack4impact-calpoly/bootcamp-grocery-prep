@@ -25,12 +25,12 @@ const updateRating = async (id, rating) => {
 
 router.get("/recipe", async (req,res) => {
     res.status(200)
-    res.send("All recipes requested")
+    //res.send("All recipes requested")
     console.log("ALL RECPIES")
     
     recipes = await getRecipe()
     console.log(recipes)
-    res.json()
+    res.json(recipes)
     // console.log(recipes)
 })
   
