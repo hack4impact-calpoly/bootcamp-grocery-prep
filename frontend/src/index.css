@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/*  */
+body {
+  background-color: #FFFFFF;
+}
+h1 {
+  color: #1A535C;
+  margin-left: 20px;
+}
+h2 {
+  background-color: #FFE66D;
+  margin-left: 30px;
+  padding: 5px 5px 5px 10px;
+  text-align: left;
+  width: 50%;
+}
+h3 {
+  color: navy;
+  margin-left: 20px;
+}
+h4 {
+  color: #1A535C;
+  margin-left: 35px;
+}
+a:link {
+  color: red;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 35px;
+}
+/* visited link */
+.recipe-link:visited {
+  color: #f44336;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+/* mouse over link */
+a:hover {
+  color: #1A535C;
+}
+/* selected link */
+a:active {
+  color: blue;
+}
+.categories {
+  display: flex;
+}
+img {
+  margin-left: 35px;
+  margin-top: 20px;
+}
+.desc, p {
+  margin-left: 35px;
+}
+ol {
+  margin-left: 35px;
+  border-left: 2px solid tomato;
+}
+ul {
+  margin-left: 35px;
+  border-left: 2px solid tomato;
+}
+.serving-size {
+  margin-left: 15px;
+}
+#more, #less, #servings {
+  margin-left: 30px;
+}
+#home {
+color: #1A535C;
+}
+.recipe-body {
+justify-content: center;
+}
+.rating {
+margin-left: 35px;
+margin-top: 25px;
+}
+#ratings {
+margin-bottom: -10px;
+color:  #81763b;
+font-size:x-large ;
+size: 50;
+}
+#rating-label {
+  padding-left: 25px; 
+}
+
+
+
+
+

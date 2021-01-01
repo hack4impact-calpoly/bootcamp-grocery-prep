@@ -20,8 +20,60 @@ app.use((req, res, next) => {
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();
 });
+const getRecipe = async (name) => {
+	return await Recipe.find({_id: name})
+}
+const getRecipes = async () => {
+	return await Recipe.find({})
+}
+const getRandomRecipe = async () => {
+    const count = Recipe.countDocuments;
+    return await Recipe.findOne()
+}
 
 app.get('/api/recipe', async (req, res) => {
+    let recipes;
+    try 
+    {
+        recipes = await getRecipes();
+        res.json(recipes);
+        res.status(200);
+    }
+    catch (error)
+    {
+        res.status(400).send(error);
+    }
+})
+app.get('/api/recipe/:name', async (req, res) => {
+    const name = req.params.name
+    try 
+    {
+        var recipe;
+        if (typeof name === undefined || name.length === 0)
+        {
+            recipe = await Recipe.find({});
+        }
+        recipe = await getRecipe(name);
+        res.json(recipe);
+    }
+    catch (error)
+    {
+        res.status(400).send(error);
+    }
+})
+app.get('/api/random', async (req, res) => {
+    try 
+    {
+        var recipe;
+        recipe = await getRandomRecipe();
+        res.json(recipe);
+    }
+    catch (error)
+    {
+        res.status(400).send(error);
+    }
+})
+app.get('/api/images', async (req, res) => {
     try 
     {
         var result = await Recipe.find({});
@@ -29,40 +81,15 @@ app.get('/api/recipe', async (req, res) => {
     }
     catch (error)
     {
-        res.status(500).send(error);
+        res.status(400).send(error);
     }
 })
-app.get('/api/recipe/:name', async (req, res) => {
-    const name = req.params.name
-    try 
-    {
-        var result;
-        if (typeof name === undefined || name.length === 0)
-        {
-            result = await Recipe.find({});
-        }
-        result = await Recipe.find({title: name})
-        // await Recipe.find({ title: name}) 
-        res.json(result);
-    }
-    catch (error)
-    {
-        res.status(500).send(error);
-    }
-})
-app.get('/api/rating/:name', async (req, res) => {
-    const name = req.params.name
-    var result = await Recipe.find({ title: name})
-    res.send(result[0].ratings)
-    // res.log("rating of rating received for recipe id")
-})
-
 app.post('/api/rating', async (req, res) => {
     try 
     {
         if (typeof req.body.id === undefined || typeof req.body.rating === undefined)
         {
-            res.status(500);
+            res.status(400);
             return await Recipe.find({});  
         }
         var result = await Recipe.updateOne({ _id: req.body.id }, { $push: { ratings: req.body.rating } })
@@ -71,8 +98,13 @@ app.post('/api/rating', async (req, res) => {
         }
     catch (error)
     {
-        res.status(500).send(error);
+        res.status(400).send(error);
     }
+})
+app.get('/api/rating/:name', async (req, res) => {
+    const name = req.params.id
+    var result = await Recipe.find({ _id: id})
+    res.send(result[0].ratings)
 })
 
 app.listen(3001)
