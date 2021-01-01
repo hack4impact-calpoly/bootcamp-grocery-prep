@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: darkcyan;
+    color: white;
+    padding: 0px 20px 6px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    margin: 0 12px;
+    color: rgb(241, 198, 131);
+}

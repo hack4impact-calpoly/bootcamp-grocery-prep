@@ -1,0 +1,83 @@
+.ratingContainer {
+    background-color: #81b29a;
+    padding: 0px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.recipeFormat {
+    padding: 15px 10% 40px;
+}
+
+.titles {
+    background-color: #81b29a;
+    padding : 4px 8px 6px 5px;
+}
+
+.desc {
+    padding: 0px 5px;
+}
+
+.showcase {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 5px;
+}
+
+.portion_rate {
+    display: flex;
+    flex-direction: column;
+}
+
+/* .portions {
+    display: flex;
+    justify-content: right;
+    align-content: center;
+} */
+
+.post {
+    background-color: #bc4524;
+    color: white;
+    border: none;
+
+    width: 120px;
+    height: 30px;
+    font-size: 14px;
+    padding: 5px 14px;
+    align-items: flex-start;
+    margin: 0px 5px;
+}
+
+.count {
+    font-size: 20px;
+    margin: 5px 12px;
+}
+
+.plusAndMinusButton {
+    background-color: #bc4524;
+    color: white;
+    border: none;
+
+    width: 40px;
+    height: 30px;
+    font-size: 20px;
+}
+
+.addButton {
+    background-color: #bc4524;
+    border: none;
+    width: 230px;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 2px;
+    margin-top: 15px;
+}
+
+.image {
+    display: block;
+    margin-right: 0;
+    margin-left: auto;
+    width: 400px
+}

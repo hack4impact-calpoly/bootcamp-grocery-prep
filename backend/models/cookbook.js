@@ -14,9 +14,7 @@ const recipeSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    ratings: [
-        Array
-    ],
+    ratings: [],
     servings: {
         type: Number,
         required: true

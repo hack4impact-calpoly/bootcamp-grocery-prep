@@ -18,6 +18,13 @@ app.use(bodyParser.json())
 // Serving up index.html
 app.use(express.static('../'))
 
+// Bypassing CORS error
+app.use((req, res, next) => {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+});
+
 // endpoint
 app.get('/api/recipe', async (req, res) => {
     res.status(200)
@@ -46,11 +53,11 @@ app.get('/api/recipe/:name', async (req, res) => {
 })
 
 app.post('/api/rating', async (req, res) => {
-    console.log(req.body.id, req.body.rating)
+    console.log(req.body.title, req.body.rating)
     res.status(200)
-    await postNewRating(req.body.id, req.body.rating)
+    await postNewRating(req.body.title, req.body.rating)
     console.log('Posted new rating')
-    res.send(`Rating of ${req.body.rating} received for recipe ${req.body.id}`)
+    res.send(`Rating of ${req.body.rating} received for recipe ${req.body.title}`)
 })
 
 // CRUD
@@ -65,11 +72,11 @@ const getAllRecipe = async () => {
 }
 
 const postNewRating = async (name, rating) => {
-    console.log(name)
+    // console.log(name)
     return await Recipe.update(
         {title: name},
         {$push: {ratings: rating}}
     )
 }
 
-app.listen(3000)
+app.listen(3001)

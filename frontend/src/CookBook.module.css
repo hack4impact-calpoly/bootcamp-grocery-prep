@@ -1,0 +1,13 @@
+.recipeFormat {
+    padding: 15px 10% 40px;
+}
+
+.recipeHeaderFormat {
+    background-color: #81b29a;
+    padding : 4px 8px 6px;
+}
+
+.recipeLink {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}

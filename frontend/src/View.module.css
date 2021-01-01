@@ -1,0 +1,5 @@
+.mainScreen {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    background-color: rgb(255, 253, 208);
+  }

@@ -1,0 +1,15 @@
+.image {
+    display: block;
+    margin: 0px auto;
+    width: 400px
+}
+
+.ChefScreen {
+    padding: 0px 250px;
+}
+
+.titles {
+    background-color: #81b29a;
+    padding : 4px 8px 6px;
+    margin-top: 20px;
+}
