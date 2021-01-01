@@ -151,13 +151,5 @@ class Recipe extends React.Component{
 
 }
 
-// function Recipe() {
-//   return (
-//     <div>
-      
-//       <p>This is the recipe cpmponent</p>
-//     </div>
-//   );
-// }
 
 export default Recipe;
