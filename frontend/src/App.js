@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './Header.js';
-import Recipe from './Recipe.js';
+//import Recipe from './Recipe.js';
 import Cart from './Cart.js';
 import RecipeList from './RecipeList.js';
 
@@ -9,10 +9,10 @@ function App() {
     <div className="App">
       <Header />
       <main>
-        <Recipe />
+        
         <Cart />
       </main>
-      
+      <RecipeList />
     </div>
   );
 }

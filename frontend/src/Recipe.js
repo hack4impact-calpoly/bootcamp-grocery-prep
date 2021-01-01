@@ -13,7 +13,7 @@ class Recipe extends React.Component{
 
     componentDidMount(){
         const name = window.location.hash.substr(1)
-        console.log(name)
+        //console.log(name)
         fetch(`http://localhost:3001/api/recipe/` + name)
             .then(res => res.json())
             .then(data => {

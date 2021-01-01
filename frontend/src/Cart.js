@@ -2,7 +2,7 @@ import './Cart.style.css';
 
 function Cart() {
   return (
-    <div class="bord">
+    <div className="bord">
       <p>This is the cart component</p>
       <button>Empty</button>
     </div>

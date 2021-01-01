@@ -11,21 +11,28 @@ class RecipeList extends React.Component{
     }
 
     componentDidMount(){
-        const name = window.location.hash.substr(1)
-        console.log(name)
-        fetch(`http://localhost:3001/api/recipe/` + name)
+        
+        fetch(`http://localhost:3001/api/recipe/`)
             .then(res => res.json())
             .then(data => {
-                this.setState({...data})
-                
+                this.setState({allRecipies: data})
+                console.log(this.state.allRecipies)
             });
     }
 
     render(){
         return(
             <div>
-
-
+                <p>RECIPE LIST COMPONENT</p>
+                <p>{this.state.data}</p>
+                <ul>
+                    {
+                        this.state.allRecipies && this.state.allRecipies.map((curItem) => {
+                            return <li key={curItem}>{curItem.title}</li>;
+                        })
+                    }
+                    
+                </ul>
 
             </div>
 
