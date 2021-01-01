@@ -118,7 +118,7 @@ class Recipe extends React.Component{
                 </span>
 
                 <div className="pageimage">
-                    <img src={this.state.picPath} alt='text'></img>
+                    <p>Images have to be local...</p>
                 </div>
                 
                 <div className="ingredients">
