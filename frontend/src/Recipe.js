@@ -136,6 +136,8 @@ class Recipe extends React.Component{
                     
                 </ul>
 
+                <button>ADD TO CART</button>
+
                 <div id="before"></div>
                 </div>
                 <p id="inst"></p>
