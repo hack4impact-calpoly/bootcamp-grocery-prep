@@ -5,8 +5,8 @@ function Header() {
   return (
     <header>
       <h1>Milk Market</h1>
-      <nav>
-        <li><Link to="/">Home</Link></li>
+      <nav className="itemLink">
+        <li className="itemLink"><Link to="/">Home</Link></li>
         <li><Link to="random">Random Recipe</Link></li>
         <li><Link to="about">About The Chef</Link></li>
       </nav>
