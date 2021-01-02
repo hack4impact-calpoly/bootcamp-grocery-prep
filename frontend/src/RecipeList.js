@@ -1,5 +1,6 @@
 import './RecipeList.css';
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 class RecipeList extends React.Component{
 
@@ -28,7 +29,7 @@ class RecipeList extends React.Component{
                 <ul>
                     {
                         this.state.allRecipies && this.state.allRecipies.map((curItem) => {
-                            return <li key={curItem}>{curItem.title}</li>;
+                            return <Link className="itemLink" to={"/recipe/#" + curItem.title}><li key={curItem}>{curItem.title}</li></Link>;
                         })
                     }
                     

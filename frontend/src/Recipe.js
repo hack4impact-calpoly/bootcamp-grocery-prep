@@ -1,4 +1,4 @@
-import './Recipe.css';
+import styles from './Recipe.styles.css';
 import React from 'react';
 
 
@@ -93,7 +93,7 @@ class Recipe extends React.Component{
 
         return(
             <div>
-                <h1 id="title">{this.state.title}</h1>
+                <h1 >{this.state.title}</h1>
 
                 <p>Rating: <span id="rating">{this.state.avgRating} </span></p>
 
@@ -127,7 +127,7 @@ class Recipe extends React.Component{
                 
                 <div className="ingredients">
                 <h3>Ingredients</h3>
-                <ul id="ingredientList">
+                <ul className={styles.ingredients}>
                     {
                         this.state.ingredients && Object.keys(this.state.ingredients).map((curKey) => {
                             return <li key={curKey}><span className="counter">{this.state.ingredients[curKey]}</span> {curKey}</li>;
