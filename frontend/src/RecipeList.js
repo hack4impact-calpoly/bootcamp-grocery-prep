@@ -26,10 +26,10 @@ class RecipeList extends React.Component{
             <div>
                 <p>RECIPE LIST COMPONENT</p>
                 <p>{this.state.data}</p>
-                <ul>
+                <ul className={"itemList"}>
                     {
                         this.state.allRecipies && this.state.allRecipies.map((curItem) => {
-                            return <Link className="itemLink" to={"/recipe/#" + curItem.title}><li key={curItem}>{curItem.title}</li></Link>;
+                            return <Link className="itemLink" to={"/recipe/#" + curItem.title}><li className="itemList" key={curItem}>{curItem.title}</li></Link>;
                         })
                     }
                     

@@ -1,6 +1,13 @@
 
   
 .itemLink{
-    color: red;
+    color: #54A5F2;
     text-decoration: none;
+}
+
+.itemList{
+    padding: 10px;
+    margin: 10px;
+    list-style-type: lower-greek;
+    
 }
