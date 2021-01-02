@@ -37,7 +37,7 @@ class Home extends React.Component {
             return (
               <div className={styles.recipegroup}>
                 <div>
-                <Link to={'/recipe/#' + id}>{title}</Link>
+                <Link className = {styles.recipeTitle} to={'/recipe/#' + id}>{title}</Link>
                 <div className={styles.picture}>
                   <img src= {this.picturePath(item.picture)} height='250px'/>
                 </div>

@@ -6,7 +6,7 @@ function Cart(props) {
         <section class= "sidePanel">
         <div class="cart">
             <h1 >Shopping Cart</h1>
-            <button onClick={() => props.emptyCart()} id='empty-cart'>Empty Cart</button>
+            <button className="button" onClick={() => props.emptyCart()} id='empty-cart'>Empty Cart</button>
             <ul id="ingredients">
                 { props.cart && Object.keys(props.cart).map((name, size) => {
                     return (

@@ -2,8 +2,16 @@
     text-align: left;
   }
 
-  .picture
-  {
-    display: flex;
+.picture
+{
+  display: flex;
+  margin-left: 20px;
 
-  }
+}
+.recipeTitle {
+  color: goldenrod;
+  font-weight: 800;
+  margin-top: 30px;
+  margin-bottom: -10px;
+  padding: 5px 5px 5px 10px;
+}

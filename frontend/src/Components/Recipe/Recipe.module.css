@@ -1,3 +1,39 @@
 button {
     margin-left: 35px;
 }
+.servingButton {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+    border: 2px solid tomato;;
+  }
+  .servingButton:hover {
+    background-color: tomato;;
+    color: white;
+  }
+
+.ratingButton {
+    border: none;
+    padding: 1px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #81763b;;
+    margin-left: 15px;
+  }
+  
+  .ratingButton:hover {
+    background-color: #81763b;;
+    color: white;
+  }

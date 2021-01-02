@@ -93,19 +93,19 @@ class Recipe extends React.Component {
                                 <option value="4">4 &#9733;</option>
                                 <option value="5">5 &#9733;</option>
                             </select>
-                            <button id="post-rating" onClick={() => this.postRating()}>Post Rating</button></div>
+                            <button className={styles.ratingButton} id="post-rating" onClick={() => this.postRating()}>Post Rating</button></div>
                         </div>
-                    <img id='food-photo'/>
                     <div>
                         {this.state[0] && this.state[0].picture && <img src={this.picturePath(this.state[0].picture)} height='250px'/>}
                     </div>
                         <div class="serving-size">
-                            <h4>Number of Servings:</h4>
-                            <button onClick={() => this.updateServings(-1)}>-</button>
+                            <h4>Number of Servings:
+                            <button className={styles.servingButton} onClick={() => this.updateServings(-1)}>-</button>
                             <span id="servings">{this.state[0] && this.state[0].servings}</span>
-                            <button onClick={() => this.updateServings(1)}>+</button>
+                            <button className={styles.servingButton} onClick={() => this.updateServings(1)}>+</button>
+                        </h4>
                         </div>
-                    <button id='addCart' onClick={() => this.addCart()}>Add Ingredients to Cart</button>
+                    <button id='addCart' className='button' onClick={() => this.addCart()}>Add Ingredients to Cart</button>
                     <h2>Ingredients</h2>
                     <ul id="ingredients">
                         {this.state[0] && Object.keys(this.state[0].ingredients[0]).map((name, size) => {
