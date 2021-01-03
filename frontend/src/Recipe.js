@@ -7,7 +7,7 @@ class Recipe extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            //title: "random"
+            updateCart: props.addToCart,
         };
     }
 
@@ -136,7 +136,7 @@ class Recipe extends React.Component{
                     
                 </ul>
 
-                <button>ADD TO CART</button>
+                <button onClick={() => this.state.updateCart(this.state.ingredients)}>ADD TO CART</button>
 
                 <div id="before"></div>
                 </div>

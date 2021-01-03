@@ -11,7 +11,29 @@ class App extends React.Component {
 
   constructor(props){
     super(props)
-    this.state ={}
+    this.state ={
+      cartContents: {}
+    };
+  }
+
+  updateCart = (ingredients) => {
+    let tempCart = this.state.cartContents
+    for (let i in ingredients){
+      if(i in tempCart){
+        tempCart[i] = tempCart[i] + ingredients[i]
+      }
+      else{
+        tempCart[i] = ingredients[i]
+      }
+    }
+
+    this.setState({cartContents: tempCart})
+  }
+
+  clearCart = () =>{
+    console.log('*************************')
+    this.setState({cartContents: {}})
+    console.log(this.state.cartContents)
   }
 
 
@@ -21,20 +43,24 @@ class App extends React.Component {
         <BrowserRouter>
 
           <Header />
+          
+          <main>
+          <Route path='/recipe'>
+            <main>
+              <Recipe addToCart={this.updateCart}/>
+              
+            </main>
+          </Route>
 
           <Route exact path='/'>
             <main>
               <RecipeList />
-              <Cart />
+              
             </main>
           </Route>
-
-          <Route path='/recipe'>
-            <main>
-              <Recipe />
-              <Cart />
-            </main>
-          </Route>
+          <Cart contents={this.state.cartContents} empty={this.clearCart}/>
+          </main>
+          
           
         </BrowserRouter>
       </div>
