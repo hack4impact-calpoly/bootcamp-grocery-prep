@@ -28,12 +28,15 @@ class App extends React.Component {
     }
 
     this.setState({cartContents: tempCart})
+    console.log("APP COMP")
+    
+    console.log(this.state.cartContents)
   }
 
   clearCart = () =>{
-    console.log('*************************')
+    //console.log('*************************')
     this.setState({cartContents: {}})
-    console.log(this.state.cartContents)
+    //console.log(this.state.cartContents)
   }
 
 

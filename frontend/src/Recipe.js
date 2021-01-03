@@ -27,13 +27,13 @@ class Recipe extends React.Component{
                 
                 let rate = sum/data.ratings.length
                 rate = rate.toFixed(2)
-                console.log(rate)
+                //console.log(rate)
                 this.setState({avgRating: rate})
-                let imgPath = `./../../public/` + data.picture
-                console.log(imgPath)
-                this.setState({picPath: imgPath})
+                //let imgPath = `./../../public/` + data.picture
+                //console.log(imgPath)
+                //this.setState({picPath: imgPath})
                 
-                console.log(this.state.ratings)
+                //console.log(this.state.ratings)
             });
     }
 
