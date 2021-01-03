@@ -24,7 +24,7 @@ class RecipeList extends React.Component{
     render(){
         return(
             <div>
-                <p>RECIPE LIST COMPONENT</p>
+                <h2>RECIPES</h2>
                 <p>{this.state.data}</p>
                 <ul className={"itemList"}>
                     {

@@ -28,9 +28,9 @@ class App extends React.Component {
     }
 
     this.setState({cartContents: tempCart})
-    console.log("APP COMP")
+    // console.log("APP COMP")
     
-    console.log(this.state.cartContents)
+    // console.log(this.state.cartContents)
   }
 
   clearCart = () =>{
