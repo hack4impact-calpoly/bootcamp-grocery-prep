@@ -6,7 +6,7 @@ const recipeSchema = new mongoose.Schema({
     desc: String,
     ratings: [Number],
     servings: Number,
-    ingredients: { type: String, of: Number },
+    ingredients: Object,
     instructions: [String]
 }, {collection: 'Recipes'})
 

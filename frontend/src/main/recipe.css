@@ -1,0 +1,104 @@
+#title {
+    color: #D3B38F;
+    background-color: #301307;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 32px;
+    padding: 5px;
+}
+
+#rating {
+    color: #D3B38F;
+    background-color: #301307;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 32px;
+    padding: 5px;
+}
+
+h3 {
+    line-height: 50%;
+}
+
+p {
+    font-size: 22px;
+    color: #301307;
+}
+
+ol {
+    font-size: 22px;
+    color: #301307;
+}
+
+ul {
+    font-size: 22px;
+    color: #301307;
+    margin-top: 0;
+    text-align: left;
+}
+
+.servings {
+    display: flex;
+    align-content: center;
+    justify-content: left;
+    margin-left: 5px;
+}
+
+#count {
+    font-size: 22px;
+    align-self: center;
+}
+
+.button {
+    background-color: #D3B38F;
+    width: 30px;
+    height: 30px;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    margin: 0px 5px;
+    cursor: pointer;
+    align-self: center;
+}
+
+.minus {
+    margin-left: 10px;
+    padding-bottom: 10px;
+}
+
+.minus:active {
+    background-color: #301307;
+}
+
+.plus:active {
+    background-color: #301307;
+}
+
+.postRatings {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1000px;
+    padding-bottom: 50px;
+    color: #D3B38F;
+}
+
+#rating-label {
+    font-size: 22px;
+    color: #301307;
+}
+
+.submit {
+    width: 90px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 0px;
+    align-self: flex-start;
+}
+
+.addcart {
+    width: 150px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 0px;
+    align-self: flex-start;
+}

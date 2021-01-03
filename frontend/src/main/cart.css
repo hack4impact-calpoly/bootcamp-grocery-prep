@@ -1,0 +1,30 @@
+.cart {
+    margin-top: 25px;
+    min-width: 80%;
+    min-height: 100%;
+}
+
+.ingredients{
+    background-color: #301307;
+    margin-bottom: 0;
+    padding: 5px;
+}
+.ingredients > p{
+    color: #D3B38F;
+}
+
+.cartList{
+    color: #D3B38F;
+}
+
+button {
+    background-color: #D3B38F;
+    width: 120px;
+    height: 30px;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    margin: 0px 5px;
+    cursor: pointer;
+    align-self: center;
+}
