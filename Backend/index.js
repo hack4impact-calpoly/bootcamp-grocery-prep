@@ -1,57 +1,68 @@
 const express = require('express')
 const bodyParser = require('body-parser')
+const mongoose = require('mongoose')
 const app = express()
+const Recipe = require('./models/recipeSchema')
+
+mongoose.connect("mongodb+srv://shadhussain12:Doohickey12@gettingstarted.k4vqa.mongodb.net/Recipes?retryWrites=true&w=majority", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useFindAndModify: false,
+    useCreateIndex: true
+}).then(() => console.log('Connected to MongoDB'))
 
 app.use(bodyParser.json())
 app.use(express.static('public'))
 
-//gets grocery list
-app.get('/api/recipe', (req, res) => {
-    res.status(200)
-    res.send("List of recipes requested")
-})
-
-//gets specific grocery item
-app.get('/api/recipe/:recipeName', (req, res) => {
-    const recipeName = req.params.recipeName
-    res.status(200)
-    res.send("Instructions for " + recipeName + " requested" )
-})
-
-//posts rating
-app.post('/api/rating', (req, res) => {
-    const id = req.body.id
-    const rating = req.body.rating
-    res.status(200)
-    res.send('Rating of ' + rating + " received for recipe " + id)
-})
-
-/* This following code was used to replicate Ethan's demo to try to understand Node and Express
-app.use((req, res, next) => {
-    req.timestamp = new Date()
-    console.log(req.timestamp)
-    next()
-}) 
+const getRecipes = async () => {
+    return await Recipe.find({})
+}
 
 app.get('/', (req, res) => {
     res.status(200)
-    res.send('hello, world!')
-}) 
-
-app.get('/hello/:name', (req, res) => {
-    const name = req.params.name
-    if (typeof name === undefined || name.length === 0){
-        res.status(400)
-        res.send('error, no name entered')
-    }
-    res.status(200)
-    res.send('hello' + ' ' + name)
+    res.send("Welcome to Grocery Prep!")
 })
 
-app.post('/rate', (req, res) => {
-    console.log(req.body.food, req.body.rating)
+//gets grocery list
+app.get('/api/recipe', async (req, res) => {
     res.status(200)
-    res.send('rating posted!')
-})*/
+    recipes = await Recipe.find({})
+    console.log(recipes)
+    res.json(recipes)
+})
+
+//gets specific grocery item
+app.get('/api/recipe/:recipeName', async (req, res) => {
+    const recipeName = request.params.name
+    res.status(200)
+    recipe = await Recipe.findOne({'title': recipeName})
+    res.send(recipe )
+})
+
+//posts rating
+app.post('/api/rating', async (req, res) => {
+    const id = req.body.id
+    const rating = req.body.rating
+    res.status(200)
+    await Recipe.findByIdandUpdate(id, {
+        $push: {'ratings': rating}
+    })
+    res.send('Rating of ' + rating + " received for recipe " + id)
+})
+
+app.get('/api/RandomRecipe', (request, response) => {
+    response.send('Random recipe requested')
+})
+
+app.get('/api/cart', (request, response) => {
+    response.send('Here are the items in your cart')
+})
+
+app.post('/api/cart', (req, res) => {
+    const id = req.body.id
+    const quantity = req.body.quantity
+    res.status(200)
+    res.send(quantity + " of recipe " + id + " added to cart")
+})
 
 app.listen(3002)
