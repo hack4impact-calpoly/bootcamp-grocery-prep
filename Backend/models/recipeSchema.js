@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const recipeSchema = new mongoose.Schema({
-  title: StaticRange,
+  title: String,
   desc: String, 
   picture: String, 
   ratings: [Number],
