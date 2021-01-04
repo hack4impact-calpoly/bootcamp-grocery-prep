@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
     res.send('Hello world!')
 })
   
-app.use(express.static('public'))
+app.use(express.static('../'))
 
 app.get('/api/recipe', (req, res) => {
     res.send('list of all recipes requested')
@@ -23,7 +23,12 @@ app.get('/api/recipe/:name', (req, res) => {
 })
 
 app.post('/api/rating', (req, res) => {
-    res.send(`rating of ${req.body.rating} received for ${req.body.id}`)
+    const rating = req.body.rating
+    const id = req.body.id
+    if (typeof rating === undefined || rating.length === 0 || typeof id === undefined || id.length ===0) {
+        res.send('please try again')
+    }
+    res.send(`rating of ${rating} received for ${id}`)
 })
 
 app.listen(3000)
