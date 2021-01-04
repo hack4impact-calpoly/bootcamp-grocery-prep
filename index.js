@@ -1,40 +1,55 @@
-const express = require('express')
-const bodyParser = require('body-parser')
-const app = express()
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+const mongoose = require('mongoose');
+const recipe = require('./schema.js');
+const url = 'mongodb+srv://archiejones:A1m8c0j2!@hack4impactchefwebsite.kjs99.mongodb.net/Hack4ImpactChefWebsite?retryWrites=true&w=majority';
+app.use(express.static('../bootcamp-grocery-prep'));
+app.use(bodyParser.json());
 
-app.use(bodyParser.json())
 
-app.get('/https://3blzgwgi13.execute-api.us-west-2.amazonaws.com/Live/recipe', (req, res) => {
+app.get('/api/recipe', async(req, res) => {
     res.status(200)
-    res.send('list of recipes reuqested')
+    let recipies = await recipe.find({})
+    res.send(recipies)
+    return recipies
+    
 })
-app.get('/https://3blzgwgi13.execute-api.us-west-2.amazonaws.com/Live/recipe/random', (req, res) => {
+app.get('/api/recipe/random',( req, res) => {
     res.status(200)
     res.send('random recipe requested')
 })
-app.get('/https://3blzgwgi13.execute-api.us-west-2.amazonaws.com/Live/cart', (req, res) => {
-    res.status(200)
-    res.send('Here are a list of items in your cart')
-})
-app.get('/https://3blzgwgi13.execute-api.us-west-2.amazonaws.com/Live/recipe/:name', (req, res) => {
+app.get('/api/recipe/:name', async(req, res) => {
+    res.status(200);
     const name = req.params.name
-        if(name === undefined || name.length === 0){
-            res.status(400)
-            res.send("Error: no recipe requested")
+    if(name === undefined || name.length === 0){
+        res.status(400)
+        res.send("Error: no recipe requested")
+    }
+    else{
+        let recipies = await recipe.find({title : name})
+        res.send(recipies)
+        return recipies
+    }
+})
+
+app.post('/api/rating', async(req, res) => {
+    res.status(200);
+    const rTitle = req.body.title;
+    const rRating = req.body.rating;
+    let newRatings;
+    await recipe.find({title : rTitle}, 'ratings', (err,recipe) =>{
+        if(err){console.log(err)}else{
+            newRatings = recipe[0].ratings;
+            newRatings.push(rRating);
         }
-    res.status(200)
-    res.send('Requesting recipe for ' + name)
+    })
+    await recipe.updateOne({title:rTitle}, {ratings:newRatings}, (err, data) =>{
+        if(err){console.log(err)}else{
+            res.send('success')
+        }
+    })
+    
 })
 
-app.post('/https://3blzgwgi13.execute-api.us-west-2.amazonaws.com/Live/rate', (req,res) => {
-    console.log(req.body.rating, req.body.id)
-    res.status(200)
-    res.send("rating for " + req.body.id + " is " + req.body.rating )
-})
-
-app.post('/https://3blzgwgi13.execute-api.us-west-2.amazonaws.com/Live/cart', (req,res) => {
-    res.status(200)
-    console.log(req.body, req.body)
-    res.send(req.body.quantity + " of " + req.body.id + " was added to cart" )
-})
-app.listen(3000)
+app.listen(3001)
