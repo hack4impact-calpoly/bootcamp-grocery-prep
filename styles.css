@@ -1,0 +1,111 @@
+html, body{
+    background:#F5F5DC;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+main{
+    padding: 15px 20% 40px;
+}
+
+/* Header css */
+header{
+    background:#1f4a75;
+    
+}
+
+header h1{
+    color: white;
+    padding: 5 20 0 20; 
+    display: inline-block;
+}
+
+header nav{
+    float: right;
+}
+
+header li{
+    padding: 15 10 10 15;
+    display:inline-block;
+
+}
+
+header a{
+    color: orange;
+}
+
+header ul{
+    margin-right: 35;
+    list-style:none;
+}
+
+/* Home Page CSS */
+h2{
+    background:#FFAACC;
+    padding: 5 5 5 5;
+}
+
+.listmainpage{
+    list-style:none;
+    padding: 20 0 0 50;
+    display:inline-block;
+    
+}
+
+.listmainpage li{
+    padding: 10 0 0 0;
+}
+
+.listmainpage a{
+    color: maroon;
+}
+.showCase{
+   display:flex;
+   justify-content: space-between;
+}
+
+
+/* Individual foodsites CSS */
+.foodsites{
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.foodsites p{
+    display: block;
+}
+
+.img_favorites{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+/* Servings and Postings CSS */
+.servings button{
+    background-color: rgb(240, 86, 158);
+    border: none;
+    color: white;
+    padding: 5px 13px;
+
+}
+#rating-label{
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0 8px;
+}
+#postButton{
+    background-color: rgb(240, 86, 158);
+    border: none;
+    color: white;
+    padding: 10px 15px;
+}
+#headline{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#rating_block{
+    font-size: 20px;
+}

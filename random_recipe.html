@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <link rel="stylesheet" href = "styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <header>
+            <h1 >Grocery Prep</h1>
+            <nav>
+                <ul>
+                    <li><a href = "grocery_website.html">Home</a></li>
+                    <li><a href = "random_recipe.html">Random Recipe</a></li>
+                    <li><a href = "about_the_chef.html">About the Chef</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div id = "headline">
+                <h1 id = "randTitle"></h1>
+                <div id = rating_block>
+                    <span id = "rating"></span> ☆
+
+                </div>
+
+            </div>
+
+            <div class = "foodsites">
+
+                <div class = "description">
+                    <p id = randDesc></p>
+                    <div class = "postings">
+                        <label for = "ratings" id = "rating-label">Rate Me!</label>
+    
+                        <select name = "ratings" id = "ratings">
+                            <option selected hidden disabled>Select Rating</option>
+                            <option value = "1">1 ★</option>
+                            <option value = "2">2 ★</option>
+                            <option value = "3">3 ★</option>
+                            <option value = "4">4 ★</option>
+                            <option value = "5">5 ★</option>
+                        </select>
+                        <button id = "postButton">Post Rating</button>
+                    </div>
+                    <div class = "servings">
+                        <h3>Servings</h3>
+                        <button id = "dec">-</button>
+                        <span id = "serving_count">8</span>
+                        <button id = "inc">+</button>
+                    </div>
+                </div>
+                <img id = randImg src = "" height = 250px>
+
+            </div>
+
+            <div class = "ingredients">
+                <h2>Ingredients</h2>
+                <ul id = "randIngredients">
+
+                </ul>
+
+            </div>
+
+            <div class = "instructions">
+                <h2>Instructions</h2>
+                <ol id = "randInstructions">
+                    
+                </ol>
+
+            </div>
+
+        </main>
+
+    <script src = "randrecipe.js"></script>
+    <script src = "servings.js"></script>
+    </body>
+
+
+</html>
