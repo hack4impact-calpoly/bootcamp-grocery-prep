@@ -1,6 +1,7 @@
 const mongoose = require('mongoose')
 
 const recipeSchema = new mongoose.Schema({
+    
     "title": String,
     "desc": String,
     "picture": String,
@@ -8,8 +9,9 @@ const recipeSchema = new mongoose.Schema({
     "servings": Number,
     "ingredients": [Object],
     "instructions": [String]
-})
+},
+{ collection: 'recipe' })
 
-const Recipe = mongoose.model('COLLECTION_NAME', recipeSchema)
+const Recipe = mongoose.model('recipe', recipeSchema)
 
 module.exports = Recipe

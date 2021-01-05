@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose')
 const Recipe = require('./models/recipeSchema')
 
-mongoose.connect("mongodb+srv://skylerdee3:whateverheh@initialmilestone4.7k7kp.mongodb.net/recipe?retryWrites=true&w=majority", {
+mongoose.connect("mongodb+srv://skylerdee3:whateverheh@initialmilestone4.7k7kp.mongodb.net/bootcamprecipe?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
